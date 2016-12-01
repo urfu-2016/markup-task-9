@@ -1,0 +1,324 @@
+html
+{
+    background: #eee;
+}
+
+body
+{
+    display: flex;
+    flex-wrap: wrap;
+    max-width: 1400px;
+    margin: 0 auto;
+    font-family: Verdana, sans-serif;
+    font-size: 11px;
+    background: #fff;
+    line-height: 1.15;
+}
+
+nav
+{
+    flex: 0 0 100%;
+    background: #444;
+}
+
+nav ul
+{
+    display: flex;
+    margin: 0;
+    padding: 0;
+    list-style: none;
+}
+
+nav a
+{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    padding: 0 10px;
+}
+
+.site-map li
+{
+    flex: 0 0 8.33%;
+    padding: 3px 0;
+    text-align: center;
+}
+
+.site-map a:hover
+{
+    transition: color .15s linear;
+    color: #f00;
+}
+
+.hot-topics
+{
+    background: #ff5200;
+}
+
+.hot-topics li
+{
+    padding: 3px 10px;
+    text-align: center;
+}
+
+.hot-topics li:first-child
+{
+    background: #23ace3;
+}
+
+.hot-topics a:hover
+{
+    color: #444;
+}
+
+header
+{
+    display: flex;
+    flex: 0 0 100%;
+    margin-top: 4px;
+    padding-right: 8px;
+}
+
+header div
+{
+    padding: 0 5px;
+    position: relative;
+    box-sizing: border-box;
+}
+
+header > div:not(:last-child):after
+{
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    height: 95%;
+    border-right: 1px solid #bbbbbb;
+}
+
+.logo
+{
+    flex: 0 0 15%;
+}
+
+.logo img
+{
+    width: 100%;
+}
+
+.date
+{
+    flex: 0 0 10%;
+    white-space: pre-line;
+    font-size: 1.2em;
+    text-align: center;
+}
+
+.weather
+{
+    display: flex;
+    flex: 0 0 11.7%;
+}
+
+.weather__tomorrow,
+.weather__today
+{
+    white-space: pre-line;
+    text-align: center;
+    flex: 0 0 50%;
+}
+
+.weather__day
+{
+    text-decoration: underline;
+}
+
+.weather__temperature
+{
+    font-weight: bold;
+}
+
+.weather__image
+{
+    font-size: 2em;
+}
+
+.social-networks
+{
+    flex: 0 0 17.2%;
+    white-space: pre-line;
+    text-align: center;
+    font-size: 1.3em;
+}
+
+.places
+{
+    font-size: 1.5em;
+}
+
+.roads
+{
+    flex: 0 0 8.2%;
+}
+
+.currencies
+{
+    flex: 0 0 16.7%;
+}
+
+.forms
+{
+    flex: 0 0 21.2%;
+    font-size: 0.9em;
+    text-align: center;
+}
+
+.forms input[type='submit']
+{
+    width: 20px;
+    padding: 0;
+    background: #ff5200;
+    border: none;
+    height: 20px;
+}
+
+.search input[type='text']
+{
+    width: 60%;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.mail input[type='text']
+{
+    width: 30%;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+main
+{
+    display: flex;
+    flex: 0 0 80%;
+    padding: 40px 8px 0 8px;
+}
+
+.column
+{
+    display: flex;
+    flex: 0 0 50%;
+    flex-wrap: wrap;
+    box-sizing: border-box;
+}
+
+.column:not(:first-child)
+{
+    padding-left: 8px;
+}
+
+.top-line
+{
+    flex: 0 0 100%;
+    position: relative;
+    border: 1px solid black;
+    box-sizing: border-box;
+}
+
+.top-line:hover
+{
+    border: 1px solid #ff5200;
+}
+
+.top-line img
+{
+    width: 100%;
+}
+
+.top-line__header
+{
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 100%;
+    padding: 4px;
+    box-sizing: border-box;
+    word-wrap: break-word;
+    background: rgba(0, 0, 0, 0.7);
+    border-left: 4px solid #ff5200;
+    color: #fff;
+}
+
+.top-line__header h2
+{
+    margin: 0;
+    font-size: 1.8em;
+}
+
+.top-line__header q
+{
+    display: block;
+    font-weight: initial;
+}
+
+.news-block,
+.photo-of-day
+{
+    flex: 0 0 100%;
+    align-self: flex-start;
+}
+
+.news-block__header,
+.photo-of-day__header
+{
+    background: #ddd;
+    padding: 2px 4px;
+    border-left: 4px solid #ff5200;
+    border-top: 2px solid #555;
+}
+
+.news-block__header h2,
+.photo-of-day__header h2
+{
+    font-size: inherit;
+    margin: 0;
+    padding-right: 4px;
+    border-right: 1px solid #999;
+    display: inline;
+}
+
+.news-block__header a,
+.photo-of-day__header a
+{
+    float: right;
+}
+
+.news-block__article
+{
+    padding: 10px 0 0 4px;
+}
+
+.news-block__article:after
+{
+    content: '';
+    clear: both;
+    display: block;
+}
+
+.news-block__article img
+{
+    height: 50px;
+    float: left;
+    margin-right: 10px;
+}
+
+.news-block__article h3
+{
+    font-size: 1.2em;
+    margin: 0;
+    text-decoration: underline;
+}
+
+.news-block_width_half
+{
+    flex: 0 0 50%;
+}
