@@ -4,7 +4,10 @@
     flex-flow: row wrap;
 
     padding: 0;
-    margin: 0;
+    margin: 0 auto;
+
+    max-width: 1400px;
+    min-width: 1223px;
 
     font-family: Tahoma, verdana, sans-serif, arial;
     font-size: .7em;
@@ -102,3 +105,4 @@ a
     width: 100%;
     background: #000;
 }
+
