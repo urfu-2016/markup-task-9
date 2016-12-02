@@ -200,6 +200,7 @@ main
 {
     display: flex;
     flex: 0 0 80%;
+    box-sizing: border-box;
     padding: 40px 8px 0 8px;
 }
 
@@ -208,6 +209,7 @@ main
     display: flex;
     flex: 0 0 50%;
     flex-wrap: wrap;
+    justify-content: space-between;
     box-sizing: border-box;
 }
 
@@ -261,14 +263,17 @@ main
 }
 
 .news-block,
-.photo-of-day
+.photo-of-day,
+.video-of-day
 {
     flex: 0 0 100%;
     align-self: flex-start;
+    padding-bottom: 10px;
 }
 
 .news-block__header,
-.photo-of-day__header
+.photo-of-day__header,
+.video-of-day__header
 {
     background: #ddd;
     padding: 2px 4px;
@@ -277,7 +282,8 @@ main
 }
 
 .news-block__header h2,
-.photo-of-day__header h2
+.photo-of-day__header h2,
+.video-of-day__header h2
 {
     font-size: inherit;
     margin: 0;
@@ -287,7 +293,8 @@ main
 }
 
 .news-block__header a,
-.photo-of-day__header a
+.photo-of-day__header a,
+.video-of-day__header a
 {
     float: right;
 }
@@ -320,5 +327,100 @@ main
 
 .news-block_width_half
 {
+    flex: 0 0 49%;
+}
+
+.photo-of-day__date,
+.video-of-day__date
+{
+    color: #777;
+}
+
+.photo-of-day h3,
+.video-of-day h3
+{
+    margin: 0 0 20px 0;
+    font-size: 1.3em;
+}
+
+.photo-of-day img,
+.video-of-day video
+{
+    width: 100%;
+}
+
+aside
+{
+    flex: 0 0 20%;
+}
+
+footer
+{
+    flex: 0 0 100%;
+    display: flex;
+    flex-wrap: wrap;
+    border-top: 2px solid black;
+    padding: 15px;
+    box-sizing: border-box;
+    background: #e1e1e1;
+}
+
+.footer__client-info
+{
     flex: 0 0 50%;
+}
+
+.footer__other
+{
+    flex: 0 0 50%;
+}
+
+.footer__bottom
+{
+    flex: 0 0 100%;
+    margin-top: 10px;
+    padding-top: 10px;
+    border-top: 1px solid #c9c9c9;
+}
+
+.reklama
+{
+    width: 100%;
+    display: flex;
+}
+
+.reklama__image
+{
+    flex: 0 0 50%;
+}
+
+.reklama__text
+{
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+}
+
+.reklama__name
+{
+    color: #33f;
+    font-weight: bold;
+}
+
+.reklama__category
+{
+    color: #aaa;
+    margin-bottom: auto;
+}
+
+.reklama__old-price
+{
+    text-decoration: line-through;
+    color: #66f;
+}
+
+.reklama__current-price
+{
+    color: #66f;
 }
