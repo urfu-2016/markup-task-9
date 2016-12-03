@@ -7,8 +7,11 @@ body
 {
     grid-area: header;
     display: grid;
+    -ms-grid-columns: 110px 110px 110px 80px 100px 100px 
+        110px 110px 110px 100px 90px 90px 90px;
     grid-template-columns: 110px 110px 110px 80px 100px 100px 
         110px 110px 110px 100px 90px 90px 90px;
+    -ms-grid-rows: 20px 20px 80px;
     grid-template-rows: 20px 20px 80px;
     grid-template-areas: 'ttl ttl ttl ttl ttl ttl ttl ttl ttl ttl ttl ttl ttl'
         'thm thm thm thm thm thm thm thm thm thm thm thm thm'
@@ -19,7 +22,10 @@ body
 {
     grid-area: central-content;
     display: grid;
+    -ms-grid-columns: 250px 250px;
     grid-template-columns: 250px 250px;
+    -ms-grid-rows: 100px 100px 100px 70px 70px 
+        70px 70px 70px 70px 70px 70px 70px;
     grid-template-rows: 100px 100px 100px 70px 70px 
         70px 70px 70px 70px 70px 70px 70px;
     grid-template-areas: 'details details'
@@ -37,7 +43,9 @@ body
 .container
 {
     display: grid;
+    -ms-grid-columns: 530px 530px 270px;
     grid-template-columns: 530px 530px 270px;
+    -ms-grid-rows: 130px 800px 150px;
     grid-template-rows: 130px 800px 150px;
     grid-template-areas: 'header header header'
         'left-content central-content right-content'
@@ -47,6 +55,7 @@ body
 .main-footer
 {
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 20px;
     background-color: #ccc;
@@ -183,6 +192,7 @@ body
 {
     padding: 5px;
     max-width: 60px;
+    -ms-flex: 1 10%;
     flex: 1 10%;
 }
 
@@ -190,6 +200,7 @@ body
 {
     font-family: arial;
     font-weight: bold;
+    -ms-flex: 1 90%;
     flex: 1 90%;
 }
 
@@ -215,6 +226,7 @@ body
     padding-left: 5px;
     padding-right: 5px;
     display: flex;
+    -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #ccc;
     margin-top: 5px;
@@ -284,8 +296,11 @@ body
 {
     grid-area: frm;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -304,6 +319,7 @@ body
 .search
 {
     display: flex;
+    -ms-flex-align: center;
     align-items: center;
     font-size: 12px;
 }
@@ -324,7 +340,9 @@ body
     grid-area: crs;
     display: flex;
     font-size: 10px;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-align: center;
     align-items: center;
     border-right: 1px solid;
 }
@@ -339,8 +357,11 @@ body
     border-right: 1px solid;
     grid-area: sct;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -349,15 +370,20 @@ body
     border-right: 1px solid;
     grid-area: traffic;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-align: center;
     align-items: center;
+    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .weather
 {
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
+    -ms-flex-align: center;
     align-items: center;
     grid-area: weather;
     border-right: 1px solid;
@@ -433,6 +459,7 @@ body
     padding-top: 3px;
     grid-area: ttl;
     display: flex;
+    -ms-flex-pack: distribute;
     justify-content: space-around;
     font: bold 12px arial;
     background-color: #444;
