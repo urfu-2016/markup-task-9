@@ -30,85 +30,86 @@
     <a class="main-news-nav__item nav__item" href="">Споры о храме-на-воде</a>
 </nav>
 <header>
-    <img src="Images/Header/logo_def.jpg" alt="">
-    <div>Четверг 01 декабря 15:58</div>
-    <div>
-        <p>Сейчас</p>
-        <p>-8,5°C</p>
-        <img src="Images/Header/weather1.gif" alt="">
+    <a class="header__item" href=""><img src="Images/Header/logo_def.jpg" alt="E1 logo"></a>
+    <hr>
+    <div class="header__item header__today">
+        <p class="no-margin">Четверг</p>
+        <p class="no-margin">01 декабря</p>
+        <p class="no-margin bold">15:58</p>
     </div>
-    <div>
-        <p>Завтра</p>
-        <p>-14°C</p>
-        <img src="Images/Header/weather2.gif" alt="">
-    </div>
-    <div>
-        <p>Пробки</p>
-        <p>5</p>
-        <p>Баллов</p>
-    </div>
-    <div>
-        <p>Читайте нас, где удобно:</p>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-        <a href=""></a>
-    </div>
-    <div>
+    <hr>
+    <div class="header__item flex-row">
         <div>
-            <p>Курс ЦБ</p>
-            <table>
-                <thead>
-                <tr>
-                    <td></td>
-                </tr>
-                </thead>
-                <tr>
-                    <td>USD</td>
-                    <td>65.24</td>
-                </tr>
-                <tr>
-                    <td>USD</td>
-                    <td>65.24</td>
-                </tr>
-            </table>
+            <a class="no-margin a__black" href="">Сейчас</a>
+            <p class="no-margin weather-value">-8,5°C</p>
+            <img class="no-margin" src="Images/Header/weather1.gif" alt="">
         </div>
         <div>
-            <p>Средневзвешанный</p>
-            <table>
-                <thead>
-                <tr>
-                    <td>Покупка</td>
-                    <td>Продажа</td>
-                </tr>
-                </thead>
-                <tr>
-                    <td>63.10</td>
-                    <td>64.88</td>
-                </tr>
-                <tr>
-                    <td>67.03</td>
-                    <td>68.92</td>
-                </tr>
-            </table>
+            <a class="no-margin a__black" href="">Завтра</a>
+            <p class="no-margin weather-value">-14°C</p>
+            <img class="no-margin" src="Images/Header/weather2.gif" alt="">
         </div>
     </div>
-    <div>
-        <div>
-            <label for="search-input">Поиск</label>
-            <input type="text" name="search" id="search-input">
-            <a href=""></a>
-        </div>
-        <div>
-            <label for="email-input">Почта</label>
-            <input type="email" name="email" id="email-input">
-            <label for="password-input"></label>
-            <input type="password" name="password" id="password-input">
-            <a href=""></a>
-        </div>
+    <hr>
+    <div class="header__item">
+        <a class="traffic-item a__black" href="">Пробки</a>
+        <p class="traffic-item traffic-rating"><span>5</span></p>
+        <p class="traffic-item bold">баллов</p>
+    </div>
+    <hr>
+    <div class="header__item">
+        <p class="no-margin">Читайте нас, где удобно:</p><br>
+        <a href=""><img src="Images/Header/Background%20VK.png" alt="vk.com"></a>
+        <a href=""><img src="Images/Header/Background%20F.png" alt="facebook.com"></a>
+        <a href=""><img src="Images/Header/Background%20Tw.png" alt="twitter.com"></a>
+        <a href=""><img src="Images/Header/Background%20OK.png" alt="ok.ru"></a>
+        <a href=""><img src="Images/Header/Background%20YA.png" alt="yandex.ru"></a>
+        <a href=""><img src="Images/Header/Background%20I.png" alt="instagram.com"></a>
+        <a href=""><img src="Images/Header/Background%20Te.png" alt="telegram.org"></a>
+    </div>
+    <hr>
+    <div class="header__item">
+        <table class="currency">
+            <tr>
+                <td rowspan="2" colspan="2"><a href="" class="a__black">Курс ЦБ</a></td>
+                <td colspan="2"><a href="" class="a__black">Средневзвешенный</a></td>
+            </tr>
+            <tr>
+                <td>Покупка</td>
+                <td>Продажа</td>
+            </tr>
+            <tr>
+                <th class="currency-name">USD</th>
+                <td class="bold">64.15</td>
+                <td class="bold">62.82</td>
+                <td class="bold">65.35</td>
+            </tr>
+            <tr>
+                <th class="currency-name">EUR</th>
+                <td class="bold">68.47</td>
+                <td class="bold">66.93</td>
+                <td class="bold">69.54</td>
+            </tr>
+        </table>
+    </div>
+    <hr>
+    <div class="header__item">
+        <table>
+            <tr>
+                <td><label for="search-input">Поиск: </label></td>
+                <td colspan="2"><input class="search-input" type="text" name="search" id="search-input"></td>
+                <td><a href=""><img src="Images/Header/search.png" alt="search"></a></td>
+            </tr>
+            <tr>
+                <td><label for="email-input">Почта</label></td>
+                <td><input class="half-search-input" type="email" name="email" id="email-input" placeholder="Имя @e1.ru"></td>
+                <td>
+                    <label for="password-input"></label>
+                    <input class="half-search-input" type="password" name="password" id="password-input">
+                </td>
+                <td><a href=""><img src="Images/Header/search.png" alt="search"></a></td>
+            </tr>
+        </table>
     </div>
 </header>
 <main>

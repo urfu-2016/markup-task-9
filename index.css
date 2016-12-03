@@ -5,13 +5,16 @@ body
     flex-direction: column;
     font-family: Tahoma, Verdana sans-serif;
     font-size: 0.7em;
+    min-width: 1215px;
 }
 
-nav,
-header
+/*------------------------------------navigation----------------------------------------------------------------------*/
+
+nav
 {
     display: flex;
     flex-wrap: nowrap;
+    flex-basis: 100%;
 }
 .site-nav
 {
@@ -50,4 +53,111 @@ header
 .main-news-nav__item
 {
     padding: 2px 20px;
+}
+
+.main-news-nav__item:hover
+{
+    color: #3b3b3b;
+}
+
+/*------------------------------------header--------------------------------------------------------------------------*/
+header
+{
+    display: flex;
+    flex-wrap: nowrap;
+    flex-basis: 100%;
+    justify-content: space-between;
+}
+
+.header__item
+{
+    text-align: center;
+    margin: auto;
+}
+
+hr
+{
+    margin: 5px 0;
+}
+
+.header__today
+{
+    font-size: 1.5em;
+}
+
+.no-margin
+{
+    margin: 0;
+}
+
+.bold
+{
+    font-weight: 700;
+}
+
+.underline
+{
+    text-decoration: underline;
+}
+
+.weather-value
+{
+    font-size: 1.5em;
+    font-weight: 600;
+}
+
+.flex-row
+{
+    display: flex;
+    flex-direction: row;
+}
+
+.traffic-rating
+{
+    background: url("Images/Header/TrafficBackground.png");
+    width: 23px;
+    height: 18px;
+    padding: 4px 0 0 1px;
+}
+
+.traffic-item
+{
+    margin: 2px auto;
+}
+
+.traffic-rating > span
+{
+    font-weight: 900;
+    color: #fff;
+}
+
+.a__black
+{
+    color: black;
+    font-size: .9em;
+}
+
+.a__black:hover
+{
+    color: #ff4500;
+}
+
+.currency
+{
+    border-spacing: 10px 0;
+}
+
+.currency-name
+{
+    color: #369;
+}
+
+.search-input
+{
+    width: 200px;
+}
+
+.half-search-input
+{
+    width: 95px;
 }
