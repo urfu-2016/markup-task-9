@@ -1,0 +1,484 @@
+body
+{
+    margin: 0;
+}
+
+.header
+{
+    grid-area: header;
+    display: grid;
+    grid-template-columns: 110px 110px 110px 80px 100px 100px 
+        110px 110px 110px 100px 90px 90px 90px;
+    grid-template-rows: 20px 20px 80px;
+    grid-template-areas: 'ttl ttl ttl ttl ttl ttl ttl ttl ttl ttl ttl ttl ttl'
+        'thm thm thm thm thm thm thm thm thm thm thm thm thm'
+        'logo logo day weather weather traffic sct sct crs crs frm frm frm';
+}
+
+.central-content
+{
+    grid-area: central-content;
+    display: grid;
+    grid-template-columns: 250px 250px;
+    grid-template-rows: 100px 100px 100px 70px 70px 
+        70px 70px 70px 70px 70px 70px 70px;
+    grid-template-areas: 'details details'
+        'picture-story picture-story'
+        'articles articles'
+        'realty car-sale'
+        'realty-name1 car-name1'
+        'realty-name2 car-name2'
+        'realty-name3 car-name3'
+        'work caption'
+        'vacancy1 caption-name1'
+        'vacancy2 caption-name2';
+}
+
+.container
+{
+    display: grid;
+    grid-template-columns: 530px 530px 270px;
+    grid-template-rows: 130px 800px 150px;
+    grid-template-areas: 'header header header'
+        'left-content central-content right-content'
+        'footer footer footer';
+}
+
+.main-footer
+{
+    display: flex;
+    align-items: center;
+    font-size: 20px;
+    background-color: #ccc;
+    grid-area: footer;
+}
+
+.orange-ref
+{
+    font: bold 12px arial;
+    color: #ff7f00;
+}
+
+.right-content
+{
+    grid-area: right-content;
+}
+
+.caption-name2
+{
+    grid-area: caption-name2;
+}
+
+.vacancy2
+{
+    grid-area: vacancy2;
+}
+
+.caption-name1
+{
+    grid-area: caption-name1;
+}
+
+.vacancy1
+{
+    grid-area: vacancy1;
+}
+
+.work
+{
+    margin-right: 10px;
+    grid-area: work;
+}
+
+.caption
+{
+    grid-area: caption;
+}
+
+.car-name3
+{
+    grid-area: car-name3;
+}
+
+.realty-name3
+{
+    grid-area: realty-name3;
+}
+
+.car-name2
+{
+    grid-area: car-name2;
+}
+
+.realty-name2
+{
+    grid-area: realty-name2;
+}
+
+.car-name1
+{
+    grid-area: car-name1;
+}
+
+.realty-name1
+{
+    grid-area: realty-name1;
+}
+
+.price
+{
+    font-weight: bold;
+}
+
+.card p
+{
+    margin: 0;
+    padding-right: 10px;
+}
+
+.divide
+{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #ff4500;
+}
+
+.car-sale
+{
+    grid-area: car-sale;
+}
+
+.realty
+{
+    margin-right: 10px;
+    grid-area: realty;
+}
+
+.caption-news
+{
+    font-size: 12px;
+}
+
+.picture-story
+{
+    grid-area: picture-story;
+}
+
+.articles
+{
+    grid-area: articles;
+}
+
+.details
+{
+    grid-area: details;
+}
+
+.card
+{
+    margin: 8px;
+    display: flex;
+}
+
+.card img
+{
+    padding: 5px;
+    max-width: 60px;
+    flex: 1 10%;
+}
+
+.about-news
+{
+    font-family: arial;
+    font-weight: bold;
+    flex: 1 90%;
+}
+
+.description-news
+{
+    margin-top: 5px;
+}
+
+.description-news p
+{
+    margin: 0;
+    font-size: 12px;
+}
+
+.about-news
+{
+    color: #000;
+}
+
+.band
+{
+    border-left: 10px solid #ff4500;
+    padding-left: 5px;
+    padding-right: 5px;
+    display: flex;
+    justify-content: space-between;
+    background-color: #ccc;
+    margin-top: 5px;
+}
+
+.name
+{
+    font: bold 11px arial;
+    padding-top: 3px;
+    margin: 0;
+}
+
+.left-content
+{
+    grid-area: left-content;
+    padding: 10px;
+}
+
+.band p
+{
+    margin: 0;
+}
+
+.description
+{
+    font-size: 20px;
+}
+
+.main-news
+{
+    position: relative;
+    color: #fff;
+    font-family: arial;
+}
+
+.main-news:hover
+{
+    cursor: pointer;
+    border: 1px solid #ff4500;
+}
+
+.shadow
+{
+    opacity: .6;
+    background-color: #000;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 2;
+    width: 100%;
+    height: 120px;
+}
+
+.name-news
+{
+    border-left: 10px solid #ff4500;
+    padding-left: 15px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    z-index: 5;
+    width: 95%;
+    height: auto;
+}
+
+.form
+{
+    grid-area: frm;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.enter
+{
+    margin-left: 2px;
+    margin-right: 2px;
+}
+
+.valute
+{
+    border-top: 1px solid;
+}
+
+.login,
+.search
+{
+    display: flex;
+    align-items: center;
+    font-size: 12px;
+}
+
+.go
+{
+    cursor: pointer;
+}
+
+.name-valute
+{
+    font: bold 11px arial;
+    color: #00f;
+}
+
+.course
+{
+    grid-area: crs;
+    display: flex;
+    font-size: 10px;
+    justify-content: space-around;
+    align-items: center;
+    border-right: 1px solid;
+}
+
+.main-img
+{
+    width: 100%;
+}
+
+.society
+{
+    border-right: 1px solid;
+    grid-area: sct;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.traffic-jams
+{
+    border-right: 1px solid;
+    grid-area: traffic;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: column;
+}
+
+.weather
+{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    grid-area: weather;
+    border-right: 1px solid;
+}
+
+.count-points
+{
+    color: #fff;
+    text-align: center;
+    font-size: 19px;
+    width: 25px;
+    height: 25px;
+    background-image: url(images/traffic.png);
+    background-repeat: no-repeat;
+}
+
+.ref,
+.temperature,
+.society p,
+.weather-day p,
+.traffic-jams p,
+.course div p
+{
+    margin: 0;
+}
+
+.points
+{
+    font-family: arial;
+    font-weight: bold;
+    font-size: 14px;
+}
+
+.temperature
+{
+    font-weight: bold;
+}
+
+.ref
+{
+    font-size: 12px;
+    color: #000;
+}
+
+.logo
+{
+    padding-right: 10px;
+}
+
+.day
+{
+    padding: 5px;
+    border-right: 1px solid;
+    border-left: 1px solid;
+    font: 14px arial;
+    padding-top: 10px;
+    text-align: center;
+    grid-area: day;
+}
+
+.time
+{
+    font: bold 15px arial;
+}
+
+.day p
+{
+    margin: 0;
+}
+
+.title
+{
+    padding-top: 3px;
+    grid-area: ttl;
+    display: flex;
+    justify-content: space-around;
+    font: bold 12px arial;
+    background-color: #444;
+}
+
+.themes
+{
+    grid-area: thm;
+    display: flex;
+    font: bold 12px arial;
+}
+
+.themes div:nth-child(2n)
+{
+    background-color: #ff4500;
+}
+
+.themes div:last-child
+{
+    padding-left: 10px;
+    text-align: left;
+    width: 100%;
+}
+
+.themes div
+{
+    padding-top: 3px;
+    min-width: 170px;
+    text-align: center;
+    background-color: #009acd;
+}
+
+.themes a:hover
+{
+    color: #000;
+}
+
+.title a:hover
+{
+    color: #ff7f00;
+}
+
+.title a,
+.themes a
+{
+    text-align: center;
+    text-decoration: none;
+    color: #fff;
+}
