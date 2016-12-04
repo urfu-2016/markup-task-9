@@ -79,7 +79,7 @@ header
     padding-right: 8px;
 }
 
-header div
+header > div
 {
     padding: 0 5px;
     position: relative;
@@ -93,7 +93,7 @@ header > div:not(:last-child):after
     top: 0;
     right: 0;
     height: 95%;
-    border-right: 1px solid #bbbbbb;
+    border-right: 1px solid #bbb;
 }
 
 .logo
@@ -159,49 +159,138 @@ header > div:not(:last-child):after
 .roads
 {
     flex: 0 0 8.2%;
+    padding-top: 4px;
+    text-align: center;
+}
+
+.roads__header
+{
+    font-size: 1.15em;
+    font-weight: bold;
+}
+
+.roads__level
+{
+    height: 22px;
+    width: 24px;
+    margin: 5px auto;
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #fff;
+    background: url('traffic.png');
 }
 
 .currencies
 {
     flex: 0 0 16.7%;
+    display: flex;
+    font-size: .8em;
+    padding-top: 10px;
+}
+
+.currencies__central-bank
+{
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.currencies__average
+{
+    flex: 0 0 60%;
+    text-align: center;
+}
+
+.currencies__header
+{
+    text-decoration: underline;
+}
+
+.currencies__average table
+{
+    margin: 0 auto;
+    width: 90%;
+}
+
+.currencies__central-bank table
+{
+    margin: 1.6em auto;
+}
+
+.currencies__currency
+{
+    color: #369;
+    font-weight: bold;
+}
+
+.currencies__rate
+{
+    font-weight: bold;
 }
 
 .forms
 {
     flex: 0 0 21.2%;
-    font-size: 0.9em;
-    text-align: center;
+    font-size: .9em;
+    padding-top: 12px;
+}
+
+.forms__search,
+.forms__mail
+{
+    width: 90%;
+    margin: 0 auto;
+    display: flex;
+    align-items: center;
+    align-content: flex-start;
+}
+
+.forms__mail
+{
+    margin-top: 5px;
+}
+
+.forms__search span,
+.forms__mail span
+{
+    flex: 0 0 14%;
+    padding-right: 4px;
+    box-sizing: border-box;
+}
+
+.forms input[type='text']
+{
+    width: 100%;
+    height: 20px;
+    box-sizing: border-box;
+}
+
+.forms__search .forms__input
+{
+    flex: 0 0 76%;
+}
+
+.forms__mail .forms__input
+{
+    flex: 0 0 38%;
 }
 
 .forms input[type='submit']
 {
-    width: 20px;
     padding: 0;
     background: #ff5200;
     border: none;
+    flex: 0 0 20px;
+    margin-left: 3px;
     height: 20px;
-}
-
-.search input[type='text']
-{
-    width: 60%;
-    height: 20px;
-    box-sizing: border-box;
-}
-
-.mail input[type='text']
-{
-    width: 30%;
-    height: 20px;
-    box-sizing: border-box;
 }
 
 main
 {
     display: flex;
     flex: 0 0 80%;
+    flex-wrap: wrap;
     box-sizing: border-box;
-    padding: 40px 8px 0 8px;
+    padding: 40px 8px 0;
 }
 
 .column
@@ -210,6 +299,7 @@ main
     flex: 0 0 50%;
     flex-wrap: wrap;
     justify-content: space-between;
+    align-content: flex-start;
     box-sizing: border-box;
 }
 
@@ -245,7 +335,7 @@ main
     padding: 4px;
     box-sizing: border-box;
     word-wrap: break-word;
-    background: rgba(0, 0, 0, 0.7);
+    background: rgba(0, 0, 0, .7);
     border-left: 4px solid #ff5200;
     color: #fff;
 }
@@ -262,9 +352,7 @@ main
     font-weight: initial;
 }
 
-.news-block,
-.photo-of-day,
-.video-of-day
+.news-block
 {
     flex: 0 0 100%;
     align-self: flex-start;
@@ -334,24 +422,55 @@ main
 .video-of-day__date
 {
     color: #777;
+    margin-top: 5px;
 }
 
 .photo-of-day h3,
 .video-of-day h3
 {
-    margin: 0 0 20px 0;
+    margin: 0 0 14px;
     font-size: 1.3em;
 }
 
-.photo-of-day img,
-.video-of-day video
+.photo-of-day img
 {
     width: 100%;
+    vertical-align: bottom;
+}
+
+.video-of-day iframe
+{
+    height: 100%;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.entertainment
+{
+    flex: 0 0 100%;
+    display: flex;
+    padding-bottom: 10px;
+}
+
+.photo-of-day
+{
+    flex: 0 0 50%;
+}
+
+.video-of-day
+{
+    padding-left: 8px;
+    display: flex;
+    flex-direction: column;
+    box-sizing: border-box;
+    flex: 0 0 50%;
 }
 
 aside
 {
     flex: 0 0 20%;
+    padding: 40px 8px 0 0;
+    box-sizing: border-box;
 }
 
 footer
@@ -383,15 +502,26 @@ footer
     border-top: 1px solid #c9c9c9;
 }
 
+.reklama-block
+{
+    border: 1px solid #eee;
+}
+
 .reklama
 {
     width: 100%;
     display: flex;
+    padding-bottom: 9px;
 }
 
 .reklama__image
 {
     flex: 0 0 50%;
+}
+
+.reklama__image img
+{
+    width: 100%;
 }
 
 .reklama__text
@@ -402,6 +532,11 @@ footer
     flex-direction: column;
 }
 
+.reklama__text div
+{
+    padding: 2px 0;
+}
+
 .reklama__name
 {
     color: #33f;
@@ -410,17 +545,22 @@ footer
 
 .reklama__category
 {
-    color: #aaa;
+    color: #959595;
     margin-bottom: auto;
 }
 
 .reklama__old-price
 {
     text-decoration: line-through;
-    color: #66f;
+    color: #44f;
 }
 
 .reklama__current-price
 {
-    color: #66f;
+    color: #44f;
+}
+
+.reklama__buy
+{
+    font-weight: bold;
 }
