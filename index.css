@@ -1,0 +1,251 @@
+html
+{
+    background: #eee;
+}
+
+body
+{
+    margin: 0 auto;
+    max-width: 1500px;
+    min-width: 1000px;
+    box-shadow: 0 0 15px #999;
+    background: #fff;
+    font: 11px Tahoma, verdana, sans-serif, arial;
+}
+
+input:invalid
+{
+    box-shadow: 0 0 5px 1px #f00;
+}
+
+nav,
+header
+{
+    display: flex;
+    justify-content: space-around;
+}
+
+nav
+{
+    background: #444;
+    font-weight: bold;
+    line-height: 19px;
+}
+
+nav:nth-child(2)
+{
+    justify-content: flex-start;
+    background: #ff5200;
+}
+
+nav:nth-child(2) > a
+{
+    padding: 0 19px;
+}
+
+nav:nth-child(2) > a:nth-child(2n)
+{
+    background: #ff5200;
+}
+
+nav:nth-child(2) > a:nth-child(2n+1)
+{
+    background: #23ace3;
+}
+
+nav > a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+header
+{
+    justify-content: space-between;
+}
+
+.header-section
+{
+    border-right: 1px solid #cecece;
+    padding: .5% 1%;
+}
+
+.header-title
+{
+    white-space: nowrap;
+    overflow: hidden;
+}
+
+.header-title__name
+{
+    font-size: 1.2em;
+}
+
+.header-title__name-yekt
+{
+    font-weight: bold;
+}
+
+.header-title__site-e1,
+.header-title__site-ru
+{
+    font-size: 5em;
+}
+
+.header-title__site-e1
+{
+    color: #ff5200;
+    font-weight: bold;
+}
+
+.header-title__site-ru
+{
+    color: #afafaf;
+}
+
+.header-date
+{
+    text-align: center;
+    vertical-align: middle;
+    font-size: 1.4em;
+}
+
+.header-date__time
+{
+    font-weight: bold;
+}
+
+.header-weather
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.header-weather__item
+{
+    padding: 0 10px;
+}
+
+.header-weather__item-grad:after
+{
+    content: '\2103';
+}
+
+.header-traffic
+{
+    position: relative;
+}
+
+.header-traffic__image
+{
+    background: url(images/circle-yellow.png) left top no-repeat;
+    width: 24px;
+    height: 22px;
+    margin: 2px auto;
+    font-size: 1.4em;
+    font-weight: bold;
+    color: #fff;
+    text-align: center;
+}
+
+.header-traffic__caption
+{
+    text-align: center;
+}
+
+.header-links__title
+{
+    text-align: center;
+    font-size: 1.2em;
+}
+
+.header-links__list
+{
+    margin-top: 5px;
+}
+
+.header-links__list > a
+{
+    text-decoration: none;
+}
+
+.header-currency
+{
+    display: flex;
+}
+
+.header-currency__cb
+{
+    flex: 0 0 40%;
+    text-align: center;
+}
+
+.header-currency__cb:nth-child(2)
+{
+    border-top: 1px solid #999;
+}
+
+.header-currency__cb-name
+{
+    font-weight: bold;
+    color: #369;
+}
+
+.header-currency__median
+{
+    flex: 0 0 50%;
+    display: flex;
+    flex-wrap: wrap;
+    text-align: center;
+}
+
+.header-currency__median-title,
+.header-currency__median-row
+{
+    flex: 0 0 100%;
+}
+
+.header-currency__median-row,
+.header-currency__cb-row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.header-currency__cb-row
+{
+    padding-right: 10px;
+}
+
+.header-form
+{
+    width: 20%;
+}
+
+.header-form__search,
+.header-form__login
+{
+    margin-top: 5px;
+}
+
+.header-form__input-full
+{
+    width: 66%;
+}
+
+.header-form__input-half
+{
+    width: 31%;
+}
+
+.header-form__button
+{
+    margin-top: 1px;
+    vertical-align: top;
+    width: 18px;
+    height: 18px;
+    font-size: 0;
+    border: none;
+    background: url(images/search.png) left top no-repeat;
+}
