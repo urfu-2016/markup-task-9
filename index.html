@@ -1,8 +1,540 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
+    <title>Екатеринбург Он-Лайн</title>
+    <link rel="stylesheet" href="index.css">
 </head>
+
 <body>
+    <div class="container">
+        <header class="header">
+            <nav class="navbar top-navbar">
+                <a class="navbar-item" href="#">главная</a>
+                <a class="navbar-item" href="#">новости</a>
+                <a class="navbar-item" href="#">недвижимость</a>
+                <a class="navbar-item" href="#">авто</a>
+                <a class="navbar-item" href="#">работа</a>
+                <a class="navbar-item" href="#">объявления</a>
+                <a class="navbar-item" href="#">знакомства</a>
+                <a class="navbar-item" href="#">погода</a>
+                <a class="navbar-item" href="#">афиша</a>
+                <a class="navbar-item" href="#">форумы</a>
+                <a class="navbar-item" href="#">бизнес</a>
+                <a class="navbar-item" href="#">общение</a>
+                <nav class="dropdown navbar-item">
+                    <label for="menu-more">
+                        <span class="dropdown-title navbar-item">ещё</span>
+                    </label>
+                    <input id="menu-more" class="dropdown-expander" type="checkbox" hidden>
+                    <nav class="dropdown-list">
+                        <a class="dropdown-item navbar-item" href="#">СП</a>
+                        <a class="dropdown-item navbar-item" href="#">каталог</a>
+                        <a class="dropdown-item navbar-item" href="#">справка</a>
+                        <a class="dropdown-item navbar-item" href="#">еда</a>
+                        <a class="dropdown-item navbar-item" href="#">отдых</a>
+                        <a class="dropdown-item navbar-item" href="#">почта</a>
+                        <a class="dropdown-item navbar-item" href="#">дом</a>
+                        <a class="dropdown-item navbar-item" href="#">туризм</a>
+                        <a class="dropdown-item navbar-item" href="#">здоровье</a>
+                    </nav>
+                </nav>
+            </nav>
+            <nav class="navbar bottom-navbar">
+                <a class="navbar-item" href="#">новогодний спецпроект</a>
+                <a class="navbar-item" href="#">учёные против мифов</a>
+                <a class="navbar-item" href="#">башенки Екатеринбурга</a>
+                <a class="navbar-item" href="#">осторожно, корь!</a>
+                <a class="navbar-item" href="#">уникальные дома Екатеринбурга</a>
+                <a class="navbar-item" href="#">споры о храме-на-воде</a>
+            </nav>
+            <section class="header-widgets">
+                <section class="header-widget logo-widget">
+                    <a href="#" class="logo-link" title="Екатеринбург Он-Лайн">
+                        <h3 class="logo-subtitle">
+                            <span class="word">Екатеринбург</span>
+                            <span class="word">Он-Лайн</span>
+                        </h3>
+                        <h1 class="logo-title">
+                            <span class="domain">
+                                <span class="domain-level">e1</span>
+                                <span class="domain-level">ru</span>
+                            </span>
+                        </h1>
+                    </a>
+                </section>
+                <section class="header-widget date-widget">
+                    <span class="word">воскресенье</span>
+                    <span class="word">04 декабря</span>
+                    <span class="word">14:42</span>
+                </section>
+                <section class="header-widget weather-widget">
+                    <section class="weather-report">
+                        <a class="widget-title weather-report-title" href="#">сейчас</a>
+                        <span class="weather-report-temp temp-celsius">-14,2</span>
+                        <img
+                            class="weather-report-icon"
+                            src="http://www.e1.ru/weather/images/gif/d4s2.gif"
+                            alt="snow-icon"
+                            title="Пасмурно, снег">
+                    </section>
+                    <section class="weather-report">
+                        <a class="widget-title weather-report-title" href="#">завтра</a>
+                        <span class="weather-report-temp temp-celsius">-13</span>
+                        <img
+                            class="weather-report-icon"
+                            src="http://www.e1.ru/weather/images/gif/d2.gif"
+                            alt="sun-and-cloud-icon"
+                            title="Переменная облачность, без осадков">
+                    </section>
+                </section>
+                <section class="header-widget conjestion-widget">
+                    <a class="widget-title conjestion-title" href="#">пробки</a>
+                    <span class="conjestion-level">
+                        <span class="conjestion-label conjestion-free">3</span>
+                        балла
+                    </span>
+                </section>
+                <section class="header-widget social-widget">
+                    <span class="social-widget-title">
+                        читайте нас где удобно:
+                    </span>
+                    <nav class="social-widget-links">
+                        <a class="social-link" href="#">
+                            <img src="http://www.e1.ru/static/img/informers/vk_color.png" alt="vk">
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="http://www.e1.ru/static/img/informers/fb_color.png" alt="facebook">
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="http://www.e1.ru/static/img/informers/tw_color.png" alt="twitter">
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="http://www.e1.ru/static/img/informers/ok_color.png" alt="ok">
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="http://www.e1.ru/static/img/informers/ya_color.png" alt="yandex">
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="http://www.e1.ru/static/img/informers/inst_color.png" alt="instagram">
+                        </a>
+                        <a class="social-link" href="#">
+                            <img src="http://www.e1.ru/static/img/informers/tg_color.png" alt="telegram">
+                        </a>
+                    </nav>
+                </section>
+                <section class="header-widget rates-widget">
+                    <section class="rate-type">
+                        <table class="rates-table">
+                            <thead class="rates-table-header">
+                                <tr class="rates-header-underlined">
+                                    <th class="rates-table-header widget-title"
+                                        colspan="2" rowspan="2">
+                                        <a class="widget-title" href="#">курс ЦБ</a>
+                                    </th>
+                                    <th>&nbsp;</th>
+                                </tr>
+                                <tr><th>&nbsp;</th></tr>
+                            </thead>
+                            <tbody class="rates-table-body">
+                                <tr>
+                                    <td class="rates-table-item rates-currency">USD</td>
+                                    <td class="rates-table-item">64.15</td>
+                                </tr>
+                                <tr>
+                                    <td class="rates-table-item rates-currency">EUR</td>
+                                    <td class="rates-table-item">68.47</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <section class="rate-type">
+                        <table class="rates-table">
+                            <thead class="rates-table-head">
+                                <tr>
+                                    <th class="rates-table-header widget-title"
+                                        colspan="2">
+                                        <a class="widget-title" href="#">средневзвешенный</a>
+                                    </th>
+                                </tr>
+                                <tr class="rates-header-underlined">
+                                    <th class="rates-table-header">покупка</th>
+                                    <th class="rates-table-header">продажа</th>
+                                </tr>
+                            </thead>
+                            <tbody class="rates-table-body">
+                                <tr>
+                                    <td class="rates-table-item">62.93</td>
+                                    <td class="rates-table-item">65.29</td>
+                                </tr>
+                                <tr>
+                                    <td class="rates-table-item">67.10</td>
+                                    <td class="rates-table-item">69.49</td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                </section>
+                <section class="header-widget forms-widget">
+                    <form class="forms-widget-item search-form" action="#">
+                        <span class="form-title">поиск</span>
+                        <input class="form-input" type="text" name="query">
+                        <button class="form-submit">искать</button>
+                    </form>
+                    <form class="forms-widget-item mail-form" action="#">
+                        <span class="form-title">почта</span>
+                        <input class="form-input" type="text" name="login" placeholder="Имя @e1.ru">
+                        <input class="form-input" type="text" name="password">
+                        <button class="form-submit">войти</button>
+                    </form>
+                </section>
+            </section>
+        </header>
+
+        <main class="content">
+            <section class="content-part">
+                <section class="column">
+                    <a class="main-news big-picture" href="#">
+                        <img class="main-news-image" src="https://goo.gl/l25sZ0" alt="unix">
+                        <section class="main-news-title">
+                            <h2 class="news-main-title">
+                                Усиление из "Уникса": новичок из Казани
+                                помог "Уралмашу" одержать две победы подряд
+                            </h2>
+                            <p class="news-subtitle">
+                                Екатеринбургская команда обыграла соперников из Тобольска.
+                            </p>
+                        </section>
+                    </a>
+                    <section class="card">
+                        <header class="card-header">
+                            <span class="card-title">тематические статьи</span>
+                        </header>
+                        <section class="card-content">
+                            <article class="card-article">
+                                <img class="article-img" src="https://goo.gl/LXiZpS" alt="syberia">
+                                <a class="article-link" href="#">
+                                    Остолбенели на работе
+                                </a>
+                                <span class="article-text">
+                                    Хоккейная команда «Сибирь» и «Почта России»
+                                    присоединились к мировой акции — Зарплата.ру
+                                    нашла 5 видео, где россияне подражают маникенам
+                                </span>
+                            </article>
+                            <article class="card-article">
+                                <img class="article-img" src="https://goo.gl/k1Hoq2" alt="fire">
+                                <a class="article-link" href="#">
+                                    Вас уволят. Хотите знать почему?
+                                </a>
+                                <span class="article-text">
+                                    Четыре предупреждающих «звоночка» о том,
+                                    что шеф подумывает найти вам замену
+                                </span>
+                            </article>
+                            <article class="card-article">
+                                <img class="article-img" src="https://goo.gl/LQMLYh" alt="types">
+                                <a class="article-link" href="#">
+                                    Типы снегоуборщиков: чем отличаются и как выбрать
+                                </a>
+                                <span class="article-text">
+                                    С наступлением зимы эти вопросы
+                                    становятся как никогда актуальными
+                                </span>
+                            </article>
+                        </section>
+                    </section>
+                </section>
+                <section class="column">
+                    <section class="card">
+                        <header class="card-header">
+                            <span class="card-title">подробности</span>
+                            <a class="card-link" href="#">перейти</a>
+                        </header>
+                        <section class="card-content">
+                            <article class="card-article">
+                                <img class="article-img" src="https://goo.gl/P0AiJs" alt="mother">
+                                <span class="article-link">
+                                    Мама двоих детей из Екатеринбурга стала
+                                    обладательницей титула Миссис Евразия
+                                </span>
+                            </article>
+                        </section>
+                    </section>
+                    <section class="card">
+                        <header class="card-header">
+                            <span class="card-title">фоторепортаж</span>
+                            <a class="card-link" href="#">перейти</a>
+                        </header>
+                        <section class="card-content">
+                            <article class="card-article">
+                                <img class="article-img" src="https://goo.gl/k8vLAa" alt="santa">
+                                <span class="article-link">
+                                    Дед Мороз из Великого Устюга приехал на снегоходе,
+                                    чтобы встретиться с маленькими екатеринбуржцами
+                                </span>
+                            </article>
+                        </section>
+                    </section>
+                    <section>
+                        <section class="column">
+                            <section class="card">
+                                <header class="card-header">
+                                    <span class="card-title">недвижимость</span>
+                                    <a class="card-link" href="#">перейти</a>
+                                </header>
+                                <section class="card-content">
+                                    <article class="card-article">
+                                        <img class="article-img" src="https://goo.gl/x37S8P" alt="house">
+                                        <a class="article-link" href="#">
+                                            Продам 1-комнатную квартиру
+                                        </a>
+                                        <span class="article-text">
+                                            Рощинская, 44<br>
+                                            Цена: <strong>2 391 849 руб.</strong>
+                                        </span>
+                                    </article>
+                                    <article class="card-article">
+                                        <img class="article-img" src="https://goo.gl/pehxtw" alt="house">
+                                        <a class="article-link" href="#">
+                                            Сдам 1-комнатную квартиру
+                                        </a>
+                                        <span class="article-text">
+                                            Щорса, 105<br>
+                                            Цена: <strong>1 500 руб./сут.</strong>
+                                        </span>
+                                    </article>
+                                    <article class="card-article">
+                                        <img class="article-img" src="https://goo.gl/QgGdIv" alt="house">
+                                        <a class="article-link" href="#">
+                                            Сдам офисное помещение
+                                        </a>
+                                        <span class="article-text">
+                                            Автоматики Переулок, 3/1<br>
+                                            Цена: <strong>300 руб./мес. за м2</strong>
+                                        </span>
+                                    </article>
+                                    <article class="card-article">
+                                        <img class="article-img" src="https://goo.gl/vGDXus" alt="house">
+                                        <a class="article-link" href="#">
+                                            Продам земельный участок
+                                        </a>
+                                        <span class="article-text">
+                                            Каменский<br>
+                                            Цена: <strong>8 000 000 руб.</strong>
+                                        </span>
+                                    </article>
+                                </section>
+                            </section>
+                        </section>
+                        <section class="column">
+                            <section class="card">
+                                <header class="card-header">
+                                    <span class="card-title">объявления</span>
+                                    <a class="card-link" href="#">перейти</a>
+                                </header>
+                                <section class="card-content">
+                                    <article class="card-article">
+                                        <img class="article-img" src="https://goo.gl/LCVDiB" alt="coffee">
+                                        <a class="article-link" href="#">
+                                            Zepresso кофемашина цептер, капсульного типа
+                                        </a>
+                                        <span class="article-text">
+                                            Цена: <strong>890 руб.</strong>
+                                        </span>
+                                    </article>
+                                    <article class="card-article">
+                                        <img class="article-img" src="https://goo.gl/Zs45Gu" alt="zip">
+                                        <a class="article-link" href="#">
+                                            Застежки молнии
+                                        </a>
+                                        <span class="article-text">
+                                            Цена: <strong>4 руб.</strong>
+                                        </span>
+                                    </article>
+                                    <article class="card-article">
+                                        <img class="article-img" src="https://goo.gl/JOZNP9" alt="cucumber">
+                                        <a class="article-link" href="#">
+                                            Мутон воротник норка
+                                        </a>
+                                        <span class="article-text">
+                                            Цена: <strong>не указана</strong>
+                                        </span>
+                                    </article>
+                                    <article class="card-article">
+                                        <img class="article-img" src="https://goo.gl/4CceI6" alt="mosquito">
+                                        <a class="article-link" href="#">
+                                            Сварочный трансформатор Москит тсб-200
+                                        </a>
+                                        <span class="article-text">
+                                            Цена: <strong>5 890 руб.</strong>
+                                        </span>
+                                    </article>
+                                    <strong>
+                                        <a href="#">посмотреть все объявления</a>
+                                    </strong>
+                                </section>
+                            </section>
+                        </section>
+                    </section>
+                </section>
+            </section>
+            <section class="content-part">
+                <section class="column">
+                    <section class="card">
+                        <header class="card-header">
+                            <span class="card-title">фото дня</span>
+                        </header>
+                        <section class="card-content">
+                            <h3>Зимняя рябина. Автор: Андрей Альшевских</h3>
+                            <img class="big-picture" src="https://goo.gl/LXGwbp" alt="photo">
+                        </section>
+                    </section>
+                </section>
+                <section class="column">
+                    <section class="card">
+                        <header class="card-header">
+                            <span class="card-title">видео дня</span>
+                        </header>
+                        <section class="card-content">
+                            <h3>Подростки катаются на зацепере трамвая</h3>
+                            <iframe
+                                class="big-picture"
+                                src="https://www.youtube.com/embed/vMIigWwaS1k"
+                                allowfullscreen>
+                            </iframe>
+                        </section>
+                    </section>
+                </section>
+            </section>
+        </main>
+
+        <aside class="sidebar">
+            <section class="card">
+                <header class="card-header">
+                    <span class="card-title">спецпроект</span>
+                    <a class="card-link" href="#">перейти</a>
+                </header>
+                <section class="card-content">
+                    <a href="#">
+                        <img src="http://www.e1.ru/longread/electrodom/images/promo.jpg" alt="promo">
+                    </a>
+                    <strong>
+                        <a class="hot-link" href="#">Репортаж из дома будущего</a>
+                    </strong>
+                </section>
+            </section>
+            <section class="card">
+                <header class="card-header">
+                    <span class="card-title">новости звезд</span>
+                    <a class="card-link" href="#">перейти</a>
+                </header>
+                <section class="card-content">
+                    <article class="card-article">
+                        <img class="article-img" src="https://goo.gl/ztFMHT" alt="stars">
+                        <a class="article-link" href="#">
+                            Визитная карточка: звезды, которые не изменяют своей прическе
+                        </a>
+                    </article>
+                    <article class="card-article">
+                        <img class="article-img" src="https://goo.gl/2nI4kp" alt="stars">
+                        <a class="article-link" href="#">
+                            Нюша готовится к переезду в шикарные апартаменты
+                        </a>
+                    </article>
+                    <article class="card-article">
+                        <img class="article-img" src="https://goo.gl/FKQHzr" alt="stars">
+                        <a class="article-link" href="#">
+                            Золотые семьи: финансовые империи голливудских звезд
+                        </a>
+                    </article>
+                    <article class="card-article">
+                        <img class="article-img" src="https://goo.gl/UVeCEl" alt="stars">
+                        <a class="article-link" href="#">
+                            Анна Калашникова и Дарья Пынзарь забыли о конкуренции
+                        </a>
+                    </article>
+                    <article class="card-article">
+                        <img class="article-img" src="https://goo.gl/ovp2e2" alt="stars">
+                        <a class="article-link" href="#">
+                            Елена Темникова: «Идеальный макияж? Удлини брови и добавь ресниц!»
+                        </a>
+                    </article>
+                </section>
+            </section>
+        </aside>
+
+        <footer class="footer">
+            <section class="footer-info">
+                <section class="footer-main-info">
+                    <nav class="footer-info-links">
+                        <a class="footer-link" href="#">Информация для клиентов</a>
+                        <a class="footer-link" href="#">Реклама на E1</a>
+                        <a class="footer-link" href="#">Прайс-лист</a>
+                    </nav>
+                    <address class="footer-contacts">
+                        <div class="contact">
+                            <span class="contact-title">Единый номер</span>
+                            <span class="contact-info">8-800-700-8-9-10 (звонок бесплатный)</span>
+                        </div>
+                        <div class="contact">
+                            <span class="contact-title">Отдел продаж</span>
+                            <span class="contact-info">
+                                <a class="footer-link" href="mailto://adv@corp.e1.ru">adv@corp.e1.ru</a>,
+                                (343) 379-49-10
+                            </span>
+                        </div>
+                        <div class="contact">
+                            <span class="contact-title">Редакция</span>
+                            <span class="contact-info">
+                                <a class="footer-link" href="mailto://news@corp.e1.ru">news@corp.e1.ru</a>,
+                                (343) 379-49-95,
+                                (343) 34-555-34 (круглосуточно - для новостей)
+                            </span>
+                        </div>
+                    </address>
+                    <a class="footer-link" href="#">Замечания и пожелания по работе отдела продаж</a>
+                    <p>
+                        Публикация материалов под меткой «На правах рекламы»<br>
+                        и «Новости компаний» оплачена из средств рекламодателя
+                    </p>
+                </section>
+                <section class="footer-extra-info">
+                    <nav class="footer-info-links">
+                        <a class="footer-link" href="#">iPhone</a>
+                        <a class="footer-link" href="#">Мобильная версия</a>
+                    </nav>
+                    <p>
+                        <span>
+                            Отзывы и предложения о работе портала:
+                            <a class="footer-link" href="mailto://info@corp.e1.ru">info@corp.e1.ru</a>
+                        </span><br>
+                        <a class="footer-link" href="#">Центр поддержки пользователей портала E1.RU</a><br>
+                        <span>
+                            Проблемы при работе с порталом:
+                            <a class="footer-link" href="mailto://support@corp.e1.ru">support@corp.e1.ru</a>
+                        </span>
+                    </p>
+                    <a class="footer-link" href="#">Карта сайта</a>
+                </section>
+            </section>
+            <section class="footer-marks">
+                <span class="footer-copyright">© ООО «Хёрст Шкулёв Диджитал. Урал»</span>
+                <section class="footer-logos">
+                    <a class="footer-logo" href="#">
+                        <img src="http://www.e1.ru/images/intermediagroup.jpg" alt="regional network">
+                    </a>
+                    <a class="footer-logo" href="#">
+                        <img src="http://www.e1.ru/images/n1_gray.png" alt="n1.ru">
+                    </a>
+                    <a class="footer-logo" href="#">
+                        <img src="http://www.e1.ru/images/zarplata_gray.png" alt="зарплата.ру">
+                    </a>
+                </section>
+            </section>
+        </footer>
+    </div>
 </body>
+
 </html>
