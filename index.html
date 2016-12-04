@@ -2,7 +2,1107 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>e2</title>
 </head>
 <body>
+<nav class="site-nav">
+    <a class="site-nav__item nav__item" href="">Главная</a>
+    <a class="site-nav__item nav__item" href="">Новости</a>
+    <a class="site-nav__item nav__item" href="">Недвижимость</a>
+    <a class="site-nav__item nav__item" href="">Авто</a>
+    <a class="site-nav__item nav__item" href="">Работа</a>
+    <a class="site-nav__item nav__item" href="">Объявления</a>
+    <a class="site-nav__item nav__item" href="">Знакомства</a>
+    <a class="site-nav__item nav__item" href="">Погода</a>
+    <a class="site-nav__item nav__item" href="">Афиша</a>
+    <a class="site-nav__item nav__item" href="">Формулы</a>
+    <a class="site-nav__item nav__item" href="">Бизнес</a>
+    <a class="site-nav__item nav__item" href="">Общение</a>
+    <a class="site-nav__item nav__item" href="">Новости</a>
+</nav>
+<nav class="main-news-nav">
+    <a class="main-news-nav__item nav__item" href="">Новый год</a>
+    <a class="main-news-nav__item nav__item" href="">Учёные против мифов</a>
+    <a class="main-news-nav__item nav__item" href="">Башенки Екатеринбурга</a>
+    <a class="main-news-nav__item nav__item" href="">Осторожно, корь!</a>
+    <a class="main-news-nav__item nav__item" href="">Как чистят гору</a>
+    <a class="main-news-nav__item nav__item" href="">Споры о храме-на-воде</a>
+</nav>
+<header>
+    <a class="header__item" href=""><img src="Images/Header/logo_def.jpg" alt="E1 logo"></a>
+    <hr class="header__hr">
+    <div class="header__item header__today">
+        <p>Четверг</p>
+        <p>01 декабря</p>
+        <p class="bold">15:58</p>
+    </div>
+    <hr class="header__hr">
+    <div class="header__item flex-row">
+        <div>
+            <a class="a__black" href="">Сейчас</a>
+            <p class="weather-value">-8,5°C</p>
+            <img src="Images/Header/weather1.gif" alt="">
+        </div>
+        <div>
+            <a class="a__black" href="">Завтра</a>
+            <p class="weather-value">-14°C</p>
+            <img src="Images/Header/weather2.gif" alt="">
+        </div>
+    </div>
+    <hr class="header__hr">
+    <div class="header__item">
+        <a class="traffic-item a__black" href="">Пробки</a>
+        <p class="traffic-item traffic-rating"><span>5</span></p>
+        <p class="traffic-item bold">баллов</p>
+    </div>
+    <hr class="header__hr">
+    <div class="header__item">
+        <p>Читайте нас, где удобно:</p><br>
+        <a href=""><img src="Images/Header/Background%20VK.png" alt="vk.com"></a>
+        <a href=""><img src="Images/Header/Background%20F.png" alt="facebook.com"></a>
+        <a href=""><img src="Images/Header/Background%20Tw.png" alt="twitter.com"></a>
+        <a href=""><img src="Images/Header/Background%20OK.png" alt="ok.ru"></a>
+        <a href=""><img src="Images/Header/Background%20YA.png" alt="yandex.ru"></a>
+        <a href=""><img src="Images/Header/Background%20I.png" alt="instagram.com"></a>
+        <a href=""><img src="Images/Header/Background%20Te.png" alt="telegram.org"></a>
+    </div>
+    <hr class="header__hr">
+    <div class="header__item">
+        <table class="currency">
+            <tr>
+                <td rowspan="2" colspan="2"><a href="" class="a__black">Курс ЦБ</a></td>
+                <td colspan="2"><a href="" class="a__black">Средневзвешенный</a></td>
+            </tr>
+            <tr>
+                <td>Покупка</td>
+                <td>Продажа</td>
+            </tr>
+            <tr>
+                <th class="currency-name">USD</th>
+                <td class="bold">64.15</td>
+                <td class="bold">62.82</td>
+                <td class="bold">65.35</td>
+            </tr>
+            <tr>
+                <th class="currency-name">EUR</th>
+                <td class="bold">68.47</td>
+                <td class="bold">66.93</td>
+                <td class="bold">69.54</td>
+            </tr>
+        </table>
+    </div>
+    <hr class="header__hr">
+    <div class="header__item">
+        <table>
+            <tr>
+                <td><label for="search-input">Поиск:</label></td>
+                <td colspan="2"><input class="search-input" type="text" name="search" id="search-input"></td>
+                <td><a href=""><img src="Images/Header/search.png" alt="search"></a></td>
+            </tr>
+            <tr>
+                <td><label for="email-input">Почта</label></td>
+                <td>
+                    <input class="half-search-input" type="email" name="email"
+                           id="email-input" placeholder="Имя @e1.ru">
+                </td>
+                <td>
+                    <label for="password-input"></label>
+                    <input class="half-search-input" type="password" name="password" id="password-input">
+                </td>
+                <td><a href=""><img src="Images/Header/search.png" alt="search"></a></td>
+            </tr>
+        </table>
+    </div>
+</header>
+<main>
+    <section class="main">
+        <section class="column colspan-2">
+            <section class="main-news">
+                <article class="main-news__container">
+                    <img src="Images/News/MainNews.JPG" alt="Main News">
+                    <div class="main-news__description">
+                        <h2>
+                            Школьника с Уралмаша, который признался в убийстве матери, оставят
+                            в ИВС ещё на трое суток
+                        </h2>
+                        <p>Решение об этом вынес Орджоникидзевский районный суд.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Новости</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section class="articles">
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+                <article class="article">
+                <div class="article__img">
+                    <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a class="article__news-header_bold article__news-header_big a__black" href="">
+                        В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                        катать на оленях и кормить кексами
+                    </a>
+                    <p>Публикуем полную программу праздника.</p>
+                </div>
+            </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+                <article class="article">
+                <div class="article__img">
+                    <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                </div>
+                <div>
+                    <a class="article__news-header_bold article__news-header_big a__black" href="">
+                        В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                        катать на оленях и кормить кексами
+                    </a>
+                    <p>Публикуем полную программу праздника.</p>
+                </div>
+            </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/1.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_bold article__news-header_big a__black" href="">
+                            В Екатеринбурге открывается рождественская ярмарка по-европейски, где будут
+                            катать на оленях и кормить кексами
+                        </a>
+                        <p>Публикуем полную программу праздника.</p>
+                    </div>
+                </article>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Сообщить новость</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section class="articles">
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/send_news.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header_big" href="">
+                            Отправьте свою новость в редакцию, расскажите о проблеме или
+                            подкиньте тему для публикации. Сюда же загружайте ваше видео и фото.
+                        </a>
+                        <p class="send-news-phone">
+                            Круглосуточный телефон службы новостей
+                            <span class="span_bold">+7 (343) 34-555-34</span>
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Тематические статьи</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section class="articles">
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/3.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header bold" href="">
+                            Типы снегоуборщиков: чем отличаются и как выбрать
+                        </a>
+                        <p>С наступлением зимы эти вопросы становятся как никогда актуальными.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/4.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header bold" href="">
+                            Вас уволят. Хотите знать почему?
+                        </a>
+                        <p>Четыре предупреждающих «звоночка» о том, что шеф подумывает найти вам замену.</p>
+                    </div>
+                </article>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/5.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <a class="article__news-header bold" href="">
+                            Ох уж эти страхи
+                        </a>
+                        <p>
+                            Чего боятся соискатели, и как это влияет на их поведение во время поиска работы.
+                        </p>
+                    </div>
+                </article>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Знакомства</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section class="articles">
+                <article class="article meetings">
+                    <div class="meetings-article">
+                        <a class="meetings-article__img" href=""><img src="Images/Meetings/1.jpg" alt=""></a>
+                        <a class="article__news-header bold meetings-article__name" href="">
+                            AFRODITA
+                        </a>
+                        <p class="meetings-article__age">27 лет</p>
+                    </div>
+                    <div class="meetings-article">
+                        <a class="meetings-article__img" href=""><img src="Images/Meetings/1.jpg" alt=""></a>
+                        <a class="article__news-header bold meetings-article__name" href="">
+                            AFRODITA
+                        </a>
+                        <p class="meetings-article__age">27 лет</p>
+                    </div>
+                    <div class="meetings-article">
+                        <a class="meetings-article__img" href=""><img src="Images/Meetings/1.jpg" alt=""></a>
+                        <a class="article__news-header bold meetings-article__name" href="">
+                            AFRODITA
+                        </a>
+                        <p class="meetings-article__age">27 лет</p>
+                    </div>
+                    <div class="meetings-article">
+                        <a class="meetings-article__img" href=""><img src="Images/Meetings/1.jpg" alt=""></a>
+                        <a class="article__news-header bold meetings-article__name" href="">
+                            AFRODITA
+                        </a>
+                        <p class="meetings-article__age">27 лет</p>
+                    </div>
+                    <div class="meetings-article">
+                        <a class="meetings-article__img" href=""><img src="Images/Meetings/1.jpg" alt=""></a>
+                        <a class="article__news-header bold meetings-article__name" href="">
+                            AFRODITA
+                        </a>
+                        <p class="meetings-article__age">27 лет</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="column colspan-2">
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Подробности</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/6.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <p class="article__news-header_bold article__news-header_big article__with-border">
+                            Последние правки: к Храму-на-воде добавили фонтан, два автомобильных моста и
+                            общественный туалет
+                        </p>
+                        <hr class="hr_orange">
+                        <a class="article__news-header_big" href="">
+                            Остров должен быть треугольным - по форме стрелки пруда и бухты.
+                        </a>
+                    </div>
+                </article>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Обзор</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/7.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <p class="article__news-header_bold article__news-header_big article__with-border">
+                            "В 45 выглядеть на 20": реальные истории о том, как фитнес меняет жизнь
+                        </p>
+                        <hr class="hr_orange">
+                        <a class="article__news-header_big" href="">
+                            Горожане рассказали о своих успехах и достижениях.
+                        </a>
+                    </div>
+                </article>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Статьи о недвижимости</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/8.jpg" alt=""></a>
+                    </div>
+                    <div>
+                        <p class="article__news-header_bold article__news-header_big article__with-border">
+                            4 способа и 6 причин купить квартиру в новостройке
+                        </p>
+                        <hr class="hr_orange">
+                        <a class="article__news-header_big" href="">
+                            Как не превратить покупку всей жизни в проблему.
+                        </a>
+                    </div>
+                </article>
+            </section>
+            <section class="two-columns">
+                <section class="column two-columns__column">
+                    <section class="article-header-container">
+                        <div class="article-header">
+                            <span>Недвижимость</span>
+                            <hr class="article-header__hr">
+                        </div>
+                    </section>
+                    <section class="article-categories-container">
+                        <a class="article-category" href="">Аренда</a>
+                        <a class="article-category" href="">Продажа квартир</a>
+                        <a class="article-category" href="">Новостройки</a>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/9.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Продам 1-комнатную квартиру
+                                </a>
+                                <p>Донская, 27</p>
+                                <p>Цена: <strong>1 420 000</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/9.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Продам 1-комнатную квартиру
+                                </a>
+                                <p>Донская, 27</p>
+                                <p>Цена: <strong>1 420 000</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/9.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Продам 1-комнатную квартиру
+                                </a>
+                                <p>Донская, 27</p>
+                                <p>Цена: <strong>1 420 000</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/9.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Продам 1-комнатную квартиру
+                                </a>
+                                <p>Донская, 27</p>
+                                <p>Цена: <strong>1 420 000</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <section class="column two-columns__column">
+                    <section class="article-header-container">
+                        <div class="article-header">
+                            <span>Продажа авто, мото</span>
+                            <hr class="article-header__hr">
+                        </div>
+                    </section>
+                    <section class="article-categories-container">
+                        <a class="article-category no-underline" href="">Легковые</a>
+                        <a class="article-category no-underline" href="">Грузовые</a>
+                        <a class="article-category no-underline" href="">Мото</a>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/10.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Opel Astra
+                                </a>
+                                <p>430 000 руб.</p>
+                                <p>2011, автомат, 1.6л</p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/10.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Opel Astra
+                                </a>
+                                <p>430 000 руб.</p>
+                                <p>2011, автомат, 1.6л</p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/10.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Opel Astra
+                                </a>
+                                <p>430 000 руб.</p>
+                                <p>2011, автомат, 1.6л</p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/10.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Opel Astra
+                                </a>
+                                <p>430 000 руб.</p>
+                                <p>2011, автомат, 1.6л</p>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="article-categories-container">
+                        <a class="article-category no-underline" href="">Каталог спецпредложений</a>
+                    </section>
+                </section>
+            </section>
+            <section class="two-columns">
+                <section class="column two-columns__column">
+                    <section class="article-header-container">
+                        <div class="article-header">
+                            <span>Работа</span>
+                            <hr class="article-header__hr">
+                        </div>
+                    </section>
+                    <table>
+                        <tr>
+                            <td><a class="article__news-header_bold" href="">Резюме</a> (141083)</td>
+                            <td><a class="article__news-header_bold" href="">Вакансии</a> (6014)</td>
+                        </tr>
+                        <tr>
+                            <td><a href="">Разместить резюме</a></td>
+                            <td><a href="">Разместить вакансию</a></td>
+                        </tr>
+                    </table>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/11.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header" href="">
+                                    Водитель на личном автомобиле в ...
+                                </a>
+                                <p>Зарплата: от <strong>40 000 до 120 000 руб.</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/11.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header" href="">
+                                    Водитель на личном автомобиле в ...
+                                </a>
+                                <p>Зарплата: от <strong>40 000 до 120 000 руб.</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/11.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header" href="">
+                                    Водитель на личном автомобиле в ...
+                                </a>
+                                <p>Зарплата: от <strong>40 000 до 120 000 руб.</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/11.png" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header" href="">
+                                    Водитель на личном автомобиле в ...
+                                </a>
+                                <p>Зарплата: от <strong>40 000 до 120 000 руб.</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                </section>
+                <section class="column two-columns__column">
+                    <section class="article-header-container">
+                        <div class="article-header">
+                            <span>Объявления</span>
+                            <hr class="article-header__hr">
+                        </div>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/12.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Продаю шубу из нутрии
+                                </a>
+                                <p>Цена: <strong>10 000 руб.</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/12.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Продаю шубу из нутрии
+                                </a>
+                                <p>Цена: <strong>10 000 руб.</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/12.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Продаю шубу из нутрии
+                                </a>
+                                <p>Цена: <strong>10 000 руб.</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                    <section>
+                        <article class="article">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/12.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header bold" href="">
+                                    Продаю шубу из нутрии
+                                </a>
+                                <p>Цена: <strong>10 000 руб.</strong></p>
+                            </div>
+                        </article>
+                    </section>
+                    <section class="article-categories-container">
+                        <a class="article-category" href="">Посмотреть все объявления</a>
+                    </section>
+                </section>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Гость на e1</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section>
+                <article class="article">
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/13.jpeg" alt=""></a>
+                    </div>
+                    <div>
+                        <p>
+                            <strong>Сегодня</strong>
+                        </p>
+                        <a href="">Интервью с Ширли Мэнсон, вокалисткой группы Garbage</a>
+                    </div>
+                </article>
+            </section>
+            <section class="two-columns">
+                <section class="column two-columns__column">
+                    <article class="article">
+                        <div class="article__img">
+                            <a class="article__img__a" href=""><img src="Images/News/14.jpeg" alt=""></a>
+                        </div>
+                        <div>
+                            <p>
+                                <strong>Сегодня</strong>
+                            </p>
+                            <a href="">
+                                Интервью с заведующим отделением травматологии и ортопедии ЦГКБ № 23 Максимом
+                                Агалаковым
+                            </a>
+                        </div>
+                    </article>
+                    <article class="article-categories-container">
+                        <a class="article-category bold" href="">пригласить своего гостя</a>
+                    </article>
+                </section>
+                <section class="column two-columns__column">
+                    <article class="article">
+                        <div class="article__img">
+                            <a class="article__img__a" href=""><img src="Images/News/15.jpeg" alt=""></a>
+                        </div>
+                        <div>
+                            <p>
+                                <strong>Скоро</strong>
+                            </p>
+                            <a href="">Интервью с Александром Пушным, комиком, музыкантом, телеведущим</a>
+                        </div>
+                    </article>
+                    <article class="article-categories-container">
+                        <a class="article-category bold" href="">посмотреть всех гостей</a>
+                    </article>
+                </section>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Туризм</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section class="two-columns">
+                <section class="column two-columns__column">
+                    <article class="article">
+                        <div>
+                            <a class="bold" href="">ОАЭ из Екатеринбурга 18.12</a>
+                            <p>
+                                <strong>62 880 руб. / 7 ночей</strong>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div>
+                            <a class="bold" href="">Индия из Екатеринбурга 01.02</a>
+                            <p>
+                                <strong>61 436 руб. / 9 ночей</strong>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="article-categories-container">
+                        <a class="article-category bold" href="">посмотреть все туры</a>
+                    </article>
+                </section>
+                <section class="column two-columns__column">
+                    <article class="article">
+                        <div class="article__img">
+                            <a class="article__img__a" href=""><img src="Images/News/16.jpg" alt=""></a>
+                        </div>
+                        <div>
+                            <a class="bold" href="">Лесная поляна</a>
+                            <p>
+                                <strong>База отдыха, Свердловская область</strong>
+                            </p>
+                        </div>
+                    </article>
+                    <article class="article">
+                        <div class="article__img">
+                            <a class="article__img__a" href=""><img src="Images/News/17.jpg" alt=""></a>
+                        </div>
+                        <div>
+                            <a class="bold" href="">Первоуральск</a>
+                            <p>
+                                <strong>Отель, Первоуральск</strong>
+                            </p>
+                        </div>
+                    </article>
+                </section>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Фотокаталоги недвижимости</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section class="articles">
+                <article class="article">
+                    <div>
+                        <a href="">Новостройки</a><br>
+                        <a href="">Коттеджи</a><br>
+                        <a href="">Коммерческая</a><br>
+                        <a href="">Земля</a>
+                    </div>
+                    <div class="real-estate-catalog">
+                        <div class="article real-estate-catalog__item">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/18.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header_bold article__news-header_big" href="">
+                                    Новый бизнес-центр FM класса В
+                                </a>
+                                <p class="article__news-header_big">
+                                    от 74 000 руб. за м2 до 94 000 руб. за м2
+                                </p>
+                            </div>
+                        </div>
+                        <div class="article real-estate-catalog__item">
+                            <div class="article__img">
+                                <a class="article__img__a" href=""><img src="Images/News/19.jpg" alt=""></a>
+                            </div>
+                            <div>
+                                <a class="article__news-header_bold article__news-header_big" href="">
+                                    Жилой квартал "Базилик"
+                                </a>
+                                <p class="article__news-header_big">
+                                    от 54 000 руб. за м2 до 78 000 руб. за м2
+                                </p>
+                            </div>
+                        </div>
+                    </div>
+                </article>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Дом</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section class="articles">
+                <ul class="home">
+                    <li class="home__li"><a href=""><strong>Мебель</strong></a></li>
+                    <li class="home__li"><a href=""><strong>Сантехника</strong></a></li>
+                    <li class="home__li"><a href=""><strong>Галереи интерьеров</strong></a></li>
+                    <li class="home__li"><a href=""><strong>Окна</strong></a></li>
+                    <li class="home__li"><a href=""><strong>Двери</strong></a></li>
+                    <li class="home__li"><a href=""><strong>Отделочные материалы</strong></a></li>
+                    <li class="home__li"><a href=""><strong>Бани, сауны, бассейны</strong></a></li>
+                    <li class="home__li"><a href=""><strong>Строительные материалы</strong></a></li>
+                </ul>
+                <article class="article-categories-container">
+                    <a class="article-category bold" href="">все категории товаров</a>
+                </article>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Каталог</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section class="articles">
+                <article class="article meetings">
+                    <div>
+                        <a href=""><img class="main-news__container" src="Images/News/21.jpg" alt=""></a><br>
+                        <a class="bold" href="">
+                            "Остров", база отдыха
+                        </a>
+                    </div>
+                    <div>
+                        <a href=""><img class="main-news__container" src="Images/News/21.jpg" alt=""></a><br>
+                        <a class="bold" href="">
+                            "Остров", база отдыха
+                        </a>
+                    </div>
+                    <div>
+                        <a href=""><img class="main-news__container" src="Images/News/21.jpg" alt=""></a><br>
+                        <a class="bold" href="">
+                            "Остров", база отдыха
+                        </a>
+                    </div>
+                </article>
+            </section>
+        </section>
+        <section class="column colspan-1">
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Спецпроект</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section>
+                    <div class="article__img">
+                        <a class="article__img__a" href=""><img src="Images/News/24.jpg" alt=""></a>
+                    </div>
+                <article class="article-categories-container">
+                    <a class="article-category a__orange bold" href="">репортаж из дома будущего</a>
+                </article>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Сейчас по тв</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section>
+                <table class="tv-table">
+                    <tr class="tv-table__row">
+                        <td class="tv-table__cell"><img src="Images/TV/1.jpg" alt=""></td>
+                        <td class="tv-table__cell">15:15 — <strong>Время покажет</strong> (еще 27 мин.)</td>
+                    </tr>
+                    <tr class="tv-table__row">
+                        <td class="tv-table__cell"><img src="Images/TV/2.jpg" alt=""></td>
+                        <td class="tv-table__cell">
+                            14:55 —
+                            <strong>
+                                Анна Ковальчук в детективном телесериале "ТАЙНЫ СЛЕДСТВИЯ". (12+).
+                            </strong> (еще 1 час 27 мин.)
+                        </td>
+                    </tr>
+                    <tr class="tv-table__row">
+                        <td class="tv-table__cell"><img src="Images/TV/3.jpg" alt=""></td>
+                        <td class="tv-table__cell">
+                            14:00 — <strong>Премьера. "МЕСТО ВСТРЕЧИ".</strong> (еще 27 мин.)
+                        </td>
+                    </tr>
+                </table>
+                <article class="article-categories-container">
+                    <a class="article-category" href="">все телеканалы</a>
+                </article>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Бизнес-образование</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section>
+                <div>
+                    <a class="a__orange bold" href="">Семинары, тренинги, учебные курсы</a> - вся информация
+                    по бизнес-образованию для деловых людей и не только:
+                </div><br>
+                <form>
+                    <label for="thematics"><strong>Выбрать по тематике:</strong></label><br>
+                    <select id="thematics">
+                        <option>Аудит</option>
+                        <option>Бухгалтерский учёт, налоги</option>
+                        <option>ВЭД, Таможня</option>
+                        <option>Логистика</option>
+                    </select>
+                </form>
+                <form>
+                    <label for="organizer"><strong>Выбрать по организатору:</strong></label><br>
+                    <select id="organizer">
+                        <option>ИППК УрФУ</option>
+                        <option>Учебный центр Ирины Маминой</option>
+                    </select>
+                </form>
+                <button class="event">Выбрать события</button>
+            </section>
+            <section class="article-header-container">
+                <div class="article-header">
+                    <span>Совместные покупки</span>
+                    <hr class="article-header__hr">
+                </div>
+            </section>
+            <section>
+                <article class="article buys">
+                    <img src="Images/1.jpg" alt="">
+                    <a class="a__orange bold" href="">Вместе покупать дешевле!</a>
+                </article>
+            </section>
+        </section>
+    </section>
+</main>
+<footer>
+    <section class="footer__info footer__item_grid-row-3">
+        <article class="footer__grid-row__item">
+            <a class="article-category bold" href="">Информация для клиентов</a>
+            <a class="article-category bold" href="">Реклама на Е1</a>
+            <a class="article-category bold" href="">Прайс-лист</a>
+        </article>
+        <article class="footer__grid-row__item">
+            <p><strong>Единый номер:</strong> 8-800-700-8-9-10 (звонок бесплатный)</p>
+            <p><strong>Отдел продаж:</strong> <a href="">adv@corp.e1.ru</a>, (343) 379-49-10</p>
+            <p>
+                <strong>Редакция:</strong> <a href="">news@corp.e1.ru</a>, (343) 379-49-95, (343) 34-555-34
+                (круглосуточно - для новостей)
+            </p>
+        </article>
+        <article class="footer__grid-row__item">
+            <a href="">Замечания и пожелания по работе отдела продаж</a>
+            <p>
+                Публикация материалов под меткой «На правах рекламы»<br>
+                и «Новости компаний» оплачена из средств рекламодателя
+            </p>
+        </article>
+    </section>
+    <section class="footer__links">
+        <section class="footer__item_grid-row-3">
+            <article class="footer__grid-row__item">
+                <a class="article-category bold" href="">IPhone</a>
+                <a class="article-category bold" href="">Мобильная версия</a>
+            </article>
+            <article class="footer__grid-row__item">
+                <p>Отзывы и предложения о работе портала: <a href="">info@corp.e1.ru</a></p>
+                <p><a href="">Центр поддержки пользователей портала E1.RU</a></p>
+                <p>
+                    Проблемы при работе с порталом: <a href="">support@corp.e1.ru</a>
+                </p>
+            </article>
+            <article class="footer__grid-row__item"><a href="">Карта сайта</a></article>
+        </section>
+        <article>
+            <img src="Images/Footer/18grey.jpg" alt="">
+            <img src="Images/Footer/66.gif" alt="">
+            <img src="Images/Footer/xlV6oPkwYyE.jpg" alt="">
+        </article>
+    </section>
+    <hr class="footer__hr">
+    <section class="footer__copyright">© ООО «Хёрст Шкулёв Диджитал. Урал»</section>
+    <section class="footer__partners">
+        <a href="">
+            <img src="Images/Footer/intermediagroup.jpg" alt="">
+        </a>
+        <a href="">
+            <img src="Images/Footer/n1_gray.png" alt="">
+        </a>
+        <a href="">
+            <img src="Images/Footer/zarplata_gray.png" alt="">
+        </a>
+    </section>
+</footer>
 </body>
 </html>
