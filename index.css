@@ -331,24 +331,22 @@ ul.bottom-nav li:not(:last-of-type):after
     justify-content: space-between;
 }
 
-.column
-{
-    /*flex: 2;    */
-}
-
 .column:last-of-type
 {
-    /*flex: 1;*/
     min-height: 100%;
 }
 
 .main-news
 {
     margin: auto 5px;
-    height: 300px;
     border: 1px solid black;
     position: relative;
     color: #fff;
+}
+
+.main-news img
+{
+    width: 100%;
 }
 
 .main-news:hover
