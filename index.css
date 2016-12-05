@@ -453,6 +453,12 @@ main
     object-fit: cover;
 }
 
+.channels,
+.channels-href
+{
+    margin: 0 7px;
+}
+
 .channels th,
 .channels td
 {
