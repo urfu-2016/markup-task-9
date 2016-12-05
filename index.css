@@ -121,7 +121,7 @@ table tr:nth-child(1)
 
 .big-news
 {
-    background: url("imgs/big-pic.jpg") center / cover;
+    background: url('imgs/big-pic.jpg') center / cover;
     width: 100%;
     height: 300px;
     margin-bottom: 24px;
