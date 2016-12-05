@@ -7,22 +7,22 @@ body
 
 main
 {
-  display: grid;
-  width: 100%;
-  grid-template-columns: [start] 12px [left-start] 2fr [
-    left-end] 12px [center-start] 1fr [line] 1fr [
-        center-end] 12px [right-start] 1fr [right-end] 12px [end];
-  grid-template-rows: [up] auto [menu] auto [
-    topics] auto [header] auto [banner] auto [line] 10px [
-        main] auto  [line-1] auto [line-2] auto [line-3] auto [
-            gallery] auto [footer] auto [links] auto [bottom];
-  max-width: 1750px;
-  left: 0;
-  right: 0;
-  top: -5px;
-  bottom: 05px;
-  margin: auto;
-  background-color: #fff;
+    display: grid;
+    width: 100%;
+    grid-template-columns: [start] 12px [left-start] 2fr [
+        left-end] 12px [center-start] 1fr [line] 1fr [
+            center-end] 12px [right-start] 1fr [right-end] 12px [end];
+    grid-template-rows: [up] auto [menu] auto [
+        topics] auto [header] auto [banner] auto [line] 10px [
+            main] auto  [line-1] auto [line-2] auto [line-3] auto [
+                gallery] auto [footer] auto [links] auto [bottom];
+      max-width: 1750px;
+      left: 0;
+      right: 0;
+      top: -5px;
+      bottom: 05px;
+      margin: auto;
+      background-color: #fff;
 }
 
 a:not([class]):visited
@@ -35,7 +35,6 @@ a.news
     font: bold 16px arial;
     color: black;
 }
-
 
 a.additionally
 {
@@ -50,13 +49,6 @@ a.home
     font-weight: 800;
 }
 
-
-/*
-main > div
-{
-    border: 1px solid;
-}
-*/
 .banner-1
 {
     grid-column: start;
@@ -279,7 +271,7 @@ main > div
     font: bold 15px arial;
     padding: 5px;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color .2s;
 }
 
 .menu:hover
@@ -294,7 +286,7 @@ main > div
     color: #fff;
     font: bold 15px arial;
     text-decoration: none;
-    transition: color 0.2s;
+    transition: color .2s;
 }
 
 .topic:hover
@@ -372,7 +364,7 @@ main > div
 {
     bottom: 0;
     position: absolute;
-    background: rgba(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, .5);
     color: #fff;
     padding: 0 5px 5px 20px;
     overflow: hidden;
@@ -392,7 +384,7 @@ main > div
 .content div:first-child
 {
     font: bold 25px arial;
-    margin: 5px 0 0 0;
+    margin: 5px 0 0;
 }
 
 .class
