@@ -74,7 +74,7 @@ header
 
 .level2 span:nth-child(even)
 {
-    background: #00AB6F;
+    background: #00ab6f;
 }
 
 .level3
@@ -84,7 +84,7 @@ header
     align-content: stretch;
     height: 100px;
     background: #fff;
-    box-shadow: 0 5px 10px -4px #00AE6F;
+    box-shadow: 0 5px 10px -4px #00ab6f;
 }
 
 .logo,
@@ -128,6 +128,7 @@ a
     text-decoration: none;
     color: #000;
 }
+
 .today,
 .tomorrow
 {
@@ -180,42 +181,42 @@ a
 
 .vk
 {
-    background-image: url("Images/vk.png");
+    background-image: url('Images/vk.png');
 }
 
 .facebook
 {
-    background-image: url("Images/facebook.png");
+    background-image: url('Images/facebook.png');
 }
 
 .twiter
 {
-    background-image: url("Images/twiter.png");
+    background-image: url('Images/twiter.png');
 }
 
 .ok
 {
-    background-image: url("Images/ok.png");
+    background-image: url('Images/ok.png');
 }
 
 .yandex
 {
-    background-image: url("Images/я.png");
+    background-image: url('Images/я.png');
 }
 
 .instagram
 {
-    background-image: url("Images/instagram.png");
+    background-image: url('Images/instagram.png');
 }
 
 .telegram
 {
-    background-image: url("Images/telegram.png");
+    background-image: url('Images/telegram.png');
 }
 
 .currency
 {
-    color: #00AB6F;
+    color: #00ab6f;
 }
 
 .economy
@@ -295,7 +296,7 @@ main
 .map
 {
     display: block;
-    box-shadow: 0 0 10px #00AE6F;
+    box-shadow: 0 0 10px #00ab6f;
     margin: 10px 5px;
     background: #fff;
 }
@@ -387,6 +388,7 @@ main
 {
     width: 50%;
 }
+
 .property
 {
     margin-right: 10px;
@@ -422,7 +424,7 @@ main
 
 .special
 {
-    margin: 0 10px 10px 10px;
+    margin: 0:10 px 10px;
     text-decoration: underline;
 }
 
@@ -450,18 +452,19 @@ main
 
 .people:nth-child(even) .ava
 {
-    border: 2px solid #00AE6F;
+    border: 2px solid #00ab6f;
 }
 
 .people:nth-child(even) .name
 {
-    color: #00AE6F;
+    color: #00ab6f;
 }
 
 .promo
 {
     padding: 10px;
 }
+
 .promo-image
 {
     width: 100%;
@@ -565,6 +568,7 @@ footer
     width: 60px;
     display: block;
 }
+
 .link
 {
     color: #ff5200;
