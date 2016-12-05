@@ -270,6 +270,177 @@ header
     background: url(images/search.png) left top no-repeat;
 }
 
+main
+{
+    display: flex;
+    background: #fff;
+}
+
+.main-column
+{
+    margin: 10px 5px;
+}
+
+.main-column__first
+{
+    flex: 0 0 40%;
+}
+
+.main-column__second
+{
+    flex: 0 0 40%;
+}
+
+.main-column__third
+{
+    flex: 0 0 18%;
+}
+
+.main__column-subheader
+{
+    display: flex;
+    justify-content: space-between;
+    border-top: 2px solid #434343;
+    border-left: 7px solid #fd5200;
+    background: #e1e1e1;
+}
+
+.main__column-subheader-name
+{
+    padding: 3px 5px;
+    border-right: 1px solid #777;
+}
+
+.main__column-subheader-link
+{
+    font-size: 10px;
+    padding: 3px 5px;
+    color: #666;
+}
+
+.main__news-header
+{
+    position: relative;
+}
+
+.main__news-header-image
+{
+    width: 100%;
+}
+
+.main__news-header-caption
+{
+    position: absolute;
+    background: rgba(0, 0, 0, .5);
+    border-left: 7px solid #fd5200;
+    font-weight: bold;
+    font-size: 1.6em;
+    text-decoration: none;
+    color: #fff;
+    bottom: 0;
+}
+
+.main__news-item
+{
+    display: flex;
+}
+
+.main__news-image
+{
+    padding: 10px;
+}
+
+.main__news-text
+{
+    padding-top: 10px;
+}
+
+.main__news-link
+{
+    font-weight: bold;
+    color: #000;
+}
+
+.main__column-subarticle
+{
+    display: flex;
+    font-size: 12px;
+}
+
+.main__column-subarticle-image
+{
+    padding: 10px;
+}
+
+.main__column-subarticle-header,
+.main__column-subarticle-link
+{
+    display: block;
+    padding: 5px;
+}
+
+.main__column-subarticle-header
+{
+    font-weight: bold;
+    border-bottom: 1px solid #fd5200;
+}
+
+.main__column-subarticle-link
+{
+    color: #196199;
+}
+
+.main-column__four-columns
+{
+    display: grid;
+    grid-template-areas: 'a b' 'c d';
+}
+
+.main-column__four-columns-1
+{
+    grid-area: a;
+}
+
+.main-column__four-columns-2
+{
+    grid-area: b;
+}
+
+.main-column__four-columns-3
+{
+    grid-area: c;
+}
+
+.main-column__four-columns-4
+{
+    grid-area: d;
+}
+
+.main__column-promo
+{
+    margin-bottom: 10px;
+}
+
+.main__column-promo-image
+{
+    width: 100%;
+    padding: 5px 0;
+}
+
+.main__column-promo-link
+{
+    color: #ff5200;
+    font-weight: bold;
+    font-size: 12px;
+}
+
+.main__column-tv
+{
+    font-weight: bold;
+    text-align: center;
+    font-size: 24px;
+}
+
 footer
 {
     border-top: 2px solid #000;
