@@ -10,6 +10,9 @@ header
 {
     display: flex;
     flex-direction: column;
+    width: 100%;
+    min-width: 1500px;
+    align-items: center;
 }
 
 .level1,
@@ -18,6 +21,7 @@ header
     display: flex;
     justify-content: space-around;
     height: 20px;
+    width: 100%;
 }
 
 .level1 span a,
@@ -87,6 +91,7 @@ header
     height: 100px;
     background: #fff;
     box-shadow: 0 5px 10px -4px #00ab6f;
+    width: 100%;
 }
 
 .logo,
@@ -273,6 +278,10 @@ main
 {
     display: flex;
     padding: 0 10px;
+    width: 100%;
+    min-width: 1500px;
+    box-sizing: border-box;
+    justify-content: center;
 }
 
 .left,
@@ -442,11 +451,6 @@ main
     width: 80px;
 }
 
-.name
-{
-    display: block;
-}
-
 .people:nth-child(odd) .ava
 {
     border: 2px solid #ff5200;
@@ -536,6 +540,7 @@ footer
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 1500px;
     background: rgba(0,171,111,.4);
     box-shadow: 0 -5px 10px -4px #00ab6f;
 }
