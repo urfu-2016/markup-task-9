@@ -17,6 +17,7 @@ header
 {
     display: flex;
     justify-content: space-around;
+    height: 20px;
 }
 
 .level1 span a,
@@ -48,11 +49,12 @@ header
 {
     display: flex;
     width: 150px;
+    height: 200px;
     flex-direction: column;
     align-items: center;
     background: #737373;
     position: absolute;
-    top: 19px;
+    top: 20px;
     right: 0;
 }
 
@@ -530,7 +532,7 @@ footer
     flex-direction: column;
     width: 100%;
     background: rgba(0,171,111,.4);
-    box-shadow: 0 -5px 10px -4px #00AE6F;
+    box-shadow: 0 -5px 10px -4px #00ab6f;
 }
 
 .info
