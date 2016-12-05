@@ -11,7 +11,6 @@
 
     font-family: Tahoma, verdana, sans-serif, arial;
     font-size: .7em;
-    font-weight: bold;
 }
 
 a
@@ -99,10 +98,65 @@ a
     color: #020202;
 }
 
+.navigation,
+.adv-links
+{
+    font-weight: bold;
+}
+
 .main-header
 {
     height: 76px;
     width: 100%;
-    background: #000;
+
+    display: flex;
+
+    flex-flow: row wrap;
 }
 
+.main-header > div
+{
+    display: flex;
+    align-items: center;
+
+    font-size: 1.3em;
+}
+
+.main-header > div:not(.logo):after
+{
+    margin: 0 15px;
+}
+
+.logo:after
+{
+    margin-right: 15px;
+}
+
+.main-header > div:after
+{
+    content: '';
+    height: 60px;
+    display: block;
+    border-right: 1px solid #000;
+}
+
+.logo a
+{
+    height: 76px;
+}
+
+.date
+{
+    width: 10%;
+    text-align: center;
+}
+
+time
+{
+    width: 100%;
+}
+
+.social-links
+{
+    list-style: none;
+}
