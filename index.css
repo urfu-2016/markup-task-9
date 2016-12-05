@@ -380,6 +380,8 @@ main
     justify-content: space-around;
 }
 
+.h
+
 .h a
 {
     text-decoration: underline;
@@ -440,6 +442,11 @@ main
 .ava
 {
     width: 80px;
+}
+
+.name
+{
+    display: block;
 }
 
 .people:nth-child(odd) .ava
