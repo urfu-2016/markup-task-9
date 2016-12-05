@@ -4,51 +4,324 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1">
     <link rel="stylesheet" href="index.css">
+    <title>E1</title>
 </head>
-<body class="container">
-    <nav class="navigation">
-        <ul class="navigation-list">
-            <li><a href="">Nav link</a></li>
-            <li><a class="active" href="">Nav link</a></li>
-            <li><a href="">Nav link</a></li>
-            <li><a href="">Nav link</a></li>
-            <li><a href="">Nav link</a></li>
-            <li><a href="">Nav link</a></li>
-            <li><a href="">Nav link</a></li>
-        </ul>
-    </nav>
-    <div class="adv-links">
-        <ul class="navigation-list">
-            <li><a href="">Adv link</a></li>
-            <li><a href="">Adv link</a></li>
-            <li><a href="">Adv link</a></li>
-            <li><a href="">Adv link</a></li>
-            <li><a href="">Adv link</a></li>
-        </ul>
-    </div>
-    <header class="main-header">
-        <div class="logo"><a href=""><img src="images/logo.jpg" alt="Main" title="Main page"></a></div>
-        <div class="date"><time>Monday<br>1st September<br><strong>14:50</strong></div>
-        <div class="weather">
-            <div class="today">Сейчас<br><span class="temp">13</span></div>
-            <div class="tomorrow">15</div>
-        </div>
-        <div class="traffic"><a href=""><span class="heading">Пробки</span> <span class="number">5</span> баллов</a></div>
-        <div class="social">
-            <p>Читайте нас где удобно:</p>
-            <ul class="social-links">
-                <li class="social-link vk">V</li>
-                <li class="social-link fb">F</li>
-                <li class="social-link tw">T</li>
-                <li class="social-link ya">Y</li>
-                <li class="social-link ig">I</li>
+<body>
+    <div class="container">
+        <nav class="navigation">
+            <ul class="navigation-list">
+                <li><a href="">Nav link</a></li>
+                <li><a class="active" href="">Nav link</a></li>
+                <li><a href="">Nav link</a></li>
+                <li><a href="">Nav link</a></li>
+                <li><a href="">Nav link</a></li>
+                <li><a href="">Nav link</a></li>
+                <li><a href="">Nav link</a></li>
+            </ul>
+        </nav>
+        <div class="adv-links">
+            <ul class="navigation-list">
+                <li><a href="">Adv link</a></li>
+                <li><a href="">Adv link</a></li>
+                <li><a href="">Adv link</a></li>
+                <li><a href="">Adv link</a></li>
+                <li><a href="">Adv link</a></li>
             </ul>
         </div>
-        <div class="bank"></div>
-        <div class="search"></div>
-    </header>
-    <main></main>
-    <aside></aside>
-    <footer></footer>
+        <header class="main-header">
+            <div class="logo"><a href=""><img src="images/logo.jpg" alt="Main" title="Main page"></a></div>
+            <div class="date">Monday<br>1st September<br><strong>14:50</strong></div>
+            <div class="weather">
+                <div class="today">
+                    <a href="" title="Сейчас">Сейчас</a>
+                    <div class="temp">13</div>
+                    <img src="images/d4.gif" alt="tmp">
+                </div>
+                <div class="tomorrow">
+                    <a href="" title="Завтра">Завтра</a>
+                    <div class="temp">15</div>
+                    <img src="images/d4s2.gif" alt="tmp">
+                </div>
+            </div>
+            <div class="traffic">
+                <a href="">Пробки</a>
+                <div class="traffic-value">4</div>
+                <div>балла</div>
+            </div>
+            <div class="social">
+                <p>Читайте нас где удобно:</p>
+                <br>
+                <ul class="social-links">
+                    <li class="social-link">
+                        <a href="">
+                            <img src="images/vk_color.png" alt="tmp" title="tmp">
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="">
+                            <img src="images/tg_color.png" alt="tmp" title="tmp">
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="">
+                            <img src="images/tw_color.png" alt="tmp" title="tmp">
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="">
+                            <img src="images/ya_color.png" alt="tmp" title="tmp">
+                        </a>
+                    </li>
+                    <li class="social-link">
+                        <a href="">
+                            <img src="images/inst_color.png" alt="tmp" title="tmp">
+                        </a>
+                    </li>
+                </ul>
+            </div>
+            <div class="bank">
+                <div class="central-bank">
+                    <div class="title">Курс ЦБ</div>
+                    <hr>
+                    <div class="bank-item">
+                        <span>USD</span>
+                        <span>65.54</span>
+                    </div>
+                    <div class="bank-item">
+                        <span>EUR</span>
+                        <span>68.47</span>
+                    </div>
+                </div>
+                <div class="mean">
+                    <div class="title">Средневзвешанный</div>
+                    <div class="mean-content">
+                        <span>Покупка</span>
+                        <div class="mean-item">
+                            <span>35465</span>
+                            <span>68.47</span>
+                        </div>
+                    </div>
+                    <div class="mean-content">
+                        <span>Продажа</span>
+                        <div class="mean-item">
+                            <span>35465</span>
+                            <span>68.47</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="search">
+                <form class="search-form">
+                    <label>Поиск: <input type="text" name="search"></label>
+                    <input class="submit" type="submit" name="submit">
+                </form>
+                <form class="login-form">
+                    <label class="login-form-item">Почта: <input type="text" name="email"></label>
+                    <input class="login-form-item" type="password" name="psswd">
+                    <input class="submit" type="submit" name="submit">
+                </form>
+            </div>
+        </header>
+        <main>
+            <div class="left">
+                <div class="main-news">
+                    <a href="">
+                        <img src="images/main-image.jpg" alt="tmp">
+                        <p class="category-header">Some text here</p>
+                    </a>
+                </div>
+                <section class="news">
+                    <div class="section-header">
+                        <h2>Новости</h2>
+                        <a href="">Все новости</a>
+                    </div>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                </section>
+            </div>
+            <div class="center">
+                <section class="news">
+                    <div class="section-header">
+                        <h2>Новости</h2>
+                        <a href="">Все новости</a>
+                    </div>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                </section>
+                <section class="news">
+                    <div class="section-header">
+                        <h2>Новости</h2>
+                        <a href="">Все новости</a>
+                    </div>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                </section>
+                <section class="news">
+                    <div class="section-header">
+                        <h2>Новости</h2>
+                        <a href="">Все новости</a>
+                    </div>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                </section>
+                <div class="two-column">
+                    <section class="news">
+                        <div class="section-header">
+                            <h2>Новости</h2>
+                            <a href="">Все новости</a>
+                        </div>
+                        <article>
+                            <img src="images/news.jpg" alt="tmp" title="tmp">
+                            <a href="">Awesome header</a>
+                            <p>Some awesome news here. Shock content. Please, be
+                            careful while reading this amazing article</p>
+                        </article>
+                    </section>
+                    <section class="news">
+                        <div class="section-header">
+                            <h2>Новости</h2>
+                            <a href="">Все новости</a>
+                        </div>
+                        <article>
+                            <img src="images/news.jpg" alt="tmp" title="tmp">
+                            <a href="">Awesome header</a>
+                            <p>Some awesome news here. Shock content. Please, be
+                            careful while reading this amazing article</p>
+                        </article>
+                    </section>
+                </div>
+            </div>
+            <div class="right">
+                <section class="news">
+                    <div class="section-header">
+                        <h2>Новости</h2>
+                        <a href="">Все новости</a>
+                    </div>
+                    <article>
+                        <img src="images/news.jpg" alt="tmp" title="tmp">
+                        <a href="">Awesome header</a>
+                        <p>Some awesome news here. Shock content. Please, be
+                        careful while reading this amazing article</p>
+                    </article>
+                </section>
+            </div>
+        </main>
+    </div>
+    <footer>
+        <div class="footer-left">
+            <div class="footer-links">
+                <a href="">Информация для клиентов</a>
+                <a href="">Реклама на E1</a>
+                <a href="">Прайс-лист</a>
+            </div>
+            <address class="footer-address">
+                <div class="footer-address-item">
+                    <span class="bold">Единый номер:</span>
+                    <span>8-800-700-8-9-10 (звонок бесплатный)</span>
+                </div>
+                <div class="footer-address-item">
+                    <span class="bold">Отдел продаж:</span>
+                    <span>
+                        <a href="mailto:adv@corp.e1.ru">adv@corp.e1.ru</a>,
+                        (343) 379-49-10
+                    </span>
+                </div>
+                <div class="footer-address-item">
+                    <span class="bold">Редакция:</span>
+                    <span>
+                        <a href="mailto:news@corp.e1.ru">news@corp.e1.ru</a>,
+                        (343) 379-49-95, (343) 34-555-34 (круглосуточно - для новостей)
+                    </span>
+                </div>
+            </address>
+            <div class="footer-misc">
+                <a href="">Замечания и пожелания по работе отдела продаж</a>
+                <div>
+                    Публикация материалов под меткой «На правах рекламы»
+                    и «Новости компаний» оплачена из средств рекламодателя
+                </div>
+            </div>
+        </div>
+        <div class="footer-right">
+            <div class="footer-links">
+                <a href="">iPhone</a>
+                <a href="">Мобильная версия</a>
+            </div>
+            <div class="footer-emails">
+                <div>
+                    <span>Отзывы и предложения о работе портала:</span>
+                    <a href="mailto:info@corp.e1.ru">info@corp.e1.ru</a>
+                </div>
+                <div>
+                    <a href="">Центр поддержки пользователей портала E1.RU</a>
+                </div>
+                <div>
+                    <span>Проблемы при работе с порталом:</span>
+                    <a href="mailto:support@corp.e1.ru">support@corp.e1.ru</a>
+                </div>
+            </div>
+            <div class="footer-misc">
+                <a href="">Карта сайта</a>
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
