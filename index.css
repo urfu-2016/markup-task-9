@@ -87,7 +87,7 @@ header
     margin-bottom: 10px;
 }
 
-header > section:not(first-child)
+header > section:not(:first-child)
 {
     border-left: 1px solid lightgray;
     margin-top: 7px;
@@ -166,38 +166,38 @@ header p
 }
 
 .vk
-{    
-    background: url(social-buttons.png) 0px 0px;
+{
+    background: url(social-buttons.png) 0 0;
 }
 
 .fb
 {
-    background: url(social-buttons.png) -23px 0px;
+    background: url(social-buttons.png) -23px 0;
 }
 
 .tw
 {
-    background: url(social-buttons.png) -46px 0px;
+    background: url(social-buttons.png) -46px 0;
 }
 
 .ok
 {
-    background: url(social-buttons.png) -69px 0px;
+    background: url(social-buttons.png) -69px 0;
 }
 
 .ya
 {
-    background: url(social-buttons.png) -92px 0px;
+    background: url(social-buttons.png) -92px 0;
 }
 
 .inst
 {
-    background: url(social-buttons.png) -115px 0px;
+    background: url(social-buttons.png) -115px 0;
 }
 
 .tg
 {
-    background: url(social-buttons.png) -138px 0px;
+    background: url(social-buttons.png) -138px 0;
 }
 
 .courses
@@ -240,7 +240,7 @@ header p
 
 .valutes span
 {
-    color: #336699;
+    color: #369;
 }
 
 .search
@@ -342,7 +342,7 @@ main
 
     flex-grow: 1;
     text-align: right;
-    margin: 2px 7px 2px 0px;
+    margin: 2px 7px 2px 0;
     border-left: solid 1px #000;
 }
 
