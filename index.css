@@ -1,0 +1,779 @@
+html
+{
+    background: #eee;
+}
+
+body
+{
+    margin: 0 auto;
+    padding: 0;
+    max-width: 1400px;
+    min-width: 1223px;
+    background: #fff;
+    -webkit-box-shadow: 0 0 15px #999;
+    -moz-box-shadow: 0 0 15px #999;
+    box-shadow: 0 0 15px #999;
+    display: flex;
+    min-height: 100vh;
+    flex-direction: column;
+    font-family: Tahoma, verdana, sans-serif, arial;
+    font-size: 12px;
+}
+
+.header
+{
+    width: 1400px;
+    font-weight: 800;
+    display: flex;
+    flex-direction: column;
+    font-size: 11px;
+}
+
+ul
+{
+    align-items: flex-start;
+    background: #444;
+    display: flex;
+    justify-content: space-between;
+    margin: 0;
+    padding: 0;
+    color: #fff;
+}
+
+li
+{
+    padding: 3px 25px;
+    display: block;
+}
+
+li a
+{
+    color: #fff;
+    text-decoration: none;
+}
+
+ul.top-nav li a:hover,
+ul.top-nav label:hover,
+ul.top-nav label:hover:after
+{
+    color: #ff5200;
+    transition: .5s;
+    cursor: pointer;
+}
+
+ul.top-nav input
+{
+    display: none;
+}
+
+ul.top-nav label:hover
+{
+    cursor: pointer;
+    color: #ff5200;
+}
+
+ul.top-nav label:hover:after
+{
+    border-top-color: #ff5200;
+}
+
+ul.top-nav label:after
+{
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    content: ' ';
+    border-left: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-top: 3px solid #fff;
+}
+
+ul.top-nav input + ul
+{
+    display: none;
+    position: absolute;
+    left: 0;
+    flex-direction: column;
+    flex: 1;
+    width: 100%;
+    align-items: stretch;
+    background: #444;
+    margin: 0;
+    padding: 0;
+}
+
+ul.top-nav input + ul li
+{
+    padding: 3px 20px;
+    border-top: 1px solid #666;
+}
+
+ul.top-nav input[type='checkbox']:checked + ul
+{
+    display: flex;
+}
+
+.top-nav li
+{
+    flex: 1;
+    display: block;
+    padding-left: 20px;
+    position: relative;
+}
+
+ul.middle-nav
+{
+    justify-content: flex-start;
+    background: #ff5200;
+}
+
+ul.middle-nav li:nth-child(2n+1)
+{
+    background: #2bafe4;
+}
+
+ul.middle-nav li:nth-child(2n)
+{
+    background: #ff5200;
+}
+
+ul.middle-nav li a:hover
+{
+    color: #444;
+    text-decoration: none;
+}
+
+ul.bottom-nav
+{
+    font-size: 12px;
+    background: white;
+    color: black;
+    justify-content: flex-start;
+}
+
+ul.bottom-nav a
+{
+    color: black;
+    font-size: 9px;
+    font-weight: 100;
+    text-decoration: underline;
+}
+
+ul.bottom-nav h3
+{
+    font-weight: 100;
+    font-size: 13px;
+    margin: 5px;
+}
+
+ul.bottom-nav a:hover
+{
+    color: #f00;
+}
+
+ul.bottom-nav li
+{
+    text-align: center;
+    padding: 3px 30px 3px 10px;
+    position: relative;
+}
+
+ul.bottom-nav li:not(:last-of-type):after
+{
+    content: ' ';
+    display: inline-block;
+    position: absolute;
+    right: 0;
+    top: 0;
+    padding: 0;
+    margin: 10px;
+    background: #cecece;
+    width: 1px;
+    height: 50px;
+}
+
+.clock-time
+{
+    font-weight: 100;
+    display: block;
+    padding: 5px;
+}
+
+.weather
+{
+    display: inline-block;
+    padding: 0 10px;
+    margin: 0;
+    text-align: center;
+}
+
+.weather .temperature
+{
+    margin: 0;
+    text-indent: 0;
+}
+
+.traffic
+{
+    width: 24px;
+    height: 24px;
+    font-size: 14px;
+    position: relative;
+    top: 4px;
+    left: 1px;
+    padding: 1px;
+    margin: auto;
+    color: white;
+    background: url('img/traffic.png') no-repeat;
+    background-position: 1px 0;
+}
+
+.socials
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.cb
+{
+    display: inline-block;
+    margin-top: 10px;
+    font-size: 9px;
+}
+
+.cb h4
+{
+    padding: 0;
+    color: #369;
+    margin: 0;
+    display: inline-block;
+}
+
+.buysell
+{
+    margin-top: 5px;
+    font-size: 9px;
+    display: inline-block;
+}
+
+.buysell h4
+{
+    font-weight: 100;
+    padding: 0;
+    margin: 0;
+    display: inline-block;
+}
+
+.buysell section
+{
+    padding: 0 10px;
+    display: inline-block;
+}
+
+.login
+{
+    font-size: 11px;
+    font-weight: 100;
+    margin-top: 10px;
+    display: flex;
+    width: 300px;
+    flex-direction: column;
+}
+
+.login .row-input
+{
+    font-size: 10px;
+    text-indent: 2px;
+    width: 100%;
+    height: 14px;
+    margin: 0 0 1px 1px;
+    border: 1px solid #ddd;
+}
+
+.row-submit
+{
+    background: url('img/submit.png') left top no-repeat;
+    margin-left: 3px;
+    position: relative;
+    cursor: pointer;
+    text-decoration: none;
+    vertical-align: top;
+    outline: none;
+    border: none;
+    width: 25px;
+    height: 18px;
+}
+
+.login .mail
+{
+    width: 95px;
+}
+
+.login .search
+{
+    width: 200px;
+}
+
+.login .pass
+{
+    width: 98px;
+}
+
+.main
+{
+    flex: 1;
+    margin-top: 50px;
+}
+
+.content,
+.daily
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.column
+{
+    /*flex: 2;    */
+}
+
+.column:last-of-type
+{
+    /*flex: 1;*/
+    min-height: 100%;
+}
+
+.main-news
+{
+    margin: auto 5px;
+    height: 300px;
+    border: 1px solid black;
+    position: relative;
+    color: #fff;
+}
+
+.main-news:hover
+{
+    cursor: pointer;
+    border: 1px solid #ff5200;
+}
+
+.main-news-caption
+{
+    padding: 10px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    border-left: 6px solid #ff5200;
+    background: rgba(0, 0, 0, .5);
+}
+
+.main-news-caption h1
+{
+    font-size: 20px;
+}
+
+.news-wrapper
+{
+    border-top: 2px solid black;
+    margin: auto 5px;
+    min-height: 100px;
+}
+
+.news-wrapper .heading
+{
+    padding: 2px auto;
+    height: 15px;
+    background: #ddd;
+    border-left: 6px solid #ff5200;
+    margin-bottom: 10px;
+}
+
+.news-wrapper .heading h3
+{
+    padding: 0 4px;
+    margin: 0;
+    display: inline-block;
+    font-weight: 800;
+    font-size: 10px;
+}
+
+.news-wrapper .heading h3:after
+{
+    content: ' ';
+    width: 1px;
+    margin-left: 4px;
+    height: 10px;
+    border-left: 1px solid #777;
+    display: inline-block;
+}
+
+.news-wrapper .heading a
+{
+    float: right;
+    padding: 0 4px;
+    font-size: 10px;
+    color: #666;
+}
+
+.news-wrapper .heading a:before
+{
+    display: inline-block;
+    width: 2px;
+    height: 2px;
+    content: ' ';
+    border-top: 3px solid transparent;
+    border-right: 3px solid transparent;
+    border-bottom: 3px solid transparent;
+    border-left: 3px solid #666;
+}
+
+.news-wrapper .heading a:hover
+{
+    color: #ff5200;
+}
+
+.news-wrapper section span
+{
+    color: #ff5200;
+    padding: 5px;
+    font-size: 10px;
+}
+
+.news-wrapper section
+{
+    margin: 10px;
+    display: flex;
+    flex-direction: row;
+}
+
+.article-image
+{
+    margin: auto 0;
+    width: 70px;
+    height: 50px;
+}
+
+.news-article
+{
+    margin: 0 10px;
+    display: flex;
+    flex-direction: column;
+}
+
+.news-article h4,
+.news-article h5,
+.news-article p
+{
+    margin: 0;
+    padding: 0;
+}
+
+.news-article h4 a
+{
+    font-size: 12px;
+    text-decoration: underline;
+}
+
+.news-article p
+{
+    font-size: 10px;
+}
+
+.row
+{
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-start;
+}
+
+.row div
+{
+    flex: 1;
+    margin-top: 0;
+}
+
+a
+{
+    color: #196199;
+}
+
+.news-wrapper section h4 a
+{
+    color: #000;
+}
+
+.news-wrapper section h4 a:hover
+{
+    color: #ff5200;
+}
+
+.news-wrapper section h4 a.simple-title-link:before
+{
+    display: none;
+}
+
+.news-wrapper section h4 a.simple-title-link
+{
+    color: #196199;
+    font-weight: 100;
+    font-size: 12px;
+}
+
+.news-wrapper section h5 a
+{
+    color: #196199;
+}
+
+.info
+{
+    display: block;
+    padding: 10px 0;
+}
+
+.news-wrapper article span.phone
+{
+    font-weight: 800;
+    color: #000;
+    font-size: 12px;
+}
+
+.meet-wrapper
+{
+    margin: 5px;
+}
+
+.news-wrapper section.meetings-wrapper
+{
+    justify-content: space-between;
+}
+
+.meetings-wrapper a.meet-wrapper
+{
+    text-decoration: none;
+}
+
+.meet-wrapper img.meet-img
+{
+    width: 75px;
+    height: 75px;
+    border: 2px solid #ff5200;
+}
+
+.meetings-wrapper .meet-wrapper h5
+{
+    color: #ff5200;
+    text-decoration: underline;
+}
+
+.meetings-wrapper .meet-wrapper p
+{
+    color: #999;
+    font-size: 10px;
+}
+
+section.meetings-wrapper .meet-wrapper .meet-img:nth-child(2n)
+{
+    border: 1px solid red !important;
+    color: blue;
+}
+
+section hr
+{
+    display: block;
+    width: 100%;
+    border-top: 1px solid #ff5200;
+}
+
+div.property .prop-sections
+{
+    display: flex;
+    justify-content: space-around;
+    color: #196199;
+    font-size: 11px;
+    text-decoration: underline;
+}
+
+.property section h5 a
+{
+    font-weight: 100;
+}
+
+.property div.cost span
+{
+    font-weight: 800;
+    color: #000;
+    font-size: 12px;
+}
+
+.property a
+{
+    color: #196199;
+}
+
+div.auto-sell .auto-sections
+{
+    display: flex;
+    justify-content: space-around;
+    color: #196199;
+    font-size: 11px;
+}
+
+.auto-sell section h5 a
+{
+    font-weight: 800;
+    text-decoration: none;
+}
+
+.auto-sell div.cost
+{
+    font-weight: 800;
+    color: #000;
+    font-size: 12px;
+}
+
+.auto-sell a
+{
+    color: #196199;
+    text-decoration: none;
+}
+
+.tourism section
+{
+    font-weight: 800;
+    font-size: 11px;
+}
+
+.tourism a
+{
+    font-size: 10px;
+}
+
+.col
+{
+    display: flex;
+    flex-direction: column;
+    padding: 5px;
+}
+
+.journal img
+{
+    width: 100px;
+    height: 70px;
+}
+
+.journal article
+{
+    background: #ddd;
+    padding: 5px;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+.j-descr
+{
+    display: inline-block;
+    vertical-align: top;
+}
+
+.j-descr h4
+{
+    margin: 1px;
+}
+
+.news-wrapper section .j-descr a
+{
+    color: #196199;
+}
+
+.special img
+{
+    width: 230px;
+    height: 50px;
+}
+
+table
+{
+    border-collapse: collapse;
+    width: 220px;
+    font-size: 11px;
+}
+
+table,
+th,
+td
+{
+    border: 1px solid black;
+}
+
+.buys
+{
+    font-size: 11px;
+}
+
+.news-wrapper.buys section a
+{
+    color: #ff5200;
+    text-decoration: underline;
+}
+
+.news-wrapper.buys section a:hover
+{
+    color: #000;
+}
+
+.meetings-wrapper .meet-wrapper h5,
+.meetings-wrapper .meet-wrapper p
+{
+    padding: 0;
+    margin: 0;
+}
+
+.footer
+{
+    margin-top: 5px;
+    border-top: 2px solid black;
+    background: #e1e1e1;
+    font-size: 11px;
+}
+
+.footer-top,
+.footer-bottom
+{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+}
+
+.footer .column
+{
+    margin: 10px;
+}
+
+.footer .column h2
+{
+    display: inline-block;
+    font-size: 12px;
+    margin: 0 20px;
+}
+
+.footer section
+{
+    padding: 20px;
+}
+
+.footer span
+{
+    font-weight: 800;
+}
+
+.footer .pics
+{
+    margin: 50px 40px;
+}
+
+.footer .sponsors
+{
+    margin: 20px 100px;
+}
+
