@@ -2,7 +2,471 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>e2.ru</title>
 </head>
 <body>
+<div class="top-adv">
+    <img src="pictures/ad.jpg"
+         alt="Реклама" title="Реклама">
+</div>
+<nav class="main-nav">
+    <a href="" class="main-nav-item">Главная</a>
+    <a href="" class="main-nav-item">Новости</a>
+    <a href="" class="main-nav-item">Недвижимость</a>
+    <a href="" class="main-nav-item">Авто</a>
+    <a href="" class="main-nav-item">Работа</a>
+    <a href="" class="main-nav-item">Объявления</a>
+    <a href="" class="main-nav-item">Знакомства</a>
+    <a href="" class="main-nav-item">Погода</a>
+    <a href="" class="main-nav-item">Афиша</a>
+    <a href="" class="main-nav-item">Форум</a>
+    <a href="" class="main-nav-item">Бизнес</a>
+    <a href="" class="main-nav-item">Общениие</a>
+    <a href="" class="main-nav-item">Еще &#9660;</a>
+</nav>
+<nav class="news-nav">
+    <a class="news-nav-item" href="">Новогодний спецпроект</a>
+    <a class="news-nav-item" href="">Ученые против мифов</a>
+    <a class="news-nav-item" href="">Башенки Екатеринбурга</a>
+    <a class="news-nav-item" href="">Осторожно, корь!</a>
+    <a class="news-nav-item" href="">Уникальные дома Екатеринбурга</a>
+    <a class="news-nav-item" href="">Споры о храме-на-воде</a>
+</nav>
+<header>
+    <a class="logo" href=""><img src="pictures/logo.jpg" alt="Логотип" title="Логотип"></a>
+    <div class="calendar header-item">
+        <span>Воскресенье</span>
+        <span>04 декабря</span>
+        <span class="bold-note">18:00</span>
+    </div>
+    <div class="weather header-item">
+        <div class="weather-item">
+            <a class="black-href" href="">Сейчас</a>
+            <span class="bold-note bigger-note">-10,8&deg;С</span>
+            <img  class="ico" src="pictures/n2s1.gif" alt="Облачно, снег" title="Облачно, снег">
+        </div>
+        <div class="weather-item">
+            <a class="black-href" href="">Завтра</a>
+            <span class="bold-note bigger-note">-13&deg;С</span>
+            <img class="ico" src="pictures/d2.gif" alt="Переменная облачность" title="Переменная облачность">
+        </div>
+    </div>
+    <div class="traffic header-item">
+        <a class="black-href" href="">Пробки</a>
+        <div class="traffic-lights">
+            <img class="ico" src="pictures/traffic-light.png" alt="traffic-lights" title="traffic-lights">
+            <span class="traffic-number">2</span>
+        </div>
+        <span class="bold-note bigger-note">балла</span>
+    </div>
+    <div class="social-networks header-item">
+        <span>Читайте нас где удобно:</span>
+        <div class="icons">
+            <a href=""><img class="ico" src="pictures/vl.png" alt="vk" title="vk"></a>
+            <a href=""><img class="ico" src="pictures/fb.png" alt="fb" title="fb"></a>
+            <a href=""><img class="ico" src="pictures/tw.png" alt="tw" title="tw"></a>
+            <a href=""><img class="ico" src="pictures/ok.png" alt="ok" title="ok"></a>
+            <a href=""><img class="ico" src="pictures/inst.png" alt="inst" title="inst"></a>
+            <a href=""><img class="ico" src="pictures/tg.png" alt="tg" title="tg"></a>
+        </div>
+    </div>
+    <div class="header-item currency-info">
+        <table class="currency">
+            <tr>
+                <td colspan="2" rowspan="2">
+                    <a href="" class="black-href">Курс ЦБ</a>
+                </td>
+                <td colspan="2">
+                    <a href="" class="black-href">Средневзвешенный</a>
+                </td>
+            </tr>
+            <tr>
+                <td>Покупка</td>
+                <td>Продажа</td>
+            </tr>
+            <tr>
+                <th class="currency-name">USD</th>
+                <td class="bold-note">64.15</td>
+                <td class="bold-note">62.42</td>
+                <td class="bold-note">65.75</td>
+            </tr>
+            <tr>
+                <th class="currency-name">EUR</th>
+                <td class="bold-note">68.47</td>
+                <td class="bold-note">66.64</td>
+                <td class="bold-note">69.94</td>
+            </tr>
+        </table>
+    </div>
+    <div class="header-item user-block">
+        <div class="search-block user-block-item">
+            <span>Поиск:</span>
+            <input class="search-input user-block-input" type="text" name="search" >
+            <label class="button-label" for="button-one">
+                <img class="label-img" src="pictures/search.png" alt="button" title="button">
+            </label>
+            <input id="button-one" type="submit" hidden>
+        </div>
+        <div class="post-block user-block-item">
+            <span>Почта:</span>
+            <div class="search-input">
+                <input class="post-input user-block-input" type="text" name="email" placeholder="Имя@e1.ru">
+                <input class="password-input user-block-input" type="text" name="password">
+            </div>
+            <label class="button-label" for="button-one">
+                <img class="label-img" src="pictures/search.png" alt="button" title="button">
+            </label>
+            <input id="button-two" type="submit" hidden>
+        </div>
+    </div>
+</header>
+<main>
+    <section class="left-content-column">
+        <a href="" class="main-news">
+            <img class="main-news-picture" src="pictures/man.jpg" alt="аферист" title="аферист">
+            <div class="description">
+                <p class="main-news-header">
+                    Аферист-неудачник пытался забрать выручку бара в "Высоцком", представившись его
+                    директором
+                </p>
+                <p class="additional-note">
+                    Только он не учел, что руководит заведением женщина, а не
+                    мужчина.
+                </p>
+            </div>
+        </a>
+        <section class="news-section">
+            <header class="section-header">
+                <span class="section-header-name black-href">НОВОСТИ</span>
+                <a href=""><span class="section-href">&#9658; Все новости</span></a>
+            </header>
+            <article class="news-article">
+                <a class="news-photo" href=""><img src="pictures/meal.JPG" alt="Блюдо" title="Блюдо"></a>
+                <div class="news-info">
+                    <p class="news-header"><a href="" class="black-href ">
+                        Мармелад из капусты и чипсы из свекольного сока: кулинары-самоучки поразили шеф-повара
+                        в Екатеринбурге
+                    </a></p>
+                    <p class="news-info-additional">Финал конкурса на форуме "Кулинария" прошёл вживую.</p>
+                </div>
+            </article>
+            <article class="news-article">
+                <a class="news-photo" href=""><img src="pictures/meal.JPG" alt="Блюдо" title="Блюдо"></a>
+                <div class="news-info">
+                    <p class="news-header"><a href="" class="black-href ">
+                        Мармелад из капусты и чипсы из свекольного сока: кулинары-самоучки поразили шеф-повара
+                        в Екатеринбурге
+                    </a></p>
+                    <p class="news-info-additional">Финал конкурса на форуме "Кулинария" прошёл вживую.</p>
+                </div>
+            </article>
+            <article class="news-article">
+                <a class="news-photo" href=""><img src="pictures/meal.JPG" alt="Блюдо" title="Блюдо"></a>
+                <div class="news-info">
+                    <p class="news-header"><a href="" class="black-href ">
+                        Мармелад из капусты и чипсы из свекольного сока: кулинары-самоучки поразили шеф-повара
+                        в Екатеринбурге
+                    </a></p>
+                    <p class="news-info-additional">Финал конкурса на форуме "Кулинария" прошёл вживую.</p>
+                </div>
+            </article>
+            <article class="news-article">
+                <a class="news-photo" href=""><img src="pictures/meal.JPG" alt="Блюдо" title="Блюдо"></a>
+                <div class="news-info">
+                    <p class="news-header"><a href="" class="black-href ">
+                        Мармелад из капусты и чипсы из свекольного сока: кулинары-самоучки поразили шеф-повара
+                        в Екатеринбурге
+                    </a></p>
+                    <p class="news-info-additional">Финал конкурса на форуме "Кулинария" прошёл вживую.</p>
+                </div>
+            </article>
+            <article class="news-article">
+                <a class="news-photo" href=""><img src="pictures/meal.JPG" alt="Блюдо" title="Блюдо"></a>
+                <div class="news-info">
+                    <p class="news-header"><a href="" class="black-href ">
+                        Мармелад из капусты и чипсы из свекольного сока: кулинары-самоучки поразили шеф-повара
+                        в Екатеринбурге
+                    </a></p>
+                    <p class="news-info-additional">Финал конкурса на форуме "Кулинария" прошёл вживую.</p>
+                </div>
+            </article>
+        </section>
+        <section class="contact-section">
+            <header class="section-header">
+                <span class="section-header-name black-href">Сообщить новость</span>
+                <a href=""><span class="section-href">&#9658; Перейти</span></a>
+            </header>
+            <article class="news-article">
+                <a class="news-photo" href="">
+                    <img src="pictures/letter.jpg" alt="сообщение" title="сообщение">
+                </a>
+                <div class="news-info contact-info">
+                    <p class="no-margin">
+                        <a href="" class="contact-header">
+                            Отправьте свою новость в редакцию, расскажите о проблеме или подкиньте тему для
+                            публикации. Сюда же загружайте ваше видео и фото.
+                        </a>
+                    </p>
+                    <p class="news-info-additional">
+                        Круглосуточный телефон службы новостей <span class="phone">+7 (343) 34-555-34</span>
+                    </p>
+                </div>
+            </article>
+        </section>
+    </section>
+    <section class="central-content-column">
+        <section class="two-columns-span">
+            <header class="section-header">
+                <span class="section-header-name black-href">Подробности</span>
+                <a href=""><span class="section-href">&#9658; Перейти</span></a>
+            </header>
+            <article class="news-article">
+                <a class="news-photo" href="">
+                    <img src="pictures/man2.jpg" alt="Виновник" title="Виновник">
+                </a>
+                <div class="news-info">
+                    <p class="news-info-additional bold-note center-block-additional">
+                        В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских
+                        садах
+                    </p>
+                    <p class="central-header">
+                        <a href="" class="blue-header">Его уже опознали очевидцы.</a>
+                    </p>
+
+                </div>
+            </article>
+        </section>
+        <section class="two-columns-span">
+            <header class="section-header">
+                <span class="section-header-name black-href">Репортаж</span>
+                <a href=""><span class="section-href">&#9658; Перейти</span></a>
+            </header>
+            <article class="news-article ">
+                <a class="news-photo" href="">
+                    <img src="pictures/man2.jpg" alt="Виновник" title="Виновник">
+                </a>
+                <div class="news-info">
+                    <p class="news-info-additional bold-note center-block-additional">
+                        В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских
+                        садах
+                    </p>
+                    <p class="central-header">
+                        <a href="" class="blue-header">Его уже опознали очевидцы.</a>
+                    </p>
+
+                </div>
+            </article>
+        </section>
+        <section class="two-columns-span">
+            <header class="section-header">
+                <span class="section-header-name black-href">Статьи о недвижимости</span>
+                <a href=""><span class="section-href">&#9658; Перейти</span></a>
+            </header>
+            <article class="news-article ">
+                <a class="news-photo" href="">
+                    <img src="pictures/man2.jpg" alt="Виновник" title="Виновник">
+                </a>
+                <div class="news-info">
+                    <p class="news-info-additional bold-note center-block-additional">
+                        В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских
+                        садах
+                    </p>
+                    <p class="central-header">
+                        <a href="" class="blue-header">Его уже опознали очевидцы.</a>
+                    </p>
+
+                </div>
+            </article>
+        </section>
+        <section class="two-columns">
+            <section class="realty flex-column">
+                <header class="section-header">
+                    <span class="section-header-name black-href">Недвижимость</span>
+                    <a href="">
+                        <span class="section-href">&#9658; Добавить объявление</span>
+                    </a>
+                </header>
+                <nav class="section-nav">
+                    <a href="">Аренда</a>
+                    <a href="">Продажа квартир</a>
+                    <a href="">Новостройки</a>
+                </nav>
+                <article class="news-article half-size-article">
+                    <a class="news-photo" href="">
+                        <img src="pictures/flat.jpg" alt="квартира" title="квартира">
+                    </a>
+                    <div class="news-info">
+                        <p class="no-margin">
+                            <a href="" class="contact-header">Продам 1-комнатную квартиру</a>
+                        </p>
+                        <p class="no-margin">Светлый Микрорайон, 5</p>
+                        <p class="no-margin">Цена: <span class="bold-note">2 400 000 руб.</span></p>
+                    </div>
+                </article>
+                <article class="news-article half-size-article">
+                    <a class="news-photo" href="">
+                        <img src="pictures/flat.jpg" alt="квартира" title="квартира">
+                    </a>
+                    <div class="news-info">
+                        <p class="no-margin">
+                            <a href="" class="contact-header">Продам 1-комнатную квартиру</a>
+                        </p>
+                        <p class="no-margin">Светлый Микрорайон, 5</p>
+                        <p class="no-margin">Цена: <span class="bold-note">2 400 000 руб.</span></p>
+                    </div>
+                </article>
+                <article class="news-article half-size-article">
+                    <a class="news-photo" href="">
+                        <img src="pictures/flat.jpg" alt="квартира" title="квартира">
+                    </a>
+                    <div class="news-info">
+                        <p class="no-margin">
+                            <a href="" class="contact-header">Продам 1-комнатную квартиру</a>
+                        </p>
+                        <p class="no-margin">Светлый Микрорайон, 5</p>
+                        <p class="no-margin">Цена: <span class="bold-note">2 400 000 руб.</span></p>
+                    </div>
+                </article>
+                <article class="news-article half-size-article">
+                    <a class="news-photo" href="">
+                        <img src="pictures/flat.jpg" alt="квартира" title="квартира">
+                    </a>
+                    <div class="news-info">
+                        <p class="no-margin">
+                            <a href="" class="contact-header">Продам 1-комнатную квартиру</a>
+                        </p>
+                        <p class="no-margin">Светлый Микрорайон, 5</p>
+                        <p class="no-margin">Цена: <span class="bold-note">2 400 000 руб.</span></p>
+                    </div>
+                </article>
+            </section>
+            <section class="sale flex-column">
+                <header class="section-header">
+                    <span class="section-header-name black-href">Продажа авто, мото</span>
+                    <a href=""><span class="section-href">&#9658; Перейти</span></a>
+                </header>
+                <nav class="section-nav">
+                    <a href="">Легковые</a>
+                    <a href="">Грузовые</a>
+                    <a href="">Мото</a>
+                </nav>
+                <article class="news-article half-size-article">
+                    <a class="news-photo" href="">
+                        <img src="pictures/car.jpg" alt="машина" title="машина">
+                    </a>
+                    <div class="news-info">
+                        <p class="no-margin">
+                            <a href="" class="contact-header bold-note">Nissan Qashqai</a>
+                        </p>
+                        <p class="no-margin bold-note">779 196 руб.</p>
+                        <p class="no-margin">2012, механика, 2л</p>
+                    </div>
+                </article>
+                <article class="news-article half-size-article">
+                    <a class="news-photo" href="">
+                        <img src="pictures/car.jpg" alt="машина" title="машина">
+                    </a>
+                    <div class="news-info">
+                        <p class="no-margin">
+                            <a href="" class="contact-header bold-note">Nissan Qashqai</a>
+                        </p>
+                        <p class="no-margin bold-note">779 196 руб.</p>
+                        <p class="no-margin">2012, механика, 2л</p>
+                    </div>
+                </article>
+                <article class="news-article half-size-article">
+                    <a class="news-photo" href="">
+                        <img src="pictures/car.jpg" alt="машина" title="машина">
+                    </a>
+                    <div class="news-info">
+                        <p class="no-margin">
+                            <a href="" class="contact-header bold-note">Nissan Qashqai</a>
+                        </p>
+                        <p class="no-margin bold-note">779 196 руб.</p>
+                        <p class="no-margin">2012, механика, 2л</p>
+                    </div>
+                </article>
+                <article class="news-article half-size-article">
+                    <a class="news-photo" href="">
+                        <img src="pictures/car.jpg" alt="машина" title="машина">
+                    </a>
+                    <div class="news-info">
+                        <p class="no-margin">
+                            <a href="" class="contact-header bold-note">Nissan Qashqai</a>
+                        </p>
+                        <p class="no-margin bold-note">779 196 руб.</p>
+                        <p class="no-margin">2012, механика, 2л</p>
+                    </div>
+                </article>
+            </section>
+        </section>
+    </section>
+    <section class="right-content-column">
+        <section>
+            <header class="section-header">
+                <span class="section-header-name black-href">Спецпроект</span>
+                <a href=""><span class="section-href">&#9658; Перейти</span></a>
+            </header>
+            <a href="">
+                <figure class="order-item">
+                    <img class="order-picture" src="pictures/promo.jpg" alt="электродом" title="электродом">
+                    <figcaption class="orange-href bold-note">Репортаж из дома будущего</figcaption>
+                </figure>
+            </a>
+        </section>
+        <section>
+            <header class="section-header">
+                <span class="section-header-name black-href">Сейчас по TV</span>
+                <a href=""><span class="section-href">&#9658; Перейти</span></a>
+            </header>
+            <table class="channels">
+                <tbody>
+                <tr>
+                    <td><img src="pictures/1.jpg" alt="Первый" title="Первый"></td>
+                    <td>21:30 -
+                        <span class="bold-note">
+                         Павел Деревянко в многосерийном фильме <q>Обратная сторона Луны</q>.
+                            Новый сезон (16+).
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="pictures/2.jpg" alt="Россия1" title="Россия1"></td>
+                    <td>21:00 -
+                        <span class="bold-note">
+                         Россия 1. <q>Русская серия</q>. Премьера. Анна Ковальчук в детективном телесериале
+                            <q>Тайны следствия-16</q>. (12+).
+                        </span>
+                    </td>
+                </tr>
+                <tr>
+                    <td><img src="pictures/3.jpg" alt="НТВ" title="НТВ"></td>
+                    <td>19:45 -
+                        <span class="bold-note">
+                         Премьера. Екатерина Климова в детективном сериале <q>ОПЕКУН</q> (16+).
+                        </span>
+                    </td>
+                </tr>
+                </tbody>
+            </table>
+            <a href="" class="channels-href">Все телеканалы</a>
+        </section>
+        <section>
+            <header class="section-header">
+                <span class="section-header-name black-href">Совместные покупки</span>
+                <a href=""><span class="section-href">&#9658; Перейти</span></a>
+            </header>
+            <article class="news-article half-size-article">
+                <a class="news-photo" href="">
+                    <img src="pictures/basket.jpg" alt="тележка" title="тележка">
+                </a>
+                <div class="news-info">
+                    <p><a href="" class="orange-href bold-note">Вместе покупать дешевле!</a></p>
+                </div>
+            </article>
+        </section>
+    </section>
+</main>
 </body>
 </html>
