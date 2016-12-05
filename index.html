@@ -1,8 +1,501 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="index.css">
+	<title>E2.ru</title>
 </head>
-<body>
+<body class="e1">
+	<header>
+		<section class="header__nav">
+			<ul class="header__nav__wrap">
+				<li class="nav__item nav__item--hover">Главная</li>
+				<li class="nav__item nav__item--hover">Новости</li>
+				<li class="nav__item nav__item--hover">Недвижимость</li>
+				<li class="nav__item nav__item--hover">Авто</li>
+				<li class="nav__item nav__item--hover">Работа</li>
+				<li class="nav__item nav__item--hover">ОБъявления</li>
+				<li class="nav__item nav__item--hover">Знакомства</li>
+				<li class="nav__item nav__item--hover">Погода</li>
+				<li class="nav__item nav__item--hover">Афиша</li>
+				<li class="nav__item nav__item--hover">Форумы</li>
+				<li class="nav__item nav__item--hover">Бизнес</li>
+				<li class="nav__item nav__item--hover">Общение</li>
+				<!-- <li class="nav__item"></li> -->
+			</ul>
+		</section>
+		<section class="hedaer__topics">
+			<div class="topics__item">
+				<span class="topics__text topics__text--hover">Новогодний спецпроект</span>
+			</div>
+			<div class="topics__item">
+				<span class="topics__text topics__text--hover">Ученые против мифов</span>
+			</div>
+			<div class="topics__item">
+				<span class="topics__text topics__text--hover">Башенки Екатерибурга</span>
+			</div>
+			<div class="topics__item">
+				<span class="topics__text topics__text--hover">Осторожно, корь</span>
+			</div>
+			<div class="topics__item">
+				<span class="topics__text topics__text--hover">Уникальные дома Екатеринбурга</span>
+			</div>
+			<div class="topics__item">
+				<span class="topics__text topics__text--hover">Споры о храме-на-воде</span>
+			</div>
+		</section>
+		<section class="header__widget">
+			<section class="widget__item">
+				<img src="img/logo_e1.jpg" alt="logo-e1">
+			</section>
+			<section class="widget__item">
+				<div class="widget__item__time">Воскресенье<br>04 декабря<br><span>16:05</span></div>
+			</section>
+			<section class="widget__item">
+				<div class="widget__item__weather weather-today">
+					<span class="weather__time weather__time--hover">Сейчас</span>
+					<div class="weather__value">-13,9°C</div>
+					<img src="img/weatherSnow.gif" alt="weather snow">
+				</div>
+				<div class="widget__item__weather weather-tomorrow">
+					<span class="weather__time weather__time--hover">Завтра</span>
+					<div class="weather__value">-14,9°C</div>
+					<img src="img/weatherSun.gif" alt="weather sun">
+				</div>
+			</section>
+			<section class="widget__item">
+				<div class="traffic-jams traffic-jams--hover">
+					<span class="traffic-jams__text">Пробки</span>
+					<div class="traffic-jams__count">3</div>
+					<span class="traffic-jams__balls">балла</span>
+				</div>
+			</section>
+			<section class="widget__item social">
+				<div>Читайте нас где удобно:</div>
+				<section class="widget__item__social">
+					<div class="social__item social__item1"></div>
+					<div class="social__item social__item2"></div>
+					<div class="social__item social__item3"></div>
+					<div class="social__item social__item4"></div>
+					<div class="social__item social__item5"></div>
+					<div class="social__item social__item6"></div>
+					<div class="social__item social__item7"></div>
+				</section>
+			</section>
+			<section class="widget__item">
+				<section class="widget__item__course">
+					<span class="course__cb course__cb--hover">Курс ЦБ</span>
+					<div class="course__cb__info">
+						<table>
+							<tr><td class="cb__usd">USD</td><td>64.15</td></tr>
+							<tr><td class="cb__eur">EUR</td><td>68.15</td></tr>
+						</table>
+					</div>
+				</section>
+				<section class="widget__item__course">
+					<span class="course__avarage course__avarage--hover">Средневзвешенный</span>
+					<div class="course__buy-sale">
+						<span class="course__buy">Покупка</span>
+						<span class="course__ sale">Продажа</span>
+					</div>
+					<div class="course__avarage__info">
+						<table>
+							<tr><td>61.93</td><td>66.13</td></tr>
+							<tr><td>66.20</td><td>70.40</td></tr>
+						</table>
+					</div>
+				</section>
+			</section>
+			<section class="widget__item find">
+				<div class="widget__item__find">
+					<span class="item__find__text">Поиск:</span>
+					<input type="text">
+				</div>
+				<div class="widget__item__auth">
+					<span class="item__auth__text">Почта</span>
+					<input type="text" placeholder="Имя @e1.ru" class="item__auth__email">
+					<input type="text">
+				</div>
+			</section>
+		</section>
+	</header>
+	<main class="content">
+		<section class="content__col1">
+			<section class="main-news-block">
+				<section class="main-news-block__text">
+					<p class="block__text__article">
+						Аферист-неудачник пытался забрать выручку
+						бара в&nbsp;&laquo;Высоцком&raquo;,
+						представившись его директором
+					</p>
+					<p class="block__text__main">
+						Только он&nbsp;не&nbsp;учёл, что руководит
+						заведением женщина, а&nbsp;не&nbsp;мужчина.
+					</p>
+				</section>
+			</section>
+			<section class="news-block">
+				<section class="header-block">
+					<div class="header-block__name">Новости</div>
+					<div>
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover">Все новости</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img
+						src="http://www.e1.ru/news/static/b96a00364481a9ab14793fdbc99b6ea6_70_50_c.jpg" 
+						class="img-black-wom"
+						alt="Из Екатеринбурга в Африку запустят туры с посещением парка Крюгера">
+					</div>
+					<div class="block__item__news">
+						<span class="item__tag">Фото</span>
+						<div class="item__article item__article--hover">
+						Из&nbsp;Екатеринбурга в&nbsp;Африку запустят туры
+						с&nbsp;посещением парка Крюгера</div>
+						<div class="item__text">Стоимость перелёта будет
+						начинаться от&nbsp;75&nbsp;тысяч рублей.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img
+						src="http://www.e1.ru/news/static/b96a00364481a9ab14793fdbc99b6ea6_70_50_c.jpg"
+						class="img-black-wom" alt="Из Екатеринбурга в Африку запустят туры с посещением парка Крюгера">
+					</div>
+					<div class="block__item__news">
+						<span class="item__tag">Фото</span>
+						<div class="item__article item__article--hover"
+						Из&nbsp;Екатеринбурга в&nbsp;Африку запустят туры с&nbsp;посещением парка Крюгера</div>
+						<div class="item__text">Стоимость
+						перелёта будет начинаться от&nbsp;75&nbsp;тысяч рублей.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://www.e1.ru/news/static/b96a00364481a9ab14793fdbc99b6ea6_70_50_c.jpg"
+						class="img-black-wom"
+						alt="Из Екатеринбурга в Африку запустят туры с посещением парка Крюгера">
+					</div>
+					<div class="block__item__news">
+						<span class="item__tag">Фото</span>
+						<div class="item__article item__article--hover">Из&nbsp;Екатеринбурга в&nbsp;Африку запустят туры с&nbsp;посещением парка Крюгера</div>
+						<div class="item__text">Стоимость перелёта будет
+						начинаться от&nbsp;75&nbsp;тысяч рублей.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://www.e1.ru/news/static/b96a00364481a9ab14793fdbc99b6ea6_70_50_c.jpg" class="img-black-wom" alt="Из Екатеринбурга в Африку запустят туры с посещением парка Крюгера">
+					</div>
+					<div class="block__item__news">
+						<span class="item__tag">Фото</span>
+						<div class="item__article item__article--hover">Из&nbsp;Екатеринбурга в&nbsp;Африку запустят туры с&nbsp;посещением парка Крюгера</div>
+						<div class="item__text">Стоимость перелёта будет начинаться от&nbsp;75&nbsp;тысяч рублей.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://www.e1.ru/news/static/b96a00364481a9ab14793fdbc99b6ea6_70_50_c.jpg" class="img-black-wom" alt="Из Екатеринбурга в Африку запустят туры с посещением парка Крюгера">
+					</div>
+					<div class="block__item__news">
+						<span class="item__tag">Фото</span>
+						<div class="item__article item__article--hover">Из&nbsp;Екатеринбурга в&nbsp;Африку запустят туры с&nbsp;посещением парка Крюгера</div>
+						<div class="item__text">Стоимость перелёта будет начинаться от&nbsp;75&nbsp;тысяч рублей.</div>
+					</div>
+				</section>
+			</section>
+			<section class="say-news">
+				<section class="header-block">
+					<div class="header-block__name">Сообщить новость</div>
+					<div>
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover">Перейти</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="img/sayNews.jpg" class="say-news__img" alt="Из Екатеринбурга в Африку запустят туры с посещением парка Крюгера">
+					</div>
+					<div class="block__item__news">
+						<div class="say-news__aritcle">
+							Отправьте свою новость в&nbsp;редакцию,
+							расскажите о&nbsp;проблеме или подкиньте тему для публикации. 
+							Сюда&nbsp;же загружайте ваше видео и&nbsp;фото.
+						</div>
+						<div class="say-news__text">Круглосуточный телефон службы новостей <span class="item__text__number">+7 (343) 34-555-34</span></div>
+					</div>
+				</section>
+			</section>	
+			<section class="thematic-aritcle">
+				<section class="header-block">
+					<div class="header-block__name">тематические статьи</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg" class="thematic-aritcle__photo" alt="leg-icon">
+					</div>
+					<div class="block__item__news">
+						<div class="say-news__aritcle">&laquo;Это существенно снижает ваши шансы&raquo;</div>
+						<div class="item__text">10&nbsp;распространенных ошибок в&nbsp;резюме, которые можно поправить за&nbsp;один день</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg" class="thematic-aritcle__photo" alt="lag-img">
+					</div>
+					<div class="block__item__news">
+						<div class="say-news__aritcle">&laquo;Это существенно снижает ваши шансы&raquo;</div>
+						<div class="item__text">10&nbsp;распространенных ошибок в&nbsp;резюме, которые можно поправить за&nbsp;один день</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+						<div class="block__item__img">
+							<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg" class="thematic-aritcle__photo" alt="lag-img">
+						</div>
+						<div class="block__item__news">
+							<div class="say-news__aritcle">&laquo;Это существенно снижает ваши шансы&raquo;</div>
+							<div class="item__text">10&nbsp;распространенных ошибок в&nbsp;резюме, которые можно поправить за&nbsp;один день</div>
+						</div>
+				</section>
+			</section>
+		</section>
+		<section class="content__col2">
+			<section>
+				<section class="header-block">
+					<div class="header-block__name">Подробности</div>
+					<div>
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover">Перейти</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg" alt="В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских садах" class="say-news__img">
+					</div>
+					<div class="block__item__news">
+						<div class="item__article__short-topic">В&nbsp;Екатеринбурге задержали парня, подозреваемого в&nbsp;серийном поджоге веранд в&nbsp;детских садах</div>
+						<div class="say-news__aritcle">Его уже опознали очевидцы.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg" alt="В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских садах" class="say-news__img">
+					</div>
+					<div class="block__item__news">
+						<div class="item__article__short-topic">В&nbsp;Екатеринбурге задержали парня, подозреваемого в&nbsp;серийном поджоге веранд в&nbsp;детских садах</div>
+						<div class="say-news__aritcle">Его уже опознали очевидцы.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg" alt="В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских садах" class="say-news__img">
+					</div>
+					<div class="block__item__news">
+						<div class="item__article__short-topic">В&nbsp;Екатеринбурге задержали парня, подозреваемого в&nbsp;серийном поджоге веранд в&nbsp;детских садах</div>
+						<div class="say-news__aritcle">Его уже опознали очевидцы.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg" alt="В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских садах" class="say-news__img">
+					</div>
+					<div class="block__item__news">
+						<div class="item__article__short-topic">В&nbsp;Екатеринбурге задержали парня, подозреваемого в&nbsp;серийном поджоге веранд в&nbsp;детских садах</div>
+						<div class="say-news__aritcle">Его уже опознали очевидцы.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg" alt="В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских садах" class="say-news__img">
+					</div>
+					<div class="block__item__news">
+						<div class="item__article__short-topic">В&nbsp;Екатеринбурге задержали парня, подозреваемого в&nbsp;серийном поджоге веранд в&nbsp;детских садах</div>
+						<div class="say-news__aritcle">Его уже опознали очевидцы.</div>
+					</div>
+				</section>
+			</section>
+			<section class="house-auto">
+				<section class="buy-house">
+					<section class="header-block header-block--half">
+						<div class="header-block__name">Недвижимость</div>
+						<div>
+							<img src="img/arrow.gif" alt="arrow-icon">
+							<div class="header-block__move header-block__move--hover">Добавить объявление</div>
+						</div>
+					</section>
+					<section class="buy-house__content">
+						<div class="buy-house__tags">
+							<span class="buy-house__tags__item">Аренда</span>
+							<span class="buy-house__tags__item">Продажа квартир</span>
+							<span class="buy-house__tags__item">Новостройки</span>
+						</div>
+
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg" alt="leg-icon" class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									Продам 1-комнатную квартиру
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg"  alt="leg-icon" class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									Продам 1-комнатную квартиру
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg" alt="leg-img" class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									Продам 1-комнатную квартиру
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+					</section>
+				</section>
+				<section class="buy-auto">
+					<section class="header-block header-block--half">
+						<div class="header-block__name">Продажа авто, мото</div>
+						<div>
+							<img src="img/arrow.gif" alt="arrow-icon">
+							<div class="header-block__move header-block__move--hover">Перейти</div>
+						</div>
+					</section>
+					<section class="buy-house__content">
+						<div class="buy-house__tags">
+							<span class="buy-house__tags__item">Аренда</span>
+							<span class="buy-house__tags__item">Продажа квартир</span>
+							<span class="buy-house__tags__item">Новостройки</span>
+						</div>
+
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg" alt="leg-img" class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									Продам 1-комнатную квартиру
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg" alt="leg-img" class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									Продам 1-комнатную квартиру
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg" alt="leg-img" class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									Продам 1-комнатную квартиру
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+					</section>
+				</section>
+			</section>
+		</section>
+		<section class="content__col3">
+			<section class="tv-programm">
+				<section class="header-block header-block--half">
+					<div class="header-block__name">Сейчас по тв</div>
+					<div>
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover">Перейти</div>
+					</div>
+				</section>
+				<section class="tv-programm__item">
+					<div class="tv-programm__logo">
+						<img src="img/tv1.jpg" alt="первый канал" class="first-channel">
+					</div>
+					<div class="tv-programm__info">
+						<span class="programm__info__time">21:30</span>
+						<span class="programm__info__name">-Павел Деревянко в многосерийном фильме "Обратная сторона Луны". Новый сезон (S) (16+).</span>
+						<span class="programm__info__finish">(еще 29 мин.)</span>
+					</div>
+				</section>
+				<section class="tv-programm__item">
+					<div class="tv-programm__logo">
+						<img src="img/tv1.jpg" alt="первый канал" class="first-channel">
+					</div>
+					<div class="tv-programm__info">
+						<span class="programm__info__time">21:30</span>
+						<span class="programm__info__name">-Павел Деревянко в многосерийном фильме "Обратная сторона Луны". Новый сезон (S) (16+).</span>
+						<span class="programm__info__finish">(еще 29 мин.)</span>
+					</div>
+				</section>
+				<section class="tv-programm__item">
+					<div class="tv-programm__logo">
+						<img src="img/tv1.jpg" alt="первый канал" class="first-channel">
+					</div>
+					<div class="tv-programm__info">
+						<span class="programm__info__time">21:30</span>
+						<span class="programm__info__name">-Павел Деревянко в многосерийном фильме "Обратная сторона Луны". Новый сезон (S) (16+).</span>
+						<span class="programm__info__finish">(еще 29 мин.)</span>
+					</div>
+				</section>
+				<section class="tv-programm__item">
+					<div class="tv-programm__logo">
+						<img src="img/tv1.jpg" alt="первый канал" class="first-channel">
+					</div>
+					<div class="tv-programm__info">
+						<span class="programm__info__time">21:30</span>
+						<span class="programm__info__name">-Павел Деревянко в многосерийном фильме "Обратная сторона Луны". Новый сезон (S) (16+).</span>
+						<span class="programm__info__finish">(еще 29 мин.)</span>
+					</div>
+				</section>
+				<section class="tv-programm__item">
+					<div class="tv-programm__logo">
+						<img src="img/tv1.jpg" alt="первый канал" class="first-channel">
+					</div>
+					<div class="tv-programm__info">
+						<span class="programm__info__time">21:30</span>
+						<span class="programm__info__name">-Павел Деревянко в многосерийном фильме "Обратная сторона Луны". Новый сезон (S) (16+).</span>
+						<span class="programm__info__finish">(еще 29 мин.)</span>
+					</div>
+				</section>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<section class="footer__e1-owner">
+			© ООО «Хёрст Шкулёв Диджитал. Урал»
+		</section>
+		<section class="footer__e1-partners">
+			<img src="http://www.e1.ru/images/intermediagroup.jpg" alt="e1-partnet">
+			<img class="e1-footer__marks-icon e1-footer__marks-icon_n1" src="http://www.e1.ru/images/n1_gray.png" alt="e1-partnet">
+			<img class="e1-footer__marks-icon e1-footer__marks-icon_zarplata" src="http://www.e1.ru/images/zarplata_gray.png" alt="e1-partnet">
+		</section>
+	</footer>
 </body>
 </html>
