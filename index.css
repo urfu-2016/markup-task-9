@@ -9,8 +9,13 @@ main
 {
   display: grid;
   width: 100%;
-  grid-template-columns: [start] 12px [left-start] 2fr [left-end] 12px [center-start] 1fr [line] 1fr [center-end] 12px [right-start] 1fr [right-end] 12px [end];
-  grid-template-rows: [up] auto [menu] auto [topics] auto [header] auto [banner] auto [line] 10px [main] auto  [line-1] auto [line-2] auto [line-3] auto [gallery] auto [footer] auto [links] auto [bottom];
+  grid-template-columns: [start] 12px [left-start] 2fr [
+    left-end] 12px [center-start] 1fr [line] 1fr [
+        center-end] 12px [right-start] 1fr [right-end] 12px [end];
+  grid-template-rows: [up] auto [menu] auto [
+    topics] auto [header] auto [banner] auto [line] 10px [
+        main] auto  [line-1] auto [line-2] auto [line-3] auto [
+            gallery] auto [footer] auto [links] auto [bottom];
   max-width: 1750px;
   left: 0;
   right: 0;
