@@ -8,7 +8,7 @@ body
     display: inline-block;
     width: 23px;
     height: 23px;
-    background: url(images/icons.png) no-repeat;
+    background: url(/images/icons.png) no-repeat;
     cursor: pointer;
 }
 
