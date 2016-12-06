@@ -7,19 +7,27 @@ body
 
 }
 
+body
+{
+    background: rgba(0, 0, 0, .2);
+}
+
 .container
 {
     display: flex;
     flex-flow: row wrap;
-
+    background: #fff;
     align-content: flex-start;
 
-    max-width: 1400px;
-    min-width: 1223px;
+    width: 1270px;
+
+    margin: 0 auto;
 
     min-height: 100%;
 
     margin-bottom: -150px;
+
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 
     font-family: Tahoma, verdana, sans-serif, arial;
     box-sizing: border-box;
@@ -317,9 +325,12 @@ footer
     font-size: .8em;
     background: #aaa;
     justify-content: space-between;
-    /* margin-top: auto; */
     padding: 10px 20px;
     border-top: 2px solid #000;
+
+    margin: 0 auto;
+    width: 1270px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 
     line-height: 1.2em;
 }
