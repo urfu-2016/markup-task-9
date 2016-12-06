@@ -6,20 +6,18 @@ body
     margin: 0 auto;
     padding: 0;
     background: #fff;
-    font: 11px Tahoma, verdana, sans-serif, arial;
+    font: 12px Tahoma, verdana, sans-serif, arial;
     cursor: default;
-}
-
-body
-{
-    min-height: 100%;
-    height: auto;
 }
 
 main
 {
     position: relative;
+    min-height: 100%;
+    height: auto;
 }
+
+/* CSS for headers */
 
 .header-in-main
 {
@@ -34,7 +32,20 @@ main
 .main-header
 {
     display: flex;
+    justify-content: space-around;
     width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+.links-to-other-sections
+{
+    background: #444;
+}
+
+.links-to-top-news
+{
+    background: #2ad;
 }
 
 .links-to-other-sections a,
@@ -42,27 +53,11 @@ main
 {
     flex-grow: 1;
     margin: 0;
-    padding: .37rem 1.5rem;
+    padding: .38rem 0;
     text-align: center;
     font-size: 1rem;
     font-weight: bold;
     text-decoration: none;
-}
-
-.links-to-other-sections a
-{
-    background: #444;
-    color: #fff;
-}
-
-.links-to-other-sections a:hover
-{
-    color: #f50;
-}
-
-.links-to-top-news a
-{
-    background: #2ad;
     color: #fff;
 }
 
@@ -71,14 +66,18 @@ main
     background: #f50;
 }
 
-.links-to-top-news a:hover
+.orange-link-hover:hover
+{
+    color: #f50;
+}
+
+.dark-gray-link-hover:hover
 {
     color: #444;
 }
 
 .main-header
 {
-    justify-content: space-around;
     align-items: stretch;
     margin: 1rem 0;
 }
@@ -97,9 +96,25 @@ main
     justify-content: center;
     align-items: center;
     margin: 0;
-    padding: 0 1.5rem;
+    padding: 0;
     text-align: center;
     border-left: 1px solid #ccc;
+}
+
+.icon-in-header
+{
+    margin: 0;
+    padding: 0;
+    width: 25px;
+    height: 25px;
+    background: 50% 50% no-repeat;
+    background-size: contain;
+}
+
+.icon-weather,
+.icon-traffic-jam
+{
+    margin: .25rem 0;
 }
 
 .logo
@@ -112,16 +127,6 @@ main
     width: 200px;
     margin: 0;
     padding: 0;
-}
-
-.social
-{
-    width: 250px;
-}
-
-.sign-in
-{
-    width: 200px;
 }
 
 .weekday,
@@ -138,17 +143,10 @@ main
     font-weight: bold;
 }
 
-.weather
+.weather,
+.banking
 {
     flex-direction: row;
-    justify-content: space-around;
-}
-
-.social,
-.sign-in
-{
-    flex-direction: row;
-    flex-wrap: wrap;
 }
 
 .today,
@@ -163,38 +161,23 @@ main
 }
 
 .link-to-detailed-weather,
-.link-to-traffic-jams
+.link-to-traffic-jams,
+.link-to-detailed-banking
 {
     margin: 0;
-    padding: .25rem 0;
+    padding: 0;
+    text-decoration: none;
     font-size: 1rem;
-    color: #888;
+    color: #999;
 }
 
 .degrees,
 .icon-caption
 {
     margin: 0;
-    padding: .12rem 0;
+    padding: 0;
     font-size: 1rem;
     font-weight: bold;
-}
-
-.icon-weather,
-.icon-traffic-jam,
-.icon-social
-{
-    margin: 0;
-    padding: .12rem 0;
-    width: 25px;
-    height: 25px;
-    background: 50% 50% no-repeat;
-    background-size: contain;
-}
-
-.icon-social
-{
-    margin: 0 .25rem;
 }
 
 .cloudy-day
@@ -232,6 +215,28 @@ main
     background-image: url(images/traffic-jam-5.png);
 }
 
+.social
+{
+    width: 200px;
+}
+
+.social-caption
+{
+    margin: 0;
+    padding: 0;
+}
+
+.links-to-social
+{
+    display: flex;
+    margin: .5rem 0 0;
+}
+
+.icon-social
+{
+    margin: 0 .13rem;
+}
+
 .social-fb
 {
     background-image: url(images/social-fb.png);
@@ -267,69 +272,68 @@ main
     background-image: url(images/social-yt.png);
 }
 
-.social-caption
+.dollar
 {
-    width: 100%;
-}
-
-.banking-caption
-{
-    margin: 0;
-    padding: .5rem 0;
+    margin-top: .5rem;
 }
 
 .money-name
 {
-    margin: 0;
-    padding: 0 .5rem;
     font-weight: bold;
-    color: #07b;
+    color: #2ad;
 }
 
+.money-name,
 .money-sale
 {
     margin: 0;
     padding: 0 .5rem;
 }
 
+.sign-in
+{
+    width: calc(200px - 2rem);
+    padding: 0 1rem;
+}
+
 form[id='search'],
 form[id='sign-in']
 {
     display: flex;
-    justify-content: center;
+    justify-content: space-between;
     align-items: center;
     width: 100%;
     margin: 0;
+    padding: .25rem 0;
 }
 
 .sign-in input[type='text']
 {
-    width: 150px;
+    width: calc(100% - 25px - .5rem);
     height: 20px;
-    margin: 0;
+    margin: 0 .5rem 0 0;
     padding: 0;
 }
 
 .sign-in form[id='sign-in'] input[type='text']
 {
-    width: 75px;
-}
-
-.sign-in input[type='text']:focus
-{
-    outline-color: #f50;
+    width: calc((100% - 25px - 1.5rem) / 2);
 }
 
 .sign-in input[type='submit']
 {
     width: 25px;
     height: 25px;
-    margin: 0 0 0 .5rem;
+    margin: 0;
     padding: 0;
     border: none;
+    outline: none;
     background: url(images/right-arrow.png) 0 0 no-repeat;
     background-size: contain;
+    cursor: pointer;
 }
+
+/* CSS for footer */
 
 .footer-in-main
 {
