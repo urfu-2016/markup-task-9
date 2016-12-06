@@ -15,18 +15,25 @@ body
 }
 
 a,
-table
+.table-money
 {
     font-size: 10px;
     text-align: center;
+    color: #000;
+    text-decoration: none;
 }
 
-table
+.nav-link
+{
+    color: #fff;
+}
+
+.table-money
 {
     border-collapse: collapse;
 }
 
-table tr:nth-child(1)
+.table-money tr:nth-child(1)
 {
     border-bottom: 1px solid #000;
 }
@@ -76,16 +83,15 @@ table tr:nth-child(1)
 .horizontal-info
 {
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center;
     justify-content: center;
     margin: 0 8px;
 }
 
-.horizontal-info
+.vertical-info
 {
-    flex-direction: row;
+    flex-direction: column;
 }
 
 .vertical-line
@@ -104,7 +110,6 @@ table tr:nth-child(1)
 .main-page
 {
     display: flex;
-    flex-direction: row;
 }
 
 .main-column
@@ -148,7 +153,6 @@ table tr:nth-child(1)
     display: flex;
     justify-content: space-between;
     padding: 0 8px;
-    min-width: 245px;
 }
 
 .box-title
@@ -211,7 +215,7 @@ table tr:nth-child(1)
     display: block;
 }
 
-.box-baner
+.box-banner
 {
     height: 60px;
     width: 100%;
