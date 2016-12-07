@@ -31,6 +31,44 @@ body
 .nav-top
 {
     justify-content: space-around;
+    position: relative;
+}
+
+.nav-top__dropdown-header
+{
+    cursor: pointer;
+}
+
+.nav-top__dropdown-header:after
+{
+    content: '\25BE';
+}
+
+.nav-top__dropdown
+{
+    display: none;
+    background: #444;
+    position: absolute;
+    width: 100px;
+    right: 0;
+}
+
+.nav-top__dropdown-wrap:hover > .nav-top__dropdown
+{
+    display: block;
+}
+
+.nav-top__dropdown:hover
+{
+    display: block;
+}
+
+.nav-top__dropdown-item
+{
+    display: block;
+    text-align: center;
+    padding: 2px;
+    border-top: 1px solid #545454;
 }
 
 .nav-adv
@@ -54,7 +92,8 @@ body
     background: #23ace3;
 }
 
-.nav-item
+.nav-item,
+.nav-top__dropdown-item
 {
     color: #fff;
     text-decoration: none;
@@ -63,14 +102,14 @@ body
 .page-wrap
 {
     min-height: 100%;
-    margin-bottom: -150px;
+    margin-bottom: -253px;
 }
 
 .page-wrap:after
 {
     content: '';
     display: block;
-    height: 150px;
+    height: 253px;
 }
 
 header
@@ -82,18 +121,20 @@ header
 .header-section
 {
     border-right: 1px solid #cecece;
-    padding: .5% 1%;
+    padding: .5% 2%;
 }
 
 .header-title
 {
     white-space: nowrap;
     overflow: hidden;
+    padding-left: 10px;
+    padding-right: 2%;
 }
 
 .header-title__name
 {
-    font-size: 1.2em;
+    font-size: 1.1em;
 }
 
 .header-title__name-yekt
@@ -176,28 +217,49 @@ header
 
 .header-links__list
 {
+    display: flex;
+    justify-content: space-between;
     margin-top: 5px;
 }
 
 .header-links__list > a
 {
+    margin-left: 2px;
     text-decoration: none;
 }
 
 .header-currency
 {
     display: flex;
+    font-size: 10px;
+    width: 20%;
+    justify-content: space-between;
+}
+
+.header-currency__value
+{
+    font-weight: bold;
+}
+
+.header-currency__cb-title,
+.header-currency__median-title
+{
+    height: 25px;
+    color: #000;
+    border-bottom: 1px solid #999;
 }
 
 .header-currency__cb
 {
-    flex: 0 0 40%;
+    /*flex: 0 0 40%;*/
+    width: 64px;
+    margin-right: 5px;
     text-align: center;
 }
 
-.header-currency__cb:nth-child(2)
+.header-currency__median
 {
-    border-top: 1px solid #999;
+    width: 100px;
 }
 
 .header-currency__cb-name
@@ -208,8 +270,9 @@ header
 
 .header-currency__median
 {
-    flex: 0 0 50%;
+    /*flex: 0 0 50%;*/
     display: flex;
+    height: 0;
     flex-wrap: wrap;
     text-align: center;
 }
@@ -226,11 +289,6 @@ header
     display: flex;
     justify-content: space-between;
     align-items: flex-start;
-}
-
-.header-currency__cb-row
-{
-    padding-right: 10px;
 }
 
 .header-form
@@ -337,6 +395,7 @@ main
     font-size: 1.6em;
     text-decoration: none;
     color: #fff;
+    padding: 4px 10px 0;
     bottom: 0;
 }
 
@@ -445,9 +504,15 @@ footer
 {
     border-top: 2px solid #000;
     background: #e1e1e1;
-    height: 128px;
+    height: 230px;
     display: flex;
+    flex-wrap: wrap;
     padding: 10px;
+}
+
+.footer-side
+{
+    padding-bottom: 20px;
 }
 
 .footer-side-left
@@ -491,4 +556,29 @@ footer
 .footer-address__item-bold
 {
     font-weight: bold;
+}
+
+.footer-marks
+{
+    border-top: 1px solid #d1d1d1;
+    padding-top: 20px;
+    flex: 0 0 100%;
+    display: flex;
+}
+
+.footer-marks__left
+{
+    flex: 0 0 50%;
+}
+
+.footer-marks__right
+{
+    flex: 0 0 50%;
+}
+
+.footer-marks__image
+{
+    padding-right: 30px;
+    padding-bottom: 30px;
+    vertical-align: top;
 }
