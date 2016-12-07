@@ -926,3 +926,18 @@ footer
     background: #ff5200;
     color: #fff;
 }
+
+@media (min-width: 1400px)
+{
+    html
+    {
+        background: #ddd;
+    }
+    body
+    {
+        width: 1400px;
+        background: #fff;
+        box-shadow: 0 0 15px -1px rgba(0, 0, 0, .75);
+        margin: 0 auto;
+    }
+}
