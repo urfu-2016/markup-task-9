@@ -345,7 +345,7 @@ form[id='sign-in']
     width: calc(100% - 3rem);
     margin: 0;
     padding: 0 1.5rem;
-    border-top: 2px solid #444;
+    border-top: 2px solid #999;
     background: #ddd;
 }
 
@@ -353,7 +353,8 @@ form[id='sign-in']
 .copyright-and-partners
 {
     display: flex;
-    padding: 2rem 0;
+    width: 100%;
+    padding: 1.5rem 0;
 }
 
 .info-for-clients,
@@ -363,7 +364,8 @@ form[id='sign-in']
 {
     display: flex;
     flex-direction: column;
-    width: 45%;
+    width: calc(40% - 1rem);
+    margin: 0 1rem 0 0;
 }
 
 .links
@@ -376,9 +378,20 @@ form[id='sign-in']
 .link-to-info
 {
     margin: 0;
-    padding: 0 1rem 0 0;
-    font-weight: bold;
+    padding: 0;
+    text-decoration: none;
     color: #069;
+}
+
+.link-to-info:hover
+{
+    color: #f50;
+}
+
+.links .link-to-info
+{
+    padding-right: 1.5rem;
+    font-weight: bold;
 }
 
 .contacts,
@@ -394,16 +407,27 @@ form[id='sign-in']
     padding: 1.5rem 0 0;
 }
 
+.other-info
+{
+    margin: 0;
+    padding: .5rem 0 0;
+}
+
 .copyright-and-partners
 {
-    border-top: 1px solid #bbb;
+    border-top: 1px solid #aaa;
 }
 
 .partners
 {
     flex-direction: row;
-    justify-content: space-between;
     align-items: center;
+    width: calc(60% - 1rem);
+}
+
+.partner
+{
+    margin-right: 6rem;
 }
 
 /* CSS for news */
