@@ -533,6 +533,12 @@ form[id='sign-in']
     font-weight: normal;
 }
 
+.news-subhead a
+{
+    font-weight: bold;
+    color: #444;
+}
+
 .news .any-news:nth-of-type(1)
 {
     flex-direction: column;
@@ -748,4 +754,28 @@ form[id='sign-in']
 {
     width: 32px;
     height: 32px;
+}
+
+.business-education .news-subhead
+{
+    padding: 0 0 1rem;
+}
+
+form[id='select-category'] label
+{
+    margin: 0;
+    padding: 0;
+    font-weight: bold;
+}
+
+form[id='select-category'] select
+{
+    margin: .25rem 0 .75rem;
+}
+
+form[id='select-category'] input[type='submit']
+{
+    margin: 0;
+    background: #f50;
+    color: #fff;
 }
