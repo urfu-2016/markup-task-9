@@ -7,7 +7,7 @@ html
 
 body
 {
-    width: 100%;
+    width: 1260px;
     height: 100%;
     margin: 0 auto;
     overflow-x: hidden;
@@ -68,7 +68,7 @@ main
     color: #424242;
 }
 
-.dailyInform
+.daily-inform
 {
     display: flex;
     justify-content: space-between;
@@ -109,7 +109,7 @@ main
 }
 
 .weather a,
-.trafficJams a,
+.traffic-jams a,
 .course a,
 .average a
 {
@@ -117,7 +117,7 @@ main
 }
 
 .weather a:hover,
-.trafficJams a:hover,
+.traffic-jams a:hover,
 .course a:hover,
 .average a:hover
 {
@@ -144,7 +144,7 @@ main
     margin: 0 auto;
 }
 
-.trafficJams,
+.traffic-jams,
 .contacts,
 .course,
 .average
@@ -154,7 +154,7 @@ main
     margin-top: 3px;
 }
 
-.trafficJams
+.traffic-jams
 {
     padding: 0 15px;
     border-right: 1px solid #424242;
@@ -173,7 +173,7 @@ main
     margin-top: 3px;
 }
 
-.trafficJams span
+.traffic-jams span
 {
     font-weight: 600;
 }
@@ -190,7 +190,7 @@ main
     margin-top: 3px;
 }
 
-.moneyRate
+.money-rate
 {
     display: flex;
 }
@@ -221,19 +221,19 @@ main
     flex-direction: column;
 }
 
-.blockAverage
+.block-average
 {
     display: flex;
 }
 
-.blockBuy,
-.blockSelling
+.block-buy,
+.block-selling
 {
     flex-direction: row;
     padding: 0 5px;
 }
 
-.blockBuy:nth-child(n)
+.block-buy:nth-child(n)
 {
     flex-direction: column;
 }
@@ -256,38 +256,6 @@ main
     margin: 0 3px;
 }
 
-/*Анимация*/
-
-.animation
-{
-    animation-name: matreshka;
-    animation-duration: 4600ms;
-    animation-iteration-count: infinite;
-    animation-timing-function: linear;
-    position: absolute;
-    right: 0;
-    top: 30px;
-}
-
-@keyframes matreshka
-{
-    from
-    {
-        transform: translateX(100%) rotate(0deg);
-        opacity: .2;
-    }
-    50%
-    {
-        transform: translateX(-150%) rotate(-20deg);
-        opacity: 1;
-    }
-    to
-    {
-        transform: translateX(100%) rotate(0deg);
-        opacity: .2;
-    }
-}
-
 /*Содержание сайта*/
 
 .news
@@ -296,19 +264,19 @@ main
     justify-content: space-between;
 }
 
-.leftColumn,
-.centerColumn,
-.rightColumn
+.left-column,
+.center-column,
+.right-column
 {
     flex-direction: row;
 }
 
-.rightColumn
+.right-column
 {
     width: 400px;
 }
 
-.mainNews
+.main-news
 {
     height: 300px;
     max-width: 560px;
@@ -318,7 +286,7 @@ main
     margin-bottom: 10px;
 }
 
-.anonsBlock
+.anons-block
 {
     background: rgba(0, 0, 0, .7);
     border-left: 7px solid #fd5200;
@@ -331,7 +299,7 @@ main
     box-sizing: border-box;
 }
 
-.anonsBlock span
+.anons-block span
 {
     font-weight: 600;
     font-size: 20px;
@@ -343,13 +311,13 @@ main
     max-width: 100%;
 }
 
-.bigBlock .article img
+.big-block .article img
 {
-    max-height: 70px;
+    height: 50px;
     margin-right: 5px;
 }
 
-.headerBlock
+.header-block
 {
     max-width: 100%;
     border-left: 7px solid #fd5200;
@@ -358,57 +326,58 @@ main
     font-size: 14px;
 }
 
-.headerBlock a
+.header-block a
 {
     float: right;
     color: rgba(0, 0, 0, .5);
 }
 
-.bodyBlock
+.body-block
 {
     display: flex;
     font-size: 12px;
 }
 
-.bodyBlock a,
-.bodyBlock span
+.body-block a,
+.body-block span
 {
     display: block;
     max-width: 450px;
 }
 
-.borderOrange
+.border-orange
 {
     color: #fd5200;
 }
 
-.rightColumn
+.right-column
 {
     max-width: 250px;
     margin-left: 15px;
 }
 
-.rightColumn img
+.right-column img
 {
     width: 100%;
 }
 
-.miniBlock
+.mini-block
 {
     display: flex;
     justify-content: space-between;
 }
 
-.miniBlock:nth-child(n)
+.mini-block:nth-child(n)
 {
     flex-direction: row;
     min-width: 400px;
 }
 
-.miniBlock .article img
+.mini-block .article img
 {
     max-width: 50px;
     height: 38px;
+    margin-right: 5px;
 }
 
 /*Подвал*/
@@ -424,16 +393,16 @@ main
     padding: 10px 15px;
 }
 
-.firstLevel,
-.secondLevel
+.first-level,
+.second-level
 {
     display: flex;
     width: 100%;
     justify-content: space-between;
 }
 
-.phonenumbers,
-.bigIcons
+.phone-numbers,
+.big-icons
 {
     flex-direction: row;
 }
