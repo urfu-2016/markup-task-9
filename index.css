@@ -36,29 +36,41 @@ body
     cursor: pointer;
 }
 
+.logo,
+.search,
+.content,
+.ya1-login,
+.ya1-footer,
+.right-side,
+.ya1-header,
+.news-block,
+.ya1-top-bar,
+.caption-line,
+.logo-section,
+.header-section,
+.more-item:checked ~ .more-block
+{
+    display: flex;
+}
+
 /* BAR */
 
-.ya1-bar-item
+.ya1-top-bar
 {
-    text-decoration: none;
-    margin: 0;
-    vertical-align: top;
-    position: relative;
-    padding: 0 19px;
-    text-align: left;
-    display: table-cell;
-    color: #fff;
-    font-size: 11px;
-    font-weight: bold;
-    height: 20px;
-    width: 100%;
-    line-height: 20px;
-
+    justify-content: space-around;
+    background-color: #3a3a3a;
+    cursor: pointer;
 }
 
 .ya1-bar-item
 {
+    text-decoration: none;
+    color: #fff;
+    padding-left: 2px;
+    padding-right: 2px;
+    font-size: 11px;
     line-height: 20px;
+    height: 20px;
 }
 
 .ya1-bar-item:hover
@@ -68,18 +80,32 @@ body
     transition: background .3s ease 0s, color .3s ease 0s;
 }
 
+.more-item,
+.more-block
+{
+    display: none;
+}
+
+.more-block
+{
+    position: absolute;
+    flex-direction: column;
+    text-align: center;
+    right: 2%;
+    background-color: #3a3a3a;
+    margin-top: 20px;
+}
+
 /* BAR */
 
 /* HEADER */
 
 .ya1-header
 {
-    flex: 100%;
-    display: flex;
     align-items: center;
-    height: 70px;  /* Убрать после grid */
+    height: 70px;
     margin-top: 5px;
-    margin-bottom: 5px;
+    margin-bottom: 10px;
 }
 
 .header-section
@@ -87,24 +113,14 @@ body
     border-right: 1px solid #cecece;
     margin-left: 5px;
     padding-right: 5px;
-    display: flex;
     align-items: center;
     justify-content: center;
     text-align: center;
     height: 100%;
 }
 
-.ya1-top-bar
-{
-    display: flex;
-    justify-content: space-between;
-    background-color: #3a3a3a;
-    cursor: pointer;
-}
-
 .logo-section
 {
-    display: flex;
     align-items: center;
     flex: 15%;
     line-height: .8;
@@ -113,7 +129,6 @@ body
 
 .logo
 {
-    display: flex;
     flex-wrap: wrap;
     justify-content: center;
     align-items: center;
@@ -124,8 +139,8 @@ body
 
 .logo-capture
 {
-    margin-bottom: -15px;
-    font-size: 1vw;
+    margin-bottom: -20px;
+    font-size: .9vw;
     width: 100%;
     color: #000;
 }
@@ -143,7 +158,7 @@ body
 .date-section
 {
     flex: 10%;
-    font-size: 1.1vw;
+    font-size: 1.2vw;
 }
 
 .ya1-date
@@ -190,6 +205,11 @@ body
     height: 30px;
 }
 
+.temperature
+{
+    font-size: 1.2vw;
+}
+
 .traffic-section
 {
     flex: 5%;
@@ -197,6 +217,7 @@ body
 
 .traffic-block
 {
+    font-size: 1.2vw;
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -237,15 +258,15 @@ body
 {
     display: block;
     width: 100%;
-    font-size: .9em;
+    font-size: 1.2vw;
     margin-bottom: 5px;
 }
 
 .icon
 {
     display: inline-block;
-    width: 2vw;
-    height: 2vw;
+    width: 1.5vw;
+    height: 1.5vw;
     background-size: cover;
 }
 
@@ -286,7 +307,7 @@ body
 
 .currency-section
 {
-    flex: 18%;
+    flex: 15%;
 }
 
 .currency-block
@@ -315,16 +336,21 @@ body
 
 .search-section
 {
-    flex: 18%;
-    font-size: .8vw;
+    flex: 19%;
 }
 
 .search,
 .ya1-login
 {
-    display: flex;
     align-items: center;
     width: 100%;
+}
+
+.search-label,
+.login-label
+{
+    font-size: 1.2vw;
+    padding-right: 5px;
 }
 
 .inputs-block
@@ -345,50 +371,25 @@ body
 
 /* COLUMN */
 
-.wrapper
-{
-    display: flex;
-    flex: 100%;
-}
-
-.content
-{
-    display: flex;
-    flex: 80%;
-    margin: 10px 0 10px 10px;
-}
-
-.right-side
-{
-    display: flex;
-    flex: 20%;
-    margin: 10px 10px 10px 0;
-}
-
-.fullsize-column
-{
-    display: inline-block;
-    width: 100%;
-    margin: 0 5px;
-}
-
 .column
 {
     display: inline-block;
     width: 50%;
-    margin: 0 5px;
+    margin: -4px;
 }
 
-.column > .column
+.column-1,
+.column-2,
+.right-side
 {
-    width: calc(50% - 10px);
-    margin: 5px;
+    margin-left: 5px;
+    margin-right: 5px;
+    margin-bottom: 5px;
 }
 
 .caption-line
 {
     box-sizing: border-box;
-    display: flex;
     width: 100%;
     height: 20px;
     background-color: #e1e1e1;
@@ -469,9 +470,18 @@ body
 
 .news-block
 {
-    display: flex;
     align-items: center;
     margin: 2px;
+}
+
+.news-block > img
+{
+    padding: 2px;
+}
+
+.tv > .news-block > img
+{
+    border-right: 1px solid #bbb;
 }
 
 .news-image
@@ -487,7 +497,7 @@ body
 {
     display: inline-block;
     width: calc(100% - 80px);
-    height: 70px;
+    height: 80px;
     overflow: hidden;
 }
 
@@ -516,21 +526,23 @@ body
 .project
 {
     height: 50px;
-    margin-top: 10px;
-    margin-bottom: 10px;
+    width: 50%;
+}
+
+.right-side
+{
+    flex-direction: column;
 }
 
 .tv
 {
     font-size: .9vw;
-    width: 100%;
 }
 
-.tv-block
+.tv > .news-block
 {
-    width: 100%;
-    display: inline-block;
-    margin: 5px;
+    margin-bottom: -3px;
+    border: 1px solid #bbb;
 }
 
 /* END COLUMN */
@@ -539,20 +551,19 @@ body
 
 .ya1-footer
 {
-    display: flex;
     justify-content: space-around;
     align-items: center;
+    flex-wrap: wrap;
     background: #e1e1e1;
     border-top: 2px solid #000;
 }
 
 .ya1-footer-inner
 {
-    padding: 25px 25px 23px;
-    font-size: 12px;
+    flex: 30%;
     box-sizing: border-box;
-    vertical-align: top;
-    text-align: left;
+    padding: 25px;
+    font-size: 12px;
 }
 
 /* Grid */
@@ -572,9 +583,14 @@ body
     grid-area: header;
 }
 
-.content
+.column-1
 {
-    grid-area: main;
+    grid-area: first;
+}
+
+.column-2
+{
+    grid-area: second;
 }
 
 .right-side
@@ -589,10 +605,10 @@ body
 
 .grid-container
 {
-    grid-template-columns: 40% 40% 18%;
+    grid-template-columns: 20% 20% 20% 20% 20%;
     grid-template-rows: auto;
-    grid-template-areas: 'bar bar bar'
-        'header header header'
-        'main main right'
-        'footer footer footer';
+    grid-template-areas: 'bar bar bar bar bar'
+        'header header header header header'
+        'first first second second right'
+        'footer footer footer footer footer';
 }

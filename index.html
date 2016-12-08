@@ -7,18 +7,24 @@
 <body>
 <div class="grid-container">
     <div class="ya1-top-bar">
-        <a class="ya1-bar-item">Главная</a>
-        <a class="ya1-bar-item">Новости</a>
-        <a class="ya1-bar-item">Недвижимость</a>
-        <a class="ya1-bar-item">Авто</a>
-        <a class="ya1-bar-item">Работа</a>
-        <a class="ya1-bar-item">Объявления</a>
-        <a class="ya1-bar-item">Знакомства</a>
-        <a class="ya1-bar-item">Погода</a>
-        <a class="ya1-bar-item">Афиша</a>
-        <a class="ya1-bar-item">Форумы</a>
-        <a class="ya1-bar-item">Бизнес</a>
-        <a class="ya1-bar-item">Общение</a>
+        <a class="ya1-bar-item bold">Главная</a>
+        <a class="ya1-bar-item bold">Новости</a>
+        <a class="ya1-bar-item bold">Недвижимость</a>
+        <a class="ya1-bar-item bold">Авто</a>
+        <a class="ya1-bar-item bold">Работа</a>
+        <a class="ya1-bar-item bold">Объявления</a>
+        <a class="ya1-bar-item bold">Знакомства</a>
+        <a class="ya1-bar-item bold">Погода</a>
+        <a class="ya1-bar-item bold">Афиша</a>
+        <a class="ya1-bar-item bold">Форумы</a>
+        <a class="ya1-bar-item bold">Бизнес</a>
+        <a class="ya1-bar-item bold">Общение</a>
+        <input type="checkbox" class="more-item" id="more">
+        <label for="more" class="ya1-bar-item bold">Ещё ▼</label>
+        <div class="more-block">
+            <a class="ya1-bar-item bold">Мало тебе?</a>
+            <a class="ya1-bar-item bold">"Ещё" захотел?</a>
+        </div>
     </div>
     <header class="ya1-header">
         <section class="header-section logo-section">
@@ -39,12 +45,12 @@
         <section class="header-section weather-section">
             <div class="weather-block">
                 <span class="small-hoverable">Сейчас</span>
-                <span class="bold">-7,2°C</span>
+                <span class="bold temperature">-7,2°C</span>
                 <div class="weather-icon-1"></div>
             </div>
             <div class="weather-block">
                 <span class="small-hoverable">Завтра</span>
-                <span class="bold">-14°C</span>
+                <span class="bold temperature">-14°C</span>
             <div class="weather-icon-2"></div>
         </div>
         </section>
@@ -108,9 +114,8 @@
             </div>
         </section>
     </header>
-    <main class="content">
-        <div class="column">
-            <div class="big-news-block">
+    <section class="column-1">
+        <div class="big-news-block">
                 <span class="big-news-image"></span>
                 <div class="big-news-announce">
                     <p class="big-news-announce-title">
@@ -122,28 +127,28 @@
                     </p>
                 </div>
             </div>
-            <div class="caption-line">
-                <span class="caption-text bold">
-                    <img class="news-ya" src="images/news.svg"
-                         alt="Новости" title="Яндекс Новости">
-                </span>
-                <a class="small-hoverable more">Все новости</a>
+        <div class="caption-line">
+            <span class="caption-text bold">
+                <img class="news-ya" src="images/news.svg"
+                     alt="Новости" title="Яндекс Новости">
+            </span>
+            <a class="small-hoverable more"><span class="triangle">►</span> Все новости</a>
+        </div>
+        <div class="news-block">
+            <img class="news-image" src="images/news-1.png"
+                 alt="Что ищут в Яндексе?" title="Статистика от Яндекса">
+            <div class="news-content">
+                <span class="news-tags">инфа яндекс поиск</span>
+                <a class="bold small-hoverable">
+                    «Яндекс» рассказал, что россияне чаще всего ищут в Интернете
+                </a>
+                <p class="news-text">
+                    Компания «Яндекс» представила данные,
+                    что чаще всего вбивают в строку поиска российские интернет-пользователи.
+                </p>
             </div>
-            <div class="news-block">
-                <img class="news-image" src="images/news-1.png"
-                     alt="Что ищут в Яндексе?" title="Статистика от Яндекса">
-                <div class="news-content">
-                    <span class="news-tags">инфа яндекс поиск</span>
-                    <a class="bold small-hoverable">
-                        «Яндекс» рассказал, что россияне чаще всего ищут в Интернете
-                    </a>
-                    <p class="news-text">
-                        Компания «Яндекс» представила данные,
-                        что чаще всего вбивают в строку поиска российские интернет-пользователи.
-                    </p>
-                </div>
-            </div>
-            <div class="news-block">
+        </div>
+        <div class="news-block">
                 <img class="news-image"
                      src="http://www.e1.ru/news/static/85fcb867c4d138d563c53b2feb4f1599_70_50_c.jpg"
                      alt="УГМК крутые теннисисты"
@@ -160,7 +165,7 @@
                     </p>
                 </div>
             </div>
-            <div class="news-block">
+        <div class="news-block">
                 <img class="news-image" src="images/news-2.png"
                      alt="Вконтакте без музыки"
                      title="Вконтакте лишится музыки">
@@ -178,7 +183,7 @@
                     </p>
                 </div>
             </div>
-            <div class="news-block">
+        <div class="news-block">
                 <img class="news-image" src="images/news-3.png"
                      alt="ideco" title="Крутой шлюз от ideco">
                 <div class="news-content">
@@ -193,11 +198,11 @@
                     </p>
                 </div>
             </div>
-            <div class="caption-line">
+        <div class="caption-line">
                 <span class="caption-text bold">СООБЩИТЬ НОВОСТЬ</span>
-                <a class="small-hoverable more">Перейти</a>
+                <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
             </div>
-            <div class="news-block">
+        <div class="news-block">
                 <img class="news-image" src="images/mail.png"
                      alt="Предложить новость" title="Отправить свою новость">
                 <div class="news-content">
@@ -212,13 +217,13 @@
                     </p>
                 </div>
             </div>
-        </div>
-        <div class="column">
-            <div class="caption-line">
+    </section>
+    <section class="column-2">
+        <div class="caption-line">
                 <span class="caption-text bold">ПОДРОБНОСТИ</span>
-                <a class="small-hoverable more">Перейти</a>
+                <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
             </div>
-            <div class="news-block">
+        <div class="news-block">
                 <img class="news-image" src="images/news-4.png"
                      alt="Бедные дети за ограждениями"
                      title="Дедушка мороз">
@@ -233,11 +238,11 @@
                     </p>
                 </div>
             </div>
-            <div class="caption-line">
+        <div class="caption-line">
                 <span class="caption-text bold">ОБЗОР</span>
-                <a class="small-hoverable more">Перейти</a>
+                <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
             </div>
-            <div class="news-block">
+        <div class="news-block">
                 <img class="news-image" src="images/news-5.png"
                      alt="Обзор планшета" title="Обзор от РИА Новости">
                 <div class="news-content">
@@ -251,11 +256,11 @@
                     </p>
                 </div>
             </div>
-            <div class="caption-line">
+        <div class="caption-line">
                 <span class="caption-text bold">СТАТЬИ О НЕДВИЖИМОСТИ</span>
-                <a class="small-hoverable more">Перейти</a>
+                <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
             </div>
-            <div class="news-block">
+        <div class="news-block">
                 <img class="news-image" src="images/news-6.png"
                      alt="Фишки конструктивизма"
                      title="Новое здание юстиции">
@@ -271,11 +276,11 @@
                     </p>
                 </div>
             </div>
-            <div class="caption-line">
+        <div class="caption-line">
                 <span class="caption-text bold">ФОТОРЕПОРТАЖ</span>
-                <a class="small-hoverable more">Перейти</a>
+                <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
             </div>
-            <div class="news-block">
+        <div class="news-block">
                 <img class="news-image" src="images/news-7.png"
                      alt="Наушники-Уши"
                      title="Оригинальные наушники">
@@ -290,11 +295,11 @@
                     </p>
                 </div>
             </div>
-            <div class="caption-line">
+        <div class="caption-line">
                 <span class="caption-text bold">ГОСТЬ НА Я1</span>
-                <a class="small-hoverable more">Перейти</a>
+                <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
             </div>
-            <div class="news-block">
+        <div class="news-block">
                 <img class="news-image" src="images/news-8.png"
                      alt="Интервью с вокалисткой"
                      title="Интервью с вокалисткой Garbage">
@@ -306,10 +311,10 @@
                     </p>
                 </div>
             </div>
-            <div class="column">
+        <div class="column">
                 <div class="caption-line">
                     <span class="caption-text bold">НЕДВИЖИМОСТЬ</span>
-                    <a class="small-hoverable more">Добавить объяву</a>
+                    <a class="small-hoverable more"><span class="triangle">►</span> Добавить объяву</a>
                 </div>
                 <div class="post-caption bold">Аренда Продажа квартир Новостройки</div>
                 <div class="news-block">
@@ -349,13 +354,13 @@
                     </div>
                 </div>
             </div>
-            <div class="column">
-                <div class="caption-line">
+        <div class="column">
+            <div class="caption-line">
                     <span class="caption-text bold">ПРОДАЖА АВТО, МОТО</span>
-                    <a class="small-hoverable more">Перейти</a>
+                    <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
                 </div>
-                <div class="post-caption bold">Легкие Грузовые Мото</div>
-                <div class="news-block">
+            <div class="post-caption bold">Легкие Грузовые Мото</div>
+            <div class="news-block">
                     <img class="news-image" src="images/car_1.png"
                          alt="Крутая Беха" title="BMW">
                     <div class="news-content">
@@ -367,7 +372,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="news-block">
+            <div class="news-block">
                     <img class="news-image" src="images/car_2.png"
                          alt="Феррари" title="Феррари">
                     <div class="news-content">
@@ -379,7 +384,7 @@
                         </p>
                     </div>
                 </div>
-                <div class="news-block">
+            <div class="news-block">
                     <img class="news-image" src="images/car_3.png"
                          alt="Тачка" title="Пацанская тачка">
                     <div class="news-content">
@@ -391,33 +396,31 @@
                         </p>
                     </div>
             </div>
-            </div>
         </div>
-    </main>
-    <aside class="right-side">
-        <div class="fullsize-column">
-            <div class="caption-line">
+    </section>
+    <section class="right-side">
+        <div class="caption-line">
                 <span class="caption-text bold">СПЕЦПРОЕКТ</span>
-                <a class="small-hoverable more">Перейти</a>
+                <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+            </div>
+        <div class="news-block">
+            <img class="project" src="images/footer_1.svg" alt="Яндекс" title="Яндекс">
+            <img class="project" src="images/connect.svg" alt="Connect" title="Connect">
+        </div>
+        <div class="caption-line">
+                <span class="caption-text bold">СЕЙЧАС ПО TV</span>
+                <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+            </div>
+        <div class="tv">
+            <div class="news-block">
+                <img src="images/channel_1.png" alt="Первый канал"
+                     title="Первый канал">
+                <p>
+                    &nbsp;16:25 — <span class="bold">Скукота</span>
+                    <sup>(еще 1 мин.)</sup>
+                </p>
             </div>
             <div class="news-block">
-                <img class="project" src="images/footer_1.svg" alt="Яндекс" title="Яндекс">
-                <img class="project" src="images/connect.svg" alt="Connect" title="Connect">
-            </div>
-            <div class="caption-line">
-                <span class="caption-text bold">СЕЙЧАС ПО TV</span>
-                <a class="small-hoverable more">Перейти</a>
-            </div>
-            <div class="tv">
-                <div class="news-block">
-                    <img src="images/channel_1.png" alt="Первый канал"
-                         title="Первый канал">
-                    <p>
-                        &nbsp;16:25 — <span class="bold">Скукота</span>
-                        <sup>(еще 1 мин.)</sup>
-                    </p>
-                </div>
-                <div class="news-block">
                     <img src="images/channel_2.png" alt="Второй канал"
                          title="Россия 1">
                     <p>
@@ -425,14 +428,13 @@
                         <sup>(еще 2 мин.)</sup>
                     </p>
                 </div>
-                <div class="news-block">
+            <div class="news-block">
                     <img src="images/channel_3.png" alt="Третий канал"
                          title="НТВ">
                     <p>&nbsp;11:25 — <span class="bold">Бандитская скукота</span></p>
                 </div>
-            </div>
         </div>
-    </aside>
+    </section>
     <footer class="ya1-footer">
         <section class="ya1-footer-inner">
             © dimastark
