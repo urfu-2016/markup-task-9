@@ -4,6 +4,7 @@ body
     width: 100%;
     height: 100%;
     margin: 0;
+    overflow: visible;
 }
 
 nav,
@@ -12,13 +13,22 @@ nav,
 main,
 main > div,
 .two-columns,
-footer
+footer,
+.all:target,
+.all,
+header
 {
     display: flex;
 }
 
+header
+{
+    padding-bottom: 1%;
+}
+
 nav,
-.top-menu
+.top-menu,
+table
 {
     
     font-size: 11px;
@@ -26,16 +36,28 @@ nav,
     font-weight: bold;
 }
 
+nav > div,
+.top-menu > div,
+.main-header > div
+{
+    flex-shrink: 0;
+}
+
+nav,
+.all
+{
+    background-color: #434343;
+}
+
 nav
 {
     padding: 4px 2%;
     justify-content: space-between;
-    background-color: #363636;
 }
 
 .top-menu
 {
-    background-color: #ee2c2c;
+    background-color: rgb(255, 82, 0);
     width: 100%;
     justify-content: flex-start;
 }
@@ -43,7 +65,7 @@ nav
 nav div a:visited:hover,
 nav div a:hover
 {
-    color: #ee2c2c;
+    color: rgb(255, 82, 0);
 }
 
 nav a,
@@ -57,7 +79,7 @@ nav a:visited,
 
 .top-menu div:nth-child(2n+1) a
 {
-    background-color: #4876ff;
+    background-color: rgb(35, 172, 227);
 }
 
 .top-menu div
@@ -73,14 +95,13 @@ nav a:visited,
 .top-menu a:visited:hover,
 .top-menu a:hover
 {
-    color: #363636;
+    color: rgb(68, 68, 68);
 }
 
 .main-header
 {
     margin-top: 10px;
     text-align: center;
-    justify-content: space-between;
 }
 
 .tapon div a
@@ -144,13 +165,11 @@ nav a:visited,
 
 .border-left
 {
-    padding-left: 20px;
     border-left: 1px solid rgba(0, 0, 0, .2);
 }
 
 .border-right
 {
-    padding-right: 20px;
     border-right: 1px solid rgba(0, 0, 0, .2);
 }
 
@@ -165,14 +184,30 @@ nav a:visited,
     width: 15%;
 }
 
+.first-column > div > a > img
+{
+    width: 100%;
+}
+
 .first-column > div,
 .third-column > div
 {
     overflow: hidden;
-    margin-bottom: 2%;
 }
 
-main > div
+.first-column > div:nth-child(1) img:hover
+{
+    border: 1px solid rgb(255, 82, 0);
+}
+
+.first-column > div:nth-child(1) img
+{
+    border: 1px solid #000;
+    width: 99%;
+}
+
+main > div,
+header
 {
     flex-direction: column;
 }
@@ -181,6 +216,11 @@ main,
 .main-header
 {
     margin: 0 1%;
+}
+
+.main-header > div
+{
+    padding: 0 1%;
 }
 
 .thumbnail
@@ -216,14 +256,25 @@ main,
 
 .subtitle a,
 .subtitle a:visited,
-.additionally a,
-.additionally a:visited
+.additionally a:visited,
+.additionally a
 {
-    text-transform: uppercase;
     font-size: 10px;
     font-family: Tahoma, verdana, sans-serif, arial;
-    text-decoration: none;
     color: #000;
+}
+
+.subtitle a,
+.subtitle a:visited
+{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.additionally a:visited,
+.additionally a
+{
+    opacity: .5;
 }
 
 .subtitle
@@ -231,11 +282,12 @@ main,
     float: left;
     padding: 1px 10px;
     border-right: 1px solid rgba(0, 0, 0, .3);
-    border-left: 10px solid rgba(255, 0, 0, .5);
+    border-left: 10px solid rgb(255, 82, 0);
 }
 
 main,
-.two-columns
+.two-columns,
+header
 {
     justify-content: space-between;
 }
@@ -249,13 +301,14 @@ main,
 .subtitle-style
 {
     height: 20px;
-    background-color: rgba(0, 0, 0, .2);
+    background-color: rgb(225, 225, 225);
+    border-top: 2px solid #434343;
 }
 
 hr
 {
     -webkit-margin-after: 0;
-    border-color: rgba(255, 0, 0, .5);
+    border-color: rgb(255, 82, 0);
 }
 
 .two-columns > div
@@ -270,7 +323,8 @@ hr
 }
 
 .two-columns .subtitle-style ~ div a,
-.two-columns .subtitle-style ~ div a:visited
+.two-columns .subtitle-style ~ div a:visited,
+table ~ a
 {
     color: rgba(0, 0, 255, .7);
     font-size: 12px;
@@ -301,4 +355,27 @@ footer a
 .copy
 {
     padding-top: 100px;
+}
+
+.all
+{
+    position: absolute;
+    flex-direction: column;
+    right: 0;
+    top: 0;
+    text-align: center;
+    padding: 4px 17px;
+    display: none;
+}
+
+td
+{
+    background-color: #fff;
+}
+
+table
+{
+    border-spacing: 1px 1px;
+    background-color: #bebebe;
+    border-collapse: separate;
 }
