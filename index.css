@@ -6,7 +6,7 @@ body
     margin: 0 auto;
     padding: 0;
     background: #fff;
-    font: 12px Tahoma, verdana, sans-serif, arial;
+    font: 12px Tahoma, verdana, arial, sans-serif;
     cursor: default;
 }
 
@@ -15,6 +15,11 @@ main
     position: relative;
     min-height: 100%;
     height: auto;
+}
+
+.no-display-input
+{
+    display: none;
 }
 
 /* CSS for headers */
@@ -49,6 +54,7 @@ main
 }
 
 .links-to-other-sections a,
+.links-to-other-sections label,
 .links-to-top-news a
 {
     flex-grow: 1;
@@ -59,6 +65,7 @@ main
     font-weight: bold;
     text-decoration: none;
     color: #fff;
+    cursor: pointer;
 }
 
 .links-to-top-news a:nth-of-type(2n)
@@ -74,6 +81,29 @@ main
 .dark-gray-link-hover:hover
 {
     color: #444;
+}
+
+.other-links
+{
+    display: none;
+    flex-direction: column;
+    position: absolute;
+    right: 0;
+    top: 2rem;
+    margin: 0;
+    background: #444;
+    z-index: 100;
+}
+
+.other-links a
+{
+    padding: .38rem 1.25rem;
+    border-top: 1px solid #666;
+}
+
+input[id='open-other-links']:checked ~ .other-links
+{
+    display: flex;
 }
 
 .main-header
@@ -309,15 +339,19 @@ form[id='sign-in']
 
 .sign-in input[type='text']
 {
-    width: calc(100% - 25px - .5rem);
     height: 20px;
     margin: 0 .5rem 0 0;
     padding: 0;
 }
 
+.sign-in form[id='search'] input[type='text']
+{
+    width: calc(100% - 25px - 1rem);
+}
+
 .sign-in form[id='sign-in'] input[type='text']
 {
-    width: calc((100% - 25px - 1.5rem) / 2);
+    width: calc((100% - 25px - 2rem) / 2);
 }
 
 .sign-in input[type='submit']
@@ -494,7 +528,7 @@ form[id='sign-in']
     align-items: flex-start;
     position: relative;
     width: calc(100% - 1.5rem);
-    margin: 0 auto 1rem;
+    margin: 0 auto 1.5rem;
     padding: 0;
 }
 
@@ -673,6 +707,11 @@ form[id='sign-in']
     height: 75px;
 }
 
+.photo-gallery .any-news .news-photo label
+{
+    cursor: pointer;
+}
+
 .photo-gallery .any-news:nth-of-type(1)
 {
     margin: 0 auto 1rem;
@@ -683,13 +722,30 @@ form[id='sign-in']
 .photo-gallery .any-news:nth-of-type(1) .news-photo img
 {
     width: 100%;
-    height: 250px;
+    height: 275px;
     background: rgba(0,0,0, .5);
 }
 
 .photo-gallery .any-news:nth-of-type(1) .news-photo img
 {
     object-fit: contain;
+}
+
+.for-photo-1,
+.for-photo-2,
+.for-photo-3
+{
+    display: none;
+}
+
+input[id='photo-gallery-1']:checked ~ .any-news .for-photo-1,
+input[id='photo-gallery-1']:checked ~ .any-news .for-photo-1,
+input[id='photo-gallery-2']:checked ~ .any-news .for-photo-2,
+input[id='photo-gallery-2']:checked ~ .any-news .for-photo-2,
+input[id='photo-gallery-3']:checked ~ .any-news .for-photo-3,
+input[id='photo-gallery-3']:checked ~ .any-news .for-photo-3
+{
+    display: block;
 }
 
 .special-project .any-news .news-photo,
@@ -720,7 +776,9 @@ form[id='sign-in']
 .job .news-photo,
 .job .news-photo img,
 .ads .news-photo,
-.ads .news-photo img
+.ads .news-photo img,
+.joint-buy .news-photo,
+.joint-buy .news-photo img
 {
     width: 50px;
     height: 35px;
@@ -771,6 +829,7 @@ form[id='select-category'] label
 form[id='select-category'] select
 {
     margin: .25rem 0 .75rem;
+    cursor: pointer;
 }
 
 form[id='select-category'] input[type='submit']
@@ -778,4 +837,10 @@ form[id='select-category'] input[type='submit']
     margin: 0;
     background: #f50;
     color: #fff;
+    cursor: pointer;
+}
+
+.joint-buy .news-subhead a
+{
+    text-decoration: none;
 }
