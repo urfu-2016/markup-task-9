@@ -1,7 +1,8 @@
 html,
 body
 {
-    width: 1200px;
+    min-width: 1200px;
+    max-width: 1440px;
     min-height: 100%;
     height: auto;
     margin: 0 auto;
@@ -508,20 +509,20 @@ form[id='sign-in']
 .news-section-header
 {
     display: flex;
+    justify-content: space-between;
     width: 100%;
     margin: 0 0 1rem;
     padding: 0;
     border-top: 2px solid #444;
+    background: #ddd;
 }
 
 .news-section-name
 {
-    width: 100%;
     margin: 0;
     padding: .25rem .75rem;
     border-left: .75rem solid #f50;
-    background: #ddd;
-    font-size: 1rem;
+    font-size: .9rem;
     text-transform: uppercase;
     text-decoration: none;
     font-weight: bold;
@@ -852,6 +853,12 @@ input[id='video-gallery-3']:checked ~ .any-news .for-video-3
     padding: 0 0 1rem;
 }
 
+form[id='select-category']
+{
+    display: flex;
+    flex-direction: column;
+}
+
 form[id='select-category'] label
 {
     margin: 0;
@@ -867,6 +874,7 @@ form[id='select-category'] select
 
 form[id='select-category'] input[type='submit']
 {
+    align-self: flex-start;
     margin: 0;
     background: #f50;
     color: #fff;
