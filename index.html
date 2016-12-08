@@ -2,6 +2,7 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Е2.ру</title>
     <link rel="stylesheet" type="text/css" href="index.css">
 </head>
@@ -123,8 +124,9 @@
                 <div class="shadow"></div>
             </article>
             <article class="news">
+                <input type="checkbox" class="invisible-input" id="news" name="news">
                 <div class="band">
-                    <p class="name">НОВОСТИ</p>
+                    <label for="news" class="name">НОВОСТИ</label>
                     <p><a class="ref" href="#">Все новости</a></p>
                 </div>
                 <article class="card">
@@ -196,8 +198,9 @@
         </section>
         <section class="central-content">
             <article class="details">
+                <input type="checkbox" class="invisible-input" id="about" name="about">
                 <div class="band">
-                    <p class="name">ПОДРОБНОСТИ</p>
+                    <label for="about" class="name">ПОДРОБНОСТИ</label>
                     <p><a class="ref" href="#">Перейти</a></p>
                 </div>
                 <article class="card">
@@ -212,8 +215,9 @@
                 </article>
             </article>
             <article class="picture-story">
+                <input type="checkbox" class="invisible-input" id="photo" name="photo">
                 <div class="band">
-                    <p class="name">ФОТОРЕПОРТАЖ</p>
+                    <label for="photo" class="name">ФОТОРЕПОРТАЖ</label>
                     <p><a class="ref" href="#">Перейти</a></p>
                 </div>
                 <article class="card">
@@ -228,8 +232,9 @@
                 </article>
             </article>
             <article class="articles">
+                <input type="checkbox" class="invisible-input" id="about-realty" name="about-realty">
                 <div class="band">
-                    <p class="name">СТАТЬИ О НЕДВИЖИМОСТИ</p>
+                    <label for="about-realty" class="name">СТАТЬИ О НЕДВИЖИМОСТИ</label>
                     <p><a class="ref" href="#">Перейти</a></p>
                 </div>
                 <article class="card">
@@ -243,185 +248,199 @@
                     </div>
                 </article>
             </article>
-            <article class="realty">
-                <div class="band">
-                    <p class="name">НЕДВИЖИМОСТЬ</p>
-                    <p><a class="ref" href="#">Добавить объявления</a></p>
-                </div>
-                <article class="card">
-                    <p><a class="ref" href="#">Аренда</a></p>
-                    <p><a class="ref" href="#">Продажа квартир</a></p>
-                    <p><a class="ref" href="#">Новостройки</a></p>
-                </article>
-            </article>
-            <article class="car-sale">
-                <div class="band">
-                    <p class="name">ПРОДАЖА АВТО, МОТО</p>
-                    <p><a class="ref" href="#">Перейти</a></p>
-                </div>
-                <article class="card">
-                    <p><a class="ref" href="#">Легковые</a></p>
-                    <p><a class="ref" href="#">Грузовые</a></p>
-                    <p><a class="ref" href="#">Мото</a></p>
-                </article>
-            </article>
-            <article class="realty-name1">
-                <article class="card">
-                    <img src="images/house1.jpg" title="Объявление" alt="Дом" >
-                    <div class="caption-news">
-                        <p>
-                            <a href="#">Продам 3-комнатную квартиру</a>
-                        </p>
-                        <p>Громова, 28</p>
-                        <p>Цена: <span class="price">6 380 000 руб.</span></p>
+            <article class="two-columns">
+                <article class="realty">
+                    <input type="checkbox" class="invisible-input" id="realty" name="realty">
+                    <div class="band">
+                        <label for="realty" class="name">НЕДВИЖИМОСТЬ</label>
+                        <p><a class="ref" href="#">Добавить объявления</a></p>
                     </div>
+                    <article class="card">
+                        <p><a class="ref" href="#">Аренда</a></p>
+                        <p><a class="ref" href="#">Продажа квартир</a></p>
+                        <p><a class="ref" href="#">Новостройки</a></p>
+                    </article>
+                    <article class="realty-name1 house">
+                        <article class="card">
+                            <img src="images/house1.jpg" title="Объявление" alt="Дом" >
+                            <div class="caption-news">
+                                <p>
+                                    <a href="#">Продам 3-комнатную квартиру</a>
+                                </p>
+                                <p>Громова, 28</p>
+                                <p>Цена: <span class="price">6 380 000 руб.</span></p>
+                            </div>
+                        </article>
+                    </article>
+                    <article class="realty-name2 house">
+                        <article class="card">
+                            <img src="images/house2.jpg" title="Объявление" alt="Дом" >
+                            <div class="caption-news">
+                                <p>
+                                    <a href="#">Продам 1-комнатную квартиру</a>
+                                </p>
+                                <p>Куйбышева, 21</p>
+                                <p>Цена: <span class="price">4 349 070 руб.</span></p>
+                            </div>
+                        </article>
+                    </article>
+                    <article class="realty-name3 house">
+                        <article class="card">
+                            <img src="images/house3.jpg" title="Объявление" alt="Квартира" >
+                            <div class="caption-news">
+                                <p>
+                                    <a href="#">Продам таунхаус</a>
+                                </p>
+                                <p>Карасьевская, 35</p>
+                                <p>Цена: <span class="price">7 900 000 руб.</span></p>
+                            </div>
+                        </article>
+                    </article>
                 </article>
-            </article>
-            <article class="car-name1">
-                <article class="card">
-                    <img src="images/car1.jpg" title="Объявление" alt="Авто" >
-                    <div class="caption-news">
-                        <p>
-                            <a href="#">Toyota Highlander</a>
-                        </p>
-                        <p><span class="price">1 359 196 руб.</span></p>
-                        <p>2012, автомат, 3.5л</p>
+                <article class="car-sale">
+                    <input type="checkbox" class="invisible-input" id="car" name="car">
+                    <div class="band">
+                        <label for="car" class="name">ПРОДАЖА АВТО, МОТО</label>
+                        <p><a class="ref" href="#">Перейти</a></p>
                     </div>
+                    <article class="card">
+                        <p><a class="ref" href="#">Легковые</a></p>
+                        <p><a class="ref" href="#">Грузовые</a></p>
+                        <p><a class="ref" href="#">Мото</a></p>
+                    </article>
+                    <article class="car-name1 car">
+                        <article class="card">
+                            <img src="images/car1.jpg" title="Объявление" alt="Авто" >
+                            <div class="caption-news">
+                                <p>
+                                    <a href="#">Toyota Highlander</a>
+                                </p>
+                                <p><span class="price">1 359 196 руб.</span></p>
+                                <p>2012, автомат, 3.5л</p>
+                            </div>
+                        </article>
+                    </article>
+                    <article class="car-name2 car">
+                        <article class="card">
+                            <img src="images/car2.JPG" title="Объявление" alt="Авто" >
+                            <div class="caption-news">
+                                <p>
+                                    <a href="#">Citroen C5</a>
+                                </p>
+                                <p><span class="price">348 000 руб.</span></p>
+                                <p>2007, механика, 2л</p>
+                            </div>
+                        </article>
+                    </article>
+                    <article class="car-name3 car">
+                        <article class="card">
+                            <img src="images/car3.jpg" title="Объявление" alt="Авто" >
+                            <div class="caption-news">
+                                <p>
+                                    <a href="#">Lifan Smily</a>
+                                </p>
+                                <p><span class="price">160 000 руб.</span></p>
+                                <p>2011, механика, 1.3л</p>
+                            </div>
+                        </article>
+                    </article>
                 </article>
             </article>
-            <article class="realty-name2">
-                <article class="card">
-                    <img src="images/house2.jpg" title="Объявление" alt="Дом" >
-                    <div class="caption-news">
-                        <p>
-                            <a href="#">Продам 1-комнатную квартиру</a>
-                        </p>
-                        <p>Куйбышева, 21</p>
-                        <p>Цена: <span class="price">4 349 070 руб.</span></p>
+            <article class="two-columns">
+                <article class="work">
+                    <input type="checkbox" class="invisible-input" id="work" name="work">
+                    <div class="band">
+                        <label for="work" class="name">РАБОТА</label>
+                        <p><a class="ref" href="#">Перейти</a></p>
                     </div>
+                    <article class="card">
+                        <p><a class="ref" href="#">Резюме</a></p>
+                        <p><a class="ref" href="#">Вакансии</a></p>
+                    </article>
+                    <article class="vacancy1 vac">
+                        <article class="card">
+                            <img src="images/vacancy1.png" title="Вакансия" alt="Логотип" >
+                            <div class="caption-news">
+                                <p>
+                                    <a href="#">Менеджер по продажам</a>
+                                </p>
+                                <p>Зарплата: <span class="price">от 25 000 до 80 000 руб.</span></p>
+                            </div>
+                        </article>
+                    </article>
+                    <article class="vacancy2 vac">
+                        <article class="card">
+                            <img src="images/vacancy2.jpg" title="Вакансия" alt="Логотип" >
+                            <div class="caption-news">
+                                <p>
+                                    <a href="#">Риелтор-стажёр</a>
+                                </p>
+                                <p>Стаж работы: без опыта</p>
+                                <p>Зарплата: <span class="price">от 30 000 руб.</span></p>
+                            </div>
+                        </article>
+                    </article>
                 </article>
-            </article>
-            <article class="car-name2">
-                <article class="card">
-                    <img src="images/car2.JPG" title="Объявление" alt="Авто" >
-                    <div class="caption-news">
-                        <p>
-                            <a href="#">Citroen C5</a>
-                        </p>
-                        <p><span class="price">348 000 руб.</span></p>
-                        <p>2007, механика, 2л</p>
+                <article class="caption">
+                    <input type="checkbox" class="invisible-input" id="caption" name="caption">
+                    <div class="band">
+                        <label for="caption" class="name">ОБЪЯВЛЕНИЯ</label>
+                        <p><a class="ref" href="#">Перейти</a></p>
                     </div>
-                </article>
-            </article>
-            <article class="realty-name3">
-                <article class="card">
-                    <img src="images/house3.jpg" title="Объявление" alt="Квартира" >
-                    <div class="caption-news">
-                        <p>
-                            <a href="#">Продам таунхаус</a>
-                        </p>
-                        <p>Карасьевская, 35</p>
-                        <p>Цена: <span class="price">7 900 000 руб.</span></p>
-                    </div>
-                </article>
-            </article>
-            <article class="car-name3">
-                <article class="card">
-                    <img src="images/car3.jpg" title="Объявление" alt="Авто" >
-                    <div class="caption-news">
-                        <p>
-                            <a href="#">Lifan Smily</a>
-                        </p>
-                        <p><span class="price">160 000 руб.</span></p>
-                        <p>2011, механика, 1.3л</p>
-                    </div>
-                </article>
-            </article>
-            <article class="work">
-                <div class="band">
-                    <p class="name">РАБОТА</p>
-                    <p><a class="ref" href="#">Перейти</a></p>
-                </div>
-                <article class="card">
-                    <p><a class="ref" href="#">Резюме</a></p>
-                    <p><a class="ref" href="#">Вакансии</a></p>
-                </article>
-            </article>
-            <article class="caption">
-                <div class="band">
-                    <p class="name">ОБЪЯВЛЕНИЯ</p>
-                    <p><a class="ref" href="#">Перейти</a></p>
-                </div>
-            </article>
-            <article class="vacancy1">
-                <article class="card">
-                    <img src="images/vacancy1.png" title="Вакансия" alt="Логотип" >
-                    <div class="caption-news">
-                        <p>
-                            <a href="#">Менеджер по продажам</a>
-                        </p>
-                        <p>Зарплата: <span class="price">от 25 000 до 80 000 руб.</span></p>
-                    </div>
-                </article>
-            </article>
-            <article class="caption-name1">
-                <article class="card">
-                    <img src="images/kapot.jpg" title="Объявление" alt="Капот" >
-                    <div class="caption-news">
-                        <p>
-                            <a href="#">Капот бмв 3</a>
-                        </p>
-                        <p>Цена: <span class="price">2 000 руб.</span></p>
-                    </div>
-                </article>
-            </article>
-            <article class="vacancy2">
-                <article class="card">
-                    <img src="images/vacancy2.jpg" title="Вакансия" alt="Логотип" >
-                    <div class="caption-news">
-                        <p>
-                            <a href="#">Риелтор-стажёр</a>
-                        </p>
-                        <p>Стаж работы: без опыта</p>
-                        <p>Зарплата: <span class="price">от 30 000 руб.</span></p>
-                    </div>
-                </article>
-            </article>
-            <article class="caption-name2">
-                <article class="card">
-                    <img src="images/tv.jpg" title="Объявление" alt="Телевизор" >
-                    <div class="caption-news">
-                        <p>
-                            <a href="#">Телевизор Toshiba 22L1353R</a>
-                        </p>
-                        <p>Цена: <span class="price">6 500 руб.</span></p>
-                    </div>
+                    <article class="caption-name1 capt">
+                        <article class="card">
+                            <img src="images/kapot.jpg" title="Объявление" alt="Капот" >
+                            <div class="caption-news">
+                                <p>
+                                    <a href="#">Капот бмв 3</a>
+                                </p>
+                                <p>Цена: <span class="price">2 000 руб.</span></p>
+                            </div>
+                        </article>
+                    </article>
+                    <article class="caption-name2 capt">
+                        <article class="card">
+                            <img src="images/tv.jpg" title="Объявление" alt="Телевизор" >
+                            <div class="caption-news">
+                                <p>
+                                    <a href="#">Телевизор Toshiba 22L1353R</a>
+                                </p>
+                                <p>Цена: <span class="price">6 500 руб.</span></p>
+                            </div>
+                        </article>
+                    </article>
                 </article>
             </article>
         </section>
         <section class="right-content">
+            <input type="checkbox" class="invisible-input" id="spec" name="spec">
             <div class="band">
-                <p class="name">СПЕЦПРОЕКТ</p>
+                <label for="spec" class="name">СПЕЦПРОЕКТ</label>
                 <p><a class="ref" href="#">Перейти</a></p>
             </div>
-            <img src="images/promo.jpg" title="Спецпроект" alt="Электродом" >
-            <p class="ref"><a class="orange-ref" href="#">Репортаж из дома будущего</a></p>
+            <div class="spec">
+                <img src="images/promo.jpg" title="Спецпроект" alt="Электродом" >
+                <p class="ref"><a class="orange-ref" href="#">Репортаж из дома будущего</a></p>
+            </div>
+            <input type="checkbox" class="invisible-input" id="tv" name="tv">
             <div class="band">
-                <p class="name">СЕЙЧАС ПО TV</p>
+                <label for="tv" class="name">СЕЙЧАС ПО TV</label>
                 <p><a class="ref" href="#">Перейти</a></p>
             </div>
-            <p><a class="orange-ref" href="#">Все телеканалы</a></p>
+            <p class="tv"><a class="orange-ref" href="#">Все телеканалы</a></p>
+            <input type="checkbox" class="invisible-input" id="edu" name="edu">
             <div class="band">
-                <p class="name">БИЗНЕС ОБРАЗОВАНИЕ</p>
+                <label for="edu" class="name">БИЗНЕС ОБРАЗОВАНИЕ</label>
                 <p><a class="ref" href="#">Перейти</a></p>
             </div>
-            <p><a class="orange-ref" href="#">Семинары, тренинги, учебные курсы</a>
+            <p class="edu"><a class="orange-ref" href="#">Семинары, тренинги, учебные курсы</a>
             - вся информация по бизнес-образованию для деловых людей и не только:</p>
+            <input type="checkbox" class="invisible-input" id="buy" name="buy">
             <div class="band">
-                <p class="name">СОВМЕСТНЫЕ ПОКУПКИ</p>
+                <label for="buy" class="name">СОВМЕСТНЫЕ ПОКУПКИ</label>
                 <p><a class="ref" href="#">Перейти</a></p>
             </div>
-            <article class="card">
+            <article class="card buy">
                 <img src="images/basket.jpg" title="Корзина" alt="Корзина" >
                 <p class="ref"><a class="orange-ref" href="#">Вместе покупать дешевле!</a></p>
             </article>

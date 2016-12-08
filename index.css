@@ -77,24 +77,9 @@ body
 
 .central-content
 {
-    grid-area: central-content;
-    display: grid;
-    -ms-grid-columns: 250px 250px;
-    grid-template-columns: 250px 250px;
-    -ms-grid-rows: 100px 100px 100px 70px 70px 
-        70px 70px 70px 70px 70px 70px 70px;
-    grid-template-rows: 100px 100px 100px 70px 70px 
-        70px 70px 70px 70px 70px 70px 70px;
-    grid-template-areas: 'details details'
-        'picture-story picture-story'
-        'articles articles'
-        'realty car-sale'
-        'realty-name1 car-name1'
-        'realty-name2 car-name2'
-        'realty-name3 car-name3'
-        'work caption'
-        'vacancy1 caption-name1'
-        'vacancy2 caption-name2';
+    display: flex;
+    flex-direction: column;
+    margin-right: 10px;
 }
 
 .container
@@ -130,65 +115,9 @@ body
     grid-area: right-content;
 }
 
-.caption-name2
-{
-    grid-area: caption-name2;
-}
-
-.vacancy2
-{
-    grid-area: vacancy2;
-}
-
-.caption-name1
-{
-    grid-area: caption-name1;
-}
-
-.vacancy1
-{
-    grid-area: vacancy1;
-}
-
 .work
 {
     margin-right: 10px;
-    grid-area: work;
-}
-
-.caption
-{
-    grid-area: caption;
-}
-
-.car-name3
-{
-    grid-area: car-name3;
-}
-
-.realty-name3
-{
-    grid-area: realty-name3;
-}
-
-.car-name2
-{
-    grid-area: car-name2;
-}
-
-.realty-name2
-{
-    grid-area: realty-name2;
-}
-
-.car-name1
-{
-    grid-area: car-name1;
-}
-
-.realty-name1
-{
-    grid-area: realty-name1;
 }
 
 .price
@@ -208,15 +137,22 @@ body
     border-bottom: 1px solid #ff4500;
 }
 
-.car-sale
-{
-    grid-area: car-sale;
-}
-
 .realty
 {
     margin-right: 10px;
-    grid-area: realty;
+    flex: 1 45%;
+}
+
+.two-columns
+{
+    display: flex;
+}
+
+.work,
+.caption,
+.car-sale
+{
+    flex: 1 45%;
 }
 
 .caption-news
@@ -291,6 +227,7 @@ body
 
 .name
 {
+    cursor: pointer;
     font: bold 11px arial;
     padding-top: 3px;
     margin: 0;
@@ -302,7 +239,8 @@ body
     padding: 10px;
 }
 
-.band p
+.band p,
+.band label .name
 {
     margin: 0;
 }
@@ -565,4 +503,76 @@ body
     text-align: center;
     text-decoration: none;
     color: #fff;
+}
+
+.name:before
+{
+    content: '↓';
+}
+
+.invisible-input
+{
+    display: none;
+}
+
+input[id='news']:checked + .band .name:before,
+input[id='about']:checked + .band .name:before,
+input[id='photo']:checked + .band .name:before,
+input[id='about-realty']:checked + .band .name:before,
+input[id='realty']:checked + .band .name:before,
+input[id='car']:checked + .band .name:before,
+input[id='caption']:checked + .band .name:before,
+input[id='work']:checked + .band .name:before,
+input[id='spec']:checked + .band .name:before,
+input[id='tv']:checked + .band .name:before,
+input[id='edu']:checked + .band .name:before,
+input[id='buy']:checked + .band .name:before
+{
+    content: '→';
+}
+
+input[id='news']:checked ~ .card,
+input[id='about']:checked ~ .card,
+input[id='photo']:checked ~ .card,
+input[id='about-realty']:checked ~ .card,
+input[id='realty']:checked ~ .card,
+input[id='realty']:checked ~ .house,
+input[id='car']:checked ~ .card,
+input[id='car']:checked ~ .car,
+input[id='work']:checked ~ .card,
+input[id='work']:checked ~ .vac,
+input[id='caption']:checked ~ .card,
+input[id='caption']:checked ~ .capt,
+input[id='spec']:checked ~ .spec,
+input[id='tv']:checked ~ .tv,
+input[id='edu']:checked ~ .edu,
+input[id='buy']:checked ~ .buy
+{
+    display: none;
+}
+
+@media (max-width: 768px) 
+{
+    .container 
+    {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .left-content 
+    {
+        display: block;
+    }
+
+    .header
+    {
+        display: block;
+    }
+
+    .title,
+    .themes
+    {
+        display: flex;
+        flex-direction: column;
+    }
 }
