@@ -33,7 +33,7 @@ a,
     border-collapse: collapse;
 }
 
-.table-money tr:nth-child(1)
+.table-money tr:first-child
 {
     border-bottom: 1px solid #000;
 }
@@ -259,4 +259,9 @@ footer
 {
     width: 30%;
     margin: 8px;
+}
+
+.copyWrite
+{
+    padding: 8px;
 }
