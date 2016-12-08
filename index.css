@@ -7,7 +7,7 @@ body
 {
     margin: 0 auto;
     max-width: 1500px;
-    min-width: 1000px;
+    min-width: 1100px;
     box-shadow: 0 0 15px #999;
     background: #fff;
     font: 11px Tahoma, verdana, sans-serif, arial;
@@ -331,6 +331,7 @@ header
 main
 {
     display: flex;
+    flex-wrap: wrap;
     background: #fff;
 }
 
@@ -351,7 +352,7 @@ main
 
 .main-column__third
 {
-    flex: 0 0 18%;
+    flex: 0 0 17%;
 }
 
 .main__column-subheader
@@ -367,6 +368,8 @@ main
 {
     padding: 3px 5px;
     border-right: 1px solid #777;
+    text-transform: uppercase;
+    font-weight: bold;
 }
 
 .main__column-subheader-link
@@ -420,10 +423,56 @@ main
     color: #000;
 }
 
+.main__offer-news
+{
+    display: flex;
+    margin-top: 10px;
+    font-size: 12px;
+}
+
+.main__offer-news-image
+{
+    margin: 10px;
+}
+
+.main__offer-news-link
+{
+    font-size: 12px;
+    color: #196199;
+}
+
+.main__offer-news-text
+{
+
+    margin-top: 10px;
+}
+
+.main__offer-news-phone
+{
+    font-weight: bold;
+}
+
 .main__column-subarticle
 {
     display: flex;
     font-size: 12px;
+}
+
+.main__guest
+{
+    font-size: 12px;
+    display: flex;
+}
+
+.main__guest-image,
+.main__guest-content
+{
+    margin: 10px 5px;
+}
+
+.main__guest-date
+{
+    font-weight: bold;
 }
 
 .main__column-subarticle-image
@@ -444,9 +493,22 @@ main
     border-bottom: 1px solid #fd5200;
 }
 
-.main__column-subarticle-link
+.main__column-subarticle-link,
+.main__generic-link
 {
     color: #196199;
+}
+
+.main__text-bold
+{
+    font-weight: bold;
+}
+
+.main-column__links
+{
+    font-size: 12px;
+    display: flex;
+    justify-content: space-around;
 }
 
 .main-column__four-columns
@@ -498,6 +560,31 @@ main
     font-weight: bold;
     text-align: center;
     font-size: 24px;
+}
+
+.main-days-media
+{
+    flex: 0 0 81%;
+    display: flex;
+    justify-content: space-between;
+}
+
+.main-days-media__item
+{
+    flex: 0 0 49.5%;
+}
+
+.main-days-media__image,
+.main-days-media__youtube
+{
+    width: 96%;
+    padding: 20px 10px;
+}
+
+.main-days-media__youtube
+{
+    height: 350px;
+    border: none;
 }
 
 footer
