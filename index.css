@@ -1,8 +1,6 @@
 html
 {
     background: #eee;
-    display: flex;
-    justify-content: center;
     font-family: Tahoma, verdana, sans-serif, arial;
     min-width: 1235px;
 }
@@ -11,14 +9,23 @@ body
 {
     max-width: 1600px;
     min-width: 1260px;
-    margin: 0;
+    margin: auto;
     background: #fff;
     box-shadow: 0 0 15px #999;
 }
 
 header,
-main section div,
 main section article,
+.description,
+.line-article,
+.row-links,
+.sub-guest,
+.bottom-link,
+.tourism-section,
+.sub-reality,
+.sub-catalog,
+.head,
+.day-blocks,
 .courses > div,
 .ul-column
 {
@@ -38,6 +45,7 @@ main section article,
 
 main,
 header div,
+header nav,
 .about ul,
 .ads li,
 .work li
@@ -73,13 +81,14 @@ footer div
     margin: 7px 0;
 }
 
+header nav,
 header div
 {
     display: flex;
     justify-content: space-around;
 }
 
-.second-row
+.second-nav-row
 {
     justify-content: flex-start;
     background-color: #ff5200;
@@ -91,14 +100,14 @@ header div
     font-size: 12px;
 }
 
-.nav
+.first-nav-row
 {
     background-color: #444;
 }
 
-.nav div span,
-.nav div a,
-.second-row div a
+.first-nav-row div span,
+.first-nav-row div a,
+.second-nav-row div a
 {
     color: #fff;
     display: block;
@@ -108,32 +117,32 @@ header div
     transition: color .3s ease 0s;
 }
 
-.second-row div
+.second-nav-row div
 {
     padding: 0 15px;
 }
 
-.nav div a:hover,
+.first-nav-row div a:hover,
 .orange-link,
-.third-row a:hover,
+.informers a:hover,
 article a:hover,
 .head a:last-child:hover
 {
     color: #ff5200;
 }
 
-.second-row div a:hover,
+.second-nav-row div a:hover,
 .orange-link:hover
 {
     color: #000;
 }
 
-.second-row div:nth-of-type(2n+1)
+.second-nav-row div:nth-of-type(2n+1)
 {
     background-color: #23ace3;
 }
 
-.third-row
+.informers
 {
     align-items: center;
     position: relative;
@@ -149,7 +158,7 @@ article a:hover,
     position: relative;
 }
 
-.third-row .row-block:not(:last-of-type)::after
+.informers .row-block:not(:last-of-type)::after
 {
     content: '';
     height: 70px;
@@ -462,7 +471,7 @@ footer a,
     text-transform: lowercase;
 }
 
-.third-row a,
+.informers a,
 article a
 {
     font-size: 12px;
@@ -492,7 +501,7 @@ article p
     color: #196199;
 }
 
-.main-article div
+.main-news
 {
     position: absolute;
     bottom: 0;
@@ -924,6 +933,7 @@ h4
 
 .promo-img
 {
+    display: flex;
     width: 230px;
     height: 50px;
 }
