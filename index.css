@@ -1,0 +1,458 @@
+body
+{
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+    max-width: 1400px;
+    min-width: 1100px;
+    margin: auto;
+    font: 11px Tahoma, Verdana, sans-serif;
+}
+
+.nav,
+.sub-nav
+{
+    display: flex;
+    font-weight: bold;
+}
+
+.nav
+{
+    justify-content: space-around;
+    height: 20px;
+    line-height: 20px;
+    background-color: #444;
+}
+
+.sub-nav
+{
+    height: 19px;
+    line-height: 19px;
+    background-color: #ff5200;
+}
+
+.nav-item,
+.sub-nav-item
+{
+    text-decoration: none;
+    color: #fff;
+    padding: 0 19px;
+}
+
+.sub-nav-item:nth-of-type(2n+1)
+{
+    background-color: #23ace3;
+}
+
+.nav-item:hover
+{
+    color: #ff5200;
+}
+
+.sub-nav-item:hover
+{
+    color: #434343;
+}
+
+header
+{
+    height: 80px;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    margin: 0 0 10px;
+    justify-content: space-between;
+}
+
+.header-item
+{
+    height: 70px;
+}
+
+.header-item:not(:first-child)
+{
+    border-left: 1px solid #cecece;
+    padding: 5px 25px 0;
+    box-sizing: border-box;
+}
+
+.header-item a
+{
+    font-size: .9em;
+    color: #000;
+}
+
+.header-item a:hover
+{
+    color: #ff5200;
+}
+
+.date
+{
+    color: #171717;
+    font-size: 1.3em;
+}
+
+.weather,
+.exchange-rate
+{
+    display: flex;
+}
+
+.now
+{
+    margin-right: 25px;
+}
+
+.weather-strong
+{
+    font-size: 1.3em;
+}
+
+.traffic-jams-mark
+{
+    background: url(images/traffic.png) no-repeat;
+    width: 24px;
+    height: 22px;
+    line-height: 22px;
+    background-size: 100%;
+    margin: 5px auto;
+    font-size: 1.3em;
+    font-weight: bold;
+    color: #fff;
+}
+
+.traffic-jams-caption
+{
+    font-size: 1.2em;
+    font-weight: bold;
+}
+
+.social-networks
+{
+    min-width: 240px;
+}
+
+.social-networks p
+{
+    margin: 0 0 5px;
+    font-size: 1.3em;
+    width: 100%;
+}
+
+.exchange-rate table:nth-of-type(1)
+{
+    margin-right: 10px;
+}
+
+.search-mail input
+{
+    border: 1px solid #dcdcdc;
+    padding: 0;
+    height: 16px;
+}
+
+.search
+{
+    display: flex;
+    margin: 10px 0 5px;
+}
+
+.mail
+{
+    display: flex;
+}
+
+.search-input
+{
+    width: 154px;
+    margin: 0 3px 0 4px;
+}
+
+.mail-login-input
+{
+    width: 85px;
+    margin: 0 2px 0 3px;
+}
+
+.mail-password-input
+{
+    width: 65px;
+    margin-right: 3px;
+}
+
+main
+{
+    flex-grow: 1;
+    display: flex;
+    margin: 0 10px;
+}
+
+.first-column
+{
+    width: 41%;
+}
+
+.first-column h4
+{
+    margin: 0;
+}
+
+.main-article
+{
+    position: relative;
+    height: 300px;
+    width: 100%;
+    background-image: url(images/DSC_3765.jpg);
+    background-size: 100%;
+    border: 1px solid #000;
+    box-sizing: border-box;
+}
+
+.main-article:hover
+{
+    border: 1px solid #fd5200;
+}
+
+.main-article-description
+{
+    position: absolute;
+    bottom: 0;
+    background: rgba(0, 0, 0, .7);
+    color: #fff;
+    border-left: 7px solid #fd5200;
+    padding: 5px 10px;
+    box-sizing: border-box;
+}
+
+.main-article-description-title
+{
+    font-size: 1.6em;
+    font-weight: bold;
+}
+
+.main-article-description-content
+{
+    font-size: 1.2em;
+    padding: 5px 0;
+}
+
+.subhead
+{
+    display: flex;
+    align-items: center;
+    position: relative;
+    font-size: .9em;
+    width: 100%;
+    height: 17px;
+    margin-bottom: 5px;
+    background-color: #e1e1e1;
+    border-top: 2px solid #333;
+}
+
+.subhead-marker
+{
+    background-color: #ff5200;
+    height: 17px;
+    width: 7px;
+}
+
+.subhead-header
+{
+    height: 11px;
+    line-height: 11px;
+    text-transform: uppercase;
+    padding: 0 10px;
+    box-sizing: border-box;
+    border-right: 1px solid #a3a3a3;
+}
+
+.subhead-link
+{
+    position: absolute;
+    right: 0;
+    bottom: 3px;
+    padding-right: 10px;
+    box-sizing: border-box;
+    color: #666;
+}
+
+.subhead-link:hover
+{
+    color: #ff5200;
+}
+
+.secondary-article,
+.thematic-article-content
+{
+    display: flex;
+    margin-bottom: 10px;
+}
+
+.secondary-article img,
+.whole-column img
+{
+    height: 50px;
+    padding-left: 5px;
+}
+
+.secondary-article-description
+{
+    margin-left: 10px;
+}
+
+.secondary-article-description-type
+{
+    color: #ff5200;
+    font-size: .9em;
+}
+
+.secondary-article-description-title
+{
+    font-size: 1.1em;
+    color: #000;
+}
+
+.secondary-article-description-title:hover
+{
+    color: #fd5200;
+}
+
+.second-column
+{
+    width: 41%;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    margin: 0 10px;
+    align-self: flex-start;
+}
+
+.half-column
+{
+    width: 49%;
+}
+
+.thematic-article-description
+{
+    font-size: 1.1em;
+    margin-left: 10px;
+}
+
+.thematic-article-description-title
+{
+    padding-bottom: 5px;
+    margin-bottom: 5px;
+    box-sizing: border-box;
+    font-weight: bold;
+    border-bottom: 1px solid #ff5200;
+}
+
+.nav-thematic-article
+{
+    margin: 0 0 15px 5px;
+}
+
+.sub-thematic-article
+{
+    display: flex;
+    margin: 0 0 15px 5px;
+}
+
+.sub-thematic-article-description
+{
+    margin-left: 5px;
+}
+
+.third-column
+{
+    width: 18%;
+}
+
+.third-column-item
+{
+    margin-bottom: 10px;
+}
+
+.tv-program table
+{
+    border-collapse: collapse;
+}
+
+.tv-program td
+{
+    border: 1px solid #888;
+}
+
+.joint-purchases-content
+{
+    display: flex;
+    align-items: center;
+}
+
+.orange-link
+{
+    font-weight: bold;
+    color: #ff5200;
+}
+
+.business button
+{
+    font-size: .9em;
+    background: #ff5200;
+    cursor: pointer;
+    color: #fff;
+    margin-bottom: 10px;
+}
+
+.business select
+{
+    height: 16px;
+    font-size: .9em;
+}
+
+.orange-link:hover
+{
+    color: #000;
+}
+
+footer
+{
+    display: flex;
+    justify-content: space-around;
+    font-size: 1.1em;
+    background: #e1e1e1;
+    border-top: 2px solid #000;
+    padding: 20px 0;
+    box-sizing: border-box;
+}
+
+.footer-first-column
+{
+    width: 45%;
+}
+
+.footer-second-column
+{
+    width: 30%;
+}
+
+.footer-third-column
+{
+    margin: auto 0;
+    width: 10%;
+}
+
+.footer-middle-paragraph
+{
+    margin: 20px 0 10px;
+}
+
+.thematic-article-description a,
+.nav-thematic-article a,
+.sub-thematic-article a,
+.blue-link,
+footer a
+{
+    color: #196199;
+}
