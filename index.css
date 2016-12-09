@@ -11,7 +11,6 @@ header
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 1500px;
     align-items: center;
 }
 
@@ -35,7 +34,7 @@ header
 .level1 span a:hover,
 .level1 label:hover
 {
-    color: #ff5200;
+    color: #20805e;
 }
 
 .level1
@@ -64,7 +63,7 @@ header
 
 .level2
 {
-    background: #ff5200;
+    background: #20805e;
 }
 
 .level2 span
@@ -232,39 +231,22 @@ a
     flex-direction: row;
 }
 
-.course
+.course tr,
+.course tr td
 {
-    margin: 0 5px;
-    align-self: flex-end;
+    text-align: center;
 }
 
-.l
+.color-course
 {
-    display: grid;
-    grid-template-areas: 'a b';
-}
-
-.p1,
-.st1,
-.currency
-{
-    grid-area: a;
-    margin: 0;
-}
-
-.p2,
-.st2,
-.price
-{
-    grid-area: b;
-    margin: 0;
+    color: #00ab6f;
 }
 
 .enter
 {
     width: 25px;
     height: 25px;
-    background: #ff5200;
+    background: #20805e;
     color: #fff;
 }
 
@@ -279,9 +261,9 @@ main
     display: flex;
     padding: 0 10px;
     width: 100%;
-    min-width: 1500px;
     box-sizing: border-box;
     justify-content: center;
+    min-height: calc(100vh - 400px);
 }
 
 .left,
@@ -290,7 +272,13 @@ main
 {
     display: flex;
     flex-direction: column;
-    margin: 5px;
+    padding: 5px;
+    box-sizing: border-box;
+}
+
+.left
+{
+    min-width: 300px;
 }
 
 .left,
@@ -344,15 +332,21 @@ main
     display: grid;
     grid-template-areas: 'a b';
     grid-template-columns: 100px auto;
-    grid-template-rows: 70px;
+    grid-template-rows: auto;
     margin: 10px 0 10px 10px;
+}
+
+.block-with-photo
+{
+    grid-area: a;
+    min-height: 70px;
 }
 
 .small-photo
 {
+    display: block;
     width: 100px;
-    height: 100%;
-    grid-area: a;
+    max-height: 100%;
     object-fit: cover;
 }
 
@@ -430,7 +424,7 @@ main
 
 .orange-text
 {
-    color: #ff5200;
+    color: #20805e;
 }
 
 .special
@@ -453,12 +447,12 @@ main
 
 .people:nth-child(odd) .ava
 {
-    border: 2px solid #ff5200;
+    border: 2px solid #20805e;
 }
 
 .people:nth-child(odd) .name
 {
-    color: #ff5200;
+    color: #20805e;
 }
 
 .people:nth-child(even) .ava
@@ -486,7 +480,7 @@ main
     display: grid;
     grid-template-areas: 'a b';
     grid-template-columns: 50px auto;
-    grid-template-rows: 70px;
+    grid-template-rows: auto;
     padding: 10px;
 }
 
@@ -518,7 +512,7 @@ main
 
 .choise
 {
-    background: #ff5200;
+    background: #20805e;
     color: #fff;
 }
 
@@ -540,7 +534,6 @@ footer
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 1500px;
     background: rgba(0,171,111,.4);
     box-shadow: 0 -5px 10px -4px #00ab6f;
 }
@@ -583,7 +576,7 @@ footer
 
 .link
 {
-    color: #ff5200;
+    color: #20805e;
     text-decoration: underline;
 }
 
