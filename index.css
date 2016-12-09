@@ -212,15 +212,21 @@ iframe
     overflow: hidden;
 }
 
-.first-column > div:nth-child(1) img:hover
+.first-column > div:nth-child(1) > a
+{
+    display: block;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.first-column > div:nth-child(1) > a:hover
 {
     border: 1px solid rgb(255, 82, 0);
 }
 
-.first-column > div:nth-child(1) img
+.first-column > div:nth-child(1) > a > img
 {
-    border: 1px solid #000;
-    width: 99%;
+    width: 100%;
 }
 
 main > div,
