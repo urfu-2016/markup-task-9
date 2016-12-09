@@ -1,8 +1,569 @@
 <!DOCTYPE html>
 <html lang="ru">
-<head>
-    <meta charset="utf-8">
-</head>
-<body>
-</body>
+    <head>
+        <meta charset="utf-8">
+        <title>E2</title>
+        <link rel="stylesheet" type="text/css" href="index.css">
+    </head>
+    <body>
+        <nav class="nav-top">
+            <a class="nav-item nav-top__item" href="#">Главная</a>
+            <a class="nav-item nav-top__item" href="#">Новости</a>
+            <a class="nav-item nav-top__item" href="#">Недвижимость</a>
+            <a class="nav-item nav-top__item" href="#">Авто</a>
+            <a class="nav-item nav-top__item" href="#">Работа</a>
+            <a class="nav-item nav-top__item" href="#">Объявления</a>
+            <a class="nav-item nav-top__item" href="#">Знакомства</a>
+            <a class="nav-item nav-top__item" href="#">Погода</a>
+            <a class="nav-item nav-top__item" href="#">Афиша</a>
+            <a class="nav-item nav-top__item" href="#">Форумы</a>
+            <a class="nav-item nav-top__item" href="#">Бизнес</a>
+            <a class="nav-item nav-top__item" href="#">Общение</a>
+            <div class="nav-item nav-top__item nav-top__dropdown-wrap">
+                <span class="nav-item nav-top__dropdown-header">Еще</span>
+                <div class="nav-top__dropdown">
+                    <a class="nav-item nav-top__dropdown-item" href="#">СП</a>
+                    <a class="nav-item nav-top__dropdown-item" href="#">Каталог</a>
+                    <a class="nav-item nav-top__dropdown-item" href="#">Справка</a>
+                    <a class="nav-item nav-top__dropdown-item" href="#">Еда</a>
+                    <a class="nav-item nav-top__dropdown-item" href="#">Отдых</a>
+                    <a class="nav-item nav-top__dropdown-item" href="#">Почта</a>
+                    <a class="nav-item nav-top__dropdown-item" href="#">Дом</a>
+                    <a class="nav-item nav-top__dropdown-item" href="#">Туризм</a>
+                    <a class="nav-item nav-top__dropdown-item" href="#">Здоровье</a>
+                </div>
+            </div>
+        </nav>
+        <nav class="nav-adv">
+            <a class="nav-item nav-adv__item" href="#">Новогодний спецпроект</a>
+            <a class="nav-item nav-adv__item" href="#">Ученые против мифов</a>
+            <a class="nav-item nav-adv__item" href="#">Башенки Екатеринбурга</a>
+            <a class="nav-item nav-adv__item" href="#">Осторожно, корь!</a>
+            <a class="nav-item nav-adv__item" href="#">Как чистят город</a>
+            <a class="nav-item nav-adv__item" href="#">Споры о храме-на-воде</a>
+        </nav>
+        <header>
+            <div class="header-section header-title">
+                <div class="header-title__name">
+                    <span class="header-title__name-yekt">Екатеринбург</span>
+                    <span class="header-title__name-online">Он-Лайн</span>
+                </div>
+                <div class="header-title__site">
+                    <span class="header-title__site-e1">E1.</span>
+                    <span class="header-title__site-ru">RU</span>
+                </div>
+            </div>
+            <div class="header-section header-date">
+                <div>Суббота</div>
+                <div>03 декабря</div>
+                <div class="header-date__time">13:29</div>
+            </div>
+            <div class="header-section header-weather">
+                <div class="header-weather__item">
+                    <a href="#">Сейчас</a>
+                    <div class="header-weather__item-grad">-12,7</div>
+                    <img src="images/d4.gif" alt="Облачно" title="Облачно">
+                </div>
+                <div class="header-weather__item">
+                    <a href="#">Завтра</a>
+                    <div class="header-weather__item-grad">-13</div>
+                    <img src="images/d4s2.gif" alt="Облачно, снег" title="Облачно, снег">
+                </div>
+            </div>
+            <div class="header-section header-traffic">
+                <a href="#">Пробки</a>
+                <div class="header-traffic__image">4</div>
+                <div class="header-traffic__caption">балла</div>
+            </div>
+            <div class="header-section header-links">
+                <div class="header-links__title">Читайте нас где удобно:</div>
+                <div class="header-links__list">
+                    <a href="https://goo.gl/3Dgc3A" target="_blank">
+                        <img src="images/vk_color.png" alt="VK" title="VK">
+                    </a>
+                    <a href="https://goo.gl/uXTL7c" target="_blank">
+                        <img src="images/fb_color.png" alt="Facebook" title="Facebook">
+                    </a>
+                    <a href="https://goo.gl/22oCWI" target="_blank">
+                        <img src="images/tw_color.png" alt="Twitter" title="Twitter">
+                    </a>
+                    <a href="https://goo.gl/A4VHze" target="_blank">
+                        <img src="images/ok_color.png" alt="Ok" title="Ok">
+                    </a>
+                    <a href="https://goo.gl/aQ6GDh" target="_blank">
+                        <img src="images/ya_color.png" alt="Yandex" title="Yandex">
+                    </a>
+                    <a href="https://goo.gl/GGYZH0" target="_blank">
+                        <img src="images/inst_color.png" alt="Instagram" title="Instagram">
+                    </a>
+                    <a href="https://goo.gl/3w54iS" target="_blank">
+                        <img src="images/tg_color.png" alt="Telegram" title="Telegram">
+                    </a>
+                </div>
+            </div>
+            <div class="header-section header-currency">
+                <div class="header-currency__cb">
+                    <div class="header-currency__cb-title" >
+                        <a href="#">Курс ЦБ</a>
+                    </div>
+                    <div class="header-currency__cb-row">
+                        <span class="header-currency__cb-name">USD</span>
+                        <span class="header-currency__value">64.15</span>
+                    </div>
+                    <div class="header-currency__cb-row">
+                        <span class="header-currency__cb-name">EUR</span>
+                        <span class="header-currency__value">68.47</span>
+                    </div>
+                </div>
+                <div class="header-currency__median">
+                    <div class="header-currency__median-title">
+                        <a href="#">Средневзвешенный</a>
+                        <div class="header-currency__median-row">
+                            <span>Покупка</span>
+                            <span>Продажа</span>
+                        </div>
+                    </div>
+                    <div class="header-currency__median-row">
+                        <span class="header-currency__value">62.42</span>
+                        <span class="header-currency__value">65.72</span>
+                    </div>
+                    <div class="header-currency__median-row">
+                        <span class="header-currency__value">66.64</span>
+                        <span class="header-currency__value">69.94</span>
+                    </div>
+                </div>
+            </div>
+            <div class="header-section header-form">
+                <form class="header-form__search" method="post">
+                    <label for="search">Поиск:</label>
+                    <input class="header-form__input header-form__input-full" type="text" name="search"
+                        id="search">
+                    <input class="header-form__button" type="submit">
+                </form>
+                <form class="header-form__login" method="post">
+                    <label for="email">Почта:</label>
+                    <input class="header-form__input header-form__input-half"
+                        type="email" name="email" id="email" placeholder="Имя @e1.ru">
+                    <input class="header-form__input header-form__input-half"
+                        type="password" name="password" id="password">
+                    <input class="header-form__button" type="submit">
+                </form>
+            </div>
+        </header>
+        <main>
+            <div class="main-column main-column__first">
+                <div class="main__news">
+                    <div class="main__news-header">
+                        <img class="main__news-header-image" src="images/traffic.jpg"
+                            alt="Traffic" title="Traffic">
+                        <a class="main__news-header-caption" href="#">
+                            Город пестрит ДТП: в вечерний час пик Екатеринбург встал в 8-балльных пробках
+                        </a>
+                    </div>       
+                    <div class="main__column-subheader">
+                        <span class="main__column-subheader-name">Новости</span>
+                        <a class="main__column-subheader-link" href="#">Все новости</a>
+                    </div>
+                    <div class="main__news-item">
+                        <img class="main__news-image" src="images/news1.jpg"
+                            alt="news1" title="news1">
+                        <div class="main__news-text">
+                            <a class="main__news-link" href="#">
+                                Следователи нашли новых жертв убийцы, который бросил у "Карнавала"
+                                труп в багажнике
+                            </a>
+                            <div class="main__news-caption">
+                                Расследованием занимается отдел по особо важным делам.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__news-item">
+                        <img class="main__news-image" src="images/news2.jpg"
+                            alt="news2" title="news2">
+                        <div class="main__news-text">
+                            <a class="main__news-link" href="#">
+                                В Екатеринбурге полиция ищет таксиста, который выкинул из машины пожилую
+                                пассажирку и уехал
+                            </a>
+                            <div class="main__news-caption">
+                                По словам женщины, водитель был недоволен тем, что она отказалась платить
+                                за ожидание.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__news-item">
+                        <img class="main__news-image" src="images/news2.jpg"
+                            alt="news2" title="news2">
+                        <div class="main__news-text">
+                            <a class="main__news-link" href="#">
+                                В Екатеринбурге полиция ищет таксиста, который выкинул из машины пожилую
+                                пассажирку и уехал
+                            </a>
+                            <div class="main__news-caption">
+                                По словам женщины, водитель был недоволен тем, что она отказалась платить
+                                за ожидание.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__news-item">
+                        <img class="main__news-image" src="images/news2.jpg"
+                            alt="news2" title="news2">
+                        <div class="main__news-text">
+                            <a class="main__news-link" href="#">
+                                В Екатеринбурге полиция ищет таксиста, который выкинул из машины пожилую
+                                пассажирку и уехал
+                            </a>
+                            <div class="main__news-caption">
+                                По словам женщины, водитель был недоволен тем, что она отказалась платить
+                                за ожидание.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__news-item">
+                        <img class="main__news-image" src="images/news2.jpg"
+                            alt="news2" title="news2">
+                        <div class="main__news-text">
+                            <a class="main__news-link" href="#">
+                                В Екатеринбурге полиция ищет таксиста, который выкинул из машины пожилую
+                                пассажирку и уехал
+                            </a>
+                            <div class="main__news-caption">
+                                По словам женщины, водитель был недоволен тем, что она отказалась платить
+                                за ожидание.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__news-item">
+                        <img class="main__news-image" src="images/news2.jpg"
+                            alt="news2" title="news2">
+                        <div class="main__news-text">
+                            <a class="main__news-link" href="#">
+                                В Екатеринбурге полиция ищет таксиста, который выкинул из машины пожилую
+                                пассажирку и уехал
+                            </a>
+                            <div class="main__news-caption">
+                                По словам женщины, водитель был недоволен тем, что она отказалась платить
+                                за ожидание.
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main__news-item">
+                        <img class="main__news-image" src="images/news2.jpg"
+                            alt="news2" title="news2">
+                        <div class="main__news-text">
+                            <a class="main__news-link" href="#">
+                                В Екатеринбурге полиция ищет таксиста, который выкинул из машины пожилую
+                                пассажирку и уехал
+                            </a>
+                            <div class="main__news-caption">
+                                По словам женщины, водитель был недоволен тем, что она отказалась платить
+                                за ожидание.
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="main__column-subheader">
+                    <span class="main__column-subheader-name">Сообщить новость</span>
+                    <a class="main__column-subheader-link" href="#">Перейти</a>
+                </div>
+                <div class="main__offer-news">
+                    <div class="main__offer-news-image">
+                        <img src="images/send_news.jpg" alt="Сообщить новость" title="Сообщить новость">
+                    </div>
+                    <div>
+                        <a class="main__offer-news-link" href="#">
+                            Отправьте свою новость в редакцию, расскажите о проблеме или подкиньте тему
+                            для публикации. Сюда же загружайте ваше видео и фото.
+                        </a>
+                        <div class="main__offer-news-text">
+                            <span>Круглосуточный телефон службы новостей</span>
+                            <span class="main__offer-news-phone">+7 (343) 34-555-34</span>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-column main-column__second">
+                <div>
+                    <div class="main__column-subheader">
+                        <span class="main__column-subheader-name">Подробности</span>
+                        <a class="main__column-subheader-link" href="#">Перейти</a>
+                    </div>
+                    <div class="main__column-subarticle">
+                        <img class="main__column-subarticle-image" src="images/article1.jpg"
+                            alt="article1" title="article1">
+                        <div class="main__column-subarticle-text">
+                            <div class="main__column-subarticle-header">
+                                В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд
+                                в детских садах
+                            </div>
+                            <a class="main__column-subarticle-link" href="#">
+                                Его уже опознали очевидцы.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main__column-subheader">
+                        <span class="main__column-subheader-name">Репортаж</span>
+                        <a class="main__column-subheader-link" href="#">Перейти</a>
+                    </div>
+                    <div class="main__column-subarticle">
+                        <img class="main__column-subarticle-image" src="images/article2.jpg"
+                            alt="article2" title="article2">
+                        <div class="main__column-subarticle-text">
+                            <div class="main__column-subarticle-header">
+                                Супертехнологии и опытные врачи: репортаж из турецкой клиники, где
+                                борются за жизни пациентов из разных стран
+                            </div>
+                            <a class="main__column-subarticle-link" href="#">
+                                Как турецким медикам удалосьдоказать, что их страна - это не только
+                                солнце и море.
+                            </a>
+                        </div>
+                    </div>
+                    <div class="main__column-subheader">
+                        <span class="main__column-subheader-name">Статьи о недвижимости</span>
+                        <a class="main__column-subheader-link" href="#">Перейти</a>
+                    </div>
+                    <div class="main__column-subarticle">
+                        <img class="main__column-subarticle-image" src="images/article3.jpg"
+                            alt="article3" title="article3">
+                        <div class="main__column-subarticle-text">
+                            <div class="main__column-subarticle-header">
+                                Европейская трёхэтажка, новостройка с бассейном и ещё 8 вариантов: как
+                                низко упали цены перед Новым годом
+                            </div>
+                            <a class="main__column-subarticle-link" href="#">
+                                Кто из застройщиков сделает самый щедрый подарок новосёлам.
+                            </a>
+                        </div>
+                    </div>
+                </div>
+                <div class="main-column__four-columns">
+                    <div class="main-column__four-columns-1">
+                        <div class="main__column-subheader">
+                            <span class="main__column-subheader-name">Недвижимость</span>
+                            <a class="main__column-subheader-link" href="#">Добавить объявления</a>
+                        </div>
+                        <div class="main-column__links">
+                            <a class="main__generic-link" href="#">Аренда</a>
+                            <a class="main__generic-link" href="#">Продажа квартир</a>
+                            <a class="main__generic-link" href="#">Новостройки</a>
+                        </div>
+                        <div class="main__news-item">
+                            <img class="main__news-image" src="images/flat1.jpg"
+                                alt="news2" title="news2">
+                            <div class="main__news-text">
+                                <a class="main__generic-link" href="#">Продам 3-комнатную квартиру</a>
+                                <address>Ленина, 160</address>
+                                <div class="main__news-caption">
+                                    <span>Цена:</span>
+                                    <span class="main__text-bold">1 890 000 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__news-item">
+                            <img class="main__news-image" src="images/flat2.jpg"
+                                alt="news2" title="news2">
+                            <div class="main__news-text">
+                                <a class="main__generic-link" href="#">Продам 1-комнатную квартиру</a>
+                                <address>Колмогорова, 73/2 стр</address>
+                                <div class="main__news-caption">
+                                    <span>Цена:</span>
+                                    <span class="main__text-bold">2 900 000 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-column__four-columns-2">
+                        <div class="main__column-subheader">
+                            <span class="main__column-subheader-name">Продажа авто, мото</span>
+                            <a class="main__column-subheader-link" href="#">Перейти</a>
+                        </div>
+                        <div class="main-column__links">
+                            <a class="main__generic-link" href="#">Легковые</a>
+                            <a class="main__generic-link" href="#">Грузовые</a>
+                            <a class="main__generic-link" href="#">Мото</a>
+                        </div>
+                        <div class="main__news-item">
+                            <img class="main__news-image" src="images/car1.jpg"
+                                alt="news2" title="news2">
+                            <div class="main__news-text">
+                                <a class="main__generic-link main__text-bold" href="#">
+                                    Volkswagen Passat CC
+                                </a>
+                                <div class="main__text-bold">620 000 руб.</div>
+                                <div>2011, механика, 1.8л</div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-column__four-columns-3">
+                        <div class="main__column-subheader">
+                            <span class="main__column-subheader-name">Работа</span>
+                            <a class="main__column-subheader-link" href="#">Перейти</a>
+                        </div>
+                        <div class="main__news-item">
+                            <img class="main__news-image" src="images/work1.png"
+                                alt="news2" title="news2">
+                            <div class="main__news-text">
+                                <a class="main__generic-link" href="#">Бухгалтер</a>
+                                <div>Стаж работы: 1-3 года</div>
+                                <div class="main__news-caption">
+                                    <span>Зарплата:</span>
+                                    <span class="main__text-bold">от 20 000 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="main-column__four-columns-4">
+                        <div class="main__column-subheader">
+                            <span class="main__column-subheader-name">Объявления</span>
+                            <a class="main__column-subheader-link" href="#">Перейти</a>
+                        </div>
+                        <div class="main__news-item">
+                            <img class="main__news-image" src="images/adv1.jpg"
+                                alt="news2" title="news2">
+                            <div class="main__news-text">
+                                <a class="main__generic-link main__text-bold" href="#">
+                                    Двери, окна, натяжные потолки
+                                </a>
+                                <div>
+                                    <span>Цена:</span>
+                                    <span class="main__text-bold">350 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                        <div class="main__news-item">
+                            <img class="main__news-image" src="images/adv2.jpg"
+                                alt="news2" title="news2">
+                            <div class="main__news-text">
+                                <a class="main__generic-link main__text-bold" href="#">
+                                    Двери купе, шкафы купе кухни
+                                </a>
+                                <div>
+                                    <span>Цена:</span>
+                                    <span class="main__text-bold">10 000 руб.</span>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <div class="main__column-subheader">
+                        <span class="main__column-subheader-name">Гость на E1</span>
+                        <a class="main__column-subheader-link" href="#">Перейти</a>
+                    </div>
+                    <div class="main__guest">
+                        <img class="main__guest-image" src="images/guest.jpg" alt="Гость" title="Гость">
+                        <div class="main__guest-content">
+                            <div class="main__guest-date">Сегодня</div>
+                            <a class="main__generic-link" href="#">
+                                Интервью с Ширли Мэнсон, вокалисткой группы Garbage
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="main-column main-column__third">
+                <div class="main__column-subheader">
+                    <span class="main__column-subheader-name">Спецпроект</span>
+                    <a class="main__column-subheader-link" href="#">Перейти</a>
+                </div>
+                <div class="main__column-promo">
+                    <img class="main__column-promo-image" src="images/promo.jpg"
+                        alt="promo" title="promo">
+                    <a class="main__column-promo-link" href="#">Репортаж из дома будущего</a>
+                </div>
+                <div class="main__column-subheader">
+                    <span class="main__column-subheader-name">Сейчас по TV</span>
+                    <a class="main__column-subheader-link" href="#">Перейти</a>
+                </div>
+                <div class="main__column-tv">Ничего интересного</div>
+            </div>
+            <div class="main-column main-days-media">
+                <div class="main-days-media__item">
+                    <div class="main__column-subheader">
+                        <span class="main__column-subheader-name">Фото дня</span>
+                    </div>
+                    <img class="main-days-media__image" src="images/blini-cat1.jpg"
+                        alt="Blini cat" title="Blini cat">
+                </div>
+                <div class="main-days-media__item">
+                    <div class="main__column-subheader">
+                        <span class="main__column-subheader-name">Видео дня</span>
+                    </div>
+                    <iframe class="main-days-media__youtube"
+                        src="https://www.youtube.com/embed/CAbqUjQ4ZCQ">
+                    </iframe>
+                </div>
+            </div>
+        </main>
+        <footer>
+            <div class="footer-side footer-side-left">
+                <div class="footer-links">
+                    <a class="footer-link footer-links__item" href="#">Информация для клиентов</a>
+                    <a class="footer-link footer-links__item" href="#">Реклама на E1</a>
+                    <a class="footer-link footer-links__item" href="#">Прайс-лист</a>
+                </div>
+                <address class="footer-address">
+                    <div class="footer-address__item">
+                        <span class="footer-address__item-bold">Единый номер:</span>
+                        <span>8-800-700-8-9-10 (звонок бесплатный)</span>
+                    </div>
+                    <div class="footer-address__item">
+                        <span class="footer-address__item-bold">Отдел продаж:</span>
+                        <span>
+                            <a class="footer-link" href="mailto:adv@corp.e1.ru">adv@corp.e1.ru</a>,
+                            (343) 379-49-10
+                        </span>
+                    </div>
+                    <div class="footer-address__item">
+                        <span class="footer-address__item-bold">Редакция:</span>
+                        <span>
+                            <a class="footer-link" href="mailto:news@corp.e1.ru">news@corp.e1.ru</a>,
+                            (343) 379-49-95, (343) 34-555-34 (круглосуточно - для новостей)
+                        </span>
+                    </div>
+                </address>
+                <div class="footer-misc">
+                    <a class="footer-link" href="#">Замечания и пожелания по работе отдела продаж</a>
+                    <div>
+                        Публикация материалов под меткой «На правах рекламы»
+                        и «Новости компаний» оплачена из средств рекламодателя
+                    </div>
+                </div>
+            </div>
+            <div class="footer-side footer-side-right">
+                <div class="footer-links">
+                    <a class="footer-link footer-links__item" href="#">iPhone</a>
+                    <a class="footer-link footer-links__item" href="#">Мобильная версия</a>
+                </div>
+                <div class="footer-emails">
+                    <div class="footer-emails__item">
+                        <span>Отзывы и предложения о работе портала:</span>
+                        <a class="footer-link" href="mailto:info@corp.e1.ru">info@corp.e1.ru</a>
+                    </div>
+                    <div class="footer-emails__item">
+                        <a class="footer-link" href="#">Центр поддержки пользователей портала E1.RU</a>
+                    </div>
+                    <div class="footer-emails__item">
+                        <span>Проблемы при работе с порталом:</span>
+                        <a class="footer-link" href="mailto:support@corp.e1.ru">support@corp.e1.ru</a>
+                    </div>
+                </div>
+                <div class="footer-misc">
+                    <a class="footer-link" href="#">Карта сайта</a>
+                </div>
+            </div>
+            <div class="footer-marks">
+                <div class="footer-marks__left">&copy; OOO</div>
+                <div class="footer-marks__right">
+                    <img class="footer-marks__image" src="images/intermediagroup.jpg"
+                        alt="Intermediagroup" title="Intermediagroup">
+                    <img class="footer-marks__image" src="images/n1_gray.png"
+                        alt="N1" title="N1">
+                    <img class="footer-marks__image" src="images/zarplata_gray.png"
+                        alt="Zarplata" title="Zarplata">
+                </div>
+            </div>
+        </footer>
+    </body>
 </html>
