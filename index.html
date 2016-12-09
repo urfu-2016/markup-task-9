@@ -8,7 +8,7 @@
 <body>
     <header>
         <input class="still" id="id_menu" type="checkbox">
-        <section class="level1 menu">
+        <nav class="level1 menu">
             <span><a href="">СП</a></span>
             <span><a href="">Каталог</a></span>
             <span><a href="">Справка</a></span>
@@ -18,7 +18,7 @@
             <span><a href="">Дом</a></span>
             <span><a href="">Туризм</a></span>
             <span><a href="">Здоровье</a></span>
-        </section>
+        </nav>
         <section class="level1">
             <span><a href="">Главная</a></span>
             <span><a href="">Новости</a></span>
@@ -45,7 +45,7 @@
         <section class="level3">
             <article class="logo">
                 <a href="logo">
-                    <img src="Images/Logo.png" alt="Екатериньург Он-лайн" width="194" height="85">
+                    <img src="Images/logo.png" alt="Екатериньург Он-лайн" width="194" height="85">
                 </a>
             </article>
             <article class="data">
@@ -92,60 +92,38 @@
             </article>
             <article class="economy">
                 <span class="course">
-                    <a href="">
-                        <span class="h">Курс валют</span>
-                    </a>
-                    <br>
-                    <a href="">
-                        <span class="l">
-                            <span class="currency">
-                                USD
-                            </span>
-                            <span class="price">
-                                64.15
-                            </span>
-                        </span>
-                        <span class="l">
-                            <span class="currency">
-                                EUR
-                            </span>
-                            <span class="price">
-                                68.47
-                            </span>
-                        </span>
-                    </a>
-                </span>
-                <span class="course">
-                    <a href="">
-                        <span class="h">Средневзвешенный</span>
-                        <span class="l">
-                            <span class="p1">Покупка</span>
-                            <span class="p2">Продажа</span>
-                        </span>
-                    </a>
-                    <br>
-                    <a href="">
-                        <span class="l">
-                            <span class="st1">
-                                62.42
-                            </span>
-                            <span class="st2">
-                                65.72
-                            </span>
-                        </span>
-                        <span class="l">
-                            <span class="st1">
-                                66.64
-                            </span>
-                            <span class="st2">
-                                69.94
-                            </span>
-                        </span>
-                    </a>
+                    <table>
+                        <tr>
+                            <td colspan="2" rowspan="2">
+                                Курс
+                            </td>
+                            <td colspan="2">
+                                Средневзвешенный
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Покупка
+                            </td>
+                            <td>Продажа</td>
+                        </tr>
+                        <tr>
+                            <td class="color-course">USD</td>
+                            <td>64.15</td>
+                            <td>62.42</td>
+                            <td>65.72</td>
+                        </tr>
+                        <tr>
+                            <td class="color-course">EUR</td>
+                            <td>68.47</td>
+                            <td>66.64</td>
+                            <td>69.94</td>
+                        </tr>
+                    </table>
                 </span>
             </article>
             <article class="block">
-                <span class="search">
+               <span class="search">
                     Поиск:
                     <input type="text" size="35">
                     <button class="enter">&rsaquo;</button>
@@ -173,7 +151,9 @@
             <article class="new map">
                 <article class="head-map">Новости</article>
                 <article class="blocks">
-                    <img src="Images/3.jpg" class="small-photo" alt="ДТП" title="ДТП">
+                    <span class="block-with-photo">
+                        <img src="Images/3.jpg" class="small-photo" alt="ДТП" title="ДТП">
+                    </span>
                     <span class="text-header">
                         <a href="">
                             <strong>
@@ -187,7 +167,9 @@
                     </span>
                 </article>
                 <article class="blocks">
-                    <img src="Images/4.jpg" class="small-photo" alt="Спорт" title="Спорт">
+                    <span class="block-with-photo">
+                        <img src="Images/4.jpg" class="small-photo" alt="Спорт" title="Спорт">
+                    </span>
                     <span class="text-header">
                         <a href="">
                             <strong>
@@ -202,7 +184,9 @@
                     </span>
                 </article>
                 <article class="blocks">
-                    <img src="Images/5.jpg" class="small-photo" alt="Акция" title="Акция">
+                    <span class="block-with-photo">
+                        <img src="Images/5.jpg" class="small-photo" alt="Акция" title="Акция">
+                    </span>
                     <span class="text-header">
                         <a href="">
                             <strong>
@@ -217,7 +201,9 @@
                     </span>
                 </article>
                 <article class="blocks">
-                    <img src="Images/6.jpg" class="small-photo" alt="Конкурс" title="Конкурс">
+                    <span class="block-with-photo">
+                        <img src="Images/6.jpg" class="small-photo" alt="Конкурс" title="Конкурс">
+                    </span>
                     <span class="text-header">
                         <a href="">
                             <strong>
@@ -234,7 +220,9 @@
             <article class="news-report map">
                 <article class="head-map">Сообщить новость</article>
                 <article class="blocks">
-                    <img src="Images/send_news.jpg" class="small-photo" alt="Нов" title="Нов">
+                    <span class="block-with-photo">
+                        <img src="Images/send_news.jpg" class="small-photo" alt="Нов" title="Нов">
+                    </span>
                     <span class="text-header">
                         <a href="">
                             <strong>
@@ -253,7 +241,9 @@
             <article class="feature-articles map">
                 <article class="head-map">Тематические статьи</article>
                 <article class="blocks">
-                    <img src="Images/7.jpg" class="small-photo" alt="Спорт" title="Спорт">
+                    <span class="block-with-photo">
+                        <img src="Images/7.jpg" class="small-photo" alt="Спорт" title="Спорт">
+                    </span>
                     <span class="text-header">
                         <a href="">
                             <strong>
@@ -267,7 +257,9 @@
                     </span>
                 </article>
                 <article class="blocks">
-                    <img src="Images/8.jpg" class="small-photo" alt="Советы" title="Советы">
+                    <span class="block-with-photo">
+                        <img src="Images/8.jpg" class="small-photo" alt="Советы" title="Советы">
+                    </span>
                     <span class="text-header">
                         <a href="">
                             <strong>
@@ -281,7 +273,9 @@
                     </span>
                 </article>
                 <article class="blocks">
-                    <img src="Images/9.jpg" class="small-photo" alt="Новость" title="Новость">
+                    <span class="block-with-photo">
+                        <img src="Images/9.jpg" class="small-photo" alt="Новость" title="Новость">
+                    </span>
                     <span class="text-header">
                         <a href="">
                             <strong>
