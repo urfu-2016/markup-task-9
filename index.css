@@ -2,14 +2,14 @@ html,
 body
 {
     min-width: 1280px;
-    height: 100%;
-    margin: 0;
+    max-width: 1400px;
+    margin: auto;
     overflow: visible;
 }
 
 nav,
 .top-menu,
-.main-header,
+.header3,
 main,
 main > div,
 .two-columns,
@@ -21,6 +21,11 @@ header
     display: flex;
 }
 
+.all ~ a
+{
+    background-color: rgb(255, 0, 0);
+}
+
 header
 {
     padding-bottom: 1%;
@@ -30,17 +35,9 @@ nav,
 .top-menu,
 table
 {
-    
     font-size: 11px;
     font-family: Tahoma, verdana, sans-serif, arial;
     font-weight: bold;
-}
-
-nav > div,
-.top-menu > div,
-.main-header > div
-{
-    flex-shrink: 0;
 }
 
 nav,
@@ -98,7 +95,7 @@ nav a:visited,
     color: rgb(68, 68, 68);
 }
 
-.main-header
+.header3
 {
     margin-top: 10px;
     text-align: center;
@@ -128,6 +125,26 @@ nav a:visited,
     padding-bottom: 10px;
 }
 
+time
+{
+    font-size: 10px;
+    opacity: .7;
+}
+
+.a-color-black > a,
+.a-color-black > a:visited
+{
+    color: #000;
+    font-size: 16px;
+}
+
+iframe
+{
+    border: 0;
+    width: 100%;
+    height: 320px;
+}
+
 .usd,
 .eur
 {
@@ -135,7 +152,7 @@ nav a:visited,
     color: #369;
 }
 
-.bold
+.font-bold
 {
     font-weight: bold;
 }
@@ -163,12 +180,12 @@ nav a:visited,
     background: url('http://www.e1.ru/static/img/informers/search.png') no-repeat;
 }
 
-.border-left
+.border-on-the-left
 {
     border-left: 1px solid rgba(0, 0, 0, .2);
 }
 
-.border-right
+.border-on-the-right
 {
     border-right: 1px solid rgba(0, 0, 0, .2);
 }
@@ -213,12 +230,12 @@ header
 }
 
 main,
-.main-header
+.header3
 {
     margin: 0 1%;
 }
 
-.main-header > div
+.header3 > div
 {
     padding: 0 1%;
 }
@@ -243,8 +260,8 @@ main,
     font-family: Tahoma, verdana, sans-serif, arial;
 }
 
-.thumbnail ~ .bold > a:hover,
-.thumbnail ~ .bold > a:visited:hover
+.thumbnail ~ .font-bold > a:hover,
+.thumbnail ~ .font-bold > a:visited:hover
 {
     color: #ff5200;
 }
@@ -324,10 +341,34 @@ hr
 
 .two-columns .subtitle-style ~ div a,
 .two-columns .subtitle-style ~ div a:visited,
-table ~ a
+table ~ a,
+ul li > a,
+.all-category
 {
     color: rgba(0, 0, 255, .7);
     font-size: 12px;
+}
+
+ul
+{
+    -webkit-padding-start: 0;
+}
+
+li
+{
+    list-style-type: none;
+    float: left;
+    width: 33%;
+}
+
+.all-category
+{
+    clear: both;
+}
+
+li a img
+{
+    float: left;
 }
 
 body > hr
@@ -357,12 +398,17 @@ footer a
     padding-top: 100px;
 }
 
+nav
+{
+    position: relative;
+}
+
 .all
 {
     position: absolute;
     flex-direction: column;
-    right: 0;
     top: 0;
+    right: 0;
     text-align: center;
     padding: 4px 17px;
     display: none;
