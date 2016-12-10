@@ -15,8 +15,7 @@ body
     display: flex;
     min-height: 100vh;
     flex-direction: column;
-    font-family: Tahoma, verdana, sans-serif, arial;
-    font-size: 12px;
+    font: 12px Tahoma, verdana, sans-serif, arial;
 }
 
 .header
