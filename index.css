@@ -659,6 +659,12 @@ select
     cursor: pointer;
 }
 
+iframe
+{
+    width: 100%;
+    min-height: 250px;
+}
+
 /* Media blocks */
 
 .control,
@@ -691,6 +697,7 @@ select
     border-top: 20px solid #b5b5b5;
     border-bottom: 20px solid #b5b5b5;
     max-height: 250px;
+    min-height: 250px;
     margin-bottom: 10px;
 }
 
@@ -730,6 +737,10 @@ select
 .grid-container
 {
     display: -ms-grid;
+}
+
+.grid-container
+{
     display: grid;
     min-width: 800px;
 }
