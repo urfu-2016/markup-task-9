@@ -1,6 +1,17 @@
 body
 {
+    -ms-flex-pack: center;
+    justify-content: center;
+    display: -ms-flexbox;
+    /* stylelint-disable */
+    display: flex;
+    /* stylelint-enable */
     margin: 0;
+}
+
+a
+{
+    color: #196199;
 }
 
 .icon
@@ -63,10 +74,13 @@ body
 .header
 {
     grid-area: header;
+    display: -ms-grid;
+    /* stylelint-disable */
     display: grid;
-    -ms-grid-columns: 110px 110px 110px 80px 100px 100px 
+    /* stylelint-enable */
+    -ms-grid-columns: 110px 110px 110px 100px 100px 100px 
         110px 110px 110px 100px 90px 90px 90px;
-    grid-template-columns: 110px 110px 110px 80px 100px 100px 
+    grid-template-columns: 110px 110px 100px 110px 100px 100px 
         110px 110px 110px 100px 90px 90px 90px;
     -ms-grid-rows: 20px 20px 80px;
     grid-template-rows: 20px 20px 80px;
@@ -77,14 +91,21 @@ body
 
 .central-content
 {
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
+    -ms-flex-direction: column;
     flex-direction: column;
     margin-right: 10px;
 }
 
 .container
 {
+    display: -ms-grid;
+    /* stylelint-disable */
     display: grid;
+    /* stylelint-enable */
     -ms-grid-columns: 530px 530px 270px;
     grid-template-columns: 530px 530px 270px;
     -ms-grid-rows: 130px 800px 150px;
@@ -96,23 +117,88 @@ body
 
 .main-footer
 {
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
     -ms-flex-align: center;
     align-items: center;
-    font-size: 20px;
+    font-size: 12px;
+    font-family: arial;
     background-color: #ccc;
     grid-area: footer;
+}
+
+.refs a
+{
+    padding-right: 10px;
+}
+
+.refs
+{
+    font-weight: bold;
+    margin: 5px;
+}
+
+.addr p
+{
+    margin: 5px;
+}
+
+.e2
+{
+    font-size: 15px;
+    margin-left: 5px;
+}
+
+.rate
+{
+    margin-left: 5px;
+}
+
+.rating
+{
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.rating,
+.info
+{
+    margin: 10px;
+    display: -ms-flexbox;
+    /* stylelint-disable */
+    display: flex;
+    /* stylelint-enable */
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
+.category
+{
+    font-weight: bold;
 }
 
 .orange-ref
 {
     font: bold 12px arial;
-    color: #ff7f00;
+    color: #ff5200;
 }
 
 .right-content
 {
     grid-area: right-content;
+}
+
+.logo,
+.date,
+.weather,
+.traffic-jams,
+.society,
+.course,
+.form
+{
+    margin-top: 8px;
 }
 
 .work
@@ -140,18 +226,23 @@ body
 .realty
 {
     margin-right: 10px;
+    -ms-flex: 1 45%;
     flex: 1 45%;
 }
 
 .two-columns
 {
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
 }
 
 .work,
 .caption,
 .car-sale
 {
+    -ms-flex: 1 45%;
     flex: 1 45%;
 }
 
@@ -178,13 +269,24 @@ body
 .card
 {
     margin: 8px;
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
 }
 
-.card img
+.news-img
 {
     padding: 5px;
-    max-width: 60px;
+    max-width: 70px;
+    -ms-flex: 1 10%;
+    flex: 1 10%;
+}
+
+.caption-img
+{
+    padding: 5px;
+    max-width: 50px;
     -ms-flex: 1 10%;
     flex: 1 10%;
 }
@@ -213,16 +315,36 @@ body
     color: #000;
 }
 
+.description-news p .about-news:hover
+{
+    color: #ff5200;
+}
+
+.orange-ref:hover
+{
+    color: #000;
+}
+
+.tv-ref
+{
+    font-size: 12px;
+    font-family: arial;
+}
+
 .band
 {
     border-left: 10px solid #ff4500;
     padding-left: 5px;
     padding-right: 5px;
+    /* stylelint-disable-line */
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
     -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #ccc;
-    margin-top: 5px;
+    border-top: 1px solid #000;
 }
 
 .name
@@ -236,7 +358,7 @@ body
 .left-content
 {
     grid-area: left-content;
-    padding: 10px;
+    padding-right: 10px;
 }
 
 .band p,
@@ -248,19 +370,6 @@ body
 .description
 {
     font-size: 20px;
-}
-
-.main-news
-{
-    position: relative;
-    color: #fff;
-    font-family: arial;
-}
-
-.main-news:hover
-{
-    cursor: pointer;
-    border: 1px solid #ff4500;
 }
 
 .shadow
@@ -290,9 +399,12 @@ body
 .form
 {
     grid-area: frm;
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
     -ms-flex-pack: distribute;
-    justify-content: space-around;
+    justify-content: center;
     -ms-flex-align: center;
     align-items: center;
     -ms-flex-direction: column;
@@ -313,10 +425,29 @@ body
 .login,
 .search
 {
+    margin-top: 5px;
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
     -ms-flex-align: center;
     align-items: center;
     font-size: 12px;
+}
+
+.mail-input1
+{
+    width: 81px;
+}
+
+.mail-input2
+{
+    width: 82px;
+}
+
+.search-input
+{
+    width: 172px;
 }
 
 .go
@@ -333,13 +464,17 @@ body
 .course
 {
     grid-area: crs;
+    /* stylelint-disable-line */
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
     font-size: 10px;
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -ms-flex-align: center;
     align-items: center;
-    border-right: 1px solid;
+    border-right: 1px solid #ccc;
 }
 
 .main-img
@@ -349,9 +484,13 @@ body
 
 .society
 {
-    border-right: 1px solid;
+    border-right: 1px solid #ccc;
     grid-area: sct;
+    /* stylelint-disable-line */
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -ms-flex-align: center;
@@ -360,11 +499,31 @@ body
     flex-direction: column;
 }
 
+.tv p
+{
+    margin-left: 10px;
+}
+
+.chanel
+{
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    margin: 10px;
+    font-size: 12px;
+    display: -ms-flexbox;
+    /* stylelint-disable */
+    display: flex;
+    /* stylelint-enable */
+}
+
 .traffic-jams
 {
-    border-right: 1px solid;
+    border-right: 1px solid #ccc;
     grid-area: traffic;
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -ms-flex-align: center;
@@ -375,13 +534,16 @@ body
 
 .weather
 {
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
     -ms-flex-pack: distribute;
     justify-content: space-around;
     -ms-flex-align: center;
     align-items: center;
     grid-area: weather;
-    border-right: 1px solid;
+    border-right: 1px solid #ccc;
 }
 
 .count-points
@@ -417,6 +579,11 @@ body
     font-weight: bold;
 }
 
+.ref:hover
+{
+    color: #ff5200;
+}
+
 .ref
 {
     font-size: 12px;
@@ -428,11 +595,60 @@ body
     padding-right: 10px;
 }
 
+.edu
+{
+    font-size: 12px;
+    margin: 10px;
+}
+
+.orange-button
+{
+    font-size: 10px;
+    background: #ff5200;
+    cursor: pointer;
+    color: #fff;
+    font-family: Tahoma, verdana, sans-serif, arial;
+}
+
+.select-theme
+{
+    width: 120px;
+}
+
+.select-org
+{
+    width: 140px;
+}
+
+.choose
+{
+    margin: 0;
+}
+
+.chanel img
+{
+    margin-right: 5px;
+    -ms-flex-item-align: start;
+    align-self: flex-start;
+}
+
+.tv
+{
+    display: -ms-flexbox;
+    /* stylelint-disable */
+    display: flex;
+    /* stylelint-enable */
+    -ms-flex-pack: justify;
+    justify-content: space-between;
+    -ms-flex-direction: column;
+    flex-direction: column;
+}
+
 .date
 {
     padding: 5px;
-    border-right: 1px solid;
-    border-left: 1px solid;
+    border-right: 1px solid #ccc;
+    border-left: 1px solid #ccc;
     font: 14px arial;
     padding-top: 10px;
     text-align: center;
@@ -453,7 +669,10 @@ body
 {
     padding-top: 3px;
     grid-area: ttl;
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
     -ms-flex-pack: distribute;
     justify-content: space-around;
     font: bold 12px arial;
@@ -463,7 +682,10 @@ body
 .themes
 {
     grid-area: thm;
+    display: -ms-flexbox;
+    /* stylelint-disable */
     display: flex;
+    /* stylelint-enable */
     font: bold 12px arial;
 }
 
@@ -515,6 +737,20 @@ body
     display: none;
 }
 
+.main-news:hover
+{
+    cursor: pointer;
+    border: 1px solid #ff4500;
+}
+
+.main-news
+{
+    position: relative;
+    color: #fff;
+    font-family: arial;
+    border: 1px solid #000;
+}
+
 input[id='news']:checked + .band .name:before,
 input[id='about']:checked + .band .name:before,
 input[id='photo']:checked + .band .name:before,
@@ -555,8 +791,42 @@ input[id='buy']:checked ~ .buy
 {
     .container 
     {
+        display: -ms-flexbox;
+        /* stylelint-disable */
         display: flex;
+        /* stylelint-enable */
+        -ms-flex-direction: column;
         flex-direction: column;
+    }
+
+    .logo,
+    .spec,
+    .edu
+    {
+        text-align: center;
+    }
+    
+    .container .in-header,
+    .container .date
+    {
+        border: 0;
+    }
+
+    .chanel
+    {
+        -ms-flex-pack: normal;
+        justify-content: normal;
+    }
+
+    .buy
+    {
+        -ms-flex-pack: center;
+        justify-content: center;
+    }
+
+    .form
+    {
+        margin-bottom: 10px;
     }
 
     .left-content 
@@ -569,10 +839,20 @@ input[id='buy']:checked ~ .buy
         display: block;
     }
 
+    .themes a:last-child
+    {
+        text-align: center;
+        padding-left: 0;
+    }
+
     .title,
     .themes
     {
+        display: -ms-flexbox;
+        /* stylelint-disable */
         display: flex;
+        /* stylelint-enable */
+        -ms-flex-direction: column;
         flex-direction: column;
     }
 }
