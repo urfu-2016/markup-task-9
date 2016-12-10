@@ -1,0 +1,433 @@
+html,
+body
+{
+    min-width: 1280px;
+    max-width: 1400px;
+    margin: auto;
+    overflow: visible;
+}
+
+nav,
+.top-menu,
+.header3,
+main,
+main > div,
+.two-columns,
+footer,
+.all:target,
+.all,
+header
+{
+    display: flex;
+}
+
+.all ~ a
+{
+    background-color: rgb(255, 0, 0);
+}
+
+header
+{
+    padding-bottom: 1%;
+}
+
+nav,
+.top-menu,
+table
+{
+    font-size: 11px;
+    font-family: Tahoma, verdana, sans-serif, arial;
+    font-weight: bold;
+}
+
+nav,
+.all
+{
+    background-color: #434343;
+}
+
+nav
+{
+    padding: 4px 2%;
+    justify-content: space-between;
+}
+
+.top-menu
+{
+    background-color: rgb(255, 82, 0);
+    width: 100%;
+    justify-content: flex-start;
+}
+
+nav div a:visited:hover,
+nav div a:hover
+{
+    color: rgb(255, 82, 0);
+}
+
+nav a,
+.top-menu a,
+nav a:visited,
+.top-menu a:visited
+{
+    text-decoration: none;
+    color: #fff;
+}
+
+.top-menu div:nth-child(2n+1) a
+{
+    background-color: rgb(35, 172, 227);
+}
+
+.top-menu div
+{
+    margin: 4px 0;
+}
+
+.top-menu a
+{
+    padding: 4px 20px;
+}
+
+.top-menu a:visited:hover,
+.top-menu a:hover
+{
+    color: rgb(68, 68, 68);
+}
+
+.header3
+{
+    margin-top: 10px;
+    text-align: center;
+}
+
+.tapon div a
+{
+    font-size: 11px;
+    padding: 0 0 40px;
+}
+
+.tapon div:nth-child(2)
+{
+    background: linear-gradient(to top, #006400, #2e8b57);
+    border-radius: 20px;
+    width: 3ch;
+    margin: auto;
+}
+
+.curs
+{
+    border-bottom: 1px solid gray;
+}
+
+.cb
+{
+    padding-bottom: 10px;
+}
+
+time
+{
+    font-size: 10px;
+    opacity: .7;
+}
+
+.a-color-black > a,
+.a-color-black > a:visited
+{
+    color: #000;
+    font-size: 16px;
+}
+
+iframe
+{
+    border: 0;
+    width: 100%;
+    height: 320px;
+}
+
+.usd,
+.eur
+{
+    font-family: Tahoma, verdana, sans-serif, arial;
+    color: #369;
+}
+
+.font-bold
+{
+    font-weight: bold;
+}
+
+.name-e1
+{
+    width: 60px;
+}
+
+.name-e1 ~ input:nth-child(2)
+{
+    width: 50px;
+}
+
+.search
+{
+    width: 119px;
+}
+
+.submit
+{
+    padding: 0 10px 4px 8px;
+    margin-top: 10px;
+    border: 0;
+    background: url('http://www.e1.ru/static/img/informers/search.png') no-repeat;
+}
+
+.border-on-the-left
+{
+    border-left: 1px solid rgba(0, 0, 0, .2);
+}
+
+.border-on-the-right
+{
+    border-right: 1px solid rgba(0, 0, 0, .2);
+}
+
+.first-column,
+.second-column
+{
+    width: 40%;
+}
+
+.third-column
+{
+    width: 15%;
+}
+
+.first-column > div > a > img
+{
+    width: 100%;
+}
+
+.first-column > div,
+.third-column > div
+{
+    overflow: hidden;
+}
+
+.first-column > div:nth-child(1) > a
+{
+    display: block;
+    background-color: #000;
+    border: 1px solid #000;
+}
+
+.first-column > div:nth-child(1) > a:hover
+{
+    border: 1px solid rgb(255, 82, 0);
+}
+
+.first-column > div:nth-child(1) > a > img
+{
+    width: 100%;
+}
+
+main > div,
+header
+{
+    flex-direction: column;
+}
+
+main,
+.header3
+{
+    margin: 0 1%;
+}
+
+.header3 > div
+{
+    padding: 0 1%;
+}
+
+.thumbnail
+{
+    margin: 1%;
+    float: left;
+}
+
+.orange
+{
+    color: #ff5200;
+    font-size: 10px;
+    font-family: Tahoma, verdana, sans-serif, arial;
+}
+
+.thumbnail ~ div > a
+{
+    color: #000;
+    font-size: 13px;
+    font-family: Tahoma, verdana, sans-serif, arial;
+}
+
+.thumbnail ~ .font-bold > a:hover,
+.thumbnail ~ .font-bold > a:visited:hover
+{
+    color: #ff5200;
+}
+
+.description
+{
+    font-size: 12px;
+}
+
+.subtitle a,
+.subtitle a:visited,
+.additionally a:visited,
+.additionally a
+{
+    font-size: 10px;
+    font-family: Tahoma, verdana, sans-serif, arial;
+    color: #000;
+}
+
+.subtitle a,
+.subtitle a:visited
+{
+    text-decoration: none;
+    text-transform: uppercase;
+}
+
+.additionally a:visited,
+.additionally a
+{
+    opacity: .5;
+}
+
+.subtitle
+{
+    float: left;
+    padding: 1px 10px;
+    border-right: 1px solid rgba(0, 0, 0, .3);
+    border-left: 10px solid rgb(255, 82, 0);
+}
+
+main,
+.two-columns,
+header
+{
+    justify-content: space-between;
+}
+
+.additionally
+{
+    padding-right: 10px;
+    float: right;
+}
+
+.subtitle-style
+{
+    height: 20px;
+    background-color: rgb(225, 225, 225);
+    border-top: 2px solid #434343;
+}
+
+hr
+{
+    -webkit-margin-after: 0;
+    border-color: rgb(255, 82, 0);
+}
+
+.two-columns > div
+{
+
+    width: 49%;
+}
+
+.two-columns .subtitle-style ~ div
+{
+    clear: both;
+}
+
+.two-columns .subtitle-style ~ div a,
+.two-columns .subtitle-style ~ div a:visited,
+table ~ a,
+ul li > a,
+.all-category
+{
+    color: rgba(0, 0, 255, .7);
+    font-size: 12px;
+}
+
+ul
+{
+    -webkit-padding-start: 0;
+}
+
+li
+{
+    list-style-type: none;
+    float: left;
+    width: 33%;
+}
+
+.all-category
+{
+    clear: both;
+}
+
+li a img
+{
+    float: left;
+}
+
+body > hr
+{
+    border-color: #000;
+}
+
+footer
+{
+    background-color: rgba(0, 0, 0, .3);
+}
+
+footer > div:nth-child(1),
+footer > div:nth-child(2)
+{
+    padding: 30px;
+    width: 50%;
+}
+
+footer a
+{
+    color: rgba(0, 0, 255, .5);
+}
+
+.copy
+{
+    padding-top: 100px;
+}
+
+nav
+{
+    position: relative;
+}
+
+.all
+{
+    position: absolute;
+    flex-direction: column;
+    top: 0;
+    right: 0;
+    text-align: center;
+    padding: 4px 17px;
+    display: none;
+}
+
+td
+{
+    background-color: #fff;
+}
+
+table
+{
+    border-spacing: 1px 1px;
+    background-color: #bebebe;
+    border-collapse: separate;
+}
