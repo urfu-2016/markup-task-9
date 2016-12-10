@@ -176,7 +176,9 @@ a
 
 .main-header .date
 {
-    vertical-align: middle;
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
     text-align: center;
     flex: 0 1 100px;
 }
@@ -197,6 +199,10 @@ a
 {
     flex: 0 1 15%;
     text-align: center;
+
+    display: flex;
+    flex-flow: column;
+    justify-content: center;
 }
 
 .social p
@@ -217,6 +223,7 @@ a
 .main-header .traffic
 {
     display: flex;
+    justify-content: space-around;
     flex-flow: column wrap;
     flex: 0 1 100px;
 }
@@ -256,57 +263,34 @@ a
     display: inline-block;
 }
 
-.search
+.main-header > .search
 {
+    font-size: .7em;
     display: flex;
     flex-flow: column;
     justify-content: center;
-    font-size: .7em;
+    align-items: center;
 }
 
-.search form
+.form-item
 {
-    display: flex;
-    justify-content: flex-start;
-    align-content: ce;
-    width: 100%;
+    display: inline-block;
+    vertical-align: middle;
 }
 
-.search-form
+.form-content input
 {
-    width: 100%;
+    box-sizing: border-box;
 }
 
-.search-form label
+.form-content.search-form-item input
 {
-    width: 80%;
-    display: block;
+    width: 150px;
 }
 
-.search-form label input
+.form-content.login-form-item input
 {
-    width: 75%;
-}
-
-.login-form
-{
-    display: flex;
-}
-
-.login-form-item
-{
-    width: 50%;
-}
-
-input.login-form-item
-{
-    width: 25%;
-    margin-right: 9px;
-}
-
-.login-form-item input
-{
-    width: 66%;
+    width: 75px;
 }
 
 .submit
