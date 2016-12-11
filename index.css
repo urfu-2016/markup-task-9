@@ -14,6 +14,11 @@ body
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 }
 
+h2
+{
+    margin: 0;
+}
+
 a,
 .table-money
 {
@@ -261,7 +266,7 @@ footer
     margin: 8px;
 }
 
-.copyWrite
+.copy-write
 {
     padding: 8px;
 }
