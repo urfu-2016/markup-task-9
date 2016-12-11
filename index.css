@@ -190,7 +190,7 @@ header
 }
 
 .today,
-.weather-now,
+.weather-block,
 .traffic-jam,
 .social-buttons,
 .exchange-rates,
@@ -232,7 +232,7 @@ a.logo
 
 .today
 {
-    background: url('img/ic_calendar.svg') no-repeat 16px 0;
+    background: url('img/ic_calendar.svg') no-repeat 16px 2px;
     display: block;
     -webkit-flex-grow: 1;
     flex-grow: 1;
@@ -241,15 +241,26 @@ a.logo
 
 .today span
 {
+    display: block;
+}
+
+.today .date
+{
     color: #212121;
     font-weight: bold;
 }
 
-.today-event
+span.today-event
 {
     color: #727272;
     display: block;
+    font-weight: 400;
     margin: 8px 0 0;
+}
+
+.weather-block
+{
+    display: flex;
 }
 
 .weather-now,
@@ -262,14 +273,19 @@ a.logo
     text-align: center;
 }
 
-.weather-now
-{
-    padding: 4px 8px 4px 16px;
-}
-
+.weather-now,
 .weather-tomorrow
 {
-    padding: 4px 16px 4px 8px;
+    background-position: 50% 100%;
+    background-repeat: no-repeat;
+    padding: 4px 8px 28px;
+}
+
+.weather-now p,
+.weather-tomorrow p
+{
+    margin: 0;
+    white-space: nowrap;
 }
 
 .weather-now a,
@@ -295,20 +311,6 @@ a.logo
     font-weight: bold;
 }
 
-.weather-icon,
-.traffic-jam-value
-{
-    display: inline-block;
-    height: 24px;
-    margin-top: 4px;
-    width: 24px;
-}
-
-.weather-icon
-{
-    background-repeat: no-repeat;
-}
-
 .weather-snowy
 {
     background-image: url('img/ic_weather_snowy.svg');
@@ -325,13 +327,19 @@ a.logo
     padding: 4px 16px;
 }
 
+.traffic-jam span
+{
+    display: block;
+}
+
 .traffic-jam-value
 {
     background-color: #ffeb3b;
     border-radius: 50%;
     font-weight: 700;
     line-height: 24px;
-    margin-bottom: 4px;
+    margin: 4px auto;
+    width: 24px;
 }
 
 .social-buttons
@@ -490,7 +498,6 @@ a.logo
     height: 29px;
     margin: 0 2px;
     width: 30px;
-    font-size: 0;
 }
 
 .textfield-label
@@ -544,10 +551,17 @@ main
 
 .large-header
 {
+    box-sizing: border-box;
     font-size: 1.71em;
     font-weight: 400;
-    margin-right: 16px;
-    margin-left: 16px;
+    padding-right: 8px;
+    padding-left: 8px;
+}
+
+.main-entry .large-header
+{
+    padding-right: 16px;
+    padding-left: 16px;
 }
 
 .main-entry
@@ -698,6 +712,7 @@ a.flat-button:hover
     align-items: flex-start;
     -webkit-justify-content: space-between;
     justify-content: space-between;
+    padding: 0 8px;
 }
 
 .card-primary-color .title-container,
@@ -715,6 +730,8 @@ a.flat-button:hover
 .news-section .title-container .flat-button
 {
     margin-top: 16px;
+    margin-right: 0;
+    margin-left: 0;
 }
 
 .card-entry
@@ -810,6 +827,11 @@ a.flat-button:hover
     margin: 0 0 8px;
 }
 
+.card-entry .title
+{
+    margin-bottom: 4px;
+}
+
 .card-entry .title a
 {
     color: #212121;
@@ -835,7 +857,7 @@ a.flat-button:hover
 .card-entry .description
 {
     color: #616161;
-    margin: 4px 0 0;
+    margin: 0;
 }
 
 .card-entry.narrow-entry .description
@@ -1058,6 +1080,7 @@ a.acquintance-item
 .photo-date
 {
     color: rgba(255, 255, 255, .65);
+    display: block;
     font-size: .93em;
     margin: 0 16px 24px;
 }
@@ -1310,4 +1333,157 @@ footer a:visited
     {
         opacity: 1;
     }
+}
+
+@media only screen and (max-width: 1200px)
+{
+
+    .top-navigation li,
+    .main-news li
+    {
+        padding-left: 12px;
+        padding-right: 12px;
+    }
+
+    .today
+    {
+        background-position: 8px 2px;
+        padding-right: 8px;
+        padding-left: 40px;
+    }
+
+    .weather-now,
+    .weather-tomorrow,
+    .traffic-jam
+    {
+        -webkit-flex-basis: 72px;
+        flex-basis: 72px;
+        min-width: 72px;
+    }
+
+    .weather-now
+    {
+        padding-right: 4px;
+        padding-left: 8px;
+    }
+
+    .weather-tomorrow
+    {
+        padding-right: 8px;
+        padding-left: 4px;
+    }
+
+    .traffic-jam
+    {
+        padding-right: 8px;
+        padding-left: 8px;
+    }
+
+    .exchange-rates
+    {
+        padding: 0 12px;
+    }
+
+    a.acquintance-item
+    {
+        padding: 0;
+    }
+
+    .main-photo
+    {
+        height: 250px;
+    }
+
+    .preview-image
+    {
+        height: 80px;
+    }
+
+}
+
+@media only screen and (max-width: 1024px)
+{
+
+    .weather-block
+    {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .weather-now,
+    .weather-tomorrow
+    {
+        background-position: 8px 50%;
+        -webkit-flex-basis: auto;
+        flex-basis: auto;
+        min-width: 100px;
+        padding: 4px 8px 4px 32px;
+    }
+
+    .social-buttons
+    {
+        -webkit-flex-basis: 120px;
+        flex-basis: 120px;
+        min-width: 120px;
+    }
+
+    .social-buttons p span
+    {
+        display: none;
+    }
+
+    .textfield
+    {
+        width: 75px;
+    }
+
+    .two-column-container
+    {
+        -webkit-flex-direction: column;
+        -ms-flex-direction: column;
+        flex-direction: column;
+    }
+
+    .two-column-container .column
+    {
+        margin-right: 0;
+        width: 100%;
+    }
+
+    .two-column-container .column:last-child
+    {
+        margin-left: 0;
+    }
+
+    .news-section .category-item
+    {
+        width: 50%;
+    }
+
+    .global-column
+    {
+        padding-right: 16px;
+    }
+
+    .global-column
+    {
+        width: 37%;
+    }
+
+    .right-bar
+    {
+        width: 26%;
+    }
+
+    .main-photo
+    {
+        height: 200px;
+    }
+
+    .preview-image
+    {
+        height: 64px;
+    }
+
 }

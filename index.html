@@ -73,32 +73,33 @@
             <h1 class="logo-descr">Екатеринбург Он-Лайн</h1>
         </div>
         <time class="today" datetime="2016-12-02 20:38">
-            <span>Пятница, 20:38</span><br>2 декабря 2016
+            <span class="date">Пятница, 20:38</span>
+            <span>2 декабря 2016</span>
             <span class="today-event">Международный день борьбы за отмену рабства</span>
         </time>
-        <div class="weather-now">
-            <a href="#" target="_blank" rel="nofollow">Сейчас</a>
-            <br><span class="weather-temperature">-14,1</span>°C
-            <br><span class="weather-icon weather-snowy"></span>
-        </div>
-        <div class="weather-tomorrow">
-            <a href="#" target="_blank" rel="nofollow">Завтра</a>
-            <br><span class="weather-temperature">-12</span>°C
-            <br><span class="weather-icon weather-partlycloudy"></span>
+        <div class="weather-block">
+            <div class="weather-now weather-snowy">
+                <a href="#" target="_blank" rel="nofollow">Сейчас</a>
+                <p><span class="weather-temperature">-14,1</span>°C</p>
+            </div>
+            <div class="weather-tomorrow weather-partlycloudy">
+                <a href="#" target="_blank" rel="nofollow">Завтра</a>
+                <p><span class="weather-temperature">-12</span>°C</p>
+            </div>
         </div>
         <div class="traffic-jam">
             <a href="#" target="_blank" rel="nofollow">Пробки</a>
-            <br><span class="traffic-jam-value">4</span>
-            <br>Балла
+            <span class="traffic-jam-value">4</span>
+            <span>Балла</span>
         </div>
         <div class="social-buttons">
-            <p>Читайте нас где удобно:</p>
-            <a class="social-button vk" href="#"></a>
-            <a class="social-button facebook" href="#"></a>
-            <a class="social-button twitter" href="#"></a>
-            <a class="social-button ok" href="#"></a>
-            <a class="social-button instagram" href="#"></a>
-            <a class="social-button telegram" href="#"></a>
+            <p>Читайте нас<span> где удобно</span>:</p>
+            <a class="social-button vk" href="#" target="_blank" rel="nofollow"></a>
+            <a class="social-button facebook" href="#" target="_blank" rel="nofollow"></a>
+            <a class="social-button twitter" href="#" target="_blank" rel="nofollow"></a>
+            <a class="social-button ok" href="#" target="_blank" rel="nofollow"></a>
+            <a class="social-button instagram" href="#" target="_blank" rel="nofollow"></a>
+            <a class="social-button telegram" href="#" target="_blank" rel="nofollow"></a>
         </div>
         <div class="exchange-rates">
             <a href="#" target="_blank" rel="nofollow">Курс ЦБ</a>
@@ -114,12 +115,12 @@
         <div class="search-email">
             <form name="form1" method="get" action="#" class="search">
                 <input type="text" name="query" placeholder="Поиск..." class="textfield">
-                <input type="submit" value="Найти" class="textfield-submit">
+                <button type="submit" title="Найти" class="textfield-submit"></button>
             </form>
             <form name="form2" method="post" action="#" class="email-login">
                 <input type="text" name="email" placeholder="Почта@e2.ru" class="textfield">
                 <input type="password" name="password" placeholder="Пароль" class="textfield">
-                <input type="submit" value="Войти" class="textfield-submit">
+                <button type="submit" title="Войти" class="textfield-submit"></button>
             </form>
         </div>
     </header>
@@ -144,8 +145,10 @@
                     <a class="flat-button" href="#">Все новости</a>
                 </div>
                 <article class="card-entry">
-                    <img src="img/news-entry-1.jpg" alt="Украденный телевизор"
-                         title="Украденный телевизор" class="entry-image">
+                    <a href="#">
+                        <img src="img/news-entry-1.jpg" alt="Украденный телевизор"
+                            title="Украденный телевизор" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Ограб&shy;ле&shy;ние по-се&shy;ров&shy;ски: пар&shy;ни
@@ -158,8 +161,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/news-entry-2.jpg" alt="Столкновение авто"
-                         title="Столкновение авто" class="entry-image">
+                    <a href="#">
+                        <img src="img/news-entry-2.jpg" alt="Столкновение авто"
+                             title="Столкновение авто" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">В Ека&shy;те&shy;рин&shy;бур&shy;ге
@@ -174,8 +179,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/news-entry-3.jpg" alt="Аэропорт"
-                         title="Аэропорт" class="entry-image">
+                    <a href="#">
+                        <img src="img/news-entry-3.jpg" alt="Аэропорт"
+                             title="Аэропорт" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">&quot;Со&shy;ве&shy;ту&shy;ют пи&shy;сать за&shy;яв&shy;ки
@@ -189,8 +196,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/news-entry-4.jpg" alt="Пляж"
-                         title="Пляж" class="entry-image">
+                    <a href="#">
+                        <img src="img/news-entry-4.jpg" alt="Пляж"
+                             title="Пляж" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Жизнь и спорт вме&shy;сте: в
@@ -205,8 +214,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/news-entry-5.jpg" alt="Место ДТП"
-                         title="Место ДТП" class="entry-image">
+                    <a href="#">
+                        <img src="img/news-entry-5.jpg" alt="Место ДТП"
+                             title="Место ДТП" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Меж&shy;ду Бог&shy;да&shy;но&shy;ви&shy;чем и Су&shy;хим
@@ -218,8 +229,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/news-entry-6.jpg" alt="Volkswagen"
-                         title="Volkswagen" class="entry-image">
+                    <a href="#">
+                        <img src="img/news-entry-6.jpg" alt="Volkswagen"
+                             title="Volkswagen" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Ека&shy;те&shy;рин&shy;бург&shy;ский ав&shy;то&shy;центр
@@ -234,8 +247,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/news-entry-7.jpg" alt="Мост на Токарей - Халтурина"
-                         title="Мост на Токарей - Халтурина" class="entry-image">
+                    <a href="#">
+                        <img src="img/news-entry-7.jpg" alt="Мост на Токарей - Халтурина"
+                             title="Мост на Токарей - Халтурина" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">В Ека&shy;те&shy;рин&shy;бур&shy;ге
@@ -249,8 +264,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/news-entry-8.jpg" alt="Спектакль о дружбе русских и украинцев"
-                         title="Спектакль о дружбе русских и украинцев" class="entry-image">
+                    <a href="#">
+                        <img src="img/news-entry-8.jpg" alt="Спектакль о дружбе русских и украинцев"
+                             title="Спектакль о дружбе русских и украинцев" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Ни&shy;ко&shy;лай Ко&shy;ля&shy;да по&shy;ста&shy;вил
@@ -265,8 +282,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/news-entry-9.jpg" alt="Парк Зелёная Роща"
-                         title="Парк Зелёная Роща" class="entry-image">
+                    <a href="#">
+                        <img src="img/news-entry-9.jpg" alt="Парк Зелёная Роща"
+                             title="Парк Зелёная Роща" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Парк &quot;Зе&shy;лё&shy;ная Ро&shy;ща&quot; нач&shy;нут
@@ -279,8 +298,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/news-entry-10.jpg" alt="Университет Огайо"
-                         title="Университет Огайо" class="entry-image">
+                    <a href="#">
+                        <img src="img/news-entry-10.jpg" alt="Университет Огайо"
+                             title="Университет Огайо" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Рус&shy;ский сту&shy;дент по&shy;стра&shy;дал во вре&shy;мя
@@ -310,7 +331,10 @@
                         </h3>
                         <p class="description">
                             Круг&shy;ло&shy;су&shy;точ&shy;ный те&shy;ле&shy;фон служ&shy;бы
-                            но&shy;во&shy;стей<br><strong>+7 (343) 34-555-34</strong>
+                            но&shy;во&shy;стей
+                        </p>
+                        <p class="description">
+                            <strong><a href="tel:+7 (343) 34-555-34">+7 (343) 34-555-34</a></strong>
                         </p>
                     </div>
                 </article>
@@ -364,8 +388,10 @@
                     <h4 class="large-header">Тематические статьи</h4>
                 </div>
                 <article class="card-entry">
-                    <img src="img/feature-article-1.jpg" alt="Манекен"
-                         title="Манекен" class="entry-image">
+                    <a href="#">
+                        <img src="img/feature-article-1.jpg" alt="Манекен"
+                             title="Манекен" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Остол&shy;бе&shy;не&shy;ли на ра&shy;бо&shy;те</a>
@@ -380,8 +406,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/feature-article-2.jpg" alt="Звонок"
-                         title="Звонок" class="entry-image">
+                    <a href="#">
+                        <img src="img/feature-article-2.jpg" alt="Звонок"
+                             title="Звонок" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Вас уво&shy;лят. Хо&shy;ти&shy;те знать по&shy;че&shy;му?</a>
@@ -394,8 +422,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/feature-article-3.jpg" alt="Уборка снега"
-                         title="Уборка снега" class="entry-image">
+                    <a href="#">
+                        <img src="img/feature-article-3.jpg" alt="Уборка снега"
+                             title="Уборка снега" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Ти&shy;пы сне&shy;го&shy;убор&shy;щи&shy;ков: чем
@@ -409,8 +439,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/feature-article-4.jpg" alt="Не наступайте на грабли"
-                         title="Не наступайте на грабли" class="entry-image">
+                    <a href="#">
+                        <img src="img/feature-article-4.jpg" alt="Не наступайте на грабли"
+                             title="Не наступайте на грабли" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">&laquo;Это су&shy;ще&shy;ствен&shy;но сни&shy;жа&shy;ет
@@ -423,8 +455,10 @@
                     </div>
                 </article>
                 <article class="card-entry">
-                    <img src="img/feature-article-5.jpg" alt="У страха глаза велики"
-                         title="У страха глаза велики" class="entry-image">
+                    <a href="#">
+                        <img src="img/feature-article-5.jpg" alt="У страха глаза велики"
+                             title="У страха глаза велики" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Ох уж эти стра&shy;хи</a>
@@ -445,8 +479,10 @@
                     <a class="flat-button" href="#">Перейти</a>
                 </div>
                 <article class="card-entry">
-                    <img src="img/details-entry-1.jpg" alt="Храм-на-воде"
-                         title="Храм-на-воде" class="entry-image">
+                    <a href="#">
+                        <img src="img/details-entry-1.jpg" alt="Храм-на-воде"
+                             title="Храм-на-воде" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             &quot;Вас под&shy;ста&shy;ви&shy;ли&quot;:
@@ -466,8 +502,10 @@
                     <a class="flat-button" href="#">Перейти</a>
                 </div>
                 <article class="card-entry">
-                    <img src="img/picture-story-1.jpg" alt="Берёза"
-                         title="Берёза" class="entry-image">
+                    <a href="#">
+                        <img src="img/picture-story-1.jpg" alt="Берёза"
+                             title="Берёза" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             &quot;Это очень ред&shy;кое яв&shy;ле&shy;ние&quot;: учё&shy;ные
@@ -488,8 +526,10 @@
                     <a class="flat-button" href="#">Перейти</a>
                 </div>
                 <article class="card-entry">
-                    <img src="img/property-entry-1.jpg" alt="Дом юстиции"
-                         title="Дом юстиции" class="entry-image">
+                    <a href="#">
+                        <img src="img/property-entry-1.jpg" alt="Дом юстиции"
+                             title="Дом юстиции" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             В Ека&shy;те&shy;рин&shy;бур&shy;ге вос&shy;ста&shy;но&shy;вят
@@ -509,39 +549,42 @@
                         <h4 class="large-header">Недвижимость</h4>
                     </div>
                     <article class="card-entry narrow-entry">
-                        <img src="img/property-adv-entry-1.jpg" alt="Квартира на Софьи Перовской"
-                             title="Квартира на Софьи Перовской" class="entry-image">
+                        <a href="#">
+                            <img src="img/property-adv-entry-1.jpg" alt="Квартира на Софьи Перовской"
+                                 title="Квартира на Софьи Перовской" class="entry-image">
+                        </a>
                         <div class="description-container">
                             <h3 class="title">
                                 <a href="#">Продам 1-комн. кв.</a>
                             </h3>
-                            <p class="description">
-                                Софьи Перовской, 106<br>Цена: <strong>3 250 000 руб.</strong>
-                            </p>
+                            <p class="description">Софьи Перовской, 106</p>
+                            <p class="description">Цена: <strong>3 250 000 руб.</strong></p>
                         </div>
                     </article>
                     <article class="card-entry narrow-entry">
-                        <img src="img/property-adv-entry-2.jpg" alt="Квартира на Фурманова, 125"
-                             title="Квартира на Фурманова, 125" class="entry-image">
+                        <a href="#">
+                            <img src="img/property-adv-entry-2.jpg" alt="Квартира на Фурманова, 125"
+                                 title="Квартира на Фурманова, 125" class="entry-image">
+                        </a>
                         <div class="description-container">
                             <h3 class="title">
                                 <a href="#">Продам 3-комн. кв.</a>
                             </h3>
-                            <p class="description">
-                                Фурманова, 125<br>Цена: <strong>5 000 000 руб.</strong>
-                            </p>
+                            <p class="description">Фурманова, 125</p>
+                            <p class="description">Цена: <strong>5 000 000 руб.</strong></p>
                         </div>
                     </article>
                     <article class="card-entry narrow-entry">
-                        <img src="img/property-adv-entry-3.jpg" alt="Квартира на Фурманова, 124"
-                             title="Квартира на Фурманова, 124" class="entry-image">
+                        <a href="#">
+                            <img src="img/property-adv-entry-3.jpg" alt="Квартира на Фурманова, 124"
+                                 title="Квартира на Фурманова, 124" class="entry-image">
+                        </a>
                         <div class="description-container">
                             <h3 class="title">
                                 <a href="#">Продам 2-комн. кв.</a>
                             </h3>
-                            <p class="description">
-                                Фурманова, 124<br>Цена: <strong>4 961 865 руб.</strong>
-                            </p>
+                            <p class="description">Фурманова, 124</p>
+                            <p class="description">Цена: <strong>4 961 865 руб.</strong></p>
                         </div>
                     </article>
                     <a class="flat-button" href="#">Добавить объявление</a>
@@ -551,39 +594,42 @@
                         <h4 class="large-header">Продажа авто</h4>
                     </div>
                     <article class="card-entry narrow-entry">
-                        <img src="img/car-entry-1.jpg" alt="Audi Q7"
-                             title="Audi Q7" class="entry-image">
+                        <a href="#">
+                            <img src="img/car-entry-1.jpg" alt="Audi Q7"
+                                 title="Audi Q7" class="entry-image">
+                        </a>
                         <div class="description-container">
                             <h3 class="title">
                                 <a href="#">Audi Q7</a>
                             </h3>
-                            <p class="description">
-                                Цена: <strong>2 139 000 руб.</strong><br>2013, автомат, 3л
-                            </p>
+                            <p class="description">Цена: <strong>2 139 000 руб.</strong></p>
+                            <p class="description">2013, автомат, 3л</p>
                         </div>
                     </article>
                     <article class="card-entry narrow-entry">
-                        <img src="img/car-entry-2.jpg" alt="Honda Civic"
-                             title="Honda Civic" class="entry-image">
+                        <a href="#">
+                            <img src="img/car-entry-2.jpg" alt="Honda Civic"
+                                 title="Honda Civic" class="entry-image">
+                        </a>
                         <div class="description-container">
                             <h3 class="title">
                                 <a href="#">Honda Civic</a>
                             </h3>
-                            <p class="description">
-                                Цена: <strong>759 196 руб.</strong><br>2012, автомат, 1.8л
-                            </p>
+                            <p class="description">Цена: <strong>759 196 руб.</strong></p>
+                            <p class="description">2012, автомат, 1.8л</p>
                         </div>
                     </article>
                     <article class="card-entry narrow-entry">
-                        <img src="img/car-entry-3.jpg" alt="Chevrolet Niva"
-                             title="Chevrolet Niva" class="entry-image">
+                        <a href="#">
+                            <img src="img/car-entry-3.jpg" alt="Chevrolet Niva"
+                                 title="Chevrolet Niva" class="entry-image">
+                        </a>
                         <div class="description-container">
                             <h3 class="title">
                                 <a href="#">Chevrolet Niva (2123)</a>
                             </h3>
-                            <p class="description">
-                                Цена: <strong>489 000 руб.</strong><br>2016, механика, 1.7л
-                            </p>
+                            <p class="description">Цена: <strong>489 000 руб.</strong></p>
+                            <p class="description">2016, механика, 1.7л</p>
                         </div>
                     </article>
                     <a class="flat-button" href="#">Спецпредложения</a>
@@ -595,8 +641,10 @@
                     <a class="flat-button" href="#">Перейти</a>
                 </div>
                 <article class="card-entry person-entry">
-                    <img src="img/guest-entry-1.jpg" alt="Ширли Мэнсон"
-                         title="Ширли Мэнсон" class="entry-image">
+                    <a href="#">
+                        <img src="img/guest-entry-1.jpg" alt="Ширли Мэнсон"
+                             title="Ширли Мэнсон" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <p class="description">
                             Сегодня
@@ -608,8 +656,10 @@
                     </div>
                 </article>
                 <article class="card-entry person-entry">
-                    <img src="img/guest-entry-2.jpg" alt="Максим Агалаков"
-                         title="Максим Агалаков" class="entry-image">
+                    <a href="#">
+                        <img src="img/guest-entry-2.jpg" alt="Максим Агалаков"
+                             title="Максим Агалаков" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <p class="description">
                             Сегодня
@@ -623,8 +673,10 @@
                     </div>
                 </article>
                 <article class="card-entry person-entry">
-                    <img src="img/guest-entry-3.jpg" alt="Александр Пушной"
-                         title="Александр Пушной" class="entry-image">
+                    <a href="#">
+                        <img src="img/guest-entry-3.jpg" alt="Александр Пушной"
+                             title="Александр Пушной" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <p class="description">
                             Скоро
@@ -652,9 +704,8 @@
                             <h3 class="title">
                                 <a href="#">Контролер-упаковщик</a>
                             </h3>
-                            <p class="description">
-                                Стаж работы: без опыта<br>Зарплата: <strong>от  25 000 руб.</strong>
-                            </p>
+                            <p class="description">Стаж работы: без опыта</p>
+                            <p class="description">Зарплата: <strong>от  25 000 руб.</strong></p>
                         </div>
                     </article>
                     <article class="card-entry narrow-entry">
@@ -662,9 +713,8 @@
                             <h3 class="title">
                                 <a href="#">Риелтор, (работа в Центре)</a>
                             </h3>
-                            <p class="description">
-                                Стаж работы: без опыта<br>Зарплата: <strong>от  50 000 руб.</strong>
-                            </p>
+                            <p class="description">Стаж работы: без опыта</p>
+                            <p class="description">Зарплата: <strong>от  50 000 руб.</strong></p>
                         </div>
                     </article>
                     <article class="card-entry narrow-entry">
@@ -672,9 +722,9 @@
                             <h3 class="title">
                                 <a href="#">Менеджер по продажам</a>
                             </h3>
+                            <p class="description">Стаж работы: 1-3 года</p>
                             <p class="description">
-                                Стаж работы: 1-3 года<br>Зарплата:
-                                <strong>от 39 000 до 60 000 руб.</strong>
+                                Зарплата: <strong>от 39 000 до 60 000 руб.</strong>
                             </p>
                         </div>
                     </article>
@@ -689,8 +739,10 @@
                         <h4 class="large-header">Объявления</h4>
                     </div>
                     <article class="card-entry narrow-entry">
-                        <img src="img/advertisement-entry-1.jpg" alt="Мужской костюм"
-                             title="Мужской костюм" class="entry-image">
+                        <a href="#">
+                            <img src="img/advertisement-entry-1.jpg" alt="Мужской костюм"
+                                 title="Мужской костюм" class="entry-image">
+                        </a>
                         <div class="description-container">
                             <h3 class="title">
                                 <a href="#">Муж&shy;ской ко&shy;стюм</a>
@@ -701,8 +753,10 @@
                         </div>
                     </article>
                     <article class="card-entry narrow-entry">
-                        <img src="img/advertisement-entry-2.jpg" alt="Горнолыжные ботинки"
-                             title="Горнолыжные ботинки" class="entry-image">
+                        <a href="#">
+                            <img src="img/advertisement-entry-2.jpg" alt="Горнолыжные ботинки"
+                                 title="Горнолыжные ботинки" class="entry-image">
+                        </a>
                         <div class="description-container">
                             <h3 class="title">
                                 <a href="#">Гор&shy;но&shy;лыж&shy;ные дет&shy;ские
@@ -714,8 +768,10 @@
                         </div>
                     </article>
                     <article class="card-entry narrow-entry">
-                        <img src="img/advertisement-entry-3.jpg" alt="Коптильня Магарыч"
-                             title="Коптильня Магарыч" class="entry-image">
+                        <a href="#">
+                            <img src="img/advertisement-entry-3.jpg" alt="Коптильня Магарыч"
+                                 title="Коптильня Магарыч" class="entry-image">
+                        </a>
                         <div class="description-container">
                             <h3 class="title">
                                 <a href="#">Круг&shy;лая коп&shy;тиль&shy;ня Ма&shy;га&shy;рыч с 2
@@ -782,7 +838,7 @@
                         <div class="photo-title-container">
                             <h6 class="photo-title">Зим&shy;няя ря&shy;би&shy;на. Ав&shy;тор:
                                 Ан&shy;дрей Аль&shy;шев&shy;ских</h6>
-                            <p class="photo-date">04.12.2016</p>
+                            <time class="photo-date" datetime="2016-12-04 11:21">04.12.2016</time>
                         </div>
                     </div>
                     <div class="main-photo gallery-photo-2">
@@ -793,7 +849,7 @@
                                 участ&shy;ник пер&shy;во&shy;го зим&shy;не&shy;го
                                 по&shy;лу&shy;ма&shy;ра&shy;фо&shy;на в
                                 Ека&shy;те&shy;рин&shy;бур&shy;ге</h6>
-                            <p class="photo-date">04.12.2016</p>
+                            <time class="photo-date" datetime="2016-12-04 12:14">04.12.2016</time>
                         </div>
                     </div>
                     <div class="main-photo gallery-photo-3">
@@ -803,7 +859,7 @@
                             <h6 class="photo-title">Участ&shy;ни&shy;цы кон&shy;кур&shy;са
                                 &quot;Мис&shy;сис Евра&shy;зия&quot; вы&shy;шли на сце&shy;ну в
                                 об&shy;ра&shy;зе птиц сча&shy;стья</h6>
-                            <p class="photo-date">03.12.2016</p>
+                            <time class="photo-date" datetime="2016-12-03 16:38">03.12.2016</time>
                         </div>
                     </div>
                     <div class="main-photo gallery-photo-4">
@@ -813,7 +869,7 @@
                             <h6 class="photo-title">Взгля&shy;ни&shy;те, как кра&shy;си&shy;во в
                                 Пер&shy;во&shy;ураль&shy;ске зим&shy;ни&shy;ми
                                 ве&shy;че&shy;ра&shy;ми. Фо&shy;то: Аль&shy;берт Гофпс</h6>
-                            <p class="photo-date">02.12.2016</p>
+                            <time class="photo-date" datetime="2016-12-02 21:52">02.12.2016</time>
                         </div>
                     </div>
                     <div class="main-photo gallery-photo-5">
@@ -823,7 +879,7 @@
                             <h6 class="photo-title">На Рож&shy;де&shy;ствен&shy;ской
                                 яр&shy;мар&shy;ке го&shy;сти де&shy;ла&shy;ют сел&shy;фи с
                                 не&shy;мец&shy;ким Сан&shy;той</h6>
-                            <p class="photo-date">02.12.2016</p>
+                            <time class="photo-date" datetime="2016-12-02 18:43">02.12.2016</time>
                         </div>
                     </div>
                     <label for="gallery-controls-1" class="controls-previous back-to-first"></label>
@@ -846,7 +902,7 @@
                                  title="Зимняя рябина" class="preview-image">
                             <span class="preview-title">Зим&shy;няя ря&shy;би&shy;на. Ав&shy;тор:
                                 Ан&shy;дрей Аль&shy;шев&shy;ских</span>
-                            <span class="preview-date">04.12.2016</span>
+                            <time class="preview-date" datetime="2016-12-04 11:21">04.12.2016</time>
                         </label>
                         <label for="gallery-controls-2" class="preview-item">
                             <img src="img/gallery-preview-2.jpg" alt="Участник зимнего полумарафона"
@@ -855,7 +911,7 @@
                                 участ&shy;ник пер&shy;во&shy;го зим&shy;не&shy;го
                                 по&shy;лу&shy;ма&shy;ра&shy;фо&shy;на в
                                 Ека&shy;те&shy;рин&shy;бур&shy;ге</span>
-                            <span class="preview-date">04.12.2016</span>
+                            <time class="preview-date" datetime="2016-12-04 12:14">04.12.2016</time>
                         </label>
                         <label for="gallery-controls-3" class="preview-item">
                             <img src="img/gallery-preview-3.jpg" alt="Участницы конкурса Миссис Евразия"
@@ -863,7 +919,7 @@
                             <span class="preview-title">Участ&shy;ни&shy;цы кон&shy;кур&shy;са
                                 &quot;Мис&shy;сис Евра&shy;зия&quot; вы&shy;шли на сце&shy;ну в
                                 об&shy;ра&shy;зе птиц сча&shy;стья</span>
-                            <span class="preview-date">03.12.2016</span>
+                            <time class="preview-date" datetime="2016-12-03 16:38">03.12.2016</time>
                         </label>
                     </div>
                     <div class="photo-gallery-preview preview-container-2">
@@ -873,7 +929,7 @@
                             <span class="preview-title">Взгля&shy;ни&shy;те, как кра&shy;си&shy;во
                                 в Пер&shy;во&shy;ураль&shy;ске зим&shy;ни&shy;ми
                                 ве&shy;че&shy;ра&shy;ми. Фо&shy;то: Аль&shy;берт Гофпс</span>
-                            <span class="preview-date">02.12.2016</span>
+                            <time class="preview-date" datetime="2016-12-02 21:52">02.12.2016</time>
                         </label>
                         <label for="gallery-controls-5" class="preview-item">
                             <img src="img/gallery-preview-5.jpg" alt="Санта"
@@ -881,7 +937,7 @@
                             <span class="preview-title">На Рож&shy;де&shy;ствен&shy;ской
                                 яр&shy;мар&shy;ке го&shy;сти де&shy;ла&shy;ют сел&shy;фи с
                                 не&shy;мец&shy;ким Сан&shy;той</span>
-                            <span class="preview-date">02.12.2016</span>
+                            <time class="preview-date" datetime="2016-12-02 18:43">02.12.2016</time>
                         </label>
                     </div>
                     <label for="gallery-preview-controls-1"
@@ -969,8 +1025,10 @@
                     <h4 class="large-header">Новости звёзд</h4>
                 </div>
                 <article class="card-entry narrow-entry">
-                    <img src="img/star-entry-1.jpeg" alt="Дмитрий Тарасов"
-                         title="Дмитрий Тарасов" class="entry-image">
+                    <a href="#">
+                        <img src="img/star-entry-1.jpeg" alt="Дмитрий Тарасов"
+                             title="Дмитрий Тарасов" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Дмит&shy;рий Та&shy;ра&shy;сов: &laquo;Я те&shy;перь
@@ -980,8 +1038,10 @@
                     </div>
                 </article>
                 <article class="card-entry narrow-entry">
-                    <img src="img/star-entry-2.jpeg" alt="Дмитрий Шепелев"
-                         title="Дмитрий Шепелев" class="entry-image">
+                    <a href="#">
+                        <img src="img/star-entry-2.jpeg" alt="Дмитрий Шепелев"
+                             title="Дмитрий Шепелев" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Дмит&shy;рий Ше&shy;пе&shy;лев за&shy;го&shy;во&shy;рил о
@@ -990,8 +1050,10 @@
                     </div>
                 </article>
                 <article class="card-entry narrow-entry">
-                    <img src="img/star-entry-3.jpeg" alt="Алла Пугачева"
-                         title="Алла Пугачева" class="entry-image">
+                    <a href="#">
+                        <img src="img/star-entry-3.jpeg" alt="Алла Пугачева"
+                             title="Алла Пугачева" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Кто пи&shy;шет пес&shy;ни Пу&shy;га&shy;че&shy;вой,
@@ -1000,8 +1062,10 @@
                     </div>
                 </article>
                 <article class="card-entry narrow-entry">
-                    <img src="img/star-entry-4.jpeg" alt="Анна Чиповская"
-                         title="Анна Чиповская" class="entry-image">
+                    <a href="#">
+                        <img src="img/star-entry-4.jpeg" alt="Анна Чиповская"
+                             title="Анна Чиповская" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Ан&shy;на Чи&shy;по&shy;в&shy;ская разо&shy;рва&shy;ла
@@ -1010,8 +1074,10 @@
                     </div>
                 </article>
                 <article class="card-entry narrow-entry">
-                    <img src="img/star-entry-5.jpeg" alt="Елена Темникова"
-                         title="Елена Темникова" class="entry-image">
+                    <a href="#">
+                        <img src="img/star-entry-5.jpeg" alt="Елена Темникова"
+                             title="Елена Темникова" class="entry-image">
+                    </a>
                     <div class="description-container">
                         <h3 class="title">
                             <a href="#">Еле&shy;на Тем&shy;ни&shy;ко&shy;ва:
@@ -1038,16 +1104,18 @@
                 </li>
             </ul>
             <p class="footer-info">
-                <strong>Единый номер:</strong> 8-800-700-8-9-10 (звонок бесплатный)
+                <strong>Единый номер:</strong>
+                <a href="tel:8-800-700-8-9-10">8-800-700-8-9-10</a> (звонок бесплатный)
             </p>
             <p class="footer-info">
                 <strong>Отдел продаж:</strong>
-                <a href="mailto:adv@corp.e2.ru">adv@corp.e2.ru</a>, (343) 379-49-10
+                <a href="mailto:adv@corp.e2.ru">adv@corp.e2.ru</a>,
+                <a href="tel:+7 (343) 379-49-10">(343) 379-49-10</a>
             </p>
             <p class="footer-info">
                 <strong>Редакция:</strong>
                 <a href="mailto:news@corp.e2.ru">news@corp.e2.ru</a>,
-                (343) 379-49-95 (круглосуточно - для новостей)
+                <a href="tel:+7 (343) 379-49-95">(343) 379-49-95</a> (круглосуточно - для новостей)
             </p>
             <p>
                 <a href="#">Замечания и пожелания по работе отдела продаж</a>
