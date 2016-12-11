@@ -3,14 +3,14 @@
 <head>
     <meta charset="utf-8">
     <link href="index.css" rel="stylesheet">
-    <title>е1 такой е1</title>
+    <title>Екатеринбург Он-Лайн</title>
 </head>
 <body>
-    <header class="advertising">
+    <section class="advertising">
         <a href="https://smotreshka.tv/premium?name=ultra-telecom">
-            <img src="banner.png" alt="Реклама" title="Реклама">
+            <img src="banner.png" alt="Реклама телевидения Смотрёшка" title="Реклама">
         </a>
-    </header>
+    </section>
 
     <main class="content">
         <nav class="topics">
@@ -35,22 +35,22 @@
             <div class="theme"><a href="#">Как чистят город</a></div>
         </div>
         <div class="daily-inform">
-            <div class="logo"><img src="logo.gif" alt="Логотип е1" title="Логотип"></div>
-            <div class="date">
+            <a href="#" class="logo"><img src="logo.gif" alt="Логотип е1" title="Логотип"></a>
+            <time class="date" datetime="2016-12-01T00:11:11+06:00">
                 <span>Четверг</span>
                 <span>01 декабря</span>
-                <time>00:11</time>
-            </div>
+                <span class="time">00:11</span>
+            </time>
             <div class="weather">
                 <div class="today">
                     <a href="#">Сейчас</a>
                     <span>-3,7°C</span>
-                    <img src="weather1.gif" alt="Погода сегодня" title="Облачно, без осадков">
+                    <div class="cloudy-icon"></div>
                 </div>
                 <div class="tomorrow">
                     <a href="#">Завтра</a>
                     <span>-14°C</span>
-                    <img src="weather2.gif" alt="Погода завтра" title="Ясная погода, без осадков">
+                    <div class="sunny-icon"></div>
                 </div>
             </div>
             <div class="traffic-jams">
@@ -61,28 +61,26 @@
             <div class="contacts">
                 <span>Читайте нас, где вам удобно:</span>
                 <div class="icons">
-                    <a href="#"><img src="vk.png" alt="вк" title="ВКонтакте"></a>
-                    <a href="#"><img src="fb.png" alt="fk" title="Facebook"></a>
-                    <a href="#"><img src="tw.png" alt="tw" title="Twitter"></a>
-                    <a href="#"><img src="ok.png" alt="ok" title="Одноклассники"></a>
-                    <a href="#"><img src="ya.png" alt="ya" title="Яндекс"></a>
-                    <a href="#"><img src="inst.png" alt="inst" title="Instagram"></a>
-                    <a href="#"><img src="tg.png" alt="tg" title="Telegram"></a>
+                    <a href="#"><img src="vk.png" alt="ВКонтакте" title="ВКонтакте"></a>
+                    <a href="#"><img src="fb.png" alt="Facebook" title="Facebook"></a>
+                    <a href="#"><img src="tw.png" alt="Twitter" title="Twitter"></a>
+                    <a href="#"><img src="ok.png" alt="Одноклассники" title="Одноклассники"></a>
+                    <a href="#"><img src="ya.png" alt="Яндекс" title="Яндекс"></a>
+                    <a href="#"><img src="inst.png" alt="Instagram" title="Instagram"></a>
+                    <a href="#"><img src="tg.png" alt="Telegram" title="Telegram"></a>
                 </div>
             </div>
             <div class="money-rate">
                 <div class="course">
                     <a href="#">Курс ЦБ</a>
                     <div class="block-average">
-                        <div class="block-buy">
-                            <br>
-                            <div><span>USD</span></div>
-                            <div><span>EUR</span></div>
+                        <div class="block-buy currency">
+                            <div>USD</div>
+                            <div>EUR</div>
                         </div>
-                        <div class="block-selling">
-                            <br>
-                            <div><span>65.24</span></div>
-                            <div><span>69.34</span></div>
+                        <div class="block-selling currency">
+                            <div>65.24</div>
+                            <div>69.34</div>
                         </div>
                     </div>
                 </div>
@@ -90,14 +88,14 @@
                     <a href="#">Средневзвешенный</a>
                     <div class="block-average">
                         <div class="block-buy">
-                            <div><span>Покупка</span></div>
-                            <div><span>62.97</span></div>
-                            <div><span>66.90</span></div>
+                            <div>Покупка</div>
+                            <div>62.97</div>
+                            <div>66.90</div>
                         </div>
                         <div class="block-selling">
-                            <div><span>Продажа</span></div>
-                            <div><span>62.97</span></div>
-                            <div><span>66.90</span></div>
+                            <div>Продажа</div>
+                            <div>62.97</div>
+                            <div>66.90</div>
                         </div>
                     </div>
                 </div>
@@ -106,13 +104,13 @@
                 <div class="search">
                     <span>Поиск:&nbsp;</span>
                     <input type="text" size="16">
-                    <a href="#"><img src="search.png" alt="Поиск" title="Поиск"></a>
+                    <a href="#" class="search-icon"></a>
                 </div>
                 <div class="email">
                     <span>Почта:&nbsp;</span>
                     <input type="text" size="5">
                     <input type="text" size="5">
-                    <a href="#"><img src="search.png" alt="Поиск" title="Поиск"></a>
+                    <a href="#" class="search-icon"></a>
                 </div>
             </div>
         </div>
@@ -128,14 +126,14 @@
                     </div>
                 </div>
                 <div class="big-block">
-                    <div class="article detailes">
+                    <article class="detailes">
                         <div class="header-block">
-                            <span>НОВОСТИ</span>
+                            <h4>Новости</h4>
                             <a href="#">Все новости</a>
                         </div>
                         <div class="body-block">
-                            <img src="miniImg4.jpg" alt="Фото к статье Подробности"
-                                title="Фото подробностей">
+                            <a href="#"><img src="miniImg4.jpg" alt="Фото к статье Подробности"
+                                title="Фото подробностей"></a>
                             <div>
                                 <a href="#" class="informArticle">Обнаружив интимную переписку своей жены
                                     с другим мужчиной, сотрудник ППС не сдержал гнева.</a>
@@ -143,11 +141,11 @@
                                     а затем покончил с собой</span>
                             </div>
                         </div>
-                    </div>
-                    <hr class="border-orange">
-                    <div class="article view">
+                    </article>
+                    <article class="view">
                         <div class="body-block">
-                            <img src="miniImg4.jpg" alt="Фото к статье Обзор" title="Фото обзора">
+                            <a href="#"><img src="miniImg4.jpg" alt="Фото к статье Обзор"
+                                title="Фото обзора"></a>
                             <div>
                                 <a href="#" class="informArticle">Горожане рассказали о своих успехах и
                                     достижениях.</a>
@@ -155,12 +153,11 @@
                                     как фитнес меняет жизнь</span>
                             </div>
                         </div>
-                    </div>
-                    <hr class="border-orange">
-                    <div class="article realty">
+                    </article>
+                    <article class="realty">
                         <div class="body-block">
-                            <img src="miniImg4.jpg" alt="Фото к статье Недвижимость"
-                                title="Фото недвижимости">
+                            <a href="#"><img src="miniImg4.jpg" alt="Фото к статье Недвижимость"
+                                title="Фото недвижимости"></a>
                             <div>
                                 <a href="#" class="informArticle">Как не превратить покупку всей жизни
                                     в проблему.</a>
@@ -168,11 +165,11 @@
                                     новостройке</span>
                             </div>
                         </div>
-                    </div>
-                    <hr class="border-orange">
-                    <div class="article view">
+                    </article>
+                    <article class="view">
                         <div class="body-block">
-                            <img src="miniImg4.jpg" alt="Фото к статье Обзор" title="Фото обзора">
+                            <a href="#"><img src="miniImg4.jpg" alt="Фото к статье Обзор"
+                                title="Фото обзора"></a>
                             <div>
                                 <a href="#" class="informArticle">Горожане рассказали о своих успехах и
                                     достижениях.</a>
@@ -180,12 +177,11 @@
                                     как фитнес меняет жизнь</span>
                             </div>
                         </div>
-                    </div>
-                    <hr class="border-orange">
-                    <div class="article realty">
+                    </article>
+                    <article class="realty">
                         <div class="body-block">
-                            <img src="miniImg4.jpg" alt="Фото к статье Недвижимость"
-                                title="Фото недвижимости">
+                            <a href="#"><img src="miniImg4.jpg" alt="Фото к статье Недвижимость"
+                                title="Фото недвижимости"></a>
                             <div>
                                 <a href="#" class="informArticle">Как не превратить покупку всей жизни
                                     в проблему.</a>
@@ -193,11 +189,11 @@
                                     новостройке</span>
                             </div>
                         </div>
-                    </div>
-                    <hr class="border-orange">
-                    <div class="article view">
+                    </article>
+                    <article class="view">
                         <div class="body-block">
-                            <img src="miniImg4.jpg" alt="Фото к статье Обзор" title="Фото обзора">
+                            <a href="#"><img src="miniImg4.jpg" alt="Фото к статье Обзор"
+                                title="Фото обзора"></a>
                             <div>
                                 <a href="#" class="informArticle">Горожане рассказали о своих успехах и
                                     достижениях.</a>
@@ -205,171 +201,165 @@
                                     как фитнес меняет жизнь</span>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
             <div class="center-column">
                 <div class="big-block">
-                    <div class="article detailes">
+                    <article class="detailes">
                         <div class="header-block">
-                            <span>ПОДРОБНОСТИ</span>
+                            <span>Подробности</span>
                             <a href="#">Перейти</a>
                         </div>
                         <div class="body-block">
-                            <img src="miniImg2.jpg" alt="Фото к статье Подробности"
-                                title="Фото подробностей">
+                            <a href="#"><img src="miniImg2.jpg" alt="Фото к статье Подробности"
+                                title="Фото подробностей"></a>
                             <div>
                                 <span class="textArticle">В Реже полицейский застрелил врача из-за ревности,
-                                    а затем покончил с собой</span><br>
-                                <hr class="border-orange">
+                                    а затем покончил с собой</span>
                                 <a href="#" class="informArticle">Обнаружив интимную переписку своей жены
                                     с другим мужчиной, сотрудник ППС не сдержал гнева.</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="article view">
+                    </article>
+                    <article class="view">
                         <div class="header-block">
-                            <span>ОБЗОР</span>
+                            <span>Обзор</span>
                             <a href="#">Перейти</a>
                         </div>
                         <div class="body-block">
-                            <img src="miniImg3.jpg" alt="Фото к статье Обзор" title="Фото обзора">
+                            <a href="#"><img src="miniImg3.jpg" alt="Фото к статье Обзор"
+                                title="Фото обзора"></a>
                             <div>
                                 <span class="textArticle">"В 40 дет выглядеть на 20": реальные истории о том,
-                                    как фитнес меняет жизнь</span><br>
-                                <hr class="border-orange">
+                                    как фитнес меняет жизнь</span>
                                 <a href="#" class="informArticle">Горожане рассказали о своих успехах и
                                     достижениях.</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="article realty">
+                    </article>
+                    <article class="realty">
                         <div class="header-block">
-                            <span>СТАТЬИ О НЕДВИЖИМОСТИ</span>
+                            <span>Статьи о недвижимости</span>
                             <a href="#">Перейти</a>
                         </div>
                         <div class="body-block">
-                            <img src="miniImg.jpg" alt="Фото к статье Недвижимость"
-                                title="Фото недвижимости">
+                            <a href="#"><img src="miniImg.jpg" alt="Фото к статье Недвижимость"
+                                title="Фото недвижимости"></a>
                             <div>
                                 <span class="textArticle">4 способа и 6 причин купить квартиру в
-                                    новостройке</span><br>
-                                <hr class="border-orange">
+                                    новостройке</span>
                                 <a href="#" class="informArticle">Как не превратить покупку всей жизни
                                     в проблему.</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="mini-block">
-                    <div class="article view">
+                    <article class="view">
                         <div class="header-block">
-                            <span>ПРОДАЖА</span>
+                            <span>Продажа</span>
                         </div>
                         <div class="body-block">
-                            <img src="supermini.jpg" alt="Фото к статье Обзор" title="Фото обзора">
+                            <a href="#"><img src="supermini.jpg" alt="Фото к статье Обзор"
+                                title="Фото обзора"></a>
                             <div>
-                                <span class="textArticle">Малышева, 19</span><br>
-                                <hr class="border-orange">
+                                <span class="textArticle">Малышева, 19</span>
                                 <a href="#" class="informArticle">Продам квартиру быстро</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="article realty">
+                    </article >
+                    <article class="realty">
                         <div class="header-block">
-                            <span>НЕДВИЖИМОСТЬ</span>
+                            <span>Недвижимость</span>
                         </div>
                         <div class="body-block">
-                            <img src="miniImg.jpg" alt="Фото к статье Недвижимость"
-                                title="Фото недвижимости">
+                            <a href="#"><img src="miniImg.jpg" alt="Фото к статье Недвижимость"
+                                title="Фото недвижимости"></a>
                             <div>
-                                <span class="textArticle">Ленина, 53</span><br>
-                                <hr class="border-orange">
+                                <span class="textArticle">Ленина, 53</span>
                                 <a href="#" class="informArticle">Сдам квартиру недорого</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="mini-block">
-                    <div class="article view">
+                    <article class="view">
                         <div class="header-block">
-                            <span>АВТО</span>
+                            <span>Авто</span>
                         </div>
                         <div class="body-block">
-                            <img src="supermini.jpg" alt="Фото к статье Обзор" title="Фото обзора">
+                            <a href="#"><img src="supermini.jpg" alt="Фото к статье Обзор"
+                                title="Фото обзора"></a>
                             <div>
-                                <span class="textArticle">Малышева, 19</span><br>
-                                <hr class="border-orange">
+                                <span class="textArticle">Малышева, 19</span>
                                 <a href="#" class="informArticle">Продам машину быстро</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="article realty">
+                    </article>
+                    <article class="realty">
                         <div class="header-block">
-                            <span>РАБОТА</span>
+                            <span>Работа</span>
                         </div>
                         <div class="body-block">
-                            <img src="miniImg.jpg" alt="Фото к статье Недвижимость"
-                                title="Фото недвижимости">
+                            <a href="#"><img src="miniImg.jpg" alt="Фото к статье Недвижимость"
+                                title="Фото недвижимости"></a>
                             <div>
-                                <span class="textArticle">Ленина, 53</span><br>
-                                <hr class="border-orange">
+                                <span class="textArticle">Ленина, 53</span>
                                 <a href="#" class="informArticle">Водитель такси с машиной</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
                 <div class="big-block">
-                    <div class="article detailes">
+                    <article class="detailes">
                         <div class="header-block">
-                            <span>ПОДРОБНОСТИ</span>
+                            <span>Подробности</span>
                             <a href="#">Перейти</a>
                         </div>
                         <div class="body-block">
-                            <img src="miniImg2.jpg" alt="Фото к статье Подробности"
-                                title="Фото подробностей">
+                            <a href="#"><img src="miniImg2.jpg" alt="Фото к статье Подробности"
+                                title="Фото подробностей"></a>
                             <div>
                                 <span class="textArticle">В Реже полицейский застрелил врача из-за ревности,
-                                    а затем покончил с собой</span><br>
-                                <hr class="border-orange">
+                                    а затем покончил с собой</span>
                                 <a href="#" class="informArticle">Обнаружив интимную переписку своей жены
                                     с другим мужчиной, сотрудник ППС не сдержал гнева.</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="article view">
+                    </article>
+                    <article class="view">
                         <div class="header-block">
-                            <span>ОБЗОР</span>
+                            <span>Обзор</span>
                             <a href="#">Перейти</a>
                         </div>
                         <div class="body-block">
-                            <img src="miniImg3.jpg" alt="Фото к статье Обзор" title="Фото обзора">
+                            <a href="#"><img src="miniImg3.jpg" alt="Фото к статье Обзор"
+                                title="Фото обзора"></a>
                             <div>
                                 <span class="textArticle">"В 40 дет выглядеть на 20": реальные истории о том,
-                                    как фитнес меняет жизнь</span><br>
-                                <hr class="border-orange">
+                                    как фитнес меняет жизнь</span>
                                 <a href="#" class="informArticle">Горожане рассказали о своих успехах и
                                     достижениях.</a>
                             </div>
                         </div>
-                    </div>
-                    <div class="article realty">
+                    </article>
+                    <article class="realty">
                         <div class="header-block">
-                            <span>СТАТЬИ О НЕДВИЖИМОСТИ</span>
+                            <span>Статьи о недвижимости</span>
                             <a href="#">Перейти</a>
                         </div>
                         <div class="body-block">
-                            <img src="miniImg.jpg" alt="Фото к статье Недвижимость"
-                                title="Фото недвижимости">
+                            <a href="#"><img src="miniImg.jpg" alt="Фото к статье Недвижимость"
+                                title="Фото недвижимости"></a>
                             <div>
                                 <span class="textArticle">4 способа и 6 причин купить квартиру в
-                                    новостройке</span><br>
-                                <hr class="border-orange">
+                                    новостройке</span>
                                 <a href="#" class="informArticle">Как не превратить покупку всей жизни
                                     в проблему.</a>
                             </div>
                         </div>
-                    </div>
+                    </article>
                 </div>
             </div>
             <div class="right-column">
@@ -381,16 +371,16 @@
     <footer class="basement">
         <div class="first-level">
             <div class="phone-numbers">
-                <p>Единый номер: 8-800-700-8-9-10 (звонок бесплатный)</p>
-                <p>Отдел продаж: adv@corp.e1.ru, (343) 379-49-10</p>
+                <p>Единый номер: <a href="#">8-800-700-8-9-10</a> (звонок бесплатный)</p>
+                <p>Отдел продаж: <a href="#">adv@corp.e1.ru</a>, <a href="#">(343) 379-49-10</a></p>
             </div>
             <div class="big-icons">
-                <img src="18grey.jpg" alt="Политика сайта" title="Возрастное ограничение">
-                <img src="66.gif" alt="Политика сайта" title="Статистика сайта">
+                <a href="#" class="age"></a>
+                <a href="#" class="statistics"></a>
             </div>
         </div>
         <div class="second-level informants">
-            <img src="n1.png" alt="Сайт-информатор" title="Сайт-информатор">
+            <a href="#"><img src="n1.png" alt="Сайт-информатор" title="Сайт-информатор"></a>
         </div>
     </footer>
 </body>
