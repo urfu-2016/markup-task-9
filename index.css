@@ -1,6 +1,7 @@
 body
 {
     display: flex;
+    min-width: 1110px;
     flex-direction: column;
     margin: 0 auto;
     background: rgba(0,171,111,.1);
@@ -10,10 +11,9 @@ body
 {
     display: flex;
     width: 100%;
-    min-width: 1110px;
     flex-direction: column;
     margin: 0 auto;
-    min-height: calc(100vh - 260px);
+    min-height: calc(100vh - 300px);
 }
 
 header
@@ -182,13 +182,7 @@ a
     display: flex;
 }
 
-.vk,
-.facebook,
-.twiter,
-.ok,
-.yandex,
-.instagram,
-.telegram
+.e2-in-social
 {
     width: 23px;
     height: 23px;
@@ -205,7 +199,7 @@ a
     background-image: url('Images/facebook.png');
 }
 
-.twiter
+.twitter
 {
     background-image: url('Images/twiter.png');
 }
@@ -471,6 +465,11 @@ main
     border: 2px solid #20805e;
 }
 
+.name
+{
+    display: block;
+}
+
 .people:nth-child(odd) .name
 {
     color: #20805e;
@@ -531,7 +530,7 @@ main
     margin: 10px;
 }
 
-.choise
+.choice
 {
     background: #20805e;
     color: #fff;
@@ -555,7 +554,7 @@ footer
     display: flex;
     flex-direction: column;
     width: 100%;
-    min-width: 1110px;
+    height: 300px;
     background: rgba(0,171,111,.4);
     box-shadow: 0 -5px 10px -4px #00ab6f;
 }
@@ -567,8 +566,8 @@ footer
     justify-content: space-between;
 }
 
-.info2 ,
-.addres
+.info2,
+.address
 {
     display: flex;
     flex-direction: row;
@@ -614,4 +613,12 @@ footer
 {
     width: 153px;
     padding: 0 20px;
+}
+
+.partners
+{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 20px;
 }
