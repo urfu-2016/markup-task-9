@@ -2,7 +2,703 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" href="index.css">
+    <title>e2.ru</title>
 </head>
 <body>
+    <div class="header-main">
+        <header>
+            <input class="still" id="id_menu" type="checkbox">
+            <nav class="level1 menu">
+                <span><a href="">СП</a></span>
+                <span><a href="">Каталог</a></span>
+                <span><a href="">Справка</a></span>
+                <span><a href="">Еда</a></span>
+                <span><a href="">Отдых</a></span>
+                <span><a href="">Почта</a></span>
+                <span><a href="">Дом</a></span>
+                <span><a href="">Туризм</a></span>
+                <span><a href="">Здоровье</a></span>
+            </nav>
+            <nav class="level1">
+                <span><a href="">Главная</a></span>
+                <span><a href="">Новости</a></span>
+                <span><a href="">Недвижимость</a></span>
+                <span><a href="">Авто</a></span>
+                <span><a href="">Работа</a></span>
+                <span><a href="">Объявления</a></span>
+                <span><a href="">Знакомства</a></span>
+                <span><a href="">Погода</a></span>
+                <span><a href="">Афиша</a></span>
+                <span><a href="">Форумы</a></span>
+                <span><a href="">Бизнес</a></span>
+                <span><a href="">Общение</a></span>
+                <label for="id_menu">Ещё &dArr;</label>
+            </nav>
+            <nav class="level2">
+                <span><a href="">Новогодний спецпроект</a></span>
+                <span><a href="">Учёные против мифов</a></span>
+                <span><a href="">Башенки Екатеринбурга</a></span>
+                <span><a href="">Осторожно, корь!</a></span>
+                <span><a href="">Как чистят город</a></span>
+                <span><a href="">Споры о храме-на-воде</a></span>
+            </nav>
+            <section class="level3">
+                <article class="logo">
+                    <a href="logo">
+                        <img src="Images/logo.png" alt="Екатеринбург" width="194" height="85">
+                    </a>
+                </article>
+                <article class="data">
+                    Сегодня<br>
+                    03 декабя<br>
+                    <strong>16:37</strong>
+                </article>
+                <article class="weather">
+                    <span class="today">
+                        <a href="">
+                            Сейчас<br>
+                            <strong>-15,4&deg;C</strong>
+                            <img alt="" src="Images/1.jpg" class="img">
+                        </a>
+                    </span>
+                    <span class="tomorrow">
+                        <a href="">
+                            Завтра<br>
+                            <strong>-16,3&deg;C</strong>
+                            <img alt="" src="Images/2.jpg" class="img">
+                        </a>
+                    </span>
+                </article>
+                <article class="bung">
+                    <a href="">
+                        Пробки
+                        <span class="ball">
+                            <strong>0</strong>
+                        </span>
+                        <strong>баллов</strong>
+                    </a>
+                </article>
+                <article class="social">
+                    Читайте нас где удобно:
+                    <span class="logo-ss">
+                        <a href="" class="vk e2-in-social"></a>
+                        <a href="" class="facebook e2-in-social"></a>
+                        <a href="" class="twitter e2-in-social"></a>
+                        <a href="" class="ok e2-in-social"></a>
+                        <a href="" class="yandex e2-in-social"></a>
+                        <a href="" class="instagram e2-in-social"></a>
+                        <a href="" class="telegram e2-in-social"></a>
+                    </span>
+                </article>
+                <article class="economy">
+                    <table class="course">
+                        <tr>
+                            <td colspan="2" rowspan="2">
+                                Курс
+                            </td>
+                            <td colspan="2">
+                                Средневзвешенный
+                            </td>
+                        </tr>
+                        <tr>
+                            <td>
+                                Покупка
+                            </td>
+                            <td>Продажа</td>
+                        </tr>
+                        <tr>
+                            <td class="color-course">USD</td>
+                            <td>64.15</td>
+                            <td>62.42</td>
+                            <td>65.72</td>
+                        </tr>
+                        <tr>
+                            <td class="color-course">EUR</td>
+                            <td>68.47</td>
+                            <td>66.64</td>
+                            <td>69.94</td>
+                        </tr>
+                    </table>
+                </article>
+                <article class="block">
+                    <span class="search">
+                        Поиск:
+                        <input type="text" size="35">
+                        <button class="enter">&rsaquo;</button>
+                    </span>
+                    <span class="mail">
+                        Почта:
+                        <input type="text" placeholder="login@mail.ru" size="15">
+                        <input type="password" size="15">
+                        <button class="enter">&rsaquo;</button>
+                    </span>
+                </article>
+            </section>
+        </header>
+        <main>
+            <section class="left">
+                <article class="big-photo map">
+                    <img src="Images/preview.jpg" alt="Антон" title="Антон" class="big-image">
+                    <div class="text">
+                        <strong>
+                            Екатеринбургский биатлонист Антон Шипулин завершил спринтерскую
+                            гонку в Эстерсунде лишь 28-м
+                        </strong>
+                    </div>
+                </article>
+                <article class="new map">
+                    <article class="head-map">Новости</article>
+                    <article class="blocks">
+                        <span class="block-with-photo">
+                            <img src="Images/3.jpg" class="small-photo" alt="ДТП" title="ДТП">
+                        </span>
+                        <span class="text-header">
+                            <a href="">
+                                <strong>
+                                    "Mercedes ехал на красный": водитель иномарки устроил
+                                    ДТП на Щербакова и вылетел на тротуар
+                                </strong>
+                            </a><br>
+                            <small>
+                                Очевидцы говорят, что автомобиль летел на большой скорости.
+                            </small>
+                        </span>
+                    </article>
+                    <article class="blocks">
+                        <span class="block-with-photo">
+                            <img src="Images/4.jpg" class="small-photo" alt="Спорт" title="Спорт">
+                        </span>
+                        <span class="text-header">
+                            <a href="">
+                                <strong>
+                                    Повержен победитель Лиги чемпионов: теннисисты УГМК
+                                    обыграли лучший клуб Европы
+                                </strong>
+                            </a><br>
+                            <small>
+                                Столь крупный успех обеспечили российские игроки
+                                - Григорий Власов и Александр Шибаев.
+                            </small>
+                        </span>
+                    </article>
+                    <article class="blocks">
+                        <span class="block-with-photo">
+                            <img src="Images/5.jpg" class="small-photo" alt="Акция" title="Акция">
+                        </span>
+                        <span class="text-header">
+                            <a href="">
+                                <strong>
+                                    Успеть до Нового года: в Екатеринбурге зафиксировали уникальное
+                                    падение цен на кузовной ремонт
+                                </strong>
+                            </a><br>
+                            <small>
+                                В декабре - особо выгодные условия: скидка до 40%,
+                                а также пожизненная гарантия.
+                            </small>
+                        </span>
+                    </article>
+                    <article class="blocks">
+                        <span class="block-with-photo">
+                            <img src="Images/6.jpg" class="small-photo" alt="Конкурс" title="">
+                        </span>
+                        <span class="text-header">
+                            <a href="">
+                                <strong>
+                                    Мама двоих детей из Екатеринбурга стала обладательницей
+                                    титула "Миссис Евразия"
+                                </strong>
+                            </a><br>
+                            <small>
+                                А самая многодетная участница заняла второе место.
+                            </small>
+                        </span>
+                    </article>
+                </article>
+                <article class="news-report map">
+                    <article class="head-map">Сообщить новость</article>
+                    <article class="blocks">
+                        <span class="block-with-photo">
+                            <img src="Images/send_news.jpg" class="small-photo" alt="Нов" title="">
+                        </span>
+                        <span class="text-header">
+                            <a href="">
+                                <strong>
+                                    Отправьте свою новость в редакцию, расскажите о проблеме или
+                                    подкиньте тему для публикации.
+                                    Сюда же загружайте ваше видео и фото.
+                                </strong>
+                            </a><br>
+                            <small>
+                                Круглосуточный телефон службы новостей
+                            </small>
+                            <strong>+7 (343) 34-555-34</strong>
+                        </span>
+                    </article>
+                </article>
+                <article class="feature-articles map">
+                    <article class="head-map">Тематические статьи</article>
+                    <article class="blocks">
+                        <span class="block-with-photo">
+                            <img src="Images/7.jpg" class="small-photo" alt="Спорт" title="Спорт">
+                        </span>
+                        <span class="text-header">
+                            <a href="">
+                                <strong>
+                                    Остолбенели на работе
+                                </strong>
+                            </a><br>
+                            <small>
+                                Хоккейная команда «Сибирь» и «Почта России» присоединились к
+                                мировой акции — Зарплата.ру нашла 5 видео,
+                                где россияне подражают маникенам
+                            </small>
+                        </span>
+                    </article>
+                    <article class="blocks">
+                        <span class="block-with-photo">
+                            <img src="Images/8.jpg" class="small-photo" alt="Советы" title="Совет">
+                        </span>
+                        <span class="text-header">
+                            <a href="">
+                                <strong>
+                                    Вас уволят. Хотите знать почему?
+                                </strong>
+                            </a><br>
+                            <small>
+                                Четыре предупреждающих «звоночка» о том, что
+                                шеф подумывает найти вам замену
+                            </small>
+                        </span>
+                    </article>
+                    <article class="blocks">
+                        <span class="block-with-photo">
+                            <img src="Images/9.jpg" class="small-photo" alt="Новость" title="New">
+                        </span>
+                        <span class="text-header">
+                            <a href="">
+                                <strong>
+                                    Типы снегоуборщиков: чем отличаются и как выбрать
+                                </strong>
+                            </a><br>
+                            <small>
+                                С наступлением зимы эти вопросы становятся как никогда актуальными
+                            </small>
+                        </span>
+                    </article>
+                </article>
+            </section>
+            <section class="center">
+                <article class="details map">
+                    <article class="head-map">Подробнее</article>
+                    <article class="blocks">
+                        <img src="Images/10.jpg" class="small-photo" alt="Политика" title="Полит">
+                        <span class="text-header">
+                            <strong>
+                                "Вас подставили": архитекторы написали открытое письмо Козицыну
+                                и Алтушкину о Храме-на-воде
+                            </strong>
+                            <br>
+                            <a href="">
+                                <small>
+                                    Публикуем его полностью.
+                                </small>
+                            </a>
+                        </span>
+                    </article>
+                </article>
+                <article class="road-video map">
+                    <article class="head-map">Дорожное видео E2.RU</article>
+                    <article class="blocks">
+                        <img src="Images/11.jpg" class="small-photo" alt="Дорога" title="Дорога">
+                        <span class="text-header">
+                            <strong>
+                                "Дорожное видео недели": жуткое ДТП на пешеходном переходе, таран
+                                задом и застрявшая на рельсах маршрутка
+                            </strong>
+                            <br>
+                            <a href="">
+                                <small>
+                                    Разбираем и ищем виновных в первой подборке декабря.
+                                </small>
+                            </a>
+                        </span>
+                    </article>
+                </article>
+                <article class="article-property map">
+                    <article class="head-map">Статьи о недвижемости</article>
+                    <article class="blocks">
+                        <img src="Images/12.jpg" class="small-photo" alt="Недв" title="Недв">
+                        <span class="text-header">
+                            <strong>
+                                Три фишки конструктивизма: в Екатеринбурге восстановят здание,
+                                построенное на месте тюремного замка
+                            </strong>
+                            <br>
+                            <a href="">
+                                <small>
+                                    Мы узнали, как будет выглядеть Дом юстиции после реставрации.
+                                </small>
+                            </a>
+                        </span>
+                    </article>
+                </article>
+                <section class="two-columns">
+                    <article class="property map">
+                        <article class="head-map">Недвижемость</article>
+                        <article class="two-blocks">
+                            <span class="h">
+                                <a href="">Аренда</a>
+                                <a href="">Продажа квартир</a>
+                                <a href="">Новостройки</a>
+                            </span>
+                            <span class="content">
+                                <img src="Images/13.jpg" class="photo" alt="Квартира" title="Кв">
+                                <span class="text-header th">
+                                    <a href="">
+                                        Продам 1-комнатную квартиру
+                                    </a><br>
+                                    Рощинская, 44<br>
+                                    Цена:
+                                    <strong>2 391 849 руб.</strong>
+                                </span>
+                            </span>
+                            <span class="content">
+                                <img src="Images/14.jpg" class="photo" alt="Квартира" title="Кв">
+                                <span class="text-header th">
+                                    <a href="">
+                                        Продам 2-комнатную квартиру
+                                    </a><br>
+                                    Прониной, 27<br>
+                                    Цена:
+                                    <strong>2 400 000 руб.</strong>
+                                </span>
+                            </span>
+                            <span class="content">
+                                <img src="Images/15.jpg" class="photo" alt="Квартира" title="Кв">
+                                <span class="text-header th">
+                                    <a href="">
+                                        Сдам 1-комнатную квартиру
+                                    </a><br>
+                                    Циолковского, 29<br>
+                                    Цена:
+                                    <strong>1 500 руб./сут.</strong>
+                                </span>
+                            </span>
+                        </article>
+                    </article>
+                    <article class="sale map">
+                        <article class="head-map">Продажа авто, мото</article>
+                        <article class="two-blocks">
+                            <span class="h">
+                                <a href="">Легковые</a>
+                                <a href="">Грузовые</a>
+                                <a href="">Мото</a>
+                            </span>
+                            <span class="content">
+                                <img src="Images/16.jpg" class="photo" alt="Розыгрыш" title="Роз">
+                                <span class="text-header th">
+                                    <a href="">
+                                        <strong>
+                                            Найди автомобиль
+                                        </strong>
+                                    </a><br>
+                                    <span class="orange-text">
+                                        <strong>за 1 рубль от E2.RU</strong>
+                                    </span>
+                                </span>
+                            </span>
+                            <span class="content">
+                                <img src="Images/17.jpg" class="photo" alt="Авто" title="Авто">
+                                <span class="text-header th">
+                                    <a href="">
+                                        Citroen C3
+                                    </a><br>
+                                    2009, механика, 1.4л<br>
+                                    Цена:
+                                    <strong>244 000 руб.</strong>
+                                </span>
+                            </span>
+                            <span class="content">
+                                <img src="Images/18.jpg" class="photo" alt="Авто" title="Авто">
+                                <span class="text-header th">
+                                    <a href="">
+                                        BMW 7series
+                                    </a><br>
+                                    2002, автомат, 4.5л<br>
+                                    Цена:
+                                    <strong>530 000 руб.</strong>
+                                </span>
+                            </span>
+                            <span class="special">
+                                <a href="">
+                                    Каталог Спецпредложений
+                                </a>
+                            </span>
+                        </article>
+                    </article>
+                </section>
+                <section class="two-columns">
+                    <article class="property map">
+                        <article class="head-map">Работа</article>
+                        <article class="two-blocks">
+                            <span class="h">
+                                <a href=""><strong>Резюме</strong></a>
+                                <a href=""><strong>Вакансии</strong></a>
+                            </span>
+                            <span class="h">
+                                <a href="">Разместить резюме</a>
+                                <a href="">Разместить вакансию</a>
+                            </span>
+                            <span class="content">
+                                <img src="Images/19.jpg" class="photo" alt="Менеджер" title="Мен">
+                                <span class="text-header th">
+                                    <a href="">
+                                        <strong>Менеджер по продажам</strong>
+                                    </a><br>
+                                    Зарплата:
+                                    <strong>от 32 000 руб. до 120 000 руб.</strong>
+                                </span>
+                            </span>
+                            <span class="content">
+                                <img src="Images/20.jpg" class="photo" alt="Продавец" title="Прод">
+                                <span class="text-header th">
+                                    <a href="">
+                                        <strong>Продавец</strong>
+                                    </a><br>
+                                    Стаж работы: 1-3 года<br>
+                                    Зарплата:
+                                    <strong>от 40 000 руб. до 50 000 руб.</strong>
+                                </span>
+                            </span>
+                        </article>
+                    </article>
+                    <article class="sale map">
+                        <article class="head-map">Объявления</article>
+                        <article class="two-blocks">
+                            <span class="content">
+                                <img src="Images/21.jpeg" class="photo" alt="Альбом" title="Альб">
+                                <span class="text-header th">
+                                    <a href="">
+                                        <strong>
+                                            Альбом для монет, банкнот Numistore (новый)
+                                        </strong>
+                                    </a><br>
+                                    Цена:
+                                    <strong>950 руб.</strong>
+                                </span>
+                            </span>
+                            <span class="content">
+                                <img src="Images/22.jpg" class="photo" alt="Доски" title="Доски">
+                                <span class="text-header th">
+                                    <a href="">
+                                        <strong>Магнитно - грифельные доски</strong>
+                                    </a><br>
+                                    Цена:
+                                    <strong>1 450 руб.</strong>
+                                </span>
+                            </span>
+                            <span class="content">
+                                <img src="Images/23.jpg" class="photo" alt="Прибор" title="Прибор">
+                                <span class="text-header th">
+                                    <a href="">
+                                        <strong>Прибор для настройки барабанов Tama TW100</strong>
+                                    </a><br>
+                                    Цена:
+                                    <strong>не указана</strong>
+                                </span>
+                            </span>
+                            <span class="special">
+                                <a href="">
+                                    Просмотреть все предложения
+                                </a>
+                            </span>
+                        </article>
+                    </article>
+                </section>
+                <article class="details map">
+                    <article class="head-map">Знакомства</article>
+                    <article class="wrap">
+                        <span class="people">
+                            <img src="Images/24.jpg" class="ava" alt="Афродита" title="Афродита">
+                            <span class="name">AFRODITA</span>
+                            27 лет
+                        </span>
+                        <span class="people">
+                            <img src="Images/25.jpg" class="ava" alt="Саня" title="Саня">
+                            <span class="name">sania</span>
+                            27 лет
+                        </span>
+                        <span class="people">
+                            <img src="Images/26.jpg" class="ava" alt="Ironeja" title="Ironeja">
+                            <span class="name">Ironeja</span>
+                            26 лет
+                        </span>
+                        <span class="people">
+                            <img src="Images/27.jpg" class="ava" alt="AlexDIEZ" title="AlexDIEZ">
+                            <span class="name">AlexDIEZ</span>
+                            29 лет
+                        </span>
+                        <span class="people">
+                            <img src="Images/28.jpg" class="ava" alt="Елена" title="Елена">
+                            <span class="name">Елена</span>
+                            29 лет
+                        </span>
+                        <span class="people">
+                            <img src="Images/29.jpg" class="ava" alt="Дмитрий" title="Дмитрий">
+                            <span class="name">Дмитрий</span>
+                            36 лет
+                        </span>
+                    </article>
+                </article>
+            </section>
+            <section class="right">
+                <article class="details map">
+                    <article class="head-map">Спецпроект</article>
+                    <article class="promo">
+                        <img src="Images/promo.jpg" class="promo-image" alt="проект" title="пр">
+                        <a href="" class="orange-text">
+                            <strong>Репортаж из дома будущего</strong>
+                        </a>
+                    </article>
+                </article>
+                <article class="tv map">
+                    <article class="head-map">Сейчас по TV</article>
+                    <article class="teleprograma">
+                        <span class="channel">
+                            <span class="label-tv">
+                                <img src="Images/30.jpg" class="channel-image" alt="1" title="1">
+                            </span>
+                            <span class="cinema">
+                                22:30 -
+                                <strong>
+                                    "Клуб Весёлых и Находчивых". Кубок мэра Москвы (S) (16+).
+                                </strong>
+                                <sup>(еще 2 часа 10 мин.)</sup>
+                            </span>
+                        </span>
+                        <span class="channel">
+                            <span class="label-tv">
+                                <img src="Images/31.jpg" class="channel-image" alt="Р1" title="Р1">
+                            </span>
+                            <span class="cinema">
+                                22:00 -
+                                <strong>"Воскресный вечер с Владимиром Соловьёвым". (12+).</strong>
+                                <sup>(еще 1 час 55 мин.)</sup>
+                            </span>
+                        </span>
+                        <span class="channel">
+                            <span class="label-tv">
+                                <img src="Images/32.jpg" class="channel-image" alt="НТВ" title="">
+                            </span>
+                            <span class="cinema">
+                                21:00 -
+                                <strong>Остросюжетный сериал "МЕНТОВСКИЕ ВОЙНЫ-5". (16+).</strong>
+                                <sup>(еще 2 часа 55 мин.)</sup>
+                            </span>
+                        </span>
+                        <a href="" class="all">
+                            Репортаж из дома будущего
+                        </a>
+                    </article>
+                </article>
+                <article class="business map">
+                    <article class="head-map">Бизнес-Образование</article>
+                    <article class="promo">
+                        <a href="" class="seminar">
+                            <strong>Семинары, тренинги, учебные курсы</strong>
+                        </a>
+                        - вся информация по бизнес-образованию для деловых людей и не только:
+                        <form action="*" method="post">
+                            <strong>Выбрать по тематике:</strong>
+                            <select size="1" name="subject">
+                                <option disabled>Все</option>
+                                <option value="Аудит">Аудит</option>
+                                <option value="Бухг. учёт, нал">Бухгалтерский учёт, налоги</option>
+                                <option value="ВЭД, Таможня">ВЭД, Таможня</option>
+                                <option value="Логистика">Логистика</option>
+                                <option value="Марк., Реклама, PR">Маркетинг, Реклама, PR</option>
+                                <option value="Менеджмент">Менеджмент</option>
+                                <option value="Психология">Психология</option>
+                                <option value="Упр-ие Персоналом">Управление Персоналом</option>
+                                <option value="Финансы">Финансы</option>
+                            </select><br>
+                            <strong>Выбрать по организатору:</strong>
+                            <select size="1" name="sponsor">
+                                <option disabled>Все</option>
+                                <option value="ИППК УрФУ">ИППК УрФУ</option>
+                                <option value="Уч-ый центр">Учебный центр Ирины Маминой</option>
+                            </select>
+                            <input type="submit" value="Выбрать события" class="choice">
+                        </form>
+                    </article>
+                </article>
+                <article class="buy map">
+                    <article class="head-map">Совместные покупки</article>
+                    <article class="buy-together">
+                        <img src="Images/basket.jpg" class="buy-image" alt="Корзина" title="">
+                        <a href="" class="orange-text">
+                            <strong>Вместе покупать дешевле</strong>
+                        </a>
+                    </article>
+                </article>
+            </section>
+        </main>
+    </div>
+    <footer>
+        <section class="info">
+            <span class="a-inform">
+                <a href="" class="link">Информация для клиентов</a>
+                <a href="" class="link">Реклама на E2.RU</a>
+                <a href="" class="link">Прайс-лист</a>
+                <a href="" class="link">iPhone</a>
+                <a href="" class="link">Мобильная версия</a>
+            </span>
+            <article class="address">
+                <span class="text-information">
+                    <strong>Единый номер:</strong>
+                    <a href="tel:+78007008910" class="link">8-800-700-8-9-10</a>
+                    (звонок бесплатный)<br>
+                    <strong>Отдел продаж:</strong>
+                    <a href="mailto:adv@corp.e1.ru" class="link">adv@corp.e1.ru</a>,
+                    <a href="tel:+73433794910" class="link">(343) 379-49-10</a><br>
+                    <strong>Редакция:</strong>
+                    <a href="mailto:news@corp.e1.ru" class="link">news@corp.e1.ru</a>,
+                    <a href="tel:+73433794995" class="link">(343) 379-49-95</a>,
+                    <a href="tel:+73433455534" class="link">(343) 34-555-34</a>
+                    (круглосуточно - для новостей)<br>
+                    Замечания и пожелания по работе отдела продаж<br>
+                    Публикация материалов под меткой «На правах рекламы»<br>
+                    и «Новости компаний» оплачена из средств рекламодателя<br>
+                </span>
+                <span class="text-information">
+                    Отзывы и предложения о работе портала:
+                    <a href="mailto:info@corp.e1.ru" class="link">info@corp.e1.ru</a><br>
+                    Центр поддержки пользователей портала E1.RU<br>
+                    Проблемы при работе с порталом:
+                    <a href="mailto:support@corp.e1.ru" class="link">support@corp.e1.ru</a><br>
+                    <a href="" class="link">Карта сайта</a>
+                </span>
+                <img src="Images/18grey.jpg" class="year" alt="+18" title="+18">
+            </article>
+        </section>
+        <section class="info2">
+            <article class="address">
+                    © ООО «Хёрст Шкулёв Диджитал. Урал»
+            </article>
+            <article class="partners">
+                <a href="">
+                    <img src="Images/gr.jpg" class="img1" alt="int-m-group" title="int-m-group">
+                </a>
+                <a href="">
+                    <img src="Images/n1_gray.png" class="img2" alt="n1.ru" title="n1.ru">
+                </a>
+                <a href="">
+                    <img src="Images/zarplata.png" class="img3" alt="Зарплата" title="Зарплата">
+                </a>
+            </article>
+        </section>
+    </footer>
 </body>
 </html>
