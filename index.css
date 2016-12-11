@@ -1,23 +1,15 @@
 body
 {
-    -ms-flex-pack: center;
     justify-content: center;
     display: flex;
     margin: 0;
+    font-size: 12px;
+    font-family: arial;
 }
 
 a
 {
     color: #196199;
-}
-
-.icon
-{
-    display: inline-block;
-    width: 23px;
-    height: 23px;
-    background: url(images/icons.png) no-repeat;
-    cursor: pointer;
 }
 
 .vk-icon,
@@ -31,34 +23,36 @@ a
     width: 23px;
     height: 23px;
     display: inline-block;
+    background: url(images/icons.png) no-repeat;
+    cursor: pointer;
 }
 
-.facebook-icon .icon
+.facebook-icon
 {
     background-position: -29px 0;
 }
 
-.twitter-icon .icon
+.twitter-icon
 {
     background-position: -57px 0;
 }
 
-.ok-icon .icon
+.ok-icon
 {
     background-position: -84px 0;
 }
 
-.yandex-icon .icon
+.yandex-icon
 {
     background-position: -112px 0;
 }
 
-.inst-icon .icon
+.inst-icon
 {
     background-position: -140px 0;
 }
 
-.telegramm-icon .icon
+.telegramm-icon
 {
     background-position: -168px 0;
 }
@@ -70,6 +64,8 @@ a
 
 .bottom-header
 {
+    font-family: Times;
+    font-size: 1.3em;
     display: flex;
     /* stylelint-disable */
     display: grid;
@@ -84,6 +80,7 @@ a
 
 .header
 {
+    padding-bottom: 10px;
     grid-area: header;
     display: grid;
     grid-template-columns: 110px 110px 100px 110px 100px 100px 
@@ -98,7 +95,6 @@ a
 {
     flex: 1 40%;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
     margin-right: 10px;
 }
@@ -108,7 +104,6 @@ a
     display: grid;
     width: 1330px;
     grid-template-columns: 530px 530px 270px;
-    grid-template-rows: 130px 800px 150px;
     grid-template-areas: 'header header header'
         'all-content all-content all-content'
         'footer footer footer';
@@ -116,11 +111,8 @@ a
 
 .main-footer
 {
+    margin-top: 10px;
     display: flex;
-    -ms-flex-align: center;
-    align-items: center;
-    font-size: 12px;
-    font-family: arial;
     background-color: #ccc;
     grid-area: footer;
 }
@@ -143,7 +135,7 @@ a
 
 .e2
 {
-    font-size: 15px;
+    font-size: 1.3em;
     margin-left: 5px;
 }
 
@@ -154,7 +146,6 @@ a
 
 .rating
 {
-    -ms-flex-item-align: start;
     align-self: flex-start;
 }
 
@@ -163,7 +154,6 @@ a
 {
     margin: 10px;
     display: flex;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -184,13 +174,7 @@ a
     grid-area: right-content;
 }
 
-.logo,
-.date,
-.weather,
-.traffic-jams,
-.society,
-.course,
-.form
+.bottom-header
 {
     margin-top: 8px;
 }
@@ -200,36 +184,7 @@ a
     width: 210px;
     flex: 1 10%;
     grid-area: lg;
-}
-
-.date
-{
-    flex: 1 4%;
-}
-
-.weather
-{
-    flex: 1 10%;
-}
-
-.traffic-jams
-{
-    flex: 1 4%;
-}
-
-.society
-{
-    flex: 1 15%;
-}
-
-.course
-{
-    flex: 1 10%;
-}
-
-.form
-{
-    flex: 1 20%;
+    padding-right: 10px;
 }
 
 .work
@@ -257,7 +212,6 @@ a
 .realty
 {
     margin-right: 10px;
-    -ms-flex: 1 45%;
     flex: 1 45%;
 }
 
@@ -270,13 +224,7 @@ a
 .caption,
 .car-sale
 {
-    -ms-flex: 1 45%;
     flex: 1 45%;
-}
-
-.caption-news
-{
-    font-size: 12px;
 }
 
 .picture-story
@@ -302,25 +250,26 @@ a
 
 .news-img
 {
+    align-self: flex-start;
     padding: 5px;
     max-width: 70px;
-    -ms-flex: 1 10%;
-    flex: 1 10%;
+    min-width: 70px;
+    height: 100%;
+    flex: 1 20%;
 }
 
 .caption-img
 {
-    padding: 5px;
+    align-self: flex-start;
     max-width: 50px;
-    -ms-flex: 1 10%;
+    min-width: 50px;
+    padding: 5px;
     flex: 1 10%;
 }
 
 .about-news
 {
-    font-family: arial;
     font-weight: bold;
-    -ms-flex: 1 90%;
     flex: 1 90%;
 }
 
@@ -332,7 +281,6 @@ a
 .description-news p
 {
     margin: 0;
-    font-size: 12px;
 }
 
 .about-news
@@ -350,19 +298,13 @@ a
     color: #000;
 }
 
-.tv-ref
-{
-    font-size: 12px;
-    font-family: arial;
-}
-
 .band
 {
     border-left: 10px solid #ff4500;
     padding-left: 5px;
     padding-right: 5px;
+    padding-bottom: 4px;
     display: flex;
-    -ms-flex-pack: justify;
     justify-content: space-between;
     background-color: #ccc;
     border-top: 1px solid #000;
@@ -371,7 +313,7 @@ a
 .name
 {
     cursor: pointer;
-    font: bold 11px arial;
+    font: bold .9em arial;
     padding-top: 3px;
     margin: 0;
 }
@@ -402,7 +344,7 @@ a
 
 .description
 {
-    font-size: 20px;
+    font-size: 1.7em;
 }
 
 .shadow
@@ -412,9 +354,9 @@ a
     position: absolute;
     bottom: 0;
     left: 0;
-    z-index: 2;
-    width: 100%;
-    height: 120px;
+    z-index: -2;
+    width: calc(100% - 25px);
+    height: 100%;
 }
 
 .name-news
@@ -425,7 +367,7 @@ a
     bottom: 0;
     left: 0;
     z-index: 5;
-    width: 95%;
+    width: 100%;
     height: auto;
 }
 
@@ -433,18 +375,15 @@ a
 {
     grid-area: frm;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: center;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-direction: column;
     flex-direction: column;
+    flex: 1 20%;
 }
 
 .enter
 {
-    margin-left: 2px;
-    margin-right: 2px;
+    margin: 0 2px;
 }
 
 .valute
@@ -457,9 +396,8 @@ a
 {
     margin-top: 5px;
     display: flex;
-    -ms-flex-align: center;
     align-items: center;
-    font-size: 12px;
+    font-size: .8em;
 }
 
 .mail-input1
@@ -484,18 +422,17 @@ a
 
 .name-valute
 {
-    font: bold 11px arial;
+    font: bold 1em arial;
     color: #00f;
 }
 
 .course
 {
+    flex: 1 10%;
     grid-area: crs;
     display: flex;
-    font-size: 10px;
-    -ms-flex-pack: distribute;
+    font-size: .7em;
     justify-content: space-around;
-    -ms-flex-align: center;
     align-items: center;
     border-right: 1px solid #ccc;
 }
@@ -507,14 +444,12 @@ a
 
 .society
 {
+    flex: 1 15%;
     border-right: 1px solid #ccc;
     grid-area: sct;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
@@ -525,32 +460,27 @@ a
 
 .chanel
 {
-    -ms-flex-pack: justify;
     justify-content: space-between;
     margin: 10px;
-    font-size: 12px;
     display: flex;
 }
 
 .traffic-jams
 {
+    flex: 1 4%;
     border-right: 1px solid #ccc;
     grid-area: trf;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -ms-flex-align: center;
     align-items: center;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .weather
 {
+    flex: 1 10%;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    -ms-flex-align: center;
     align-items: center;
     grid-area: wth;
     border-right: 1px solid #ccc;
@@ -560,7 +490,7 @@ a
 {
     color: #fff;
     text-align: center;
-    font-size: 19px;
+    font-size: 1.2em;
     width: 25px;
     height: 25px;
     background-image: url(images/traffic.png);
@@ -579,9 +509,7 @@ a
 
 .points
 {
-    font-family: arial;
-    font-weight: bold;
-    font-size: 14px;
+    font: bold .9em arial;
 }
 
 .temperature
@@ -596,28 +524,23 @@ a
 
 .ref
 {
-    font-size: 12px;
+    font-family: Times;
+    font-size: 1em;
     color: #000;
-}
-
-.logo
-{
-    padding-right: 10px;
 }
 
 .edu
 {
-    font-size: 12px;
     margin: 10px;
 }
 
 .orange-button
 {
-    font-size: 10px;
+    font-size: .9em;
     background: #ff5200;
     cursor: pointer;
     color: #fff;
-    font-family: Tahoma, verdana, sans-serif, arial;
+    font-family: Tahoma;
 }
 
 .select-theme
@@ -638,26 +561,23 @@ a
 .chanel img
 {
     margin-right: 5px;
-    -ms-flex-item-align: start;
     align-self: flex-start;
 }
 
 .tv
 {
     display: flex;
-    -ms-flex-pack: justify;
     justify-content: space-between;
-    -ms-flex-direction: column;
     flex-direction: column;
 }
 
 .date
 {
-    padding: 5px;
+    flex: 1 4%;
+    padding: 10px 5px 5px;
     border-right: 1px solid #ccc;
     border-left: 1px solid #ccc;
-    font: 14px arial;
-    padding-top: 10px;
+    font: .9em arial;
     text-align: center;
     grid-area: date;
 }
@@ -665,7 +585,7 @@ a
 .time
 {
     flex: 1 15%;
-    font: bold 15px arial;
+    font: bold 1em arial;
 }
 
 .date p
@@ -673,14 +593,13 @@ a
     margin: 0;
 }
 
-.title
+.projects
 {
     padding-top: 3px;
     grid-area: ttl;
     display: flex;
-    -ms-flex-pack: distribute;
     justify-content: space-around;
-    font: bold 12px arial;
+    font: bold 1em arial;
     background-color: #444;
 }
 
@@ -688,7 +607,7 @@ a
 {
     grid-area: thm;
     display: flex;
-    font: bold 12px arial;
+    font: bold 1em arial;
 }
 
 .themes a:nth-child(2n)
@@ -716,12 +635,12 @@ a
     color: #000;
 }
 
-.title a:hover
+.projects a:hover
 {
     color: #ff7f00;
 }
 
-.title a,
+.projects a,
 .themes a
 {
     text-align: center;
@@ -747,9 +666,9 @@ a
 
 .main-news
 {
+    width: 100%;
     position: relative;
     color: #fff;
-    font-family: arial;
     border: 1px solid #000;
 }
 
@@ -794,7 +713,6 @@ input[id='buy']:checked ~ .buy
     .container 
     {
         display: flex;
-        -ms-flex-direction: column;
         flex-direction: column;
     }
 
@@ -820,13 +738,11 @@ input[id='buy']:checked ~ .buy
 
     .chanel
     {
-        -ms-flex-pack: normal;
         justify-content: normal;
     }
 
     .buy
     {
-        -ms-flex-pack: center;
         justify-content: center;
     }
 
@@ -861,11 +777,10 @@ input[id='buy']:checked ~ .buy
         display: block;
     }
 
-    .title,
+    .projects,
     .themes
     {
         display: flex;
-        -ms-flex-direction: column;
         flex-direction: column;
     }
 }
