@@ -476,7 +476,7 @@ form[id='sign-in']
 .city-news
 {
     display: flex;
-    align-items: flex-start;
+    align-items: stretch;
     margin: 0;
     padding: 0;
 }
@@ -485,11 +485,19 @@ form[id='sign-in']
 .second-column,
 .third-column
 {
+    position: relative;
+    align-content: flex-start;
     display: flex;
     flex-wrap: wrap;
     width: calc(40% - 2rem);
     margin: 0 0 0 1rem;
     padding: 0;
+}
+
+.first-column,
+.second-column
+{
+    padding-bottom: 475px;
 }
 
 .third-column
@@ -668,6 +676,14 @@ form[id='sign-in']
     flex-direction: row;
     flex-wrap: wrap;
     justify-content: space-around;
+}
+
+.photo-gallery,
+.video-gallery
+{
+    position: absolute;
+    left: 0;
+    bottom: 0;
 }
 
 .looking .any-news,
