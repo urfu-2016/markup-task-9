@@ -6,6 +6,16 @@ body
     background: rgba(0,171,111,.1);
 }
 
+.header-main
+{
+    display: flex;
+    width:100%;
+    min-width: 1110px;
+    flex-direction: column;
+    margin: 0 auto;
+    min-height: calc(100vh - 260px);
+}
+
 header
 {
     display: flex;
@@ -242,6 +252,16 @@ a
     color: #00ab6f;
 }
 
+.search input
+{
+    width: 60%;
+}
+
+.mail input
+{
+    width: 30%;
+}
+
 .enter
 {
     width: 25px;
@@ -254,6 +274,7 @@ a
 {
     display: flex;
     flex-direction: column;
+    min-width: 230px;
 }
 
 main
@@ -534,6 +555,7 @@ footer
     display: flex;
     flex-direction: column;
     width: 100%;
+    min-width: 1110px;
     background: rgba(0,171,111,.4);
     box-shadow: 0 -5px 10px -4px #00ab6f;
 }
@@ -541,15 +563,15 @@ footer
 .info
 {
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: space-between;
 }
 
-.addres,
-.communication
+.info2 ,
+.addres
 {
     display: flex;
-    flex-direction: column;
+    flex-direction: row;
     justify-content: space-between;
     padding: 20px;
 }
@@ -558,19 +580,15 @@ footer
 {
     display: flex;
     justify-content: space-around;
-}
-
-.znachki
-{
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    padding: 20px;
+    width: 100%;
+    padding: 5px;
+    box-sizing: border-box;
 }
 
 .year
 {
     width: 60px;
+    height: 40px;
     display: block;
 }
 
