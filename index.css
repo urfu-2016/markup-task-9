@@ -17,6 +17,7 @@ body
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
     justify-content: space-between;
+    font-family: Tahoma, verdana, sans-serif, arial;
 }
 
 header
@@ -24,11 +25,22 @@ header
     min-width: 700px;
 }
 
+.e1-nav__triangle
+{
+    border-color: #fff #434343 #434343;
+    border-style: solid;
+    border-width: 4px 4px 0;
+    display: inline-block;
+    margin-left: 3px;
+    vertical-align: 2px;
+    width: 0;
+}
+
 .header__nav
 {
     color: #fff;
     display: block;
-    font-size: 15px;
+    font-size: 14px;
     font-weight: normal;
     background: #444 none repeat scroll 0;
 }
@@ -63,7 +75,7 @@ header
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
-    font-size: 15px;
+    font-size: 14px;
     color: #fff;
     font-weight: bold;
 }
@@ -125,6 +137,7 @@ header
     -ms-flex-align: center;
     align-items: center;
     height: 100%;
+    flex-grow: 1;
     position: relative;
 }
 
@@ -144,7 +157,8 @@ header
 
 .widget__item__time span,
 .weather__value,
-.traffic-jams__balls
+.traffic-jams__balls,
+.address__info__txt
 {
     font-weight: bold;
 }
@@ -154,7 +168,7 @@ header
 .course__cb,
 .course__avarage
 {
-    font-size: 10px;
+    font-size: 9px;
     color: #000;
     padding-left: 5px;
     padding-right: 5px;
@@ -212,7 +226,7 @@ header
 .traffic-jams__balls
 {
     color: #3a3a3a;
-    font-size: 16px;
+    font-size: 15px;
     line-height: 14px;
 }
 
@@ -278,32 +292,34 @@ header
 {
     border-top: 1px solid #999;
     margin-top: 5px;
+    display: flex;
+    justify-content: center;
 }
 
 .course__buy-sale
 {
-    font-size: 11px;
+    font-size: 10px;
 }
 
 .cb__usd,
 .cb__eur
 {
     color: #369;
-    font-size: 10px;
+    font-size: 9px;
     font-weight: bold;
 }
 
 .widget__item td
 {
     font-weight: bold;
-    font-size: 14px;
+    font-size: 13px;
 }
 
 .item__find__text,
 .item__auth__text
 {
     color: #171717;
-    font-size: 11px;
+    font-size: 10px;
 }
 
 .widget__item__find input
@@ -382,7 +398,7 @@ header
 {
     padding: 6px;
     border-left: 1px solid #ccc;
-    font-size: 12px;
+    font-size: 11px;
 }
 
 .tv-programm__item
@@ -445,14 +461,14 @@ header
 .block__text__article
 {
     font-weight: bold;
-    font-size: 18px;
+    font-size: 17px;
     line-height: 24px;
     color: #fff;
 }
 
 .block__text__main
 {
-    font-size: 14px;
+    font-size: 13px;
     line-height: normal;
     color: #fff;
     margin: 2px 0 10px;
@@ -500,13 +516,13 @@ header
 
 .buy-house__item__content
 {
-    font-size: 13px;
+    font-size: 12px;
     margin-left: 20px;
 }
 
 .buy-house__tags__item
 {
-    font-size: 10px;
+    font-size: 9px;
     color: #196199;
     text-decoration: underline;
     cursor: pointer;
@@ -534,18 +550,19 @@ header
 
 .header-block__name
 {
-    font-size: 10px;
+    font-size: 9px;
     color: #000;
     text-transform: uppercase;
     font-weight: bold;
     border-right: 1px solid grey;
     padding: 0 5px;
+    line-height: 18px;
 }
 
 .header-block__move
 {
     cursor: pointer;
-    font-size: 11px;
+    font-size: 10px;
     color: #666;
     border-bottom: 1px solid #666;
     display: inline-block;
@@ -571,16 +588,16 @@ header
 {
     display: flex;
     width: 100%;
-    font-size: 14px;
+    font-size: 13px;
     color: #000;
 }
 
 .item__article__short-topic
 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     cursor: pointer;
-    padding: 7px;
+    padding-bottom: 7px;
     border-bottom: 1px solid #ff5200;
 }
 
@@ -592,7 +609,7 @@ header
 .item__tag
 {
     color: #ff5200;
-    font-size: 10px;
+    font-size: 9px;
 }
 
 .img-black-wom
@@ -620,7 +637,7 @@ header
 
 .item__article
 {
-    font-size: 14px;
+    font-size: 13px;
     font-weight: bold;
     text-decoration: underline;
     cursor: pointer;
@@ -642,6 +659,39 @@ footer
     border-top: 2px solid #000;
     padding: 25px 15px 23px;
     display: flex;
+    flex-direction: column;
+}
+
+.fotter-contacts
+{
+    display: flex;
+}
+
+.fotter-contacts__address
+{
+    display: flex;
+    flex-direction: column;
+    flex-grow: 6;
+}
+
+.fotter-contacts__address__list
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.address__list__item
+{
+    font-size: 11px;
+    color: #196199;
+    text-decoration: underline;
+}
+
+.fotter-partners
+{
+    border-top: 1px solid #d1d1d1;
+    padding: 25px 0;
+    display: flex;
     -webkit-box-pack: justify;
     -webkit-justify-content: space-between;
     -ms-flex-pack: justify;
@@ -656,6 +706,36 @@ footer
     flex-grow: 2;
 }
 
+.address__info__link,
+.address__info__back
+{
+    color: #196199;
+    text-decoration: underline;
+}
+
+.address__info__back
+{
+    display: block;
+    margin-top: 7px;
+}
+
+.fotter-contacts__feedback-logo
+{
+    display: flex;
+    flex-grow: 2;
+    justify-content: space-between;
+}
+
+.address__list__item:not(:first-child)
+{
+    margin-left: 15px;
+}
+
+.fotter-contacts__logo
+{
+    margin-top: 40px;
+}
+
 .footer__e1-partners
 {
     display: flex;
@@ -666,4 +746,9 @@ footer
     -webkit-justify-content: space-around;
     -ms-flex-pack: distribute;
     justify-content: space-around;
+}
+
+.fotter-contacts__address__info
+{
+    margin: 15px 0;
 }
