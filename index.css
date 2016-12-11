@@ -25,7 +25,7 @@ body
 
     min-height: 100%;
 
-    margin-bottom: -150px;
+    margin-bottom: -200px;
 
     box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 
@@ -44,7 +44,7 @@ body
 footer
 {
     box-sizing: border-box;
-    height: 150px;
+    height: 200px;
 }
 
 a
@@ -306,17 +306,21 @@ a
 footer
 {
     display: flex;
-    font-size: .8em;
-    background: #aaa;
+    background: #e1e1e1;
+    font-size: .9em;
     justify-content: space-between;
     padding: 10px 20px;
     border-top: 2px solid #000;
 
     margin: 0 auto;
     width: 1270px;
-    box-shadow: 0 0 10px rgba(0, 0, 0, .5);
 
     line-height: 1.2em;
+}
+
+footer a
+{
+    color: #1975b6;
 }
 
 .footer-links
@@ -334,6 +338,7 @@ footer
 .footer-emails
 {
     padding: 10px 0;
+    font-style: normal;
 }
 
 .footer-right
@@ -378,16 +383,15 @@ main
     height: 100%;
 }
 
-.main-news p,
+.main-news div,
 .main-news img
 {
     position: absolute;
 }
 
-.main-news p
+.main-news .category-header
 {
     display: block;
-    height: 50px;
     padding: 10px 0;
     box-sizing: border-box;
     background: rgba(0, 0, 0, .8);
@@ -468,4 +472,24 @@ main
 {
     width: 20%;
     margin-left: 10px;
+}
+
+.main-news .main-news-header,
+.main-news .main-news-content
+{
+    color: #fff;
+    padding: 0;
+    margin: 0;
+    padding-left: 10px;
+    font-size: 1.2em;
+}
+
+.main-news .main-news-content
+{
+    font-size: 1em;
+}
+
+.bold
+{
+    font-weight: bold;
 }
