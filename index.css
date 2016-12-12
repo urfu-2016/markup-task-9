@@ -1,10 +1,15 @@
 body
 {
+    width: 100%;
+    position: absolute;
+    left: 0;
+    top: 0;
+    flex-direction: column;
     justify-content: center;
+    align-items: center;
     display: flex;
     margin: 0;
-    font-size: 12px;
-    font-family: arial;
+    font: 12px arial;
 }
 
 a
@@ -12,13 +17,7 @@ a
     color: #196199;
 }
 
-.vk-icon,
-.facebook-icon,
-.twitter-icon,
-.ok-icon,
-.yandex-icon,
-.inst-icon,
-.telegramm-icon
+.icon
 {
     width: 23px;
     height: 23px;
@@ -27,43 +26,44 @@ a
     cursor: pointer;
 }
 
-.facebook-icon
+.icon:nth-child(2)
 {
     background-position: -29px 0;
 }
 
-.twitter-icon
+.icon:nth-child(3)
 {
     background-position: -57px 0;
 }
 
-.ok-icon
+.icon:nth-child(4)
 {
     background-position: -84px 0;
 }
 
-.yandex-icon
+.icon:nth-child(5)
 {
     background-position: -112px 0;
 }
 
-.inst-icon
+.icon:nth-child(6)
 {
     background-position: -140px 0;
 }
 
-.telegramm-icon
+.icon:nth-child(7)
 {
     background-position: -168px 0;
 }
 
-.icons
+.icons:nth-child(8)
 {
     display: inline-block;
 }
 
 .bottom-header
 {
+    margin-top: 8px;
     font-family: Times;
     font-size: 1.3em;
     display: flex;
@@ -80,6 +80,7 @@ a
 
 .header
 {
+    width: 1330px;
     padding-bottom: 10px;
     grid-area: header;
     display: grid;
@@ -101,16 +102,20 @@ a
 
 .container
 {
-    display: grid;
     width: 1330px;
+    display: flex;
+    /* stylelint-disable */
+    display: grid;
+    /* stylelint-enable */
+    margin-top: 10px;
     grid-template-columns: 530px 530px 270px;
-    grid-template-areas: 'header header header'
-        'all-content all-content all-content'
-        'footer footer footer';
+    grid-template-areas: 'left-content central-content right-content';
 }
 
 .main-footer
 {
+    width: 1330px;
+    align-self: center;
     margin-top: 10px;
     display: flex;
     background-color: #ccc;
@@ -172,11 +177,6 @@ a
 {
     flex: 1 20%;
     grid-area: right-content;
-}
-
-.bottom-header
-{
-    margin-top: 8px;
 }
 
 .logo
@@ -318,17 +318,6 @@ a
     margin: 0;
 }
 
-.all-content
-{
-    display: flex;
-    /* stylelint-disable */
-    display: grid;
-    /* stylelint-enable */
-    margin-top: 10px;
-    grid-template-columns: 530px 530px 270px;
-    grid-template-areas: 'left-content central-content right-content';
-}
-
 .left-content
 {
     flex: 1 40%;
@@ -344,6 +333,7 @@ a
 
 .description
 {
+    white-space: normal;
     font-size: 1.7em;
 }
 
@@ -386,11 +376,6 @@ a
     margin: 0 2px;
 }
 
-.valute
-{
-    border-top: 1px solid;
-}
-
 .login,
 .search
 {
@@ -426,11 +411,18 @@ a
     color: #00f;
 }
 
+.course-price,
+.course-today
+{
+    align-self: baseline;
+}
+
 .course
 {
     flex: 1 10%;
     grid-area: crs;
     display: flex;
+    padding-top: 10px;
     font-size: .7em;
     justify-content: space-around;
     align-items: center;
@@ -585,7 +577,7 @@ a
 .time
 {
     flex: 1 15%;
-    font: bold 1em arial;
+    font-weight: bold;
 }
 
 .date p
@@ -716,6 +708,21 @@ input[id='buy']:checked ~ .buy
         flex-direction: column;
     }
 
+    .main-footer,
+    .container,
+    .header
+    {
+        width: 100%;
+    }
+
+    body
+    {
+        overflow-x: hidden;
+        display: block;
+        justify-content: normal;
+        align-items: normal;
+    }
+
     .logo,
     .spec,
     .edu
@@ -763,6 +770,7 @@ input[id='buy']:checked ~ .buy
 
     .header
     {
+        width: 100%;
         display: block;
     }
 
