@@ -97,6 +97,7 @@ header div
 .third-section
 {
     justify-content: flex-start;
+    margin: 0 10px;
     font-size: 12px;
 }
 
@@ -524,6 +525,7 @@ article p
     position: relative;
     border: 1px solid black;
     width: 100%;
+    margin-left: 0;
     height: 340px;
 }
 
