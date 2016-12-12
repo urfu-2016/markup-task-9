@@ -1,566 +1,564 @@
 <!DOCTYPE html>
-<html>
+<html lang="ru">
 <head>
     <meta charset="utf-8">
     <title>Я1.ru</title>
     <link href="index.css" type="text/css" rel="stylesheet">
+</head>
 <body>
-<div class="grid-container">
-    <div class="ya1-top-bar">
-        <a class="ya1-bar-item bold">Главная</a>
-        <a class="ya1-bar-item bold">Новости</a>
-        <a class="ya1-bar-item bold">Недвижимость</a>
-        <a class="ya1-bar-item bold">Авто</a>
-        <a class="ya1-bar-item bold">Работа</a>
-        <a class="ya1-bar-item bold">Объявления</a>
-        <a class="ya1-bar-item bold">Знакомства</a>
-        <a class="ya1-bar-item bold">Погода</a>
-        <a class="ya1-bar-item bold">Афиша</a>
-        <a class="ya1-bar-item bold">Форумы</a>
-        <a class="ya1-bar-item bold">Бизнес</a>
-        <a class="ya1-bar-item bold">Общение</a>
-        <input type="checkbox" class="more-item" id="more">
-        <label for="more" class="ya1-bar-item bold">Ещё ▼</label>
-        <div class="more-block">
-            <a class="ya1-bar-item bold">Мало тебе?</a>
-            <a class="ya1-bar-item bold">"Ещё" захотел?</a>
+<nav class="ya1-top-bar">
+    <a href="#" class="ya1-bar-item strong">Главная</a>
+    <a href="#" class="ya1-bar-item strong">Новости</a>
+    <a href="#" class="ya1-bar-item strong">Недвижимость</a>
+    <a href="#" class="ya1-bar-item strong">Авто</a>
+    <a href="#" class="ya1-bar-item strong">Работа</a>
+    <a href="#" class="ya1-bar-item strong">Объявления</a>
+    <a href="#" class="ya1-bar-item strong">Знакомства</a>
+    <a href="#" class="ya1-bar-item strong">Погода</a>
+    <a href="#" class="ya1-bar-item strong">Афиша</a>
+    <a href="#" class="ya1-bar-item strong">Форумы</a>
+    <a href="#" class="ya1-bar-item strong">Бизнес</a>
+    <a href="#" class="ya1-bar-item strong">Общение</a>
+    <input type="checkbox" class="more-item" id="more">
+    <label for="more" class="ya1-bar-item strong">Ещё ▼</label>
+    <div class="more-block">
+        <a href="#" class="ya1-bar-item strong">Мало тебе?</a>
+        <a href="#" class="ya1-bar-item strong">"Ещё" захотел?</a>
+    </div>
+</nav>
+<header class="ya1-header">
+    <section class="header-section logo-section">
+        <div class="logo">
+            <span class="logo-capture">
+            <span class="strong">Екатеринбург</span> Он-Лайн</span>
+            <span class="yandex-thing">Я</span>
+            <span class="e1-thing strong">1.</span>RU
+        </div>
+    </section>
+    <section class="header-section date-section">
+        <div class="ya1-date">
+            <span class="date-day">Четверг</span>
+            <span class="date-date">01 декабря</span>
+            <span class="date-time strong">13:42</span>
+        </div>
+    </section>
+    <section class="header-section weather-section">
+        <div class="weather-block">
+            <span class="small-hoverable">Сейчас</span>
+            <span class="strong temperature">-7,2°C</span>
+            <div class="weather-icon-1"></div>
+        </div>
+        <div class="weather-block">
+            <span class="small-hoverable">Завтра</span>
+            <span class="strong temperature">-14°C</span>
+            <div class="weather-icon-2"></div>
+        </div>
+    </section>
+    <section class="header-section traffic-section">
+        <a href="#" class="traffic-block">
+            <div class="small-hoverable">Пробки</div>
+            <div class="traffic-yellow strong">4</div>
+            <div class="strong">балла</div>
+        </a>
+    </section>
+    <section class="header-section social-section">
+        <div class="social-list">
+            <span class="social-capture">Читайте нас, где удобно:</span>
+            <a href="#" class="vk-social icon" target="_blank"></a>
+            <a href="#" class="fb-social icon" target="_blank"></a>
+            <a href="#" class="tw-social icon" target="_blank"></a>
+            <a href="#" class="ok-social icon" target="_blank"></a>
+            <a href="#" class="ya-social icon" target="_blank"></a>
+            <a href="#" class="in-social icon" target="_blank"></a>
+            <a href="#" class="tg-social icon" target="_blank"></a>
+        </div>
+    </section>
+    <section class="header-section currency-section">
+        <div class="currency-block">
+            <span class="small-hoverable currency-capture">Курс ЦБ</span>
+            <div class="currency">
+                <span class="small-blue strong">USD</span>
+                <span class="strong">65.24</span>
+            </div>
+            <div class="currency">
+                <span class="small-blue strong">EUR</span>
+                <span class="strong">69.34</span>
+            </div>
+        </div>
+        <div class="currency-block">
+            <span class="small-hoverable currency-capture">Средневзвешенный</span>
+            <div class="currency-cost">
+                <span class="strong">62.97</span>
+                <span class="strong">64.75</span>
+            </div>
+            <div class="currency-cost">
+                <span class="strong">66.90</span>
+                <span class="strong">68.76</span>
+            </div>
+        </div>
+    </section>
+    <section class="header-section search-section">
+        <div class="inputs-block">
+            <div class="search">
+                <label for="search-input" class="search-label">Поиск:</label>
+                <input id="search-input"
+                       class="search-input" type="text" name="search" value="">
+                <div class="arrow"></div>
+            </div>
+            <div class="ya1-login">
+                <label for="login-input" class="login-label">Почта:</label>
+                <input id="login-input" class="login-input"
+                       type="text" name="_user" placeholder="Имя @ya1.ru" value="">
+                <div class="arrow"></div>
+            </div>
+        </div>
+    </section>
+</header>
+<section class="column-1">
+    <div class="big-news-block">
+        <span class="big-news-image"></span>
+        <div class="big-news-announce">
+            <p class="big-news-announce-title">
+                Школьника с Уралмаша, который признался в убийстве матери,
+                оставят в ИВС ещё на трое суток
+            </p>
+            <p class="big-news-announce-subtitle">
+                Решение об этом вынес Орджоникидзевский районный суд.
+            </p>
         </div>
     </div>
-    <header class="ya1-header">
-        <section class="header-section logo-section">
-            <div class="logo">
-                <span class="logo-capture">
-                <span class="bold">Екатеринбург</span> Он-Лайн</span>
-                <span class="yandex-thing">Я</span>
-                <span class="e1-thing bold">1.</span>RU
-            </div>
-        </section>
-        <section class="header-section date-section">
-            <div class="ya1-date">
-                <span class="date-day">Четверг</span>
-                <span class="date-date">01 декабря</span>
-                <span class="date-time bold">13:42</span>
-            </div>
-        </section>
-        <section class="header-section weather-section">
-            <div class="weather-block">
-                <span class="small-hoverable">Сейчас</span>
-                <span class="bold temperature">-7,2°C</span>
-                <div class="weather-icon-1"></div>
-            </div>
-            <div class="weather-block">
-                <span class="small-hoverable">Завтра</span>
-                <span class="bold temperature">-14°C</span>
-                <div class="weather-icon-2"></div>
-            </div>
-        </section>
-        <section class="header-section traffic-section">
-            <a class="traffic-block">
-                <div class="small-hoverable">Пробки</div>
-                <div class="traffic-yellow bold">4</div>
-                <div class="bold">балла</div>
+    <div class="caption-line">
+        <span class="caption-text strong">
+            <img class="news-ya" src="images/news.svg"
+                 alt="Новости" title="Яндекс Новости">
+        </span>
+        <a href="#" class="small-hoverable more"><span class="triangle">►</span> Все новости</a>
+    </div>
+    <div class="news-block">
+        <img class="news-image" src="images/news-1.png"
+             alt="Что ищут в Яндексе?" title="Статистика от Яндекса">
+        <div class="news-content">
+            <span class="news-tags">инфа яндекс поиск</span>
+            <a href="#" class="news-link strong small-hoverable">
+                «Яндекс» рассказал, что россияне чаще всего ищут в Интернете
             </a>
-        </section>
-        <section class="header-section social-section">
-            <div class="social-list">
-                <span class="social-capture">Читайте нас, где удобно:</span>
-                <a class="vk-social icon" target="_blank"></a>
-                <a class="fb-social icon" target="_blank"></a>
-                <a class="tw-social icon" target="_blank"></a>
-                <a class="ok-social icon" target="_blank"></a>
-                <a class="ya-social icon" target="_blank"></a>
-                <a class="in-social icon" target="_blank"></a>
-                <a class="tg-social icon" target="_blank"></a>
-            </div>
-        </section>
-        <section class="header-section currency-section">
-            <div class="currency-block">
-                <span class="small-hoverable currency-capture">Курс ЦБ</span>
-                <div class="currency">
-                    <span class="small-blue bold">USD</span>
-                    <span class="bold">65.24</span>
-                </div>
-                <div class="currency">
-                    <span class="small-blue bold">EUR</span>
-                    <span class="bold">69.34</span>
-                </div>
-            </div>
-            <div class="currency-block">
-                <span class="small-hoverable currency-capture">Средневзвешенный</span>
-                <div class="currency-cost">
-                    <span class="bold">62.97</span>
-                    <span class="bold">64.75</span>
-                </div>
-                <div class="currency-cost">
-                    <span class="bold">66.90</span>
-                    <span class="bold">68.76</span>
-                </div>
-            </div>
-        </section>
-        <section class="header-section search-section">
-            <div class="inputs-block">
-                <div class="search">
-                    <label for="search-input" class="search-label">Поиск:</label>
-                    <input id="search-input"
-                           class="search-input" type="text" name="search" value="">
-                    <div class="arrow"></div>
-                </div>
-                <div class="ya1-login">
-                    <label for="login-input" class="login-label">Почта:</label>
-                    <input id="login-input" class="login-input"
-                           type="text" name="_user" placeholder="Имя @ya1.ru" value="">
-                    <div class="arrow"></div>
-                </div>
-            </div>
-        </section>
-    </header>
-    <section class="column-1">
-        <div class="big-news-block">
-            <span class="big-news-image"></span>
-            <div class="big-news-announce">
-                <p class="big-news-announce-title">
-                    Школьника с Уралмаша, который признался в убийстве матери,
-                    оставят в ИВС ещё на трое суток
-                </p>
-                <p class="big-news-announce-subtitle">
-                    Решение об этом вынес Орджоникидзевский районный суд.
-                </p>
-            </div>
-        </div>
-        <div class="caption-line">
-            <span class="caption-text bold">
-                <img class="news-ya" src="images/news.svg"
-                     alt="Новости" title="Яндекс Новости">
-            </span>
-            <a class="small-hoverable more"><span class="triangle">►</span> Все новости</a>
-        </div>
-        <div class="news-block">
-            <img class="news-image" src="images/news-1.png"
-                 alt="Что ищут в Яндексе?" title="Статистика от Яндекса">
-            <div class="news-content">
-                <span class="news-tags">инфа яндекс поиск</span>
-                <a class="news-link bold small-hoverable">
-                    «Яндекс» рассказал, что россияне чаще всего ищут в Интернете
-                </a>
-                <p class="news-text">
-                    Компания «Яндекс» представила данные,
-                    что чаще всего вбивают в строку поиска российские интернет-пользователи.
-                </p>
-            </div>
-        </div>
-        <div class="news-block">
-            <img class="news-image"
-                 src="http://www.e1.ru/news/static/85fcb867c4d138d563c53b2feb4f1599_70_50_c.jpg"
-                 alt="УГМК крутые теннисисты"
-                 title="УГМК обыграли клуб Европы">
-            <div class="news-content">
-                <span class="news-tags">фиговый клуб</span>
-                <a class="news-link bold small-hoverable">
-                    Повержен победитель Лиги чемпионов:
-                    теннисисты УГМК обыграли лучший клуб
-                </a>
-                <p class="news-text">
-                    Столь крупный успех обеспечили российские игроки
-                    - Григорий Власов и Александр Шибаев.
-                </p>
-            </div>
-        </div>
-        <div class="news-block">
-            <img class="news-image" src="images/news-2.png"
-                 alt="Вконтакте без музыки"
-                 title="Вконтакте лишится музыки">
-            <div class="news-content">
-                <span class="news-tags">дуров верни стену</span>
-                <a class="news-link bold small-hoverable">
-                    Зависимые от «ВКонтакте» музыкальные приложения
-                    перестанут работать
-                </a>
-                <p class="news-text">
-                    16 декабря 2016 года «Вконтакте»
-                    отключит доступ к публичному музыкальному
-                    API сторонним приложениям, которые не контролируются
-                    соцсетью или не имеют с ней договорённостей.
-                </p>
-            </div>
-        </div>
-        <div class="news-block">
-            <img class="news-image" src="images/news-3.png"
-                 alt="ideco" title="Крутой шлюз от ideco">
-            <div class="news-content">
-                <span class="news-tags">шлюз ideco реклама</span>
-                <a class="news-link bold small-hoverable">
-                    Новая версия Ideco ICS 4: удобный и надежный интернет-шлюз
-                </a>
-                <p class="news-text">
-                    Обновиться можно с помощью системы автоматических
-                    обновлений (версия будет включена в систему с 5 августа),
-                    либо с загрузочного CD/USB.
-                </p>
-            </div>
-        </div>
-        <div class="caption-line">
-            <span class="caption-text bold">СООБЩИТЬ НОВОСТЬ</span>
-            <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
-        </div>
-        <div class="news-block">
-            <img class="news-image" src="images/mail.png"
-                 alt="Предложить новость" title="Отправить свою новость">
-            <div class="news-content">
-                <a class="news-link bold small-blue bold">
-                    Отправьте свою новость в редакцию,
-                    расскажите о проблеме или подкиньте тему для публикации.
-                    Сюда же загружайте ваше видео и фото.
-                </a>
-                <p class="news-text">
-                    Круглосуточный телефон службы новостей
-                    <span class="bold">+7 (343) 34-555-34</span>
-                </p>
-            </div>
-        </div>
-    </section>
-    <section class="column-2">
-        <div class="caption-line">
-            <span class="caption-text bold">ПОДРОБНОСТИ</span>
-            <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
-        </div>
-        <div class="news-block">
-            <img class="news-image" src="images/news-4.png"
-                 alt="Бедные дети за ограждениями"
-                 title="Дедушка мороз">
-            <div class="news-content">
-                <span class="news-tags">праздник к нам приходит</span>
-                <a class="news-link bold small-hoverable">
-                    Дед Мороз из Великого Устюга приехал на снегоходе,
-                    чтобы встретиться с маленькими екатеринбуржцами
-                </a>
-                <p class="news-text small-blue bold">
-                    Правда, детей к волшебнику не подпустили, а оставили за ограждениями.
-                </p>
-            </div>
-        </div>
-        <div class="caption-line">
-            <span class="caption-text bold">ОБЗОР</span>
-            <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
-        </div>
-        <div class="news-block">
-            <img class="news-image" src="images/news-5.png"
-                 alt="Обзор планшета" title="Обзор от РИА Новости">
-            <div class="news-content">
-                <span class="news-tags">обзор обзор обзор</span>
-                <a class="news-link bold small-hoverable">
-                    Первый российский обзор планшета Nexus 7
-                </a>
-                <p class="news-text small-blue bold">
-                    Первый планшетный компьютер от
-                    #Google протестировал эксперт РИА Новости.
-                </p>
-            </div>
-        </div>
-        <div class="caption-line">
-            <span class="caption-text bold">СТАТЬИ О НЕДВИЖИМОСТИ</span>
-            <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
-        </div>
-        <div class="news-block">
-            <img class="news-image" src="images/news-6.png"
-                 alt="Фишки конструктивизма"
-                 title="Новое здание юстиции">
-            <div class="news-content">
-                <span class="news-tags">фото недвижимая недвижимость</span>
-                <a class="news-link bold small-hoverable">
-                    Три фишки конструктивизма:
-                    в Екатеринбурге восстановят здание,
-                    построенное на месте тюремного замка
-                </a>
-                <p class="news-text small-blue bold">
-                    После реставрации у Дома юстиции появится окно высотой в 6 этажей.
-                </p>
-            </div>
-        </div>
-        <div class="caption-line">
-            <span class="caption-text bold">ФОТОРЕПОРТАЖ</span>
-            <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
-        </div>
-        <div class="news-block">
-            <img class="news-image" src="images/news-7.png"
-                 alt="Наушники-Уши"
-                 title="Оригинальные наушники">
-            <div class="news-content">
-                <span class="news-tags">давно ждали</span>
-                <a class="news-link bold small-hoverable">
-                    В продаже появились наушники в виде эльфийских ушей
-                </a>
-                <p class="news-text small-blue bold">
-                    Наушники подключаются через стандартный разъем
-                    на 3,5 мм, купить их можно примерно за 14 долларов.
-                </p>
-            </div>
-        </div>
-        <div class="caption-line">
-            <span class="caption-text bold">ГОСТЬ НА Я1</span>
-            <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
-        </div>
-        <div class="news-block">
-            <img class="news-image" src="images/news-8.png"
-                 alt="Интервью с вокалисткой"
-                 title="Интервью с вокалисткой Garbage">
-            <div class="news-content">
-                <span class="news-tags">shut your mouth</span>
-                <p class="news-text small-blue bold">
-                    <span class="bold black">Сегодня</span><br>
-                    Интервью с Ширли Мэнсон, вокалисткой группы Garbage
-                </p>
-            </div>
-        </div>
-        <div class="column column-one">
-            <div class="caption-line">
-                <span class="caption-text bold">НЕДВИЖИМОСТЬ</span>
-                <a class="small-hoverable more"><span class="triangle">►</span> Добавить объяву</a>
-            </div>
-            <div class="post-caption bold">Аренда Продажа квартир Новостройки</div>
-            <div class="news-block">
-                <img class="news-image" src="images/news-9.png"
-                     alt="Офис Яндекса" title="Сдается офис">
-                <div class="news-content">
-                    <a class="bold small-blue">Офис Яндекса</a>
-                    <p class="news-text">Хз почем</p>
-                </div>
-            </div>
-            <div class="news-block">
-                <img class="news-image" src="images/news-10.png"
-                     alt="Мой любимый УрГУ" title="Не продается">
-                <div class="news-content">
-                    <a class="bold small-blue">УРГУ</a>
-                    <p class="news-text">Дорого</p>
-                </div>
-            </div>
-            <div class="news-block">
-                <img class="news-image" src="images/news-11.png"
-                     alt="УРФУ" title="ФУ">
-                <div class="news-content">
-                    <a class="bold small-blue">УПИ + БРС (в подарок)</a>
-                    <p class="news-text">Дешего</p>
-                </div>
-            </div>
-        </div>
-        <div class="column column-two">
-            <div class="caption-line">
-                <span class="caption-text bold">ПРОДАЖА АВТО, МОТО</span>
-                <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
-            </div>
-            <div class="post-caption bold">Легкие Грузовые Мото</div>
-            <div class="news-block">
-                <img class="news-image" src="images/car_1.png"
-                     alt="Крутая Беха" title="BMW">
-                <div class="news-content">
-                    <a class="bold small-blue">Тачка</a>
-                    <p class="news-text">Дорого</p>
-                </div>
-            </div>
-            <div class="news-block">
-                <img class="news-image" src="images/car_2.png"
-                     alt="Феррари" title="Феррари">
-                <div class="news-content">
-                    <a class="bold small-blue">Тачка</a>
-                    <p class="news-text">Дороже</p>
-                </div>
-            </div>
-            <div class="news-block">
-                <img class="news-image" src="images/car_3.png"
-                     alt="Тачка" title="Пацанская тачка">
-                <div class="news-content">
-                    <a class="bold small-blue">Тачка</a>
-                    <p class="news-text">Самая дорогая</p>
-                </div>
-            </div>
-        </div>
-    </section>
-    <section class="media-blocks">
-        <div class="media-block">
-            <div class="caption-line">
-                <span class="caption-text bold">
-                    ФОТО ДНЯ
-                </span>
-            </div>
-            <input type="radio" class="show-first control" name="image" id="first-image" checked>
-            <input type="radio" class="show-second control" name="image" id="second-image">
-            <input type="radio" class="show-third control" name="image" id="third-image">
-            <input type="checkbox" id="first" class="control">
-            <input type="checkbox" id="second" class="control">
-            <input type="checkbox" id="third" class="control">
-            <label for="first" class="first-block image-block">
-                <img alt="1" title="1" src="images/car_1.png" class="first-block-img block-img">
-            </label>
-            <label for="second" class="second-block image-block">
-                <img alt="2" title="2" src="images/news-9.png" class="second-block-img block-img">
-            </label>
-            <label for="third" class="third-block image-block">
-                <img alt="3" title="3" src="images/news-big.png" class="third-block-img block-img">
-            </label>
-            <div class="thumbnails">
-                <label for="first-image" class="thumb">
-                    <img alt="1" title="1" src="images/car_1.png" class="first-thumb thumb-image">
-                </label>
-                <label for="second-image" class="thumb">
-                    <img alt="2" title="2" src="images/news-9.png" class="second-thumb thumb-image">
-                </label>
-                <label for="third-image" class="thumb">
-                    <img alt="3" title="3" src="images/news-big.png" class="third-thumb thumb-image">
-                </label>
-            </div>
-        </div>
-        <div class="media-block">
-            <div class="caption-line">
-                <span class="caption-text bold">
-                    ВИДЕО ДНЯ
-                </span>
-            </div>
-            <input type="radio" class="show-first control" name="img" id="first1-image" checked>
-            <input type="radio" class="show-second control" name="img" id="second1-image">
-            <input type="radio" class="show-third control" name="img" id="third1-image">
-            <input type="checkbox" id="first1" class="control">
-            <input type="checkbox" id="second1" class="control">
-            <input type="checkbox" id="third1" class="control">
-            <label for="first1" class="first-block image-block">
-                <iframe src="https://www.youtube.com/embed/xSE9Qk9wkig" allowfullscreen></iframe>
-            </label>
-            <label for="second1" class="second-block image-block">
-                <iframe src="https://www.youtube.com/embed/-ubQxtEukvw" allowfullscreen></iframe>
-            </label>
-            <label for="third1" class="third-block image-block">
-                <iframe  src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
-            </label>
-            <div class="thumbnails">
-                <label for="first1-image" class="thumb">
-                    <img alt="1" title="1" src="images/car_1.png" class="first-thumb thumb-image">
-                </label>
-                <label for="second1-image" class="thumb">
-                    <img alt="2" title="2" src="images/news-9.png" class="second-thumb thumb-image">
-                </label>
-                <label for="third1-image" class="thumb">
-                    <img alt="3" title="3" src="images/news-big.png" class="third-thumb thumb-image">
-                </label>
-            </div>
-        </div>
-    </section>
-    <section class="right-side">
-        <div class="caption-line">
-            <span class="caption-text bold">СПЕЦПРОЕКТ</span>
-            <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
-        </div>
-        <div class="news-block">
-            <img class="project" src="images/footer_1.svg" alt="Яндекс" title="Яндекс">
-            <img class="project" src="images/connect.svg" alt="Connect" title="Connect">
-        </div>
-        <div class="caption-line">
-            <span class="caption-text bold">СЕЙЧАС ПО TV</span>
-            <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
-        </div>
-        <div class="tv">
-            <div class="news-block">
-                <img src="images/channel_1.png" alt="Первый канал"
-                     title="Первый канал">
-                <p>
-                    &nbsp;16:25 — <span class="bold">Скукота</span>
-                    <sup>(еще 1 мин.)</sup>
-                </p>
-            </div>
-            <div class="news-block">
-                <img src="images/channel_2.png" alt="Второй канал"
-                     title="Россия 1">
-                <p>
-                    &nbsp;11:25 — <span class="bold">Скукота 2</span>
-                    <sup>(еще 2 мин.)</sup>
-                </p>
-            </div>
-            <div class="news-block">
-                <img src="images/channel_3.png" alt="Третий канал"
-                     title="НТВ">
-                <p>&nbsp;11:25 — <span class="bold">Бандитская скукота</span></p>
-            </div>
-        </div>
-        <div class="caption-line">
-            <span class="caption-text bold">БИЗНЕС-ОБРАЗОВАНИЕ</span>
-            <a class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
-        </div>
-        <div class="checks-block">
-            <a class="orange-link bold">Семинары, тренинги, учебные курсы</a>
-            <p>
-                - вся информация по
-                бизнес-образованию для деловых людей и не только:
+            <p class="news-text">
+                Компания «Яндекс» представила данные,
+                что чаще всего вбивают в строку поиска российские интернет-пользователи.
             </p>
-            <div class="bold">Выбрать по тематике:</div>
-            <select>
-                <option>все</option>
-                <option>Аудит</option>
-                <option>Логистика</option>
-                <option>Менеджмент</option>
-                <option>Психология</option>
-                <option>Финансы</option>
-            </select>
-            <div class="bold">Выбрать по организатору:</div>
-            <select>
-                <option>все</option>
-                <option>ИППК УрФУ</option>
-                <option>Учебный центр Ирины Маминой</option>
-            </select>
-            <button class="checks-button">Выбрать события</button>
+        </div>
+    </div>
+    <div class="news-block">
+        <img class="news-image"
+             src="http://www.e1.ru/news/static/85fcb867c4d138d563c53b2feb4f1599_70_50_c.jpg"
+             alt="УГМК крутые теннисисты"
+             title="УГМК обыграли клуб Европы">
+        <div class="news-content">
+            <span class="news-tags">фиговый клуб</span>
+            <a href="#" class="news-link strong small-hoverable">
+                Повержен победитель Лиги чемпионов:
+                теннисисты УГМК обыграли лучший клуб
+            </a>
+            <p class="news-text">
+                Столь крупный успех обеспечили российские игроки
+                - Григорий Власов и Александр Шибаев.
+            </p>
+        </div>
+    </div>
+    <div class="news-block">
+        <img class="news-image" src="images/news-2.png"
+             alt="Вконтакте без музыки"
+             title="Вконтакте лишится музыки">
+        <div class="news-content">
+            <span class="news-tags">дуров верни стену</span>
+            <a href="#" class="news-link strong small-hoverable">
+                Зависимые от «ВКонтакте» музыкальные приложения
+                перестанут работать
+            </a>
+            <p class="news-text">
+                16 декабря 2016 года «Вконтакте»
+                отключит доступ к публичному музыкальному
+                API сторонним приложениям, которые не контролируются
+                соцсетью или не имеют с ней договорённостей.
+            </p>
+        </div>
+    </div>
+    <div class="news-block">
+        <img class="news-image" src="images/news-3.png"
+             alt="ideco" title="Крутой шлюз от ideco">
+        <div class="news-content">
+            <span class="news-tags">шлюз ideco реклама</span>
+            <a href="#" class="news-link strong small-hoverable">
+                Новая версия Ideco ICS 4: удобный и надежный интернет-шлюз
+            </a>
+            <p class="news-text">
+                Обновиться можно с помощью системы автоматических
+                обновлений (версия будет включена в систему с 5 августа),
+                либо с загрузочного CD/USB.
+            </p>
+        </div>
+    </div>
+    <div class="caption-line">
+        <span class="caption-text strong">СООБЩИТЬ НОВОСТЬ</span>
+        <a href="#" class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+    </div>
+    <div class="news-block">
+        <img class="news-image" src="images/mail.png"
+             alt="Предложить новость" title="Отправить свою новость">
+        <div class="news-content">
+            <a href="#" class="news-link small-blue">
+                Отправьте свою новость в редакцию,
+                расскажите о проблеме или подкиньте тему для публикации.
+                Сюда же загружайте ваше видео и фото.
+            </a>
+            <p class="news-text">
+                Круглосуточный телефон службы новостей
+                <span class="strong">+7 (343) 34-555-34</span>
+            </p>
+        </div>
+    </div>
+</section>
+<section class="column-2">
+    <div class="caption-line">
+        <span class="caption-text strong">ПОДРОБНОСТИ</span>
+        <a href="#" class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+    </div>
+    <div class="news-block">
+        <img class="news-image" src="images/news-4.png"
+             alt="Бедные дети за ограждениями"
+             title="Дедушка мороз">
+        <div class="news-content">
+            <span class="news-tags">праздник к нам приходит</span>
+            <a href="#" class="news-link strong small-hoverable">
+                Дед Мороз из Великого Устюга приехал на снегоходе,
+                чтобы встретиться с маленькими екатеринбуржцами
+            </a>
+            <p class="news-text small-blue">
+                Правда, детей к волшебнику не подпустили, а оставили за ограждениями.
+            </p>
+        </div>
+    </div>
+    <div class="caption-line">
+        <span class="caption-text strong">ОБЗОР</span>
+        <a href="#" class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+    </div>
+    <div class="news-block">
+        <img class="news-image" src="images/news-5.png"
+             alt="Обзор планшета" title="Обзор от РИА Новости">
+        <div class="news-content">
+            <span class="news-tags">обзор обзор обзор</span>
+            <a href="#" class="news-link strong small-hoverable">
+                Первый российский обзор планшета Nexus 7
+            </a>
+            <p class="news-text small-blue">
+                Первый планшетный компьютер от
+                #Google протестировал эксперт РИА Новости.
+            </p>
+        </div>
+    </div>
+    <div class="caption-line">
+        <span class="caption-text strong">СТАТЬИ О НЕДВИЖИМОСТИ</span>
+        <a href="#" class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+    </div>
+    <div class="news-block">
+        <img class="news-image" src="images/news-6.png"
+             alt="Фишки конструктивизма"
+             title="Новое здание юстиции">
+        <div class="news-content">
+            <span class="news-tags">фото недвижимая недвижимость</span>
+            <a href="#" class="news-link strong small-hoverable">
+                Три фишки конструктивизма:
+                в Екатеринбурге восстановят здание,
+                построенное на месте тюремного замка
+            </a>
+            <p class="news-text small-blue">
+                После реставрации у Дома юстиции появится окно высотой в 6 этажей.
+            </p>
+        </div>
+    </div>
+    <div class="caption-line">
+        <span class="caption-text strong">ФОТОРЕПОРТАЖ</span>
+        <a href="#" class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+    </div>
+    <div class="news-block">
+        <img class="news-image" src="images/news-7.png"
+             alt="Наушники-Уши"
+             title="Оригинальные наушники">
+        <div class="news-content">
+            <span class="news-tags">давно ждали</span>
+            <a href="#" class="news-link strong small-hoverable">
+                В продаже появились наушники в виде эльфийских ушей
+            </a>
+            <p class="news-text small-blue">
+                Наушники подключаются через стандартный разъем
+                на 3,5 мм, купить их можно примерно за 14 долларов.
+            </p>
+        </div>
+    </div>
+    <div class="caption-line">
+        <span class="caption-text strong">ГОСТЬ НА Я1</span>
+        <a href="#" class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+    </div>
+    <div class="news-block">
+        <img class="news-image" src="images/news-8.png"
+             alt="Интервью с вокалисткой"
+             title="Интервью с вокалисткой Garbage">
+        <div class="news-content">
+            <p class="news-text small-blue">
+                <span class="strong black">Сегодня</span><br>
+                Интервью с Ширли Мэнсон, вокалисткой группы Garbage
+            </p>
+        </div>
+    </div>
+    <div class="column column-one">
+        <div class="caption-line">
+            <span class="caption-text strong">НЕДВИЖИМОСТЬ</span>
+            <a href="#" class="small-hoverable more"><span class="triangle">►</span> Добавить объяву</a>
+        </div>
+        <div class="post-caption strong">Аренда Продажа квартир Новостройки</div>
+        <div class="news-block">
+            <img class="news-image" src="images/news-9.png"
+                 alt="Офис Яндекса" title="Сдается офис">
+            <div class="news-content">
+                <a href="#" class="small-blue">Офис Яндекса</a>
+                <p class="news-text">Цена: <span class="strong">Хз почем</span></p>
+            </div>
+        </div>
+        <div class="news-block">
+            <img class="news-image" src="images/news-10.png"
+                 alt="Мой любимый УрГУ" title="Не продается">
+            <div class="news-content">
+                <a href="#" class="small-blue">УРГУ</a>
+                <p class="news-text">Цена: <span class="strong">Дорого</span></p>
+            </div>
+        </div>
+        <div class="news-block">
+            <img class="news-image" src="images/news-11.png"
+                 alt="УРФУ" title="ФУ">
+            <div class="news-content">
+                <a href="#" class="small-blue">УПИ + БРС (в подарок)</a>
+                <p class="news-text">Цена: <span class="strong">Дешего</span></p>
+            </div>
+        </div>
+    </div>
+    <div class="column column-two">
+        <div class="caption-line">
+            <span class="caption-text strong">ПРОДАЖА АВТО, МОТО</span>
+            <a href="#" class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+        </div>
+        <div class="post-caption strong">Легкие Грузовые Мото</div>
+        <div class="news-block">
+            <img class="news-image" src="images/car_1.png"
+                 alt="Крутая Беха" title="BMW">
+            <div class="news-content">
+                <a href="#" class="small-blue">Тачка</a>
+                <p class="news-text">Цена: <span class="strong">Дорого</span></p>
+            </div>
+        </div>
+        <div class="news-block">
+            <img class="news-image" src="images/car_2.png"
+                 alt="Феррари" title="Феррари">
+            <div class="news-content">
+                <a href="#" class="small-blue">Тачка</a>
+                <p class="news-text">Цена: <span class="strong">Дороже</span></p>
+            </div>
+        </div>
+        <div class="news-block">
+            <img class="news-image" src="images/car_3.png"
+                 alt="Тачка" title="Пацанская тачка">
+            <div class="news-content">
+                <a href="#" class="strong small-blue">Тачка</a>
+                <p class="news-text">Цена: <span class="strong">Самая дорогая</span></p>
+            </div>
+        </div>
+    </div>
+</section>
+<section class="media-blocks">
+    <div class="media-block">
+        <div class="caption-line">
+            <span class="caption-text strong">
+                ФОТО ДНЯ
+            </span>
+        </div>
+        <input type="radio" class="show-first control" name="image" id="first-image" checked>
+        <input type="radio" class="show-second control" name="image" id="second-image">
+        <input type="radio" class="show-third control" name="image" id="third-image">
+        <input type="checkbox" id="first" class="control">
+        <input type="checkbox" id="second" class="control">
+        <input type="checkbox" id="third" class="control">
+        <label for="first" class="first-block image-block">
+            <img alt="1" title="1" src="images/car_1.png" class="first-block-img block-img">
+        </label>
+        <label for="second" class="second-block image-block">
+            <img alt="2" title="2" src="images/news-9.png" class="second-block-img block-img">
+        </label>
+        <label for="third" class="third-block image-block">
+            <img alt="3" title="3" src="images/news-big.png" class="third-block-img block-img">
+        </label>
+        <div class="thumbnails">
+            <label for="first-image" class="thumb">
+                <img alt="1" title="1" src="images/car_1.png" class="first-thumb thumb-image">
+            </label>
+            <label for="second-image" class="thumb">
+                <img alt="2" title="2" src="images/news-9.png" class="second-thumb thumb-image">
+            </label>
+            <label for="third-image" class="thumb">
+                <img alt="3" title="3" src="images/news-big.png" class="third-thumb thumb-image">
+            </label>
+        </div>
+    </div>
+    <div class="media-block">
+        <div class="caption-line">
+            <span class="caption-text strong">
+                ВИДЕО ДНЯ
+            </span>
+        </div>
+        <input type="radio" class="show-first control" name="img" id="first1-image" checked>
+        <input type="radio" class="show-second control" name="img" id="second1-image">
+        <input type="radio" class="show-third control" name="img" id="third1-image">
+        <input type="checkbox" id="first1" class="control">
+        <input type="checkbox" id="second1" class="control">
+        <input type="checkbox" id="third1" class="control">
+        <label for="first1" class="first-block image-block">
+            <iframe src="https://www.youtube.com/embed/xSE9Qk9wkig" allowfullscreen></iframe>
+        </label>
+        <label for="second1" class="second-block image-block">
+            <iframe src="https://www.youtube.com/embed/-ubQxtEukvw" allowfullscreen></iframe>
+        </label>
+        <label for="third1" class="third-block image-block">
+            <iframe  src="https://www.youtube.com/embed/dQw4w9WgXcQ" allowfullscreen></iframe>
+        </label>
+        <div class="thumbnails">
+            <label for="first1-image" class="thumb">
+                <img alt="1" title="1" src="images/car_1.png" class="first-thumb thumb-image">
+            </label>
+            <label for="second1-image" class="thumb">
+                <img alt="2" title="2" src="images/news-9.png" class="second-thumb thumb-image">
+            </label>
+            <label for="third1-image" class="thumb">
+                <img alt="3" title="3" src="images/news-big.png" class="third-thumb thumb-image">
+            </label>
+        </div>
+    </div>
+</section>
+<section class="right-side">
+    <div class="caption-line">
+        <span class="caption-text strong">СПЕЦПРОЕКТ</span>
+        <a href="#" class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+    </div>
+    <div class="news-block">
+        <img class="project" src="images/footer_1.svg" alt="Яндекс" title="Яндекс">
+        <img class="project" src="images/connect.svg" alt="Connect" title="Connect">
+    </div>
+    <div class="caption-line">
+        <span class="caption-text strong">СЕЙЧАС ПО TV</span>
+        <a href="#" class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+    </div>
+    <div class="tv">
+        <div class="news-block">
+            <img src="images/channel_1.png" alt="Первый канал"
+                 title="Первый канал">
+            <p>
+                &nbsp;16:25 — <span class="strong">Скукота</span>
+                <sup>(еще 1 мин.)</sup>
+            </p>
+        </div>
+        <div class="news-block">
+            <img src="images/channel_2.png" alt="Второй канал"
+                 title="Россия 1">
+            <p>
+                &nbsp;11:25 — <span class="strong">Скукота 2</span>
+                <sup>(еще 2 мин.)</sup>
+            </p>
+        </div>
+        <div class="news-block">
+            <img src="images/channel_3.png" alt="Третий канал"
+                 title="НТВ">
+            <p>&nbsp;11:25 — <span class="strong">Бандитская скукота</span></p>
+        </div>
+    </div>
+    <div class="caption-line">
+        <span class="caption-text strong">БИЗНЕС-ОБРАЗОВАНИЕ</span>
+        <a href="#" class="small-hoverable more"><span class="triangle">►</span> Перейти</a>
+    </div>
+    <div class="checks-block">
+        <a href="#" class="orange-link strong">Семинары, тренинги, учебные курсы</a>
+        <p>
+            - вся информация по
+            бизнес-образованию для деловых людей и не только:
+        </p>
+        <div class="strong">Выбрать по тематике:</div>
+        <select>
+            <option>все</option>
+            <option>Аудит</option>
+            <option>Логистика</option>
+            <option>Менеджмент</option>
+            <option>Психология</option>
+            <option>Финансы</option>
+        </select>
+        <div class="strong">Выбрать по организатору:</div>
+        <select>
+            <option>все</option>
+            <option>ИППК УрФУ</option>
+            <option>Учебный центр Ирины Маминой</option>
+        </select>
+        <button class="checks-button">Выбрать события</button>
+    </div>
+</section>
+<footer class="ya1-footer">
+    <section class="ya1-footer-inner">
+        <div class="footer-links">
+            <a href="#" class="strong">Информация для клиентов</a>
+            <a href="#" class="strong">Реклама на Е1</a>
+            <a href="#" class="strong">Прайс-лист</a>
+        </div>
+        <div class="footer-phones">
+            <span>
+                <span class="strong">Единый номер:</span>
+                8-800-700-8-9-10 (звонок бесплатный)
+            </span>
+            <span>
+                <span class="strong">Отдел продаж:</span>
+                <a href="#" class="footer-link">adv@corp.e1.ru</a>
+                , (343) 379-49-10
+            </span>
+            <span>
+                <span class="strong">Редакция:</span>
+                <a href="#" class="footer-link">news@corp.e1.ru</a>
+                , (343) 379-49-95
+            </span>
         </div>
     </section>
-    <footer class="ya1-footer">
-        <section class="ya1-footer-inner">
-            <div class="footer-links">
-                <a class="bold">Информация для клиентов</a>
-                <a class="bold">Реклама на Е1</a>
-                <a class="bold">Прайс-лист</a>
-            </div>
-            <div class="footer-phones">
-                <span>
-                    <span class="bold">Единый номер:</span>
-                    8-800-700-8-9-10 (звонок бесплатный)
-                </span>
-                <span>
-                    <span class="bold">Отдел продаж:</span>
-                    <a class="footer-link">adv@corp.e1.ru</a>
-                    , (343) 379-49-10
-                </span>
-                <span>
-                    <span class="bold">Редакция:</span>
-                    <a class="footer-link">news@corp.e1.ru</a>
-                    , (343) 379-49-95
-                </span>
-            </div>
-        </section>
-        <section class="ya1-footer-inner">
-            <div class="footer-links">
-                <a class="bold">iPhone</a>
-                <a class="bold">Мобильная версия</a>
-            </div>
-            <span>
-                Отзывы и предложения о работе портала:
-                <a class="footer-link">info@corp.e1.ru</a>
-            </span>
-            <span><a class="footer-link">Центр поддержки пользователей портала E1.RU</a></span>
-            <span>
-                Проблемы при работе с порталом:
-                <a class="footer-link">support@corp.e1.ru</a>
-            </span>
-        </section>
-        <section class="ya1-footer-inner">
-            <div class="footer-visits">
-                <img alt="18+" title="for adults" src="images/18grey.jpg">
-                <img alt="pageviews" title="Просмотры" src="images/pageviews">
-            </div>
-        </section>
-        <section class="ya1-footer-inner">
-            © dimastark
-        </section>
-        <section class="ya1-footer-inner">
-            <img src="images/footer_1.svg" alt="Яндекс" title="Яндекс">
-        </section>
-        <section class="ya1-footer-inner">
-            <img src="images/footer_2.png" alt="УрФУ" title="Уральский Федеральный">
-        </section>
-    </footer>
-</div>
+    <section class="ya1-footer-inner">
+        <div class="footer-links">
+            <a href="#" class="strong">iPhone</a>
+            <a href="#" class="strong">Мобильная версия</a>
+        </div>
+        <span>
+            Отзывы и предложения о работе портала:
+            <a href="#" class="footer-link">info@corp.e1.ru</a>
+        </span>
+        <span><a href="#" class="footer-link">Центр поддержки пользователей портала E1.RU</a></span>
+        <span>
+            Проблемы при работе с порталом:
+            <a href="#" class="footer-link">support@corp.e1.ru</a>
+        </span>
+    </section>
+    <section class="ya1-footer-inner">
+        <div class="footer-visits">
+            <img alt="18+" title="for adults" src="images/18grey.jpg">
+            <img alt="pageviews" title="Просмотры" src="images/pageviews">
+        </div>
+    </section>
+    <section class="ya1-footer-inner">
+        © dimastark
+    </section>
+    <section class="ya1-footer-inner">
+        <img src="images/footer_1.svg" alt="Яндекс" title="Яндекс">
+    </section>
+    <section class="ya1-footer-inner">
+        <img src="images/footer_2.png" alt="УрФУ" title="Уральский Федеральный">
+    </section>
+</footer>
 </body>
 </html>
