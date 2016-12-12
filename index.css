@@ -6,7 +6,7 @@ body
     height: 100%;
     margin: 0;
     padding: 0;
-    font-family: Tahoma, Verdana, sans-serif;
+    font: 1vmax Tahoma, Verdana, sans-serif;
 }
 
 a
@@ -27,13 +27,13 @@ a
 
 .small-hoverable
 {
-    font-size: .75vw;
+    font-size: .8em;
     text-decoration: underline;
 }
 
 .small-blue
 {
-    font-size: .95vw;
+    font-size: 1em;
     color: #369;
     text-decoration: underline;
 }
@@ -102,7 +102,7 @@ a
 {
     display: flex;
     align-items: center;
-    height: 5vw;
+    height: 5em;
     margin-top: 5px;
     margin-bottom: 10px;
 }
@@ -135,14 +135,14 @@ a
     justify-content: center;
     align-items: center;
     color: #808080;
-    font-size: 4vw;
+    font-size: 4em;
     height: 100%;
 }
 
 .logo-capture
 {
-    margin-bottom: -10px;
-    font-size: .9vw;
+    margin-bottom: .05em;
+    font-size: .25em;
     width: 100%;
     color: #000;
 }
@@ -160,7 +160,7 @@ a
 .date-section
 {
     flex: 10%;
-    font-size: 1.25vw;
+    font-size: 1.25em;
 }
 
 .ya1-date
@@ -209,7 +209,7 @@ a
 
 .temperature
 {
-    font-size: 1.25vw;
+    font-size: 1.25em;
 }
 
 .traffic-section
@@ -219,7 +219,7 @@ a
 
 .traffic-block
 {
-    font-size: 1.25vw;
+    font-size: 1.25em;
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -260,15 +260,15 @@ a
 {
     display: block;
     width: 100%;
-    font-size: 1.25vw;
+    font-size: 1.25em;
     margin-bottom: 5px;
 }
 
 .icon
 {
     display: inline-block;
-    width: 1.5vw;
-    height: 1.5vw;
+    width: 1.5em;
+    height: 1.5em;
     background-size: cover;
 }
 
@@ -326,14 +326,14 @@ a
 
 .currency
 {
-    font-size: .95vw;
+    font-size: 1em;
 }
 
 .currency-cost
 {
     display: inline-block;
     width: 40%;
-    font-size: .95vw;
+    font-size: 1em;
 }
 
 .search-section
@@ -353,7 +353,7 @@ a
 .search-label,
 .login-label
 {
-    font-size: 1.3vw;
+    font-size: 1.3em;
 }
 
 .search-input,
@@ -429,7 +429,7 @@ a
 
 .caption-text
 {
-    font-size: .95vw;
+    font-size: 1em;
     padding: 0 5px 0 10px;
     border-right: 1px solid #aaa;
 }
@@ -480,14 +480,14 @@ a
 .big-news-announce-title
 {
     font-weight: bold;
-    font-size: 1.6vw;
+    font-size: 1.6em;
     line-height: 24px;
     color: #fff;
 }
 
 .big-news-announce-subtitle
 {
-    font-size: 1.05vw;
+    font-size: 1em;
     color: #fff;
     margin: 2px 0 10px;
 }
@@ -535,19 +535,19 @@ a
 {
     display: inline-block;
     width: 100%;
-    font-size: 15px;
+    font-size: 1em;
     color: #fd5200;
 }
 
 .news-text
 {
-    font-size: 15px;
+    font-size: 1em;
     margin: 0;
 }
 
 .post-caption
 {
-    font-size: .8vw;
+    font-size: 1em;
     color: #369;
     text-align: center;
     margin: 4px;
@@ -566,7 +566,7 @@ a
 
 .tv
 {
-    font-size: 1vw;
+    font-size: 1em;
     margin-bottom: 15px;
     margin-top: 10px;
 }
@@ -584,7 +584,7 @@ a
 
 .checks-block
 {
-    font-size: .95vw;
+    font-size: 1em;
     padding-left: 10px;
     padding-right: 10px;
 }
@@ -607,7 +607,7 @@ select
 {
     color: black;
     background-color: white;
-    font-size: .95vw;
+    font-size: 1em;
 }
 
 .checks-button
@@ -638,14 +638,14 @@ select
     flex: 30%;
     box-sizing: border-box;
     padding: 20px 20px 10px;
-    font-size: 15px;
+    font-size: 1em;
 }
 
 .footer-links > a
 {
     color: #196199;
     text-decoration: underline;
-    font-size: .95vw;
+    font-size: 1em;
     padding-right: 10px;
 }
 
