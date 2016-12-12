@@ -469,8 +469,8 @@ ul.bottom-nav li:not(:last-of-type):after
 .article-image
 {
     margin: auto 0;
-    width: 70px;
-    height: 50px;
+    min-width: 70px;
+    min-height: 50px;
 }
 
 .news-article
@@ -506,10 +506,18 @@ ul.bottom-nav li:not(:last-of-type):after
     align-items: flex-start;
 }
 
+
+
 .row div
 {
     flex: 1;
-    margin-top: 0;
+    margin: 0;
+}
+
+.row section
+{
+    flex: 1;
+    margin-bottom: 10px;
 }
 
 a
