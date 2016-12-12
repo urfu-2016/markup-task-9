@@ -2,7 +2,896 @@
 <html lang="ru">
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>E2. Новости Екатеринбурга</title>
 </head>
 <body>
+    <div class="body">
+    <nav>
+        <a href="#" title="Главная" class="navigation-item">Главная</a>
+        <a href="#" title="Новости" class="navigation-item">Новости</a>
+        <a href="#" title="Недвижимость" class="navigation-item">Недвижимость</a>
+        <a href="#" title="Авто" class="navigation-item">Авто</a>
+        <a href="#" title="Работа" class="navigation-item">Работа</a>
+        <a href="#" title="Объявления" class="navigation-item">Объявления</a>
+        <a href="#" title="Знакомства" class="navigation-item">Знакомства</a>
+        <a href="#" title="Погода" class="navigation-item">Погода</a>
+        <a href="#" title="Афиша" class="navigation-item">Афиша</a>
+        <a href="#" title="Форумы" class="navigation-item">Форумы</a>
+        <a href="#" title="Бизнес" class="navigation-item">Бизнес</a>
+        <a href="#" title="Общение" class="navigation-item">Общение</a>
+        <input type="checkbox" id="more-nav">
+        <label for="more-nav" class="navigation-item">Еще</label>
+        <div class="more-nav">
+            <a href="#" title="СП" class="navigation-item more-nav__navigation-item">СП</a>
+            <a href="#" title="Каталог" class="navigation-item more-nav__navigation-item">
+                Каталог
+            </a>
+        </div>
+    </nav>
+    <nav class="main-news">
+        <a href="#" title="Новый год" class="navigation-item main-news__news-item">
+            Новый год
+        </a>
+        <a href="#" title="Ученые против мифов" class="navigation-item main-news__news-item">
+            Ученые против мифов
+        </a>
+        <a href="#" title="Башенки Екатеринбурга" class="navigation-item main-news__news-item">
+            Башенки Екатеринбурга
+        </a>
+        <a href="#" title="Осторожно, корь!" class="navigation-item main-news__news-item">
+            Осторожно, корь!
+        </a>
+        <a href="#" title="Как чистят город" class="navigation-item main-news__news-item">
+            Как чистят город
+        </a>
+    </nav>
+    <header>
+        <div class="header-block header-logo">
+            <div class="h1__caption">Екатеринбург</div>
+            <div><h1>E2.</h1></div>
+        </div>
+        <div class="header-block">
+            <time datetime="2016-11-30 20:50:45.687">
+                <span class="line-text">Среда</span>
+                <span class="line-text">30 ноября</span>
+                <span class="line-text line-text__bold">20:50</span>
+            </time>
+        </div>
+        <div class="header-block header-weather">
+            <div class="weather">
+                <a href="#now" class="weather__link">Сейчас</a>
+                <span class="weather__text">2,6</span>
+                <div class="weather-image weather-image__cloudy"></div>
+            </div>
+            <div class="weather">
+                <a href="#tommorow" class="weather__link">Завтра</a>
+                <span class="weather__text">-10</span>
+                <div class="weather-image weather-image__sun"></div>
+            </div>
+        </div>
+        <div class="header-block">
+            <a href="#traf" class="traffic">
+                <span class="traffic__traffic-text">Пробки</span>
+                <div class="traffic__traffic-light red">8</div>
+                <strong>баллов</strong>
+            </a>
+        </div>
+        <div class="header-block">
+            <div class="social-block">
+                <span>Читайте нас где удобно:</span>
+                <div class="social-icons">
+                    <a href="https://vk.com" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__vk"></a>
+                    <a href="https://facebook.com" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__fb"></a>
+                    <a href="https://twitter.com" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__twitter"></a>
+                    <a href="https://ok.ru" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__ok"></a>
+                    <a href="https://yandex.ru" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__ya"></a>
+                    <a href="https://youtube.com" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__youtube"></a>
+                </div>
+            </div>
+        </div>
+        <div class="header-block header-informer">
+            <div class="header-informer">
+                <div class="informer-course">
+                    <a href="#" class="informer-course__link">Курс ЦБ</a>
+                    <div class="informer-course-content margin-top border-top min-width">
+                        <span class="informer-course-content__text blue">USD</span>
+                        <span class="informer-course-content__text">64.5</span>
+                    </div>
+                    <div class="informer-course-content min-width">
+                        <span class="informer-course-content__text blue">EUR</span>
+                        <span class="informer-course-content__text">69.324</span>
+                    </div>
+                </div>
+                <div class="informer-course">
+                    <a href="#" class="informer-course__link">Средневзвешанный</a>
+                    <div class="informer-course-content">
+                        <span class="informer-course-content__text normal">Покупка</span>
+                        <span class="informer-course-content__text normal">Продажа</span>
+                    </div>
+                    <div class="informer-course-content border-top">
+                        <span class="informer-course-content__text">64.232</span>
+                        <span class="informer-course-content__text">65.321</span>
+                    </div>
+                    <div class="informer-course-content">
+                        <span class="informer-course-content__text">68.423</span>
+                        <span class="informer-course-content__text">69.995</span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="header-block">
+            <div class="header-search">
+                <form class="header-search-item">
+                    <span class="header-search-item__text">Поиск:</span>
+                    <input type="text" class="header__input-search">
+                    <button type="submit" class="header__button"></button>
+                </form>
+                <form class="header-search-item">
+                    <span class="header-search-item__text">Почта:</span>
+                    <input type="email" class="header__input-email" placeholder="Имя @e2.ru">
+                    <input type="text" class="header__input-email">
+                    <button type="submit" class="header__button"></button>
+                </form>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="first-column">
+            <a href="img/big-image.jpg">
+                <div class="big-image">
+                    <div class="big-image__description">
+                        <div class="orange-block"></div>
+                        <h2>
+                            Собрали в бюджет почти 5 миллионов
+                        </h2>
+                    </div>
+                </div>
+            </a>
+            <div class="headline-wrapper">
+                <div class="orange-block"></div>
+                <a href="#news" class="headline-wrapper__headline">Новости</a>
+                <a href="#news" class="headline-wrapper__right-headline">Все новости</a>
+            </div>
+            <article class="news-item-wrapper">
+                <a href="img/news/1.jpg">
+                    <img class="news-item-wrapper__image" src="img/news/1.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__link" href="img/news/1.jpg">
+                        "Была жесткая игра": баскетболисткам УГМК пришлось поменять тактику,
+                        чтобы обыграть француженок
+                    </a>
+                    <span class="news-item-wrapper-news__text">
+                        Соперницы "лисиц" допустили много ошибок и потеряли преимущество.
+                    </span>
+                </div>
+            </article>
+            <article class="news-item-wrapper">
+                <a href="img/news/2.jpg">
+                    <img class="news-item-wrapper__image" src="img/news/2.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__link" href="img/news/2.jpg">
+                        Собрали в бюджет почти 5 миллионов: главный квартальный
+                        Орджоникидзевского района рассказал о борьбе с гряземесами
+                    </a>
+                    <span class="news-item-wrapper-news__text">
+                        Алексей Беззуб отчитался о наказанных водителях и нерадивых подрядчиках.
+                    </span>
+                </div>
+            </article>
+            <article class="news-item-wrapper">
+                <a href="img/news/3.jpg">
+                    <img class="news-item-wrapper__image" src="img/news/3.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__link" href="img/news/3.jpg">
+                        Завестись и не загореться: автолюбителям дали советы
+                        по прогреву автомобиля в мороз
+                    </a>
+                    <span class="news-item-wrapper-news__text">
+                        Какие "помощники" позволят сэкономить топливо и сохранить двигатель.
+                    </span>
+                </div>
+            </article>
+            <article class="news-item-wrapper">
+                <a href="img/news/4.jpg">
+                    <img class="news-item-wrapper__image" src="img/news/4.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__link" href="img/news/4.jpg">
+                        "Урал" победил дома команду,
+                        неделю назад сенсационно обыгравшую великую "Баварию"
+                    </a>
+                    <span class="news-item-wrapper-news__text">
+                        Хозяева выиграли у "Ростова" со счётом 1:0.
+                    </span>
+                </div>
+            </article>
+            <article class="news-item-wrapper">
+                <a href="img/news/5.jpg">
+                    <img class="news-item-wrapper__image" src="img/news/5.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__link" href="img/news/5.jpg">
+                        Фальстарт! Екатеринбуржцы на исходе
+                        осени начали украшать дворы к Новому году
+                    </a>
+                    <span class="news-item-wrapper-news__text">
+                        Если ваш двор уже стал праздничным, делитесь фото.
+                    </span>
+                </div>
+            </article>
+            <article class="news-item-wrapper">
+                <a href="img/news/6.jpg">
+                    <img class="news-item-wrapper__image" src="img/news/6.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__link" href="img/news/6.jpg">
+                        Екатеринбуржцам предложили встретить Новый год за городом
+                    </a>
+                    <span class="news-item-wrapper-news__text">
+                        Насладиться очарованием настоящей русской
+                        зимы можно в клубе "Белая лошадь".
+                    </span>
+                </div>
+            </article>
+            <article class="news-item-wrapper">
+                <a href="img/news/7.jpg">
+                    <img class="news-item-wrapper__image" src="img/news/7.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__link" href="img/news/7.jpg">
+                        Пять игроков МФК "Синара" вызваны в сборные России по мини-футболу
+                    </a>
+                    <span class="news-item-wrapper-news__text">
+                        Национальной и молодёжной командам страны
+                        предстоят игры против сборной Ирана.
+                    </span>
+                </div>
+            </article>
+            <article class="headline-wrapper">
+                <div class="orange-block"></div>
+                <a href="#news" class="headline-wrapper__headline">Сообщить новость</a>
+                <a href="#news" class="headline-wrapper__right-headline">Перейти</a>
+            </article>
+            <article class="news-item-wrapper">
+                <img class="news-item-wrapper__image bigger" src="img/news/send_news.jpg"
+                     width="70" height="50" title="Новость" alt="Новость">
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__normal-link" href="#">
+                        Отправьте свою новость в редакцию, расскажите о проблеме или подкиньте
+                        тему для публикации. Сюда же загружайте ваше видео и фото.
+                    </a>
+                    <br>
+                    <span class="news-item-wrapper-news__text">
+                        Круглосуточный телефон службы новостей <strong>+7 (000) 000-00-00</strong>
+                    </span>
+                </div>
+            </article>
+            <div class="headline-wrapper">
+                <div class="orange-block"></div>
+                <a href="#news" class="headline-wrapper__headline">Тематические статьи</a>
+            </div>
+            <article class="news-item-wrapper">
+                <a href="img/news/tematic-1.jpg">
+                    <img class="news-item-wrapper__image" src="img/news/tematic-1.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__bold-link" href="img/news/tematic-1.jpg">
+                        Типы снегоуборщиков: чем отличаются и как выбрать
+                    </a>
+                    <span class="news-item-wrapper-news__text">
+                        С наступлением зимы эти вопросы становятся как никогда актуальными
+                    </span>
+                </div>
+            </article>
+            <article class="news-item-wrapper">
+                <a href="img/news/tematic-2.jpg">
+                    <img class="news-item-wrapper__image" src="img/news/tematic-2.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__bold-link" href="img/news/tematic-2.jpg">
+                        Ох уж эти страхи
+                    </a>
+                    <span class="news-item-wrapper-news__text">
+                        Чего боятся соискатели, и как это влияет на их поведение во время поиска работы
+                    </span>
+                </div>
+            </article>
+        </div>
+        <div class="second-column">
+            <div class="headline-wrapper">
+                <div class="orange-block"></div>
+                <a href="#" class="headline-wrapper__headline">Подробности</a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
+            </div>
+            <article class="news-item-wrapper">
+                <a href="img/second/1.jpg">
+                    <img class="news-item-wrapper__image" src="img/second/1.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <span class="news-item-wrapper-news__text with-border">
+                        На Уралмаше девятиклассника престижной
+                        гимназии задержали за убийство матери
+                    </span>
+                    <a href="#" class="news-item-wrapper-news__normal-link">
+                        Подросток признался в преступлении
+                    </a>
+                </div>
+            </article>
+            <div class="headline-wrapper">
+                <div class="orange-block"></div>
+                <a href="#" class="headline-wrapper__headline">Интервью</a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
+            </div>
+            <article class="news-item-wrapper">
+                <a href="img/second/2.jpg">
+                    <img class="news-item-wrapper__image" src="img/second/2.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <span class="news-item-wrapper-news__text with-border">
+                        Можно ли заставить ребёнка учиться на пять:
+                        интервью с основателем школы скорочтения
+                    </span>
+                    <a href="#" class="news-item-wrapper-news__normal-link">
+                        О том, какие требования сегодня предъявляют
+                        к подросткам и как им соответствовать.
+                    </a>
+                </div>
+            </article>
+            <div class="headline-wrapper">
+                <div class="orange-block"></div>
+                <a href="#" class="headline-wrapper__headline">Статьи о недвижимости</a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
+            </div>
+            <article class="news-item-wrapper">
+                <a href="img/second/3.jpg">
+                    <img class="news-item-wrapper__image" src="img/second/3.jpg"
+                         width="70" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <span class="news-item-wrapper-news__text with-border">
+                        Комнаты-фонари и операционные с 7-метровыми потолками:
+                        фотоэкскурсия по "труднодоступным" местам Екатеринбурга
+                    </span>
+                    <a href="#" class="news-item-wrapper-news__normal-link">
+                        Смотрим, как проходили "Дни конструктивизма на Урале".
+                    </a>
+                </div>
+            </article>
+            <div class="news-items-block">
+                <div class="news-item-block__item">
+                    <div class="headline-wrapper small">
+                        <div class="orange-block"></div>
+                        <a href="#" class="headline-wrapper__headline">Недвижимость</a>
+                        <a href="#" class="headline-wrapper__right-headline">Добавить объявление</a>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/4.jpg">
+                            <img class="news-item-wrapper__image small" src="img/second/4.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__normal-link" href="#">
+                                Продам 2-комнатную квартиру
+                            </a>
+                            <span class="news-item-wrapper-news__text">
+                                Сурикова, 55
+                            </span>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Цена: 5 700 000 руб.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/5.jpg">
+                            <img class="news-item-wrapper__image small" src="img/second/5.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__normal-link" href="#">
+                                Продам офисное помещение
+                            </a>
+                            <span class="news-item-wrapper-news__text">
+                                Мамина-Сибиряка, 101
+                            </span>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Цена: 8 000 000 руб.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/6.jpg">
+                            <img class="news-item-wrapper__image small" src="img/second/6.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__normal-link" href="#">
+                                Продам коттедж
+                            </a>
+                            <span class="news-item-wrapper-news__text">
+                                Трактовая
+                            </span>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Цена: 3 490 000 руб.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/7.jpg">
+                            <img class="news-item-wrapper__image small" src="img/second/7.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__normal-link" href="#">
+                                Продам земельный участок
+                            </a>
+                            <span class="news-item-wrapper-news__text">
+                                Среднеуральский
+                            </span>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Цена: 1 450 000 руб.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item-block__item">
+                    <div class="headline-wrapper small">
+                        <div class="orange-block"></div>
+                        <a href="#" class="headline-wrapper__headline">Продажа авто, мото</a>
+                        <a href="#" class="headline-wrapper__right-headline">перейти</a>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/1rub-main-s.jpg">
+                            <img class="news-item-wrapper__image small" src="img/second/1rub-main-s.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <span class="news-item-wrapper-news__bold-text">
+                                Найди автомобиль
+                            </span>
+                            <span class="news-item-wrapper-news__bold-text">
+                                За 1 рубль от Е2.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/9.jpg">
+                            <img class="news-item-wrapper__image small" src="img/second/9.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a href="#" class="news-item-wrapper-news__bold-link">
+                                Volkswagen Passat
+                            </a>
+                            <span class="news-item-wrapper-news__bold-text">
+                                1 050 000 руб.
+                            </span>
+                            <span class="news-item-wrapper-news__text">
+                                2013, автомат, 1.4л
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/10.JPG">
+                            <img class="news-item-wrapper__image small" src="img/second/10.JPG"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a href="#" class="news-item-wrapper-news__bold-link">
+                                Volvo XC90
+                            </a>
+                            <span class="news-item-wrapper-news__bold-text">
+                                700 000 руб.
+                            </span>
+                            <span class="news-item-wrapper-news__text">
+                                2007, автомат, 2.5л
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/11.JPG">
+                            <img class="news-item-wrapper__image small" src="img/second/11.JPG"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a href="#" class="news-item-wrapper-news__bold-link">
+                                Nissan Juke
+                            </a>
+                            <span class="news-item-wrapper-news__bold-text">
+                                568 000 руб.
+                            </span>
+                            <span class="news-item-wrapper-news__text">
+                                2012, механика, 1.6л
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item-block__item">
+                    <div class="headline-wrapper small">
+                        <div class="orange-block"></div>
+                        <a href="#" class="headline-wrapper__headline">Работа</a>
+                        <a href="#" class="headline-wrapper__right-headline">перейти</a>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/12.jpg">
+                            <img class="news-item-wrapper__image border small" src="img/second/12.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__normal-link" href="#">
+                                Менеджер по продажам
+                            </a>
+                            <span class="news-item-wrapper-news__text">
+                                Стаж работы: до 1 года
+                            </span>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Зарплата: от 40 000 руб.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/13.jpg">
+                            <img class="news-item-wrapper__image border small" src="img/second/13.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__normal-link" href="#">
+                                Менеджер по заключению договоров
+                            </a>
+                            <span class="news-item-wrapper-news__text">
+                                Стаж работы: без опыта
+                            </span>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Зарплата: от 20 000 руб.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/14.jpg">
+                            <img class="news-item-wrapper__image border small" src="img/second/14.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__normal-link" href="#">
+                                Менеджер по маркетингу и рекламе
+                            </a>
+                            <span class="news-item-wrapper-news__text">
+                                Стаж работы: 1-3 года
+                            </span>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Зарплата: договорная
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="news-item-block__item">
+                    <div class="headline-wrapper small">
+                        <div class="orange-block"></div>
+                        <a href="#" class="headline-wrapper__headline">Объявления</a>
+                        <a href="#" class="headline-wrapper__right-headline">перейти</a>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/15.jpg">
+                            <img class="news-item-wrapper__image small" src="img/second/15.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__bold-link" href="#">
+                                Аварийный выезд электрика
+                            </a>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Цена: 1000 руб.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/15.jpg">
+                            <img class="news-item-wrapper__image small" src="img/second/15.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__bold-link" href="#">
+                                Аварийный выезд электрика
+                            </a>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Цена: 1000 руб.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/15.jpg">
+                            <img class="news-item-wrapper__image small" src="img/second/15.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__bold-link" href="#">
+                                Аварийный выезд электрика
+                            </a>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Цена: 1000 руб.
+                            </span>
+                        </div>
+                    </div>
+                    <div class="news-item-wrapper small">
+                        <a href="img/second/15.jpg">
+                            <img class="news-item-wrapper__image small" src="img/second/15.jpg"
+                                 width="50" height="38" title="Новость" alt="Новость">
+                        </a>
+                        <div class="news-item-wrapper-news">
+                            <a class="news-item-wrapper-news__bold-link" href="#">
+                                Аварийный выезд электрика
+                            </a>
+                            <span class="news-item-wrapper-news__bold-text">
+                                Цена: 1000 руб.
+                            </span>
+                        </div>
+                    </div>
+                </div>
+                <div class="headline-wrapper">
+                    <div class="orange-block"></div>
+                    <a href="#" class="headline-wrapper__headline">Туризм</a>
+                    <a href="#" class="headline-wrapper__right-headline">Перейти</a>
+                </div>
+                <div class="news-item-wrapper">
+                    <a href="img/second/20.jpg">
+                        <img class="news-item-wrapper__image small" src="img/second/20.jpg"
+                             width="50" height="40" title="Новость" alt="Новость">
+                    </a>
+                    <div class="news-item-wrapper-news">
+                        <a class="news-item-wrapper-news__bold-link" href="#">
+                            Солнечный остров
+                        </a>
+                        <span class="news-item-wrapper-news__bold-text">
+                            База отдыха, Свердловская область
+                        </span>
+                    </div>
+                </div>
+                <div class="news-item-wrapper">
+                    <a href="img/second/21.jpg">
+                        <img class="news-item-wrapper__image small" src="img/second/21.jpg"
+                             width="50" height="40" title="Новость" alt="Новость">
+                    </a>
+                    <div class="news-item-wrapper-news">
+                        <a class="news-item-wrapper-news__bold-link" href="#">
+                            Трубник
+                        </a>
+                        <span class="news-item-wrapper-news__bold-text">
+                            База отдыха, Свердловская область
+                        </span>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="third-column">
+            <div class="headline-wrapper small">
+                <div class="orange-block"></div>
+                <a href="#" class="headline-wrapper__headline">Спецпроект</a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
+            </div>
+            <div class="news-item-wrapper news-in-column small">
+                <a href="img/third/promo.jpg">
+                    <img class="news-item-wrapper__image big" src="img/third/promo.jpg"
+                         width="230" height="50" title="Новость" alt="Новость">
+                </a>
+                <div class="news-item-wrapper-news">
+                    <a class="news-item-wrapper-news__link" href="#">
+                        Репортаж из дома будущего
+                    </a>
+                </div>
+            </div>
+            <div class="headline-wrapper small with-margin-top">
+                <div class="orange-block"></div>
+                <a href="#" class="headline-wrapper__headline">Сейчас по TV</a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
+            </div>
+            <table class="tv-shedule">
+                <tr>
+                    <td>
+                        <img src="img/third/101_30.jpg" width="38" height="30"
+                             alt="1 канал" title="1 канал">
+                    </td>
+                    <td>
+                        <div class="news-item-wrapper-news__text">04:15 —
+                            <strong>Контрольная закупка</strong>
+                        </div>
+                        <div class="news-item-wrapper-news__text"><sub>(Еще одна минута)</sub></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/third/102_30.jpg" width="38" height="30"
+                             alt="Россия 1" title="Россия 1">
+                    </td>
+                    <td>
+                        <div class="news-item-wrapper-news__text">03:20 —
+                            <strong>Телесериал "Дар"</strong>
+                        </div>
+                        <div class="news-item-wrapper-news__text"><sub>(Еще 16 минут)</sub></div>
+                    </td>
+                </tr>
+                <tr>
+                    <td>
+                        <img src="img/third/103_30.jpg" width="38" height="30"
+                             alt="НТВ" title="НТВ">
+                    </td>
+                    <td>
+                        <div class="news-item-wrapper-news__text">04:00 —
+                            <strong>Сериал "ХВОСТ"</strong></div>
+                        <div class="news-item-wrapper-news__text"><sub>(Еще 20 минут)</sub></div>
+                    </td>
+                </tr>
+            </table>
+            <div class="headline-wrapper small with-margin-top">
+                <div class="orange-block"></div>
+                <a href="#" class="headline-wrapper__headline">Бизнес Образование</a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
+            </div>
+            <div class="news-item-wrapper news-in-column small">
+                <a href="#" class="news-item-wrapper-news__link">
+                    Семинары, тренинги, учебные курсы
+                </a>
+                <span class="news-item-wrapper-news__text">
+                    вся информация по бизнес-образованию для деловых людей и не только:
+                </span>
+                <br>
+                <span class="news-item-wrapper-news__bold-text">
+                    Выбрать по тематике:
+                </span>
+                <select>
+                    <option>Все</option>
+                    <option>Аудит</option>
+                    <option>Бухгалтерский учет</option>
+                </select>
+                <span class="news-item-wrapper-news__bold-text">
+                    Выбрать по организатору:
+                </span>
+                <select>
+                    <option>Все</option>
+                    <option>Аудит</option>
+                    <option>Бухгалтерский учет</option>
+                </select>
+                <button class="choose-button">Выбрать события</button>
+            </div>
+            <div class="headline-wrapper small with-margin-top">
+                <div class="orange-block"></div>
+                <a href="#" class="headline-wrapper__headline">Совместные покупки</a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
+            </div>
+            <div class="news-item-wrapper small">
+                <a href="img/third/basket.jpg">
+                    <img src="img/third/basket.jpg" width="64" height="46"
+                         title="Корзина" alt="Корзина">
+                </a>
+                <a href="#" class="news-item-wrapper-news__link">Вместе покупать дешевле!</a>
+            </div>
+        </div>
+    </main>
+    <div class="gallery">
+        <div class="first-column">
+            <div class="headline-wrapper">
+                <div class="orange-block"></div>
+                <a href="#" class="headline-wrapper__headline">Фото дня</a>
+            </div>
+            <input type="radio" name="image" id="first-image" class="image-select" checked>
+            <input type="radio" name="image" id="second-image" class="image-select">
+            <input type="radio" name="image" id="third-image" class="image-select">
+            <input type="checkbox" id="first" class="image-open">
+            <input type="checkbox" id="second" class="image-open">
+            <input type="checkbox" id="third" class="image-open">
+            <label for="first" class="image-select__label">
+                <span class="gallery-image first-image"></span>
+            </label>
+            <label for="second" class="image-select__label">
+                <span class="gallery-image second-image"></span>
+            </label>
+            <label for="third" class="image-select__label">
+                <span class="gallery-image third-image"></span>
+            </label>
+            <div class="modal">
+                <label for="first"><span class="close first"></span></label>
+                <label for="second"><span class="close second"></span></label>
+                <label for="third"><span class="close third"></span></label>
+                <div class="gallery-image-full first-image"></div>
+                <div class="gallery-image-full second-image"></div>
+                <div class="gallery-image-full third-image"></div>
+            </div>
+            <div class="small-images">
+                <label for="first-image">
+                    <span class="small-images__first small-images__image"></span>
+                </label>
+                <label for="second-image">
+                    <span class="small-images__second small-images__image"></span>
+                </label>
+                <label for="third-image">
+                    <span class="small-images__third small-images__image"></span>
+                </label>
+            </div>
+        </div>
+        <div class="second-column">
+            <div class="headline-wrapper">
+                <div class="orange-block"></div>
+                <a href="#" class="headline-wrapper__headline">Видео дня</a>
+            </div>
+            <div class="video">
+                <video controls preload="none" poster="img/video/poster.jpg">
+                    <source src="img/video/1.mp4" type="video/mp4">
+                    <source src="img/video/1.webm" type="video/mp4">
+                </video>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <div class="first-footer">
+            <div class="column">
+                <div class="links">
+                    <a href="#" class="first-footer__link first-footer__link__bold">
+                        Информация для клиентов
+                    </a>
+                    <a href="#" class="first-footer__link first-footer__link__bold">
+                        Реклама на E2
+                    </a>
+                    <a href="#" class="first-footer__link first-footer__link__bold">
+                        Прайс-лист
+                    </a>
+                </div>
+                <div class="contacts">
+                    <span class="first-footer__text">
+                        <strong>Единый номер:</strong>
+                        <a href="tel:7-800-700-89-10">8-800-700-89-10</a>
+                        (звонок бесплатный)
+                    </span>
+                    <span class="first-footer__text">
+                        <strong>Отдел продаж:</strong>
+                        <a href="mailto:bragin.egor.95@gmail.com" class="first-footer__link">
+                            bragin.egor.95@gmail.com</a>, <a href="tel:7-343-379-49-10">(343) 379-49-10</a>
+                    </span>
+                    <span class="first-footer__text">
+                        <strong>Редакция:</strong>
+                        <a href="mailto:bragin.egor.95@gmail.com" class="first-footer__link">
+                            bragin.egor.95@gmail.com</a>, <a href="tel:7-343-379-49-10">(343) 379-49-10</a>,
+                    </span>
+                    <span class="first-footer__text">
+                        <a href="tel:7-343-379-49-10">(343) 34-555-34</a> (круглосуточно - для новостей)
+                    </span>
+                </div>
+            </div>
+            <div class="column">
+                <div class="links">
+                    <a href="#" class="first-footer__link first-footer__link__bold">
+                        iPhone
+                    </a>
+                    <a href="#" class="first-footer__link first-footer__link__bold">
+                        Мобильная версия
+                    </a>
+                </div>
+            </div>
+        </div>
+        <div class="second-footer">
+            <span class="second-footer__text">
+                &copy; Брагин Егор "E2.RU"
+            </span>
+        </div>
+    </footer>
+        </div>
 </body>
 </html>
