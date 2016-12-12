@@ -301,7 +301,6 @@ nav .second-string
 .input-email1,
 .input-email2
 {
-    /*flex: 1 1 auto;*/
     padding: 0;
     height: 14px;
     margin: 0;
@@ -417,9 +416,8 @@ main
 
 .img-description h1
 {
-    margin: 0;
     font-size: 18px;
-    margin-top: 5px;
+    margin: 5px 0 0;
 }
 
 .img-description h2
@@ -476,7 +474,7 @@ main
     left: 0;
     bottom: 5px;
     border: 4px solid transparent;
-    border-left: 4px solid #aaa;
+    border-left-color: #aaa;
 }
 
 .strip-link .e1-link
