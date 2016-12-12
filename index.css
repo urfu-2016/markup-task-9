@@ -73,6 +73,11 @@ header
     padding: 10px;
 }
 
+.header-block__go
+{
+    line-height: 11px;
+}
+
 .nav__more .nav__item:not(:first-child)
 {
     border-top: 1px solid #545454;
@@ -428,9 +433,56 @@ header
     flex-basis: 40%;
 }
 
+.guest-page
+{
+    margin-top: 10px;
+}
+
+.guest-page__today
+{
+    font-size: 13px;
+    font-weight: bold;
+    cursor: pointer;
+    padding-bottom: 7px;
+}
+
+.meet-own-guest
+{
+    color: #196199;
+    font-weight: bold;
+    font-size: 11px;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
 .programm__info__name
 {
     font-weight: bold;
+}
+
+.buy-together__block
+{
+    margin-top: 10px;
+    display: flex;
+    padding: 0 4px;
+    align-items: center;
+}
+
+.buy-together
+{
+    margin-top: 10px;
+}
+
+.buy-together__text
+{
+    color: #ff5200;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.buy-together__text.buy-together__text--hover:hover
+{
+    color: #000;
 }
 
 .tv-programm__info
