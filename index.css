@@ -6,7 +6,7 @@ body
     height: 100%;
     margin: 0;
     padding: 0;
-    font: 1vmax Tahoma, Verdana, sans-serif;
+    font: 14px Tahoma, Verdana, sans-serif;
 }
 
 a
@@ -15,9 +15,15 @@ a
     color: #000;
 }
 
+p
+{
+    font-size: .78em;
+}
+
 .strong
 {
     font-weight: bold;
+    font-size: .71em;
 }
 
 .black
@@ -27,13 +33,19 @@ a
 
 .small-hoverable
 {
-    font-size: .8em;
+    font-size: .71em;
+    text-decoration: underline;
+}
+
+.medium-hoverable
+{
+    font-size: .85em;
     text-decoration: underline;
 }
 
 .small-blue
 {
-    font-size: 1em;
+    font-size: .71em;
     color: #369;
     text-decoration: underline;
 }
@@ -160,7 +172,6 @@ a
 .date-section
 {
     flex: 10%;
-    font-size: 1.25em;
 }
 
 .ya1-date
@@ -207,11 +218,6 @@ a
     height: 30px;
 }
 
-.temperature
-{
-    font-size: 1.25em;
-}
-
 .traffic-section
 {
     flex: 5%;
@@ -219,7 +225,6 @@ a
 
 .traffic-block
 {
-    font-size: 1.25em;
     display: block;
     padding: 10px;
     text-decoration: none;
@@ -260,7 +265,6 @@ a
 {
     display: block;
     width: 100%;
-    font-size: 1.25em;
     margin-bottom: 5px;
 }
 
@@ -353,7 +357,7 @@ a
 .search-label,
 .login-label
 {
-    font-size: 1.3em;
+    font-size: .78em;
 }
 
 .search-input,
@@ -430,7 +434,7 @@ a
 .caption-text
 {
     white-space: nowrap;
-    font-size: .9em;
+    font-size: .71em;
     padding: 0 5px 0 10px;
     border-right: 1px solid #aaa;
 }
@@ -481,14 +485,14 @@ a
 .big-news-announce-title
 {
     font-weight: bold;
-    font-size: 1.6em;
+    font-size: 1.28em;
     line-height: 24px;
     color: #fff;
 }
 
 .big-news-announce-subtitle
 {
-    font-size: 1em;
+    font-size: .92em;
     color: #fff;
     margin: 2px 0 10px;
 }
@@ -536,19 +540,19 @@ a
 {
     display: inline-block;
     width: 100%;
-    font-size: 1em;
+    font-size: .71em;
     color: #fd5200;
 }
 
 .news-text
 {
-    font-size: 1em;
+    font-size: .78em;
     margin: 0;
 }
 
 .post-caption
 {
-    font-size: 1em;
+    font-size: .78em;
     color: #369;
     text-align: center;
     margin: 4px;
@@ -592,6 +596,7 @@ a
 
 .orange-link
 {
+    font-size: .78em;
     display: block;
     margin-top: 10px;
     text-decoration: underline;
@@ -608,7 +613,7 @@ select
 {
     color: black;
     background-color: white;
-    font-size: 1em;
+    font-size: .71em;
 }
 
 .checks-button
@@ -617,7 +622,12 @@ select
     cursor: pointer;
     color: #fff;
     margin-bottom: 10px;
-    font-size: .95em;
+    font-size: .71em;
+}
+
+.column-2 > .news-block > .news-content > .medium-hoverable
+{
+    text-decoration: none;
 }
 
 /* END COLUMN */
@@ -646,7 +656,7 @@ select
 {
     color: #196199;
     text-decoration: underline;
-    font-size: 1em;
+    font-size: .85em;
     padding-right: 10px;
 }
 
