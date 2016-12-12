@@ -455,6 +455,44 @@ header
     cursor: pointer;
 }
 
+.table__item__img
+{
+    display: inline-block;
+    width: 27px;
+    height: 27px;
+    background: url(http://dom.ngs.ru/static/img/ssi/icon-sprite-e1.png) no-repeat -7px 3px;
+}
+
+.dom-block__table__item
+{
+    display: flex;
+    align-items: center;
+}
+
+.dom-block__table__item:not(:first-child)
+{
+    margin-left: 80px;
+}
+
+.table__item__text
+{
+    font-size: 12px;
+    color: #196199;
+    text-decoration: underline;
+    cursor: pointer;
+}
+
+.dom-block__table
+{
+    display: flex;
+    justify-content: flex-start;
+}
+
+.dom-block
+{
+    margin-top: 10px;
+}
+
 .programm__info__name
 {
     font-weight: bold;
