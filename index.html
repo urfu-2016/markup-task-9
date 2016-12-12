@@ -1,8 +1,733 @@
 <!DOCTYPE html>
-<html lang="ru">
+<html lang="en">
 <head>
-    <meta charset="utf-8">
+	<meta charset="UTF-8">
+	<link rel="stylesheet" href="index.css">
+	<title>E2.ru</title>
 </head>
-<body>
+<body class="e1">
+	<header>
+		<section class="header__nav">
+			<input type="checkbox" class="nav__item__check" id="item__check">
+			<ul class="header__nav__wrap">
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Главная</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Новости</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Недвижимость</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Авто</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Работа</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">ОБъявления</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Знакомства</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Погода</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Афиша</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Форумы</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Бизнес</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Общение</a></li>
+				<li class="nav__item nav__item--hover">
+					<label for="item__check">Еще<span class="e1-nav__triangle"></span></label>
+				</li>
+			</ul>
+			<ul class="nav__more">
+				<li class="nav__item nav__item--hover"><a href="#" class="link">СП</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Каталог</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Справка</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Еда</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Отдых</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Почта</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Дом</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Туризм</a></li>
+				<li class="nav__item nav__item--hover"><a href="#" class="link">Здоровье</a></li>
+			</ul>
+		</section>
+		<section class="hedaer__topics">
+			<div class="topics__item">
+				<a href="#" class="link"><span class="topics__text topics__text--hover">Новогодний спецпроект</span></a>
+			</div>
+			<div class="topics__item">
+				<a href="#" class="link"><span class="topics__text topics__text--hover">Ученые против мифов</span></a>
+			</div>
+			<div class="topics__item">
+				<a href="#" class="link"><span class="topics__text topics__text--hover">Башенки Екатерибурга</span></a>
+			</div>
+			<div class="topics__item">
+				<a href="#" class="link"><span class="topics__text topics__text--hover">Осторожно, корь</span></a>
+			</div>
+			<div class="topics__item">
+				<a href="#" class="link">
+				<span class="topics__text topics__text--hover">
+				Уникальные дома Екатеринбурга
+				</span></a>
+			</div>
+			<div class="topics__item">
+				<a href="#" class="link"><span class="topics__text topics__text--hover">Споры о храме-на-воде</span></a>
+			</div>
+		</section>
+		<section class="header__widget">
+			<section class="widget__item">
+				<img src="img/logo_e1.jpg" alt="logo-e1">
+			</section>
+			<section class="widget__item">
+				<div class="widget__item__time">Воскресенье<br>04 декабря<br><span>16:05</span></div>
+			</section>
+			<section class="widget__item">
+				<div class="widget__item__weather weather-today">
+					<a href="#" class="link"><span class="weather__time weather__time--hover">Сейчас</span></a>
+					<div class="weather__value">-13,9°C</div>
+					<img src="img/weatherSnow.gif" alt="weather snow">
+				</div>
+				<div class="widget__item__weather weather-tomorrow">
+					<a href="#" class="link"><span class="weather__time weather__time--hover">Завтра</span></a>
+					<div class="weather__value">-14,9°C</div>
+					<img src="img/weatherSun.gif" alt="weather sun">
+				</div>
+			</section>
+			<section class="widget__item">
+				<div class="traffic-jams traffic-jams--hover">
+					<a href="#" class="link"><span class="traffic-jams__text">Пробки</span></a>
+					<div class="traffic-jams__count">3</div>
+					<span class="traffic-jams__balls">балла</span>
+				</div>
+			</section>
+			<section class="widget__item social">
+				<div>Читайте нас где удобно:</div>
+				<section class="widget__item__social">
+					<div class="social__item social__item1"><a href="#" class="link"></a></div>
+					<div class="social__item social__item2"><a href="#" class="link"></a></div>
+					<div class="social__item social__item3"><a href="#" class="link"></a></div>
+					<div class="social__item social__item4"><a href="#" class="link"></a></div>
+					<div class="social__item social__item5"><a href="#" class="link"></a></div>
+					<div class="social__item social__item6"><a href="#" class="link"></a></div>
+					<div class="social__item social__item7"><a href="#" class="link"></a></div>
+				</section>
+			</section>
+			<section class="widget__item">
+				<section class="widget__item__course">
+					<a href="#" class="link"><span class="course__cb course__cb--hover">Курс ЦБ</span></a>
+					<div class="course__cb__info">
+						<table>
+							<tr><td class="cb__usd">USD</td><td>64.15</td></tr>
+							<tr><td class="cb__eur">EUR</td><td>68.15</td></tr>
+						</table>
+					</div>
+				</section>
+				<section class="widget__item__course">
+					<a href="#" class="link"><span class="course__avarage course__avarage--hover">Средневзвешенный</span></a>
+					<div class="course__buy-sale">
+						<span class="course__buy">Покупка</span>
+						<span class="course__ sale">Продажа</span>
+					</div>
+					<div class="course__avarage__info">
+						<table>
+							<tr><td>61.93</td><td>66.13</td></tr>
+							<tr><td>66.20</td><td>70.40</td></tr>
+						</table>
+					</div>
+				</section>
+			</section>
+			<section class="widget__item find">
+				<div class="widget__item__find">
+					<span class="item__find__text">Поиск:</span>
+					<input type="text">
+				</div>
+				<div class="widget__item__auth">
+					<span class="item__auth__text">Почта</span>
+					<input type="text" placeholder="Имя @e1.ru" class="item__auth__email">
+					<input type="text">
+				</div>
+			</section>
+		</section>
+	</header>
+	<main class="content">
+		<section class="content__col1">
+			<section class="main-news-block">
+				<section class="main-news-block__text">
+					<p class="block__text__article">
+						Аферист-неудачник пытался забрать выручку
+						бара в&nbsp;&laquo;Высоцком&raquo;,
+						представившись его директором
+					</p>
+					<p class="block__text__main">
+						Только он&nbsp;не&nbsp;учёл, что руководит
+						заведением женщина, а&nbsp;не&nbsp;мужчина.
+					</p>
+				</section>
+			</section>
+			<section class="news-block">
+				<section class="header-block">
+					<div class="header-block__name">Новости</div>
+					<div class="header-block__go">
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover"><a href="#" class="link">Все новости</a></div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img
+						src="http://www.e1.ru/news/static/b96a00364481a9ab14793fdbc99b6ea6_70_50_c.jpg" 
+						class="img-black-wom"
+						alt="Из Екатеринбурга в Африку запустят туры с посещением парка Крюгера">
+					</div>
+					<div class="block__item__news">
+						<span class="item__tag">Фото</span>
+						<div class="item__article item__article--hover">
+						<a href="#" class="link">Из&nbsp;Екатеринбурга в&nbsp;Африку запустят туры
+						с&nbsp;посещением парка Крюгера</a></div>
+						<div class="item__text">Стоимость перелёта будет
+						начинаться от&nbsp;75&nbsp;тысяч рублей.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img
+						src="http://www.e1.ru/news/static/b96a00364481a9ab14793fdbc99b6ea6_70_50_c.jpg"
+						class="img-black-wom" alt="Из Екатеринбурга в Африку запустят туры с посещением парка Крюгера">
+					</div>
+					<div class="block__item__news">
+						<span class="item__tag">Фото</span>
+						<div class="item__article item__article--hover">
+						<a href="#" class="link">
+						Из&nbsp;Екатеринбурга
+						в&nbsp;Африку запустят туры
+						с&nbsp;посещением парка Крюгера</a></div>
+							<div class="item__text">Стоимость
+						перелёта будет начинаться от&nbsp;75&nbsp;тысяч рублей.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://www.e1.ru/news/static/b96a00364481a9ab14793fdbc99b6ea6_70_50_c.jpg"
+						class="img-black-wom"
+						alt="Из Екатеринбурга в Африку запустят туры с посещением парка Крюгера">
+					</div>
+					<div class="block__item__news">
+						<span class="item__tag">Фото</span>
+						<div class="item__article item__article--hover">
+						<a href="#"
+						class="link">
+						Из&nbsp;Екатеринбурга в&nbsp;
+						Африку запустят туры с&nbsp;посещением парка Крюгера</a></div>
+							<div class="item__text">Стоимость перелёта будет
+						начинаться от&nbsp;75&nbsp;тысяч рублей.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://www.e1.ru/news/static/b96a00364481a9ab14793fdbc99b6ea6_70_50_c.jpg"
+						class="img-black-wom"
+						alt="Из Екатеринбурга в Африку запустят туры а">
+					</div>
+					<div class="block__item__news">
+						<span class="item__tag">Фото</span>
+						<div
+						class="item__article item__article--hover">
+						<a href="#" class="link">Из&nbsp;Екатеринбурга в&nbsp;Африку запустят туры
+						с&nbsp;посещением парка Крюгера</a></div>
+						<div class="item__text">Стоимость перелёта будет начинаться
+						от&nbsp;75&nbsp;тысяч рублей.</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img
+						src="http://www.e1.ru/news/static/b96a00364481a9ab14793fdbc99b6ea6_70_50_c.jpg"
+						class="img-black-wom" alt="Из Екатеринбурга в Афри">
+					</div>
+					<div class="block__item__news">
+						<span class="item__tag">Фото</span>
+						<div class="item__article item__article--hover"><a href="#" class="link">Из&nbsp;
+						Екатеринбурга в&nbsp;Африку запустят туры с&nbsp;посещением
+						парка Крюгера</a></div>
+						<div class="item__text">Стоимость перелёта будет начинаться
+						от&nbsp;75&nbsp;тысяч рублей.</div>
+					</div>
+				</section>
+			</section>
+			<section class="say-news">
+				<section class="header-block">
+					<div class="header-block__name">Сообщить новость</div>
+					<div class="header-block__go">
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover"><a href="#" class="link">Перейти</a></div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="img/sayNews.jpg" class="say-news__img"
+						alt="Из Екатеринбурга в Африку запустят туры с посещением парка Крюгера">
+					</div>
+					<div class="block__item__news">
+						<div class="say-news__aritcle">
+							<a href="#" class="link">Отправьте свою новость в&nbsp;редакцию,
+							расскажите о&nbsp;проблеме или подкиньте тему для публикации. 
+							Сюда&nbsp;же загружайте ваше видео и&nbsp;фото.</a>
+						</div>
+						<div class="say-news__text">Круглосуточный телефон
+						службы новостей <span class="item__text__number">+7 (343) 34-555-34</span></div>
+					</div>
+				</section>
+			</section>	
+			<section class="thematic-aritcle">
+				<section class="header-block">
+					<div class="header-block__name">тематические статьи</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg"
+						class="thematic-aritcle__photo" alt="leg-icon">
+					</div>
+					<div class="block__item__news">
+						<div class="say-news__aritcle">&laquo;<a href="#" class="link">
+						Это существенно снижает ваши шансы&raquo;</a></div>
+						<div class="item__text">10&nbsp;распространенных
+						ошибок в&nbsp;резюме, которые можно поправить за&nbsp;один день</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg"
+						class="thematic-aritcle__photo" alt="lag-img">
+					</div>
+					<div class="block__item__news">
+						<div class="say-news__aritcle"><a href="#" class="link">&laquo;Это существенно снижает
+						ваши шансы&raquo;</a></div>
+						<div class="item__text">10&nbsp;распространенных ошибок в&nbsp;
+						резюме, которые можно поправить за&nbsp;один день</div>
+					</div>
+				</section>
+				<section class="news-block__item">
+						<div class="block__item__img">
+							<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg"
+							class="thematic-aritcle__photo" alt="lag-img">
+						</div>
+						<div class="block__item__news">
+							<div class="say-news__aritcle"><a href="#" class="link">&laquo;Это существенно снижает
+							ваши шансы&raquo;</a></div>
+							<div class="item__text">10&nbsp;распространенных ошибок
+							в&nbsp;резюме, которые можно поправить за&nbsp;один день</div>
+						</div>
+				</section>
+			</section>
+		</section>
+		<section class="content__col2">
+			<section>
+				<section class="header-block">
+					<div class="header-block__name">Подробности</div>
+					<div class="header-block__go">
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover"><a href="#" class="link">Перейти</a></div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img
+						src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg"
+						alt="В Екатеринбурге задержали парнеранд в детских садах" class="say-news__img">
+					</div>
+					<div class="block__item__news">
+						<div class="item__article__short-topic">
+						В&nbsp;Екатеринбурге задержали парня, подозреваемого
+						в&nbsp;серийном поджоге веранд в&nbsp;детских садах</div>
+						<div class="say-news__aritcle"><a href="#" class="link">Его уже опознали очевидцы.</a></div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img
+						src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg"
+						alt="В Екатерваемого в садах" class="say-news__img">
+					</div>
+					<div class="block__item__news">
+						<div class="item__article__short-topic">
+						В&nbsp;Екатеринбурге задержали парня,
+						подозреваемого в&nbsp;серийном поджоге веранд
+						в&nbsp;детских садах</div>
+						<div class="say-news__aritcle"><a href="#" class="link">Его уже опознали очевидцы.</a></div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img
+						src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg"
+						alt="В Екатеринбурге задержало в серийном поджоге веранд в детских садах" class="say-news__img">
+					</div>
+					<div class="block__item__news">
+						<div class="item__article__short-topic">
+						В&nbsp;Екатеринбурге задержали парня,
+						подозреваемого в&nbsp;серийном поджоге веранд
+						в&nbsp;детских садах</div>
+						<div class="say-news__aritcle"><a href="#" class="link">Его уже опознали очевидцы.</a></div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img
+						src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg"
+						alt="В Екатеринбурге задержали парня, пв детских садах" class="say-news__img">
+					</div>
+					<div class="block__item__news">
+						<div class="item__article__short-topic">
+						В&nbsp;Екатеринбурге задержали парня,
+						подозреваемого в&nbsp;серийном поджоге веранд
+						в&nbsp;детских садах</div>
+						<div class="say-news__aritcle"><a href="#" class="link">Его уже опознали очевидцы.</a></div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img
+						src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg"
+						alt="В Екатеринбурге задержали парня, подозрких садах" class="say-news__img">
+					</div>
+					<div class="block__item__news">
+						<div class="item__article__short-topic">
+						В&nbsp;Екатеринбурге задержали парня,
+						подозреваемого в&nbsp;серийном поджоге веранд
+						в&nbsp;детских садах</div>
+						<div class="say-news__aritcle"><a href="#" class="link">Его уже опознали очевидцы.</a></div>
+					</div>
+				</section>
+			</section>
+			<section class="house-auto">
+				<section class="buy-house">
+					<section class="header-block header-block--half">
+						<div class="header-block__name">Недвижимость</div>
+						<div class="header-block__go">
+							<img src="img/arrow.gif" alt="arrow-icon">
+							<div class="header-block__move header-block__move--hover">Добавить объявление</div>
+						</div>
+					</section>
+					<section class="buy-house__content">
+						<div class="buy-house__tags">
+							<a href="#" class="link"><span class="buy-house__tags__item">Аренда</span></a>
+							<a href="#" class="link"><span class="buy-house__tags__item">Продажа квартир</span></a>
+							<a href="#" class="link"><span class="buy-house__tags__item">Новостройки</span></a>
+						</div>
+
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg"
+								alt="leg-icon"
+								class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									<a href="#" class="link">Продам 1-комнатную квартиру</a>
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg"
+								alt="leg-icon"
+								class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									<a href="#" class="link">Продам 1-комнатную квартиру</a>
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg"
+								alt="leg-img"
+								class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									<a href="#" class="link">Продам 1-комнатную квартиру</a>
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+					</section>
+				</section>
+				<section class="buy-auto">
+					<section class="header-block header-block--half">
+						<div class="header-block__name">Продажа авто, мото</div>
+						<div class="header-block__go">
+							<img src="img/arrow.gif" alt="arrow-icon">
+							<div class="header-block__move header-block__move--hover"><a href="#" class="link">Перейти</a></div>
+						</div>
+					</section>
+					<section class="buy-house__content">
+						<div class="buy-house__tags">
+							<a href="#" class="link"><span class="buy-house__tags__item">Аренда</span></a>
+							<a href="#" class="link"><span class="buy-house__tags__item">Продажа квартир</span></a>
+							<a href="#" class="link"><span class="buy-house__tags__item">Новостройки</span></a>
+						</div>
+
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg"
+								alt="leg-img"
+								class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									<a href="#" class="link">Продам 1-комнатную квартиру</a>
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg"
+								alt="leg-img"
+								class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									<a href="#" class="link">Продам 1-комнатную квартиру</a>
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+						<section class="buy-house__item">
+							<div class="buy-house__item__img">
+								<img src="http://static.ngs.ru/news/54/preview/27b671fd2f2570750ac312cf61f4945b09270786_70_50_c.jpg"
+								alt="leg-img" class="say-news__img">
+							</div>
+							<div class="buy-house__item__content">
+								<div class="buy-house__item__info">
+									<a href="#" class="link">Продам 1-комнатную квартиру</a>
+								</div>
+								<div class="buy-house__item__addres">Максима Горького, 52</div>
+								<div class="buy-house__item__cost">Цена: <span class="item__cost">2 400 000 руб.</span></div>
+							</div>
+						</section>
+					</section>
+				</section>
+			</section>
+			<section class="guest-page">
+				<section class="header-block">
+					<div class="header-block__name">Гость на Е1</div>
+					<div class="header-block__go">
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover"><a href="#" class="link">Перейти</a></div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="img/guest.jpeg" alt="Гость" class="guest__img">
+					</div>
+					<div class="block__item__news">
+						<div class="guest-page__today">Сегодня</div>
+						<div class="say-news__aritcle">
+						<a href="#" class="link">Интервью с
+						Ширли Мэнсон, вокалисткой группы Garbage</a></div>
+					</div>
+				</section>
+				<section class="news-block__item">
+					<div class="block__item__img">
+						<img src="img/guest.jpeg" alt="Гость" class="guest__img">
+					</div>
+					<div class="block__item__news">
+						<div class="guest-page__today">Сегодня</div>
+						<div class="say-news__aritcle"><a href="#"
+						class="link">Интервью с Ширли Мэнсон, вокалисткой
+						группы Garbage</a></div>
+					</div>
+				</section>
+				<a href="#" class="link"><span class="meet-own-guest">пригласить своего гостя</span></a>
+			</section>
+			<section class="dom-block">
+				<section class="header-block">
+					<div class="header-block__name">Дом</div>
+					<div class="header-block__go">
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover"><a href="#" class="link">Перейти</a></div>
+					</div>
+				</section>
+				<section class="dom-block__table">
+					<div class="dom-block__table__item">
+						<div class="table__item__img"></div>
+						<a href="#" class="link"><span class="table__item__text">Мебель</span></a>
+					</div>
+					<div class="dom-block__table__item">
+						<div class="table__item__img"></div>
+						<a href="#" class="link"><span class="table__item__text">Мебель</span></a>
+					</div>
+					<div class="dom-block__table__item">
+						<div class="table__item__img"></div>
+						<a href="#" class="link"><span class="table__item__text">Мебель</span></a>
+					</div>
+				</section>
+				<section class="dom-block__table">
+					<div class="dom-block__table__item">
+						<div class="table__item__img"></div>
+						<a href="#" class="link"><span class="table__item__text">Мебель</span></a>
+					</div>
+					<div class="dom-block__table__item">
+						<div class="table__item__img"></div>
+						<a href="#" class="link"><span class="table__item__text">Мебель</span></a>
+					</div>
+					<div class="dom-block__table__item">
+						<div class="table__item__img"></div>
+						<a href="#" class="link"><span class="table__item__text">Мебель</span></a>
+					</div>
+				</section>
+				
+				<a href="#" class="link"><span class="meet-own-guest">все категории товаров</span></a>
+			</section>
+		</section>
+		<section class="content__col3">
+			<section class="tv-programm">
+				<section class="header-block header-block--half">
+					<div class="header-block__name">Сейчас по тв</div>
+					<div class="header-block__go">
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover"><a href="#" class="link">Перейти</a></div>
+					</div>
+				</section>
+				<section class="tv-programm__item">
+					<div class="tv-programm__logo">
+						<img src="img/tv1.jpg" alt="первый канал" class="first-channel">
+					</div>
+					<div class="tv-programm__info">
+						<span class="programm__info__time">21:30</span>
+						<span class="programm__info__name">
+						-Павел Деревянко в многосерийном фильме
+						Обратная сторона Луны". Новый сезон (S) (16+).</span>
+						<span class="programm__info__finish">(еще 29 мин.)</span>
+					</div>
+				</section>
+				<section class="tv-programm__item">
+					<div class="tv-programm__logo">
+						<img src="img/tv1.jpg" alt="первый канал" class="first-channel">
+					</div>
+					<div class="tv-programm__info">
+						<span class="programm__info__time">21:30</span>
+						<span class="programm__info__name">
+						-Павел Деревянко в многосерийном фильме
+						"Обратная сторона Луны". Новый сезон (S) (16+).</span>
+						<span class="programm__info__finish">(еще 29 мин.)</span>
+					</div>
+				</section>
+				<section class="tv-programm__item">
+					<div class="tv-programm__logo">
+						<img src="img/tv1.jpg" alt="первый канал" class="first-channel">
+					</div>
+					<div class="tv-programm__info">
+						<span class="programm__info__time">21:30</span>
+						<span class="programm__info__name">
+						-Павел Деревянко в многосерийном фильме
+						"Обратная сторона Луны". Новый сезон (S) (16+).</span>
+						<span class="programm__info__finish">(еще 29 мин.)</span>
+					</div>
+				</section>
+				<section class="tv-programm__item">
+					<div class="tv-programm__logo">
+						<img src="img/tv1.jpg" alt="первый канал" class="first-channel">
+					</div>
+					<div class="tv-programm__info">
+						<span class="programm__info__time">21:30</span>
+						<span class="programm__info__name">
+						-Павел Деревянко в многосерийном фильме
+						"Обратная сторона Луны".
+						Новый сезон (S) (16+).</span>
+						<span class="programm__info__finish">(еще 29 мин.)</span>
+					</div>
+				</section>
+				<section class="tv-programm__item">
+					<div class="tv-programm__logo">
+						<img src="img/tv1.jpg" alt="первый канал" class="first-channel">
+					</div>
+					<div class="tv-programm__info">
+						<span class="programm__info__time">21:30</span>
+						<span class="programm__info__name">
+						-Павел Деревянко в многосерийном фильме
+						"Обратная сторона Луны". Новый сезон (S) (16+).</span>
+						<span class="programm__info__finish">(еще 29 мин.)</span>
+					</div>
+				</section>
+			</section>
+			<section class="buy-together">
+				<section class="header-block header-block--half">
+					<div class="header-block__name">Совместные покупки</div>
+					<div class="header-block__go">
+						<img alt="arrow-icon" src="img/arrow.gif">
+						<div class="header-block__move header-block__move--hover">
+						<a href="#" class="link">Перейти</a></div>
+					</div>
+				</section>
+				<section class="buy-together__block">
+					<img src="img/buy.jpg" alt=" корзинка">
+					<div class="buy-together__text buy-together__text--hover">
+					<a href="#" class="link">Вместе покупать дешевле!</a></div>
+				</section>
+			</section>
+		</section>
+	</main>
+	<footer>
+		<section class="fotter-contacts">
+			<section class="fotter-contacts__address">
+				<div class="fotter-contacts__address__list">
+					<div class="address__list__item"><a href="#" class="link">Информация о клиенте</a></div>
+					<div class="address__list__item"><a href="#" class="link">Реклама на е1</a></div>
+					<div class="address__list__item"><a href="#" class="link">Прайс-лист</a></div>
+				</div>
+				<div class="fotter-contacts__address__info">
+					<span class="address__info__txt">Единый номер:</span>
+					8-800-700-8-9-10 (звонок бесплатный) <br>
+					<span class="address__info__txt">Отдел продаж:
+					</span> <span class="address__info__link">
+					adv@corp.e1.ru</span>, (343) 379-49-10 <br>
+					<span class="address__info__txt">Редакция:
+					</span> <span class="address__info__link">news@corp.e1.ru</span>,
+					(343) 379-49-95, (343) 34-555-34 (круглосуточно -
+					для новостей)<br>
+
+					<a href="#" class="link"><span class="address__info__back">Замечания и пожелания по
+					работе отдела продаж</span></a> <br>
+					Публикация материалов под меткой «На правах рекламы» <br>
+					и «Новости компаний» оплачена из средств рекламодателя
+				</div>
+			</section>
+			<section class="fotter-contacts__feedback-logo">
+				<section class="fotter-contacts__feedback">
+					<div class="fotter-contacts__address__list">
+						<div class="address__list__item"><a href="#" class="link">Iphone</a></div>
+						<div class="address__list__item"><a href="#" class="link">Мобильная версия</a></div>
+					</div>
+					<div class="fotter-contacts__address__info">
+						Отзывы и предложения о работе портала:
+						<span class="address__info__link">info@corp.e1.ru</span><br>
+						Центр поддержки пользователей портала E1.RU 
+						<span class="address__info__back">Проблемы при
+						работе с порталом: support@corp.e1.ru</span>
+						<span class="address__info__back">Карта сайта</span>
+					</div>
+				</section>
+				<section class="fotter-contacts__logo">
+					<img src="http://www.e1.ru/images/18grey.jpg"  alt="лого">
+					<img src="http://counter.yadro.ru/logo;hsdigital/rn/main/66?43.7"
+					title="LiveInternet" alt="лого" width="31" height="31">
+					<img src="img/yandMetr.png" alt="яндекс метрица">
+				</section>
+			</section>
+		</section>
+		<section class="fotter-partners">
+			<section class="footer__e1-owner">
+				© ООО «Хёрст Шкулёв Диджитал. Урал»
+			</section>
+			<section class="footer__e1-partners">
+				<a href="#" class="link"><img src="http://www.e1.ru/images/intermediagroup.jpg"
+				alt="e1-partnet"></a>
+				<a href="#" class="link"><img
+				class="e1-footer__marks-icon e1-footer__marks-icon_n1"
+				src="http://www.e1.ru/images/n1_gray.png" alt="e1-partnet"></a>
+				<a href="#" class="link"><img
+				class="e1-footer__marks-icon e1-footer__marks-icon_zarplata"
+				src="http://www.e1.ru/images/zarplata_gray.png" alt="e1-partnet"></a>
+			</section>
+		</section>
+	</footer>
 </body>
 </html>
