@@ -386,7 +386,13 @@ main
 
 .main-news img
 {
-    width: 100%;
+    width: calc(100% - 2px);
+    border: 1px solid #000;
+}
+
+.main-news img:hover
+{
+    border: 1px solid #ff5200;
 }
 
 .main-news figcaption
@@ -394,7 +400,7 @@ main
     position: absolute;
     border-left: 7px solid #ff5200;
     background: rgba(0, 0, 0, .7);
-    bottom: 2px;
+    bottom: 3px;
     color: #fff;
     padding: 0 15px;
 }
