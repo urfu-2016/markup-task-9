@@ -506,8 +506,6 @@ ul.bottom-nav li:not(:last-of-type):after
     align-items: flex-start;
 }
 
-
-
 .row div
 {
     flex: 1;
