@@ -1,0 +1,546 @@
+html
+{
+    margin: 0;
+    padding: 0;
+    height: 100%;
+}
+
+body
+{
+    width: 1260px;
+    height: 100%;
+    margin: 0 auto;
+    font-family: Tahoma, verdana, sans-serif, Arial;
+}
+
+main
+{
+    flex: 1 0 auto;
+}
+
+/*Шапка сайта*/
+
+.advertising
+{
+    max-height: 150px;
+    overflow: hidden;
+    margin: 0 auto;
+    text-align: center;
+    background-color: #fa5604;
+}
+
+.topics
+{
+    display: flex;
+    justify-content: space-between;
+    background-color: #424242;
+}
+
+.themes
+{
+    display: flex;
+    justify-content: flex-start;
+    background-color: #fa5604;
+}
+
+.topic,
+.theme
+{
+    flex-direction: row;
+    margin: 2px 20px;
+}
+
+.topic a,
+.theme a
+{
+    text-decoration: none;
+    color: white;
+}
+
+.topic a:hover
+{
+    color: #fa5604;
+}
+
+.theme a:hover
+{
+    color: #424242;
+}
+
+.daily-inform
+{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.logo
+{
+    display: block;
+    width: 172px;
+    height: 70px;
+    background-image: url('logo.gif');
+    margin: 0 15px;
+}
+
+.date
+{
+    display: flex;
+    text-align: center;
+    padding: 0 15px;
+    border-right: 1px solid #424242;
+    border-left: 1px solid #424242;
+}
+
+.date
+{
+    flex-direction: column;
+    align-self: center;
+}
+
+.time
+{
+    font-weight: 600;
+}
+
+.weather
+{
+    display: flex;
+    margin-top: 3px;
+    font-size: .7em;
+    align-self: center;
+}
+
+.weather a,
+.traffic-jams a,
+.course a,
+.average a
+{
+    color: black;
+}
+
+.weather a:hover,
+.traffic-jams a:hover,
+.course a:hover,
+.average a:hover
+{
+    color: #fa5604;
+}
+
+.cloudy-icon
+{
+    width: 30px;
+    height: 30px;
+    background-image: url('weather1.gif');
+}
+
+.sunny-icon
+{
+    width: 30px;
+    height: 30px;
+    background-image: url('weather2.gif');
+}
+
+.today,
+.tomorrow
+{
+    display: flex;
+    padding: 0 15px;
+    flex-direction: column;
+}
+
+.today img,
+.tomorrow img
+{
+    width: 30px;
+    margin: 0 auto;
+}
+
+.traffic-jams,
+.contacts,
+.course,
+.average
+{
+    text-align: center;
+    align-self: flex-start;
+    margin-top: 3px;
+}
+
+.traffic-jams
+{
+    padding: 0 15px;
+    border-right: 1px solid #424242;
+    border-left: 1px solid #424242;
+    align-self: center;
+}
+
+.circle
+{
+    background-color: green;
+    width: 20px;
+    border-radius: 20px;
+    margin: 0 auto;
+    border: 1px solid #424242;
+    color: white;
+    margin-top: 3px;
+}
+
+.traffic-jams span
+{
+    font-weight: 600;
+}
+
+.contacts
+{
+    align-self: center;
+    padding: 0 30px;
+
+}
+
+.icons
+{
+    margin-top: 3px;
+}
+
+.icon
+{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+}
+
+.vkontakte
+{
+    background-image: url('vk.png');
+}
+
+.facebook
+{
+    background-image: url('fb.png');
+}
+
+.twitter
+{
+    background-image: url('tw.png');
+}
+
+.classmates
+{
+    background-image: url('ok.png');
+}
+
+.yandex
+{
+    background-image: url('ya.png');
+}
+
+.instagram
+{
+    background-image: url('inst.png');
+}
+
+.telegram
+{
+    background-image: url('tg.png');
+}
+
+.money-rate
+{
+    display: flex;
+}
+
+.course
+{
+    border-left: 1px solid #424242;
+}
+
+.average
+{
+    border-right: 1px solid #424242;
+}
+
+.course,
+.average
+{
+    display: flex;
+    padding: 0 10px;
+    font-size: .6em;
+    align-self: center;
+    flex-direction: column;
+}
+
+.block-average
+{
+    display: flex;
+}
+
+.block-buy,
+.block-selling
+{
+    flex-direction: row;
+    padding: 0 5px;
+}
+
+.currency
+{
+    padding-top: 10px;
+}
+
+.block-buy
+{
+    flex-direction: column;
+}
+
+.authorization
+{
+    align-self: center;
+}
+
+.search,
+.email
+{
+    display: flex;
+}
+
+.search input,
+.email input
+{
+    height: 12px;
+    margin: 3px;
+}
+
+.email input
+{
+    justify-content: space-between;
+}
+
+.mail
+{
+    font-size: .5em;
+    width: 50px;
+}
+
+.search-icon
+{
+    display: inline-block;
+    width: 18px;
+    min-height: 18px;
+    background-image: url('search.png');
+    border: none;
+    margin: 3px;
+}
+
+/*Содержание сайта*/
+
+.news
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.left-column,
+.center-column,
+.right-column
+{
+    flex-direction: row;
+}
+
+.right-column
+{
+    width: 400px;
+}
+
+.main-news
+{
+    height: 300px;
+    max-width: 560px;
+    position: relative;
+    color: white;
+    margin-left: 15px;
+    margin-bottom: 10px;
+}
+
+.anons-block
+{
+    background: rgba(0, 0, 0, .7);
+    border-left: 7px solid #fd5200;
+    text-align: left;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 4px 10px 0;
+    width: 100%;
+    box-sizing: border-box;
+}
+
+.anons-block span
+{
+    font-weight: 600;
+    font-size: 1.2em;
+}
+
+article
+{
+    margin: 0 0 10px 15px;
+    max-width: 100%;
+}
+
+.left-column article
+{
+    padding-bottom: 5px;
+    border-bottom: 1px solid #fd5200;
+}
+
+.left-column article:last-child
+{
+    border-bottom: none;
+}
+
+.big-block article img
+{
+    height: 50px;
+    margin-right: 5px;
+}
+
+.header-block
+{
+    max-width: 100%;
+    border-top: 2px solid #424242;
+    border-left: 7px solid #fd5200;
+    padding: 3px 5px;
+    background-color: rgba(0, 0, 0, .2);
+    font-size: .8em;
+}
+
+.header-block a
+{
+    float: right;
+    color: rgba(0, 0, 0, .5);
+    font-size: .9em;
+    margin-right: 5px;
+}
+
+.arrow
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('arrow.gif');
+    vertical-align: top;
+}
+
+.header-block h4
+{
+    display: inline;
+    text-transform: uppercase;
+    font-weight: 400;
+}
+
+.header-block span
+{
+    text-transform: uppercase;
+}
+
+.body-block
+{
+    display: flex;
+    font-size: .75em;
+}
+
+.body-block a,
+.body-block span
+{
+    display: block;
+    max-width: 450px;
+}
+
+.center-column .textArticle
+{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #fd5200;
+}
+
+.center-column .informArticle
+{
+    padding-top: 5px;
+}
+
+.right-column
+{
+    max-width: 250px;
+    margin-left: 15px;
+}
+
+.right-column img
+{
+    width: 100%;
+    margin-bottom: 10px;
+}
+
+.mini-block
+{
+    display: flex;
+    justify-content: space-between;
+    flex-direction: row;
+    min-width: 400px;
+}
+
+.mini-block article
+{
+    width: 200px;
+}
+
+.mini-block article img
+{
+    max-width: 50px;
+    height: 38px;
+    margin-right: 5px;
+}
+
+/*Подвал*/
+
+.basement
+{
+    background-color: rgba(0, 0, 0, .2);
+    height: 150px;
+    display: flex;
+    flex: 0 0 auto;
+    flex-direction: column;
+    font-size: .9em;
+    padding: 10px 15px;
+}
+
+.first-level,
+.second-level
+{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+}
+
+.phone-numbers,
+.big-icons
+{
+    flex-direction: row;
+}
+
+.informants
+{
+    justify-content: center;
+}
+
+.age
+{
+    display: inline-block;
+    width: 49px;
+    height: 31px;
+    background-image: url('18grey.jpg');
+}
+
+.statistics
+{
+    display: inline-block;
+    width: 31px;
+    height: 31px;
+    background-image: url('66.gif');
+}
