@@ -25,6 +25,11 @@ header
     min-width: 700px;
 }
 
+.nav__item__check
+{
+    display: none;
+}
+
 .e1-nav__triangle
 {
     border-color: #fff #434343 #434343;
@@ -34,15 +39,49 @@ header
     margin-left: 3px;
     vertical-align: 2px;
     width: 0;
+    cursor: pointer;
+}
+
+.nav__item label
+{
+    cursor: pointer;
 }
 
 .header__nav
 {
+    position: relative;
     color: #fff;
     display: block;
     font-size: 14px;
     font-weight: normal;
     background: #444 none repeat scroll 0;
+}
+
+.nav__item__check:checked ~ .nav__more
+{
+    display: block;
+}
+
+.nav__more
+{
+    display: none;
+    position: absolute;
+    right: 0;
+    top: 5px;
+    z-index: 1;
+    background: #444 none repeat scroll 0;
+    padding: 10px;
+}
+
+.nav__more .nav__item:not(:first-child)
+{
+    border-top: 1px solid #545454;
+    margin-top: 3px;
+}
+
+.nav__more .nav__item
+{
+    text-align: center;
 }
 
 .header__nav__wrap
