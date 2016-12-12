@@ -1,8 +1,671 @@
 <!DOCTYPE html>
 <html lang="ru">
+
 <head>
     <meta charset="utf-8">
+    <link rel="stylesheet" type="text/css" href="index.css">
+    <title>e2.ru</title>
 </head>
+
 <body>
+    <header class="header">
+        <ul class="top-nav">
+            <li><a href="#">Главная</a></li>
+            <li><a href="#">Новости</a></li>
+            <li><a href="#">Недвижимость</a></li>
+            <li><a href="#">Авто</a></li>
+            <li><a href="#">Работа</a></li>
+            <li><a href="#">Объявления</a></li>
+            <li><a href="#">Знакомства</a></li>
+            <li><a href="#">Погода</a></li>
+            <li><a href="#">Афиша</a></li>
+            <li><a href="#">Форумы</a></li>
+            <li><a href="#">Бизнес</a></li>
+            <li><a href="#">Общение</a></li>
+            <li>
+                <label for="more-header">Еще</label>
+                <input type="checkbox" id="more-header">
+                <ul>
+                    <li><a href="#">СП</a></li>
+                    <li><a href="#">Каталог</a></li>
+                    <li><a href="#">Справка</a></li>
+                    <li><a href="#">Еда</a></li>
+                    <li><a href="#">Отдых</a></li>
+                    <li><a href="#">Почта</a></li>
+                    <li><a href="#">Дом</a></li>
+                    <li><a href="#">Туризм</a></li>
+                    <li><a href="#">Здоровье</a></li>
+                </ul>
+            </li>
+        </ul>
+        <ul class="middle-nav">
+            <li><a href="#">Новогодний спецпроект</a></li>
+            <li><a href="#">Учёные против мифов</a></li>
+            <li><a href="#">Башенки Екатеринбурга</a></li>
+            <li><a href="#">Осторожно, корь!</a></li>
+            <li><a href="#">Как чистят город</a></li>
+            <li><a href="#">Споры о храме-на-воде</a></li>
+        </ul>
+        <ul class="bottom-nav">
+            <li><img src="img/logo.jpg" alt="Logo"></li>
+            <li>
+                <div class="clock-time">
+                    Суббота
+                    <br>03 декабря
+                    <br>
+                    <strong>13:33</strong>
+                </div>
+            </li>
+            <li class="weather-container">
+                <div class="weather">
+                    <a href="#" class="day">Сейчас</a>
+                    <p class="temperature">-13,3°C</p>
+                    <img src="img/weather1.gif" alt="погода">
+                </div>
+                <div class="weather">
+                    <a href="#" class="day">Завтра</a>
+                    <p class="temperature">-17°C</p>
+                    <img src="img/weather2.gif" alt="погода">
+                </div>
+            </li>
+            <li>
+                <a href="#">Пробки</a>
+                <div class="traffic">4</div>
+                балла
+            </li>
+            <li>
+                <h3>Читайте нас где удобно:</h3>
+                <div class="socials">
+                    <a href="https://goo.gl/3Dgc3A"><img src="img/vk.png" alt="vk"></a>
+                    <a href="https://goo.gl/3Dgc3A"><img src="img/facebook.png" alt="facebook"></a>
+                    <a href="https://goo.gl/3Dgc3A"><img src="img/twitter.png" alt="twitter"></a>
+                    <a href="https://goo.gl/3Dgc3A"><img src="img/odnoklassniki.png" alt="odnoklassniki"></a>
+                    <a href="https://goo.gl/3Dgc3A"><img src="img/yandex.png" alt="yandex"></a>
+                    <a href="https://goo.gl/3Dgc3A"><img src="img/instagram.png" alt="instagram"></a>
+                    <a href="https://goo.gl/3Dgc3A"><img src="img/telegram.png" alt="telegram"></a>
+                </div>
+            </li>
+            <li class="bank-wrapper">
+                <div class="cb">
+                    <a href="#">Курс ЦБ</a>
+                    <hr>
+                    <div class="currency">
+                        <h4>
+                                USD    
+                        </h4>
+                        <span>64.15</span>
+                    </div>
+                    <div class="currency">
+                        <h4>
+                                EUR    
+                            </h4>
+                        <span>68.47</span>
+                    </div>
+                </div>
+                <div class="buysell">
+                    <a href="#">Средневзвешенный</a>
+                    <div class="names">
+                        <h4>Покупка</h4>
+                        <h4>Продажа</h4>
+                        <hr>
+                        <div class="costs">
+                            <section>
+                                <div class="cost">
+                                    62.85
+                                </div>
+                                <div class="cost">
+                                    66.95
+                                </div>
+                            </section>
+                            <section>
+                                <div class="cost">
+                                    65.32
+                                </div>
+                                <div class="cost">
+                                    69.51
+                                </div>
+                            </section>
+                        </div>
+                    </div>
+                </div>
+            </li>
+            <li>
+                <div class="login">
+                    <form action="." method="get">
+                        <span class="name">Поиск:</span>
+                        <input class="row-input search" type="text" name="search" value="">
+                        <input class="row-submit" type="submit" value="">
+                    </form>
+                    <form action="." method="get">
+                        <span class="name">Почта:</span>
+                        <input class="row-input mail" type="text" placeholder="Имя @e1.ru" value="">
+                        <input class="row-input pass" type="password" value="">
+                        <input class="row-submit" type="submit" value="">
+                    </form>
+                </div>
+            </li>
+        </ul>
+    </header>
+    <main class="main">
+        <div class="content">
+            <div class="column">
+                <div class="main-news">
+                    <img src="img/main-news.jpg" alt="photo">
+                    <div class="main-news-caption">
+                        <h1>Из-за сильного ветра в Сочи задержали вылет рейса в Екатеринбург 
+                            на 13 часов
+                        </h1>
+                        <article>
+                            Самолёт авиакомпании "Россия" прилетит ранним утром 4 декабря.
+                        </article>
+                    </div>
+                </div>
+                <div class="news news-wrapper">
+                    <div class="heading">
+                        <h3>НОВОСТИ</h3>
+                        <a href="#" class="detailed">Все новости</a>
+                    </div>
+                    <section>
+                        <img src="img/new1.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <div class="tags">
+                                <span>видео</span><span>фото</span>
+                            </div>
+                            <h4><a href="#">Дед Мороз из Великого Устюга приехал на снегоходе, 
+                            чтобы встретиться с маленькими екатеринбуржцами</a></h4>
+                            <p>В нашем фоторепортаже - лучшие кадры со встречи с бородатым
+                                волшебником.
+                            </p>
+                        </article>
+                    </section>
+                    <section>
+                        <img src="img/new2.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <div class="tags">
+                                <span>схема</span>
+                            </div>
+                            <h4><a href="#">Улицу Авиационную в Екатеринбурге реконструируют 
+                            к 2020 году</a></h4>
+                            <p>На это из бюджета выделят почти 100 миллионов рублей.</p>
+                        </article>
+                    </section>
+                    <section>
+                        <img src="img/new3.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <div class="tags">
+                                <span>фото</span>
+                            </div>
+                            <h4><a href="#">Лучшим фото дня ноября стал снимок с прилетевшими 
+                            на Урал свиристелями</a></h4>
+                            <p>Подводим итоги читательского голосования.</p>
+                        </article>
+                    </section>
+                    <section>
+                        <img src="img/new4.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <div class="tags">
+                                <span>схема</span>
+                            </div>
+                            <h4><a href="#">В центре Екатеринбурга сегодня перекроют улицы для
+                             участников зимнего полумарафона</a></h4>
+                            <p>Публикуем схему закрытия дорог.</p>
+                        </article>
+                    </section>
+                    <section>
+                        <img src="img/new5.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <div class="tags">
+                                <span>видео</span><span>фото</span>
+                            </div>
+                            <h4><a href="#">Жизнь и спорт вместе: в Екатеринбурге пройдёт 
+                            теннисный турнир имени Бориса Ельцина</a></h4>
+                            <p>Застройщик жилого комплекса "Миллениум" стал одним из
+                                спонсоров теннисного турнира.</p>
+                        </article>
+                    </section>
+                </div>
+                <div class="tell-new news-wrapper">
+                    <div class="heading">
+                        <h3>СООБЩИТЬ НОВОСТЬ</h3>
+                        <a href="#" class="detailed">Перейти</a>
+                        <section>
+                            <img src="img/send_news.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h4><a href="#" class="simple-title-link">Отправьте свою новость в 
+                                редакцию, расскажите о проблеме или подкиньте тему для публикации. 
+                                Сюда же загружайте ваше видео и фото.</a></h4>
+                                <div class="info">Круглосуточный телефон службы новостей
+                                    <span class="phone">+7 (343) 34-555-34</span>
+                                </div>
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <div class="theme-artices news-wrapper">
+                    <div class="heading">
+                        <h3>ТЕМАТИЧЕСКИЕ СТАТЬИ</h3>
+                    </div>
+                    <section>
+                        <img src="img/theme1.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <h5><a href="#">Остолбенели на работе</a></h5>
+                            <p>Хоккейная команда «Сибирь» и «Почта России» присоединились
+                                к мировой акции — Зарплата.ру нашла 5 видео, где
+                                россияне подражают маникенам</p>
+                        </article>
+                    </section>
+                    <section>
+                        <img src="img/theme2.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <h5><a href="#">Вас уволят. Хотите знать почему?</a></h5>
+                            <p>Четыре предупреждающих «звоночка» о том, что шеф подумывает
+                                найти вам замену</p>
+                        </article>
+                    </section>
+                    <section>
+                        <img src="img/theme3.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <h5><a href="#">Типы снегоуборщиков: чем отличаются и 
+                            как выбрать</a></h5>
+                            <p>С наступлением зимы эти вопросы становятся как никогда
+                                актуальными
+                            </p>
+                        </article>
+                    </section>
+                </div>
+                <div class="meetings news-wrapper">
+                    <div class="heading">
+                        <h3>ЗНАКОМСТВА</h3>
+                        <a href="#" class="detailed">Посмотреть всех</a>
+                    </div>
+                    <section class="meetings-wrapper">
+                        <a href="#" class="meet-wrapper">
+                            <img src="img/meet1.jpg" class="meet-img" alt="Фото">
+                            <h5 class="name">luibofff</h5>
+                            <p class="age">22 года</p>
+                        </a>
+                        <a href="#" class="meet-wrapper">
+                            <img src="img/meet2.jpg" class="meet-img" alt="Фото">
+                            <h5 class="name">sania</h5>
+                            <p class="age">27 лет</p>
+                        </a>
+                        <a href="#" class="meet-wrapper">
+                            <img src="img/meet3.jpg" class="meet-img" alt="Фото">
+                            <h5 class="name">Aleksandra</h5>
+                            <p class="age">34 года</p>
+                        </a>
+                        <a href="#" class="meet-wrapper">
+                            <img src="img/meet4.jpg" class="meet-img" alt="Фото">
+                            <h5 class="name">Женя</h5>
+                            <p class="age">47 лет</p>
+                        </a>
+                        <a href="#" class="meet-wrapper">
+                            <img src="img/meet5.jpg" class="meet-img" alt="Фото">
+                            <h5 class="name">Лена</h5>
+                            <p class="age">41 год</p>
+                        </a>
+                        <a href="#" class="meet-wrapper">
+                            <img src="img/meet6.jpg" class="meet-img" alt="Фото">
+                            <h5 class="name">Makey</h5>
+                            <p class="age">24 года</p>
+                        </a>
+                    </section>
+                </div>
+            </div>
+            <div class="column">
+                <div class="details news-wrapper">
+                    <div class="heading">
+                        <h3>ПОДРОБНОСТИ</h3>
+                        <a href="#" class="detailed">Перейти</a>
+                    </div>
+                    <section>
+                        <img src="img/details.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <h4>
+                                Мама двоих детей из Екатеринбурга стала обладательницей
+                                 титула Миссис Евразия
+                                </h4>
+                            <hr>
+                            <h4><a href="#" class="simple-title-link">А самая многодетная участница
+                             заняла второе место.</a></h4>
+                        </article>
+                    </section>
+                </div>
+                <div class="photo-news news-wrapper">
+                    <div class="heading">
+                        <h3>ФОТОРЕПОРТАЖ</h3>
+                        <a href="#" class="detailed">Перейти</a>
+                    </div>
+                    <section>
+                        <img src="img/photo-news.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <h4>
+                                Дед Мороз из Великого Устюга приехал на снегоходе, чтобы встретиться
+                                 с маленькими екатеринбуржцами
+                                </h4>
+                            <hr>
+                            <h4><a href="#" class="simple-title-link">Правда, детей к волшебнику не
+                             подпустили, а оставили за ограждениями.</a></h4>
+                        </article>
+                    </section>
+                </div>
+                <div class="property-news news-wrapper">
+                    <div class="heading">
+                        <h3>СТАТЬИ О НЕДВИЖИМОСТИ</h3>
+                        <a href="#" class="detailed">Перейти</a>
+                    </div>
+                    <section>
+                        <img src="img/property.jpg" class="article-image" alt="фото">
+                        <article class="news-article">
+                            <h4>
+                               Три фишки конструктивизма: в Екатеринбурге восстановят здание,
+                                построенное на месте тюремного замка
+                                </h4>
+                            <hr>
+                            <h4><a href="#" class="simple-title-link">После реставрации у Дома 
+                            юстиции появится окно высотой в 6 этажей.</a></h4>
+                        </article>
+                    </section>
+                </div>
+                <div class="row">
+                    <div class="property news-wrapper">
+                        <div class="heading">
+                            <h3>НЕДВИЖИМОСТЬ</h3>
+                            <a href="#" class="detailed">Добавить объявление</a>
+                        </div>
+                        <div class="prop-sections">
+                            <span><a href="#">Аренда</a></span>
+                            <span><a href="#">Продаж квартир</a></span>
+                            <span><a href="#">Новостройки</a></span>
+                        </div>
+                        <section>
+                            <img src="img/property1.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#" class="simple-title-link">
+                              Продам 3-комнатную квартиру 
+                                    </a>
+                                </h5>
+                                <div class="address">Амундсена, 73</div>
+                                <div class="cost">Цена: <span>3 290 000 руб.</span></div>
+                            </article>
+                        </section>
+                        <section>
+                            <img src="img/property2.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#" class="simple-title-link">
+                              Продам 2-комнатную квартиру 
+                                    </a>
+                                </h5>
+                                <div class="address">Цветочный Переулок</div>
+                                <div class="cost">Цена: <span>3 674 192 руб.</span></div>
+                            </article>
+                        </section>
+                        <section>
+                            <img src="img/property3.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#" class="simple-title-link">
+                                Продам 1-комнатную квартиру 
+                                    </a>
+                                </h5>
+                                <div class="address">Техническая</div>
+                                <div class="cost">Цена: <span>3 674 192 руб.</span></div>
+                            </article>
+                        </section>
+                        <section>
+                            <img src="img/property4.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#" class="simple-title-link">
+                              Продам отдельностоящее здание
+                                    </a>
+                                </h5>
+                                <div class="address">Проспект, 99</div>
+                                <div class="cost">Цена: <span>4 075 000 руб.</span></div>
+                            </article>
+                        </section>
+                    </div>
+                    <div class="auto-sell news-wrapper">
+                        <div class="heading">
+                            <h3>ПРОДАЖА АВТО, МОТО</h3>
+                            <a href="#" class="detailed">Перейти</a>
+                        </div>
+                        <div class="auto-sections">
+                            <span><a href="#">Легковые</a></span>
+                            <span><a href="#">Груовые</a></span>
+                            <span><a href="#">Мото</a></span>
+                        </div>
+                        <section>
+                            <img src="img/auto1.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#" class="simple-title-link">
+                              Land Rover Range Rover Evoque
+                                    </a>
+                                </h5>
+                                <div class="cost">1 419 000 руб.</div>
+                                <div class="description">2012, механика, 2.2л</div>
+                            </article>
+                        </section>
+                        <section>
+                            <img src="img/auto2.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#" class="simple-title-link">
+                              Cadillac SRX
+                                    </a>
+                                </h5>
+                                <div class="cost">969 000 руб.</div>
+                                <div class="description">2010, автомат, 3л</div>
+                            </article>
+                        </section>
+                        <section>
+                            <img src="img/auto3.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#" class="simple-title-link">
+                             Chevrolet Cruze
+                                    </a>
+                                </h5>
+                                <div class="cost">429 000 руб.</div>
+                                <div class="description">2012, механика, 1.6л</div>
+                            </article>
+                        </section>
+                        <section>
+                            <img src="img/auto4.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#" class="simple-title-link">
+                              УАЗ 3163 PATRIOT
+                                    </a>
+                                </h5>
+                                <div class="cost">400 000 руб.</div>
+                                <div class="description">2010, механика, 2.2л</div>
+                            </article>
+                        </section>
+                        <span><a href="#">Каталог</a></span>
+                        <span><a href="#">Спецпредложений</a></span>
+                    </div>
+                </div>
+                <div class="tourism news-wrapper">
+                    <div class="heading">
+                        <h3>ТУРИЗМ</h3>
+                        <a href="#" class="detailed">Перейти</a>
+                    </div>
+                    <div class="row">
+                        <section>
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#">
+                                    Турция, Кемер из Екатеринбурга 07.01
+                                    </a>
+                                </h5> 37 500 руб. / 7 ночей
+                            </article>
+                        </section>
+                        <section>
+                            <img src="img/tourism1.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#">
+                                    Балтым
+                                    </a>
+                                </h5> База отдыха "Факап"
+                            </article>
+                        </section>
+                    </div>
+                    <div class="row">
+                        <section>
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#">
+                                    Индия из Екатеринбурга
+                                    </a>
+                                </h5> 55 840 руб. / 10 ночей
+                            </article>
+                        </section>
+                        <section>
+                            <img src="img/tourism2.jpg" class="article-image" alt="фото">
+                            <article class="news-article">
+                                <h5>
+                                    <a href="#">
+                                    Визит
+                                    </a>
+                                </h5> Отель, Екатеринбург
+                            </article>
+                        </section>
+                    </div>
+                </div>
+                <div class="journal news-wrapper">
+                    <div class="heading">
+                        <h3>ФОТОКАТАЛОГИ НЕДВИЖИМОСТИ</h3>
+                        <a href="#" class="detailed">Перейти</a>
+                    </div>
+                    <section>
+                        <div class="col">
+                            <a href="#">Новостройки</a>
+                            <a href="#">Коттеджи</a>
+                            <a href="#">Коммерческая</a>
+                            <a href="#">Земля</a>
+                        </div>
+                        <div class="col">
+                            <article>
+                                <img src="img/journal1.jpg" class="article-image" alt="фото">
+                                <div class="j-descr">
+                                    <h4><a href="#">Бизнес-центр К5 класса В</a></h4> 
+                                    от 69 000 руб. за м2 до 71 000 руб. за м2
+                                </div>
+                            </article>
+                            <article>
+                                <img src="img/journal2.jpg" class="article-image" alt="фото">
+                                <div class="j-descr">
+                                    <h4><a href="#">Офисные помещения в ЖК Дас Хаус</a></h4> 
+                                    от 60 000 руб. за м2 до 150 000 руб. за м2
+                                </div>
+                            </article>
+                        </div>
+                    </section>
+                </div>
+            </div>
+            <div class="column">
+                <div class="special news-wrapper">
+                    <div class="heading">
+                        <h3>СПЕЦПРОЕКТ</h3>
+                        <a href="#" class="detailed">Перейти</a>
+                    </div>
+                    <img src="img/special.jpg" class="article-image" alt="фото">
+                </div>
+                <div class="tv news-wrapper">
+                    <div class="heading">
+                        <h3>СЕЙЧАС ПО TV</h3>
+                        <a href="#" class="detailed">Перейти</a>
+                    </div>
+                    <section>
+                        <table>
+                            <tbody>
+                                <tr>
+                                    <td><img src="img/tv1.jpg" alt="Первый канал"></td>
+                                    <td>13:20 — Время покажет <sup>(еще 39 мин.)</sup></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/tv2.jpg" alt="Россия 1"></td>
+                                    <td>11:55 — Комедия "Сваты-3", заключительные серии
+                                        <sup>(еще 39 мин.)</sup></td>
+                                </tr>
+                                <tr>
+                                    <td><img src="img/tv3.jpg" alt="НТВ"></td>
+                                    <td>13:00 — Сегодня <sup>(еще 4 мин.)</sup></td>
+                                </tr>
+                            </tbody>
+                        </table>
+                    </section>
+                    <a href="#">Все телеканалы</a>
+                </div>
+                <div class="buys news-wrapper">
+                    <div class="heading">
+                        <h3>СОВМЕСТНЫЕ ПОКУПКИ</h3>
+                        <a href="#" class="detailed">Перейти</a>
+                    </div>
+                    <section>
+                        <img src="img/buy.jpg" alt="фото">
+                        <h4><a href="#">Вместе покупать дешевле!</a></h4>
+                    </section>
+                </div>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="footer-top">
+            <div class="column">
+                <h2><a href="">Информация для клиентов</a></h2>
+                <h2><a href="">Реклама на Е1</a></h2>
+                <h2><a href="">Прайс-лист</a></h2>
+                <section>
+                    <span>Единый номер:</span> 8-800-700-8-9-10 (звонок бесплатный)
+                    <br>
+                    <span>Отдел продаж:</span> adv@corp.e1.ru, (343) 379-49-10
+                    <br>
+                    <span>Редакция:</span> news@corp.e1.ru, (343) 379-49-95, (343)
+                    34-555-34 (круглосуточно - для новостей)
+                    <br>
+                    <a href="#">Замечания и пожелания по работе отдела продаж</a>
+                    <br>Публикация материалов под меткой «На правах рекламы»
+                    <br>и «Новости компаний» оплачена из средств рекламодателя
+                    <br>
+                </section>
+            </div>
+            <div class="column">
+                <h2><a href="">iPhone</a></h2>
+                <h2><a href="">Мобильная версия</a></h2>
+                <section>
+                    Отзывы и предложения о работе портала: <a href="#">info@corp.e1.ru</a>
+                    <br>
+                    <a href="#">Центр поддержки пользователей портала E1.RU</a>
+                    <br>Проблемы при работе с порталом: <a href="#">support@corp.e1.ru</a>
+                    <br>
+                    <a href="#">Карта сайта</a>
+                    <br>
+                </section>
+            </div>
+            <div class="column pics">
+                <img src="img/footer1.jpg" alt="фото">
+                <img src="img/footer2.jpg" alt="фото">
+                <img src="img/footer3.jpg" alt="фото">
+            </div>
+        </div>
+        <hr>
+        <div class="footer-bottom">
+            <div class="column">
+                <section>© ООО «Хёрст Шкулёв Диджитал. Урал»</section>
+            </div>
+            <div class="column sponsors">
+                <img src="img/sponsor1.jpg" alt="фото">
+                <img src="img/sponsor2.jpg" alt="фото">
+                <img src="img/sponsor3.jpg" alt="фото">
+            </div>
+        </div>
+    </footer>
 </body>
+
 </html>
