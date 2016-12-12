@@ -56,27 +56,22 @@
             </table>
         </div>
         <div class="header-block">
-            <div class="time">
+            <time datetime="2016-11-30 20:50:45.687">
                 <span class="line-text">Среда</span>
                 <span class="line-text">30 ноября</span>
-                <span class="line-text"><time>20:50</time></span>
-            </div>
+                <span class="line-text line-text__bold">20:50</span>
+            </time>
         </div>
         <div class="header-block header-weather">
             <div class="weather">
                 <a href="#now" class="weather__link">Сейчас</a>
                 <span class="weather__text">2,6</span>
-                <div class="weather__image">
-                    <img src="img/weather1.gif" width="30" height="30"
-                         alt="Облачно" title="Облачно">
-                </div>
+                <div class="weather-image weather-image__cloudy"></div>
             </div>
             <div class="weather">
                 <a href="#tommorow" class="weather__link">Завтра</a>
                 <span class="weather__text">-10</span>
-                <div class="weather__image">
-                    <img src="img/weather-2.gif" width="30" height="30" alt="Ясно" title="Ясно">
-                </div>
+                <div class="weather-image weather-image__sun"></div>
             </div>
         </div>
         <div class="header-block">
@@ -90,30 +85,18 @@
             <div class="social-block">
                 <span>Читайте нас где удобно:</span>
                 <div class="social-icons">
-                    <a href="https://vk.com" class="social-icons__icon">
-                        <img src="social-icons/vk.png" title="Вконаткте" alt="Вконтакте"
-                             height="50" width="50">
-                    </a>
-                    <a href="https://facebook.com" class="social-icons__icon">
-                        <img src="social-icons/facebook.png" title="Facebook" alt="Facebook"
-                             height="50" width="50">
-                    </a>
-                    <a href="https://twitter.com" class="social-icons__icon">
-                        <img src="social-icons/twitter.png" title="twitter" alt="twitter"
-                             height="50" width="50">
-                    </a>
-                    <a href="https://ok.ru" class="social-icons__icon">
-                        <img src="social-icons/ok.png" title="ok" alt="ok"
-                             height="50" width="50">
-                    </a>
-                    <a href="https://yandex.ru" class="social-icons__icon">
-                        <img src="social-icons/yandex.png" title="Яндекс" alt="Яндекс"
-                             height="50" width="50">
-                    </a>
-                    <a href="https://youtube.com" class="social-icons__icon">
-                        <img src="social-icons/youtube.png" title="youtube" alt="youtube"
-                             height="50" width="50">
-                    </a>
+                    <a href="https://vk.com" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__vk"></a>
+                    <a href="https://facebook.com" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__fb"></a>
+                    <a href="https://twitter.com" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__twitter"></a>
+                    <a href="https://ok.ru" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__ok"></a>
+                    <a href="https://yandex.ru" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__ya"></a>
+                    <a href="https://youtube.com" target="_blank" rel="nofollow"
+                       class="social-icons__icon social-icons__youtube"></a>
                 </div>
             </div>
         </div>
@@ -149,17 +132,17 @@
         </div>
         <div class="header-block">
             <div class="header-search">
-                <div class="header-search-item">
+                <form class="header-search-item">
                     <span class="header-search-item__text">Поиск:</span>
                     <input type="text" class="header__input-search">
-                    <button class="header__button"></button>
-                </div>
-                <div class="header-search-item">
+                    <button type="submit" class="header__button"></button>
+                </form>
+                <form class="header-search-item">
                     <span class="header-search-item__text">Почта:</span>
                     <input type="email" class="header__input-email" placeholder="Имя @e2.ru">
                     <input type="text" class="header__input-email">
-                    <button class="header__button"></button>
-                </div>
+                    <button type="submit" class="header__button"></button>
+                </form>
             </div>
         </div>
     </header>
@@ -178,12 +161,9 @@
             <div class="headline-wrapper">
                 <div class="orange-block"></div>
                 <a href="#news" class="headline-wrapper__headline">Новости</a>
-                <a href="#news" class="headline-wrapper__right-headline">
-                    <div class="arrow"></div>
-                    Все новости
-                </a>
+                <a href="#news" class="headline-wrapper__right-headline">Все новости</a>
             </div>
-            <div class="news-item-wrapper">
+            <article class="news-item-wrapper">
                 <a href="img/news/1.jpg">
                     <img class="news-item-wrapper__image" src="img/news/1.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -197,8 +177,8 @@
                         Соперницы "лисиц" допустили много ошибок и потеряли преимущество.
                     </span>
                 </div>
-            </div>
-            <div class="news-item-wrapper">
+            </article>
+            <article class="news-item-wrapper">
                 <a href="img/news/2.jpg">
                     <img class="news-item-wrapper__image" src="img/news/2.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -212,8 +192,8 @@
                         Алексей Беззуб отчитался о наказанных водителях и нерадивых подрядчиках.
                     </span>
                 </div>
-            </div>
-            <div class="news-item-wrapper">
+            </article>
+            <article class="news-item-wrapper">
                 <a href="img/news/3.jpg">
                     <img class="news-item-wrapper__image" src="img/news/3.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -227,8 +207,8 @@
                         Какие "помощники" позволят сэкономить топливо и сохранить двигатель.
                     </span>
                 </div>
-            </div>
-            <div class="news-item-wrapper">
+            </article>
+            <article class="news-item-wrapper">
                 <a href="img/news/4.jpg">
                     <img class="news-item-wrapper__image" src="img/news/4.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -242,8 +222,8 @@
                         Хозяева выиграли у "Ростова" со счётом 1:0.
                     </span>
                 </div>
-            </div>
-            <div class="news-item-wrapper">
+            </article>
+            <article class="news-item-wrapper">
                 <a href="img/news/5.jpg">
                     <img class="news-item-wrapper__image" src="img/news/5.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -257,8 +237,8 @@
                         Если ваш двор уже стал праздничным, делитесь фото.
                     </span>
                 </div>
-            </div>
-            <div class="news-item-wrapper">
+            </article>
+            <article class="news-item-wrapper">
                 <a href="img/news/6.jpg">
                     <img class="news-item-wrapper__image" src="img/news/6.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -272,8 +252,8 @@
                         зимы можно в клубе "Белая лошадь".
                     </span>
                 </div>
-            </div>
-            <div class="news-item-wrapper">
+            </article>
+            <article class="news-item-wrapper">
                 <a href="img/news/7.jpg">
                     <img class="news-item-wrapper__image" src="img/news/7.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -287,16 +267,13 @@
                         предстоят игры против сборной Ирана.
                     </span>
                 </div>
-            </div>
-            <div class="headline-wrapper">
+            </article>
+            <article class="headline-wrapper">
                 <div class="orange-block"></div>
                 <a href="#news" class="headline-wrapper__headline">Сообщить новость</a>
-                <a href="#news" class="headline-wrapper__right-headline">
-                    <div class="arrow"></div>
-                    Перейти
-                </a>
-            </div>
-            <div class="news-item-wrapper">
+                <a href="#news" class="headline-wrapper__right-headline">Перейти</a>
+            </article>
+            <article class="news-item-wrapper">
                 <img class="news-item-wrapper__image bigger" src="img/news/send_news.jpg"
                      width="70" height="50" title="Новость" alt="Новость">
                 <div class="news-item-wrapper-news">
@@ -309,12 +286,12 @@
                         Круглосуточный телефон службы новостей <strong>+7 (000) 000-00-00</strong>
                     </span>
                 </div>
-            </div>
+            </article>
             <div class="headline-wrapper">
                 <div class="orange-block"></div>
                 <a href="#news" class="headline-wrapper__headline">Тематические статьи</a>
             </div>
-            <div class="news-item-wrapper">
+            <article class="news-item-wrapper">
                 <a href="img/news/tematic-1.jpg">
                     <img class="news-item-wrapper__image" src="img/news/tematic-1.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -327,8 +304,8 @@
                         С наступлением зимы эти вопросы становятся как никогда актуальными
                     </span>
                 </div>
-            </div>
-            <div class="news-item-wrapper">
+            </article>
+            <article class="news-item-wrapper">
                 <a href="img/news/tematic-2.jpg">
                     <img class="news-item-wrapper__image" src="img/news/tematic-2.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -341,18 +318,15 @@
                         Чего боятся соискатели, и как это влияет на их поведение во время поиска работы
                     </span>
                 </div>
-            </div>
+            </article>
         </div>
         <div class="second-column">
             <div class="headline-wrapper">
                 <div class="orange-block"></div>
                 <a href="#" class="headline-wrapper__headline">Подробности</a>
-                <a href="#" class="headline-wrapper__right-headline">
-                    <div class="arrow"></div>
-                    Перейти
-                </a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
             </div>
-            <div class="news-item-wrapper">
+            <article class="news-item-wrapper">
                 <a href="img/second/1.jpg">
                     <img class="news-item-wrapper__image" src="img/second/1.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -366,16 +340,13 @@
                         Подросток признался в преступлении
                     </a>
                 </div>
-            </div>
+            </article>
             <div class="headline-wrapper">
                 <div class="orange-block"></div>
                 <a href="#" class="headline-wrapper__headline">Интервью</a>
-                <a href="#" class="headline-wrapper__right-headline">
-                    <div class="arrow"></div>
-                    Перейти
-                </a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
             </div>
-            <div class="news-item-wrapper">
+            <article class="news-item-wrapper">
                 <a href="img/second/2.jpg">
                     <img class="news-item-wrapper__image" src="img/second/2.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -390,16 +361,13 @@
                         к подросткам и как им соответствовать.
                     </a>
                 </div>
-            </div>
+            </article>
             <div class="headline-wrapper">
                 <div class="orange-block"></div>
                 <a href="#" class="headline-wrapper__headline">Статьи о недвижимости</a>
-                <a href="#" class="headline-wrapper__right-headline">
-                    <div class="arrow"></div>
-                    Перейти
-                </a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
             </div>
-            <div class="news-item-wrapper">
+            <article class="news-item-wrapper">
                 <a href="img/second/3.jpg">
                     <img class="news-item-wrapper__image" src="img/second/3.jpg"
                          width="70" height="50" title="Новость" alt="Новость">
@@ -413,16 +381,13 @@
                         Смотрим, как проходили "Дни конструктивизма на Урале".
                     </a>
                 </div>
-            </div>
+            </article>
             <div class="news-items-block">
                 <div class="news-item-block__item">
                     <div class="headline-wrapper small">
                         <div class="orange-block"></div>
                         <a href="#" class="headline-wrapper__headline">Недвижимость</a>
-                        <a href="#" class="headline-wrapper__right-headline">
-                            <div class="arrow"></div>
-                            Добавить объявление
-                        </a>
+                        <a href="#" class="headline-wrapper__right-headline">Добавить объявление</a>
                     </div>
                     <div class="news-item-wrapper small">
                         <a href="img/second/4.jpg">
@@ -497,10 +462,7 @@
                     <div class="headline-wrapper small">
                         <div class="orange-block"></div>
                         <a href="#" class="headline-wrapper__headline">Продажа авто, мото</a>
-                        <a href="#" class="headline-wrapper__right-headline">
-                            <div class="arrow"></div>
-                            перейти
-                        </a>
+                        <a href="#" class="headline-wrapper__right-headline">перейти</a>
                     </div>
                     <div class="news-item-wrapper small">
                         <a href="img/second/1rub-main-s.jpg">
@@ -572,10 +534,7 @@
                     <div class="headline-wrapper small">
                         <div class="orange-block"></div>
                         <a href="#" class="headline-wrapper__headline">Работа</a>
-                        <a href="#" class="headline-wrapper__right-headline">
-                            <div class="arrow"></div>
-                            перейти
-                        </a>
+                        <a href="#" class="headline-wrapper__right-headline">перейти</a>
                     </div>
                     <div class="news-item-wrapper small">
                         <a href="img/second/12.jpg">
@@ -633,10 +592,7 @@
                     <div class="headline-wrapper small">
                         <div class="orange-block"></div>
                         <a href="#" class="headline-wrapper__headline">Объявления</a>
-                        <a href="#" class="headline-wrapper__right-headline">
-                            <div class="arrow"></div>
-                            перейти
-                        </a>
+                        <a href="#" class="headline-wrapper__right-headline">перейти</a>
                     </div>
                     <div class="news-item-wrapper small">
                         <a href="img/second/15.jpg">
@@ -698,10 +654,7 @@
                 <div class="headline-wrapper">
                     <div class="orange-block"></div>
                     <a href="#" class="headline-wrapper__headline">Туризм</a>
-                    <a href="#" class="headline-wrapper__right-headline">
-                        <div class="arrow"></div>
-                        Перейти
-                    </a>
+                    <a href="#" class="headline-wrapper__right-headline">Перейти</a>
                 </div>
                 <div class="news-item-wrapper">
                     <a href="img/second/20.jpg">
@@ -737,10 +690,7 @@
             <div class="headline-wrapper small">
                 <div class="orange-block"></div>
                 <a href="#" class="headline-wrapper__headline">Спецпроект</a>
-                <a href="#" class="headline-wrapper__right-headline">
-                    <div class="arrow"></div>
-                    Перейти
-                </a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
             </div>
             <div class="news-item-wrapper news-in-column small">
                 <a href="img/third/promo.jpg">
@@ -756,10 +706,7 @@
             <div class="headline-wrapper small with-margin-top">
                 <div class="orange-block"></div>
                 <a href="#" class="headline-wrapper__headline">Сейчас по TV</a>
-                <a href="#" class="headline-wrapper__right-headline">
-                    <div class="arrow"></div>
-                    Перейти
-                </a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
             </div>
             <table class="tv-shedule">
                 <tr>
@@ -801,10 +748,7 @@
             <div class="headline-wrapper small with-margin-top">
                 <div class="orange-block"></div>
                 <a href="#" class="headline-wrapper__headline">Бизнес Образование</a>
-                <a href="#" class="headline-wrapper__right-headline">
-                    <div class="arrow"></div>
-                    Перейти
-                </a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
             </div>
             <div class="news-item-wrapper news-in-column small">
                 <a href="#" class="news-item-wrapper-news__link">
@@ -835,10 +779,7 @@
             <div class="headline-wrapper small with-margin-top">
                 <div class="orange-block"></div>
                 <a href="#" class="headline-wrapper__headline">Совместные покупки</a>
-                <a href="#" class="headline-wrapper__right-headline">
-                    <div class="arrow"></div>
-                    Перейти
-                </a>
+                <a href="#" class="headline-wrapper__right-headline">Перейти</a>
             </div>
             <div class="news-item-wrapper small">
                 <a href="img/third/basket.jpg">
@@ -855,15 +796,15 @@
                 <div class="orange-block"></div>
                 <a href="#" class="headline-wrapper__headline">Фото дня</a>
             </div>
-            <input type="radio" name="image" id="first-image" checked>
-            <input type="radio" name="image" id="second-image">
-            <input type="radio" name="image" id="third-image">
-            <input type="checkbox" id="first">
-            <input type="checkbox" id="second">
-            <input type="checkbox" id="third">
-            <label for="first"><span class="gallery-image first-image"></span></label>
-            <label for="second"><span class="gallery-image second-image"></span></label>
-            <label for="third"><span class="gallery-image third-image"></span></label>
+            <input type="radio" name="image" id="first-image" class="image-select" checked>
+            <input type="radio" name="image" id="second-image" class="image-select">
+            <input type="radio" name="image" id="third-image" class="image-select">
+            <input type="checkbox" id="first" class="image-open">
+            <input type="checkbox" id="second" class="image-open">
+            <input type="checkbox" id="third" class="image-open">
+            <label for="first" class="image-select__label"><span class="gallery-image first-image"></span></label>
+            <label for="second" class="image-select__label"><span class="gallery-image second-image"></span></label>
+            <label for="third" class="image-select__label"><span class="gallery-image third-image"></span></label>
             <div class="modal">
                 <label for="first"><span class="close first"></span></label>
                 <label for="second"><span class="close second"></span></label>
@@ -913,20 +854,22 @@
                 </div>
                 <div class="contacts">
                     <span class="first-footer__text">
-                        <strong>Единый номер:</strong> 8-800-700-8-9-10 (звонок бесплатный)
+                        <strong>Единый номер:</strong>
+                        <a href="tel:7-800-700-89-10">8-800-700-89-10</a>
+                        (звонок бесплатный)
                     </span>
                     <span class="first-footer__text">
                         <strong>Отдел продаж:</strong>
                         <a href="mailto:bragin.egor.95@gmail.com" class="first-footer__link">
-                            bragin.egor.95@gmail.com</a>, (343) 379-49-10
+                            bragin.egor.95@gmail.com</a>, <a href="tel:7-343-379-49-10">(343) 379-49-10</a>
                     </span>
                     <span class="first-footer__text">
                         <strong>Редакция:</strong>
                         <a href="mailto:bragin.egor.95@gmail.com" class="first-footer__link">
-                            bragin.egor.95@gmail.com</a>, (343) 379-49-10,
+                            bragin.egor.95@gmail.com</a>, <a href="tel:7-343-379-49-10">(343) 379-49-10</a>,
                     </span>
                     <span class="first-footer__text">
-                        (343) 34-555-34 (круглосуточно - для новостей)
+                        <a href="tel:7-343-379-49-10">(343) 34-555-34</a> (круглосуточно - для новостей)
                     </span>
                 </div>
             </div>
