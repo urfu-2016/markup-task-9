@@ -301,9 +301,7 @@ a
 .band
 {
     border-left: 10px solid #ff4500;
-    padding-left: 5px;
-    padding-right: 5px;
-    padding-bottom: 4px;
+    padding: 0 4px 5px 5px;
     display: flex;
     justify-content: space-between;
     background-color: #ccc;
