@@ -10,7 +10,6 @@ body
     width: 1260px;
     height: 100%;
     margin: 0 auto;
-    overflow-x: hidden;
     font-family: Tahoma, verdana, sans-serif, Arial;
 }
 
@@ -77,7 +76,11 @@ main
 
 .logo
 {
-    padding: 0 15px;
+    display: block;
+    width: 172px;
+    height: 70px;
+    background-image: url('logo.gif');
+    margin: 0 15px;
 }
 
 .date
@@ -89,7 +92,7 @@ main
     border-left: 1px solid #424242;
 }
 
-.date:nth-child(n)
+.date
 {
     flex-direction: column;
     align-self: center;
@@ -143,11 +146,6 @@ main
 {
     display: flex;
     padding: 0 15px;
-}
-
-.today:nth-child(n),
-.tomorrow:nth-child(n)
-{
     flex-direction: column;
 }
 
@@ -204,6 +202,48 @@ main
     margin-top: 3px;
 }
 
+.icon
+{
+    display: inline-block;
+    width: 23px;
+    height: 23px;
+}
+
+.vkontakte
+{
+    background-image: url('vk.png');
+}
+
+.facebook
+{
+    background-image: url('fb.png');
+}
+
+.twitter
+{
+    background-image: url('tw.png');
+}
+
+.classmates
+{
+    background-image: url('ok.png');
+}
+
+.yandex
+{
+    background-image: url('ya.png');
+}
+
+.instagram
+{
+    background-image: url('inst.png');
+}
+
+.telegram
+{
+    background-image: url('tg.png');
+}
+
 .money-rate
 {
     display: flex;
@@ -222,16 +262,10 @@ main
 .course,
 .average
 {
-    flex-direction: row;
     display: flex;
     padding: 0 10px;
     font-size: .6em;
     align-self: center;
-}
-
-.course:nth-child(n),
-.average:nth-child(n)
-{
     flex-direction: column;
 }
 
@@ -252,7 +286,7 @@ main
     padding-top: 10px;
 }
 
-.block-buy:nth-child(n)
+.block-buy
 {
     flex-direction: column;
 }
@@ -272,14 +306,28 @@ main
 .email input
 {
     height: 12px;
-    margin: 0 3px;
+    margin: 3px;
+}
+
+.email input
+{
+    justify-content: space-between;
+}
+
+.mail
+{
+    font-size: .5em;
+    width: 50px;
 }
 
 .search-icon
 {
+    display: inline-block;
     width: 18px;
-    height: 18px;
+    min-height: 18px;
     background-image: url('search.png');
+    border: none;
+    margin: 3px;
 }
 
 /*Содержание сайта*/
@@ -357,8 +405,9 @@ article
 .header-block
 {
     max-width: 100%;
+    border-top: 2px solid #424242;
     border-left: 7px solid #fd5200;
-    padding: 0 5px;
+    padding: 3px 5px;
     background-color: rgba(0, 0, 0, .2);
     font-size: .8em;
 }
@@ -367,6 +416,17 @@ article
 {
     float: right;
     color: rgba(0, 0, 0, .5);
+    font-size: .9em;
+    margin-right: 5px;
+}
+
+.arrow
+{
+    display: inline-block;
+    width: 10px;
+    height: 10px;
+    background-image: url('arrow.gif');
+    vertical-align: top;
 }
 
 .header-block h4
@@ -414,18 +474,20 @@ article
 .right-column img
 {
     width: 100%;
+    margin-bottom: 10px;
 }
 
 .mini-block
 {
     display: flex;
     justify-content: space-between;
-}
-
-.mini-block:nth-child(n)
-{
     flex-direction: row;
     min-width: 400px;
+}
+
+.mini-block article
+{
+    width: 200px;
 }
 
 .mini-block article img

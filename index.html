@@ -7,7 +7,7 @@
 </head>
 <body>
     <section class="advertising">
-        <a href="https://smotreshka.tv/premium?name=ultra-telecom">
+        <a href="https://smotreshka.tv/premium?name=ultra-telecom" target="_blank" rel="nofollow">
             <img src="banner.png" alt="Реклама телевидения Смотрёшка" title="Реклама">
         </a>
     </section>
@@ -35,7 +35,7 @@
             <div class="theme"><a href="#">Как чистят город</a></div>
         </div>
         <div class="daily-inform">
-            <a href="#" class="logo"><img src="logo.gif" alt="Логотип е1" title="Логотип"></a>
+            <a href="#" class="logo"></a>
             <time class="date" datetime="2016-12-01T00:11:11+06:00">
                 <span>Четверг</span>
                 <span>01 декабря</span>
@@ -61,13 +61,13 @@
             <div class="contacts">
                 <span>Читайте нас, где вам удобно:</span>
                 <div class="icons">
-                    <a href="#"><img src="vk.png" alt="ВКонтакте" title="ВКонтакте"></a>
-                    <a href="#"><img src="fb.png" alt="Facebook" title="Facebook"></a>
-                    <a href="#"><img src="tw.png" alt="Twitter" title="Twitter"></a>
-                    <a href="#"><img src="ok.png" alt="Одноклассники" title="Одноклассники"></a>
-                    <a href="#"><img src="ya.png" alt="Яндекс" title="Яндекс"></a>
-                    <a href="#"><img src="inst.png" alt="Instagram" title="Instagram"></a>
-                    <a href="#"><img src="tg.png" alt="Telegram" title="Telegram"></a>
+                    <a href="#" class="icon vkontakte"></a>
+                    <a href="#" class="icon facebook"></a>
+                    <a href="#" class="icon twitter"></a>
+                    <a href="#" class="icon classmates"></a>
+                    <a href="#" class="icon yandex"></a>
+                    <a href="#" class="icon instagram"></a>
+                    <a href="#" class="icon telegram"></a>
                 </div>
             </div>
             <div class="money-rate">
@@ -101,17 +101,17 @@
                 </div>
             </div>
             <div class="authorization">
-                <div class="search">
+                <form action="/news/search.php" method="get" class="search">
                     <span>Поиск:&nbsp;</span>
-                    <input type="text" size="16">
-                    <a href="#" class="search-icon"></a>
-                </div>
-                <div class="email">
+                    <input type="text" size="14">
+                    <button class="search-icon" type="submit"></button>
+                </form>
+                <form action="https://mail.e1.ru/enter/" method="post" class="email">
                     <span>Почта:&nbsp;</span>
-                    <input type="text" size="5">
-                    <input type="text" size="5">
-                    <a href="#" class="search-icon"></a>
-                </div>
+                    <input type="text" size="4" placeholder="Имя @e1.ru" class="mail">
+                    <input type="password" size="4">
+                    <button class="search-icon" type="submit"></button>
+                </form>
             </div>
         </div>
         <section class="news">
@@ -209,7 +209,7 @@
                     <article class="detailes">
                         <div class="header-block">
                             <span>Подробности</span>
-                            <a href="#">Перейти</a>
+                            <a href="#"><span class="arrow"></span>Перейти</a>
                         </div>
                         <div class="body-block">
                             <a href="#"><img src="miniImg2.jpg" alt="Фото к статье Подробности"
@@ -225,7 +225,7 @@
                     <article class="view">
                         <div class="header-block">
                             <span>Обзор</span>
-                            <a href="#">Перейти</a>
+                            <a href="#"><span class="arrow"></span>Перейти</a>
                         </div>
                         <div class="body-block">
                             <a href="#"><img src="miniImg3.jpg" alt="Фото к статье Обзор"
@@ -241,7 +241,7 @@
                     <article class="realty">
                         <div class="header-block">
                             <span>Статьи о недвижимости</span>
-                            <a href="#">Перейти</a>
+                            <a href="#"><span class="arrow"></span>Перейти</a>
                         </div>
                         <div class="body-block">
                             <a href="#"><img src="miniImg.jpg" alt="Фото к статье Недвижимость"
@@ -315,7 +315,7 @@
                     <article class="detailes">
                         <div class="header-block">
                             <span>Подробности</span>
-                            <a href="#">Перейти</a>
+                            <a href="#"><span class="arrow"></span>Перейти</a>
                         </div>
                         <div class="body-block">
                             <a href="#"><img src="miniImg2.jpg" alt="Фото к статье Подробности"
@@ -331,7 +331,7 @@
                     <article class="view">
                         <div class="header-block">
                             <span>Обзор</span>
-                            <a href="#">Перейти</a>
+                            <a href="#"><span class="arrow"></span>Перейти</a>
                         </div>
                         <div class="body-block">
                             <a href="#"><img src="miniImg3.jpg" alt="Фото к статье Обзор"
@@ -347,7 +347,7 @@
                     <article class="realty">
                         <div class="header-block">
                             <span>Статьи о недвижимости</span>
-                            <a href="#">Перейти</a>
+                            <a href="#"><span class="arrow"></span>Перейти</a>
                         </div>
                         <div class="body-block">
                             <a href="#"><img src="miniImg.jpg" alt="Фото к статье Недвижимость"
@@ -363,7 +363,8 @@
                 </div>
             </div>
             <div class="right-column">
-                <img src="banner.jpeg" alt="Реклама" title="Реклама">
+                <img src="banner1.jpeg" alt="Реклама" title="Реклама">
+                <img src="banner2.jpeg" alt="Реклама" title="Реклама">
             </div>
         </section>
     </main>
@@ -372,15 +373,20 @@
         <div class="first-level">
             <div class="phone-numbers">
                 <p>Единый номер: <a href="#">8-800-700-8-9-10</a> (звонок бесплатный)</p>
-                <p>Отдел продаж: <a href="#">adv@corp.e1.ru</a>, <a href="#">(343) 379-49-10</a></p>
+                <p>Отдел продаж:
+                     <a href="mailto:adv@corp.e1.ru">adv@corp.e1.ru</a>,
+                     <a href="tel:(343)3794910">(343) 379-49-10</a>
+                </p>
             </div>
             <div class="big-icons">
-                <a href="#" class="age"></a>
-                <a href="#" class="statistics"></a>
+                <a href="#" class="age" target="_blank" rel="nofollow"></a>
+                <a href="#" class="statistics" target="_blank" rel="nofollow"></a>
             </div>
         </div>
         <div class="second-level informants">
-            <a href="#"><img src="n1.png" alt="Сайт-информатор" title="Сайт-информатор"></a>
+            <a href="#" target="_blank" rel="nofollow">
+                <img src="n1.png" alt="Сайт-информатор" title="Сайт-информатор">
+            </a>
         </div>
     </footer>
 </body>
