@@ -249,7 +249,8 @@ header
     -ms-flex-direction: column;
     flex-direction: column;
     text-align: left;
-    min-width: 201px;
+    min-width: 210px;
+    max-width: 210px;
 }
 
 .traffic-jams
@@ -284,6 +285,7 @@ header
 {
     width: 26px;
     height: 23px;
+    cursor: pointer;
 }
 
 .social__item1
@@ -371,14 +373,14 @@ header
     border: 1px solid #dcdcdc;
     height: 18px;
     line-height: 18px;
-    width: 152px;
+    width: 133px;
     padding: 0 5px;
     border-radius: 0;
 }
 
 .widget__item__auth input
 {
-    width: 74px;
+    width: 64px;
 }
 
 .item__auth__email
@@ -615,11 +617,6 @@ header
     border-top: 2px solid #000;
     background-color: rgb(225, 225, 225);
     min-width: 217px;
-}
-
-.buy-house__tags
-{
-    text-align: center;
 }
 
 .item__cost
@@ -880,4 +877,11 @@ footer
 .fotter-contacts__address__info
 {
     margin: 15px 0;
+}
+
+.link
+{
+    list-style-type: none;
+    color: inherit;
+    text-decoration: none;
 }
