@@ -1,0 +1,667 @@
+/*todo: пробки не работают
+        картинка корявая в главных новостях
+        все едет
+        */
+
+header,
+body,
+.adv-navigation,
+.main-news,
+.main-header,
+.main-header
+{
+    margin: 0;
+    padding: 0;
+    font-family: Tahoma, verdana, sans-serif, arial;
+}
+
+.navigation,
+.main-header,
+.weather
+{
+    display: flex;
+}
+
+.navigation,
+.navigation-etc-list
+{
+    background-color: #444;
+    margin: 0;
+}
+
+.navigation
+{
+    justify-content: space-around;
+    padding: 4px 19px;
+}
+
+.adv-navigation
+{
+    height: 19px;
+    line-height: 0;
+}
+
+.adv-navigation-item
+{
+    margin: 0;
+}
+
+.navigation-element,
+.navigation-etc-list-item,
+.adv-navigation-item
+{
+    font: 11px Tahoma, verdana, sans-serif, arial;
+    font-weight: bold;
+    text-decoration: none;
+    color: #fff;
+}
+
+.navigation-element:hover,
+.navigation-etc-list-item:hover
+{
+    color: #ff5200;
+}
+
+header input[type='checkbox']
+{
+    display: none;
+}
+
+header input:checked ~ .navigation-etc-list
+{
+    opacity: 1;
+}
+
+.navigation-etc-list
+{
+    flex-direction: column;
+    display: flex;
+    opacity: 0;
+    transition: opacity 1s ease-out;
+    will-change: opacity;
+    position: absolute;
+    right: 0;
+}
+
+.navigation-etc-list-item
+{
+    border-top: 1px solid #fff;
+}
+
+.navigation-etc-list-item span,
+.adv-navigation span
+{
+    display: inline-block;
+    margin: 3px 19px;
+}
+
+.adv-navigation
+{
+    background-color: #ff5200;
+}
+
+.adv-navigation-item:hover
+{
+    color: #444;
+}
+
+.adv-navigation-item
+{
+    display: inline-block;
+}
+
+.adv-navigation-item:nth-child(odd)
+{
+    background-color: #23ace3;
+}
+
+.adv-navigation-item:nth-child(even)
+{
+    background-color: #ff5200;
+}
+
+.main-header
+{
+    width: 100%;
+}
+
+.main-header > div
+{
+    border-left: 1px solid #000;
+}
+
+.main-header a
+{
+    height: 76px;
+    color: #000;
+    text-decoration: none;
+}
+
+.time
+{
+    font-weight: bold;
+}
+
+.e-logo_img
+{
+    width: 210px;
+}
+
+.data,
+.weather,
+.traffic-jam,
+.social-network-header
+{
+    font-size: 14px;
+    text-align: center;
+    align-content: center;
+}
+
+.data
+{
+    flex-grow: 4;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.weather
+{
+    flex-grow: 6;
+    display: flex;
+    justify-content: space-around;
+}
+
+a.main-header-small,
+div.main-header-small
+{
+    font-size: 10px;
+    text-decoration: underline;
+}
+
+.weather-degree
+{
+    font-size: 14px;
+    font-weight: bold;
+}
+
+.weather-tomorrow img
+{
+    width: 30px;
+    height: 30px;
+}
+
+.traffic-jam span
+{
+    display: block;
+}
+
+.traffic-jam
+{
+    text-align: center;
+    flex-grow: 3;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.traffic-light
+{
+    color: #fff;
+    font-weight: bold;
+    text-decoration: none;
+    border: 1px solid #037d23;
+    width: 24px;
+    height: 24px;
+    border-radius: 15px;
+    background-color: #3ca757;
+    margin: 0 auto;
+}
+
+.social-network
+{
+    flex-grow: 8;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-around;
+}
+
+.social-network img
+{
+    height: 20px;
+}
+
+.money
+{
+    font-size: 12px;
+    display: flex;
+    flex-grow: 8;
+    justify-content: space-around;
+    align-items: center;
+    text-align: center;
+}
+
+.money-course
+{
+    display: flex;
+    font-weight: bold;
+}
+
+.money-caption
+{
+    color: #369;
+    text-align: center;
+}
+
+.turnovers
+{
+    display: flex;
+}
+
+.money-point
+{
+    font-weight: bold;
+}
+
+.searcher
+{
+    flex-grow: 6;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+
+.searcher-caption
+{
+    font-size: 11px;
+}
+
+.searcher-input
+{
+    width: 150px;
+    height: 11px;
+    font-size: 11px;
+}
+
+.search-line img
+{
+    position: relative;
+    top: 7px;
+}
+
+.searcher-input-small
+{
+    width: 70px;
+    height: 11px;
+    font-size: 11px;
+}
+
+main
+{
+    display: flex;
+    padding-right: 10px;
+}
+
+.main-content
+{
+    padding: 10px;
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-rows: auto auto;
+    width: 950px;
+}
+
+.add-content
+{
+    flex-basis: 240px;
+    padding-top: 10px;
+    padding-right: 0;
+}
+
+.main-news
+{
+    grid-column: 1 / 2;
+    grid-row: 1 / 2;
+    position: relative;
+    height: 280px;
+}
+
+.main-news img
+{
+    width: 100%;
+}
+
+.main-news img:hover
+{
+    border: 1px solid #fd5200;
+}
+
+.main-news .capture
+{
+    background: rgba(0, 0, 0, .5);
+    border-left: 7px solid #fd5200;
+    color: #fff;
+    text-align: left;
+    font-size: 18px;
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    padding: 4px 0 0 10px;
+    width: 90%;
+    z-index: 10;
+}
+
+.main-news-header
+{
+    margin-bottom: 0;
+    font-weight: bold;
+}
+
+.main-news-capture
+{
+    margin-top: 0;
+    font-size: 13px;
+}
+
+.news
+{
+    grid-column: 1 / 2;
+    grid-row: 2 / 3;
+}
+
+.block-header
+{
+    display: flex;
+    justify-content: space-between;
+    background: #e1e1e1;
+    height: 17px;
+    border-top: 2px solid #000;
+    border-left: 7px solid #ff5200;
+}
+
+.block-header-caption
+{
+    font-size: 10px;
+    padding: 3px 10px;
+    font-weight: bold;
+    border-right: 1px solid #000;
+}
+
+.block-header-more
+{
+    color: #808080;
+    font-size: 10px;
+    padding: 2px 10px;
+}
+
+.block-header-more:hover
+{
+    color: #fd5200;
+}
+
+.news-element,
+.estate-element,
+.car-element,
+.add-element,
+.tv-element
+{
+    display: flex;
+    padding: 15px 2px 2px;
+}
+
+.news-element img
+{
+    width: 70px;
+}
+
+.news-caption,
+.reports-caption,
+.estate-caption,
+.car-caption,
+.add-caption
+{
+    display: flex;
+    flex-direction: column;
+    padding-left: 7px;
+}
+
+.news-caption a,
+.reports-caption-header,
+.car-caption-header
+{
+    font-size: 12px;
+    color: #000;
+    font-weight: bold;
+}
+
+.news-caption span,
+.reports-caption-caption,
+.estate-caption-header,
+.estate-caption-address,
+.estate-caption-price,
+.car-caption-price,
+.car-caption-class
+{
+    font-size: 10px;
+    color: #000;
+}
+
+.other-news
+{
+    grid-column: 3 / 4;
+    grid-row: 1 / 3;
+}
+
+.reports-caption-header
+{
+    text-decoration: none;
+    border-bottom: 1px solid #fd5200;
+}
+
+.reports-caption-caption
+{
+    font-size: 11px;
+    color: #00f;
+}
+
+.two-columns
+{
+    display: grid;
+    grid-template-columns: 1fr 10px 1fr;
+    grid-template-rows: auto;
+}
+
+.left-column
+{
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+}
+
+.right-column
+{
+    grid-row: 1 / 2;
+    grid-column: 3 / 4;
+}
+
+.links,
+.car-links
+{
+    font-size: 9px;
+}
+
+.estate-element img,
+.car-element img
+{
+    width: 60px;
+}
+
+.estate-caption-header
+{
+    color: #00f;
+}
+
+.car-links
+{
+    text-decoration: none;
+    padding: 5px 0;
+}
+
+.car-links a,
+.car-caption-header,
+.add-caption-header,
+.add-caption-price
+{
+    text-decoration: none;
+}
+
+.car-caption-header,
+.add-caption-header,
+.add-caption-price
+{
+    font-size: 10px;
+    color: #446199;
+}
+
+.car-caption-price
+{
+    font-weight: bold;
+}
+
+.add-element img
+{
+    width: 110px;
+}
+
+.add-caption-header,
+.add-caption-price
+{
+    font-size: 12px;
+}
+
+.add-caption-class
+{
+    font-size: 10px;
+}
+
+.add-block
+{
+    border: 1px solid #000;
+    height: 350px;
+}
+
+.tv-element img
+{
+    width: 30px;
+}
+
+.tv-element,
+.tv-block > a
+{
+    font-size: 11px;
+}
+
+.tv-element
+{
+    display: flex;
+    align-items: center;
+}
+
+.tv-element span span
+{
+    font-weight: bold;
+}
+
+.tv-element
+{
+    border: 1px solid #000;
+    margin: 0 2px;
+    padding: 2px;
+}
+
+.tv-element > span
+{
+    border-left: 1px solid #000;
+    padding-left: 2px;
+}
+
+.tv-block .block-header
+{
+    margin-bottom: 15px;
+}
+
+.footer
+{
+    padding: 25px;
+    background-color: #e1e1e1;
+    border-top: 2px solid #000;
+    font-size: 12px;
+}
+
+.footer .links
+{
+    font-size: 12px;
+    color: #446199;
+    margin-bottom: 20px;
+}
+
+.footer .links a
+{
+    color: #446199;
+    font-weight: bold;
+    margin-right: 20px;
+}
+
+.footer-info,
+.phones,
+.footer-reviews,
+.footer-reviews-links
+{
+    display: flex;
+    flex-direction: column;
+}
+
+.phones,
+.footer-reviews-links
+{
+    margin-bottom: 20px;
+}
+
+.phone-capture
+{
+    font-weight: bold;
+}
+
+.footer a
+{
+    color: #446199;
+}
+
+.main-footer,
+.footer-marks
+{
+    display: flex;
+    justify-content: space-between;
+}
+
+.footer-img
+{
+    align-self: center;
+}
+
+.footer-marks
+{
+    padding: 20px;
+    border-top: 1px solid #a9a9a9;
+}
+
+.main-footer
+{
+    margin-bottom: 20px;
+}
+
+.footer-contractors img
+{
+    margin: 0 20px;
+}

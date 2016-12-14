@@ -1,8 +1,734 @@
 <!DOCTYPE html>
 <html lang="ru">
 <head>
+    <title>Екатеринбург Он-Лайн</title>
+    <link rel="stylesheet" href="index.css">
     <meta charset="utf-8">
 </head>
 <body>
+    <header>
+        <div class="navigation">
+            <a class="navigation-element" target="_blank" href="http://www.e1.ru/">
+                <span>Главная</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="http://www.e1.ru/news/?utm_source=menu">
+                <span>Новости</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="http://realty.e1.ru/?utm_source=menu">
+                <span>Недвижимость</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="https://auto.e1.ru/">
+                <span>Авто</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="http://ekb.zarplata.ru/?utm_source=menu">
+                <span>Работа</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="http://do.e1.ru/?utm_source=menu">
+                <span>Объявления</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="http://love.e1.ru/?utm_source=menu">
+                <span>Знакомства</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="http://pogoda.e1.ru/?utm_source=menu">
+                <span>Погода</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="http://www.e1.ru/afisha/?utm_source=menu">
+                <span>Афиша</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="http://www.e1.ru/talk/forum/?utm_source=menu">
+                <span>Форумы</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="http://www.e1.ru/business/?utm_source=menu">
+                <span>Бизнес</span>
+            </a>
+            <a class="navigation-element" target="_blank"
+               href="http://www.e1.ru/talk/?utm_source=menu">
+                <span>Общение</span>
+            </a>
+            <label class="navigation-element" for="navigation-etc-button">Ещё ▼</label>
+        </div>
+        <input type="checkbox" id="navigation-etc-button">
+        <div class="navigation-etc-list">
+            <a href="http://www.e1.ru/sp/?utm_source=menu"
+               class="navigation-etc-list-item" target="_blank">
+                <span>СП</span>
+            </a>
+            <a href="http://www.e1.ru/catalog/?utm_source=menu"
+               class="navigation-etc-list-item" target="_blank">
+                <span>Каталог</span>
+            </a>
+            <a href="http://www.e1.ru/info/?utm_source=menu"
+               class="navigation-etc-list-item" target="_blank">
+                <span>Справка</span>
+            </a>
+            <a href="http://www.e1.ru/food/?utm_source=menu"
+               class="navigation-etc-list-item" target="_blank">
+                <span>Еда</span>
+            </a>
+            <a href="http://www.e1.ru/fun/?utm_source=menu"
+               class="navigation-etc-list-item" target="_blank">
+                <span>Отдых</span>
+            </a>
+            <a href="https://mail.e1.ru/?utm_source=menu"
+               class="navigation-etc-list-item" target="_blank">
+                <span>Почта</span>
+            </a>
+            <a href="http://dom.e1.ru/?utm_source=menu"
+               class="navigation-etc-list-item" target="_blank">
+                <span>Дом</span>
+            </a>
+            <a href="http://turizm.e1.ru/?utm_source=menu"
+               class="navigation-etc-list-item" target="_blank">
+                <span>Туризм</span>
+            </a>
+            <a href="http://www.e1.ru/health/?utm_source=menu"
+               class="navigation-etc-list-item" target="_blank">
+                <span>Здоровье</span>
+            </a>
+        </div>
+        <div class="adv-navigation">
+            <a href="http://newyear.e1.ru/?from=top_menu" class="adv-navigation-item" target="_blank">
+                <span>Новогодний спецпроект</span>
+            </a>
+            <a href="http://www.e1.ru/news/spool/section_id-199.html?from=top_menu"
+               class="adv-navigation-item" target="_blank">
+                <span>Уникальные дома Екатеринбурга</span>
+            </a>
+            <a href="http://www.e1.ru/news/spool/section_id-195.html?from=top_menu"
+               class="adv-navigation-item" target="_blank">
+                <span>Осторожно, корь!</span>
+            </a>
+            <a href="http://www.e1.ru/news/spool/section_id-197.html?from=top_menu"
+               class="adv-navigation-item" target="_blank">
+                <span>Как чистят город от снега</span>
+            </a>
+            <a href="http://www.e1.ru/longread/bashni/?from=top_menu" class="adv-navigation-item"
+               target="_blank">
+                <span>Башенки Екатеринбурга</span>
+            </a>
+            <a href="http://www.e1.ru/news/spool/section_id-198.html?from=top_menu"
+               class="adv-navigation-item" target="_blank">
+                <span>Споры о храме-на-воде</span>
+            </a>
+        </div>
+        <div class="main-header">
+            <a class="e-logo" href="/"><img class="e-logo_img" title="Екатеринбург Он-Лайн"
+                alt="Екатеринбург Он-Лайн" src="files/logo.jpg"></a>
+            <div class="data">
+                <div>Понедельник</div>
+                <div>05 декабря</div>
+                <div class="time">22:18</div>
+            </div>
+            <div class="weather">
+                <div class="weather-now">
+                    <a href="http://pogoda.e1.ru" class="main-header-small">Сейчас</a>
+                    <div class="weather-degree">-14,8&deg;C</div>
+                    <img src="http://www.e1.ru/weather/images/gif/n2.gif"
+                         alt="Переменная облачность, без осадков" title="Переменная облачность, без осадков">
+                </div>
+                <div class="weather-tomorrow">
+                    <a href="http://pogoda.e1.ru" class="main-header-small">Завтра</a>
+                    <div class="weather-degree">-8&deg;C</div>
+                    <img src="http://www.e1.ru/weather/images/gif/d2s1.gif"
+                         alt="Облачно, небольшой снег" title="Облачно, небольшой снег">
+                </div>
+            </div>
+            <div class="traffic-jam">
+                <a href="http://maps.e1.ru/?trafficLayer">
+                    <div class="main-header-small">Пробки</div>
+                    <div class="traffic-light traffic-light-green">1</div>
+                    <div class="traffic-light-point"> балл</div>
+                </a>
+            </div>
+            <div class="social-network">
+                <div class="social-network-header">Читайте нас где удобно:</div>
+                <img src="files/social-network.png" alt="иконки социальных сетей">
+            </div>
+            <div class="money">
+                <div class="cb">
+                    <a class="main-header-small" href="http://e1.ru/business/currency/">Курс ЦБ</a>
+                    <div class="money-course">
+                        <div class="money-caption">USD</div>
+                        <div class="money-point">64.15</div>
+                    </div>
+                    <div class="money-course">
+                        <div class="money-caption">EUR</div>
+                        <div class="money-point">68.47</div>
+                    </div>
+                </div>
+                <div class="weighted">
+                    <a class="main-header-small" href="http://e1.ru/business/currency/">Средневзвешенный</a>
+                    <div class="turnovers">
+                        <div class="money-turnover">
+                            <span class="main-header-small">Покупка</span>
+                            <div class="money-point">62.75</div>
+                            <div class="money-point">64.95</div>
+                        </div>
+                        <div class="money-turnover">
+                            <span class="main-header-small">Продажа</span>
+                            <div class="money-point">66.72</div>
+                            <div class="money-point">68.93</div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="searcher">
+                <div class="search-line">
+                    <span class="searcher-caption">Поиск:</span>
+                    <input class="searcher-input" type="text" name="search" value="">
+                <img class="submit" src="files/submit.png" alt="стрелочка">
+                </div>
+                <div class="search-line">
+                    <span class="searcher-caption">Почта:</span>
+                    <input class="searcher-input-small" type="text" name="user"
+                           placeholder="Имя @e1.ru" value="">
+                    <input class="searcher-input-small" type="password" name="pass" value="">
+                    <img class="submit" src="files/submit.png" alt="стрелочка">
+                </div>
+            </div>
+        </div>
+    </header>
+    <main>
+        <div class="main-content">
+            <div class="main-news">
+                <a href="http://www.e1.ru/news/spool/news_id-457289.html">
+                    <img alt="Фото победителя" src="files/main-news.jpg">
+                    <div class="capture">
+                        <p class="main-news-header">
+                            Екатеринбуржец оказался лучшим на чемпионате по профмастерству в Швеции
+                        </p>
+                        <p class="main-news-capture">
+                            Максим Кадников увлекается пайкой, ремонтом и программированием 6 лет.
+                        </p>
+                    </div>
+                </a>
+            </div>
+            <div class="news">
+                <div class="block-header">
+                    <span class="block-header-caption">Новости</span>
+                    <a href="http://www.e1.ru/news/" class="block-header-more">&#9658; Все новости</a>
+                </div>
+                <div class="news-element">
+                    <a title="На перекрёстке Большакова - 8 Марта в ДТП легковушки разбросало по дороге"
+                       href="http://www.e1.ru/news/spool/news_id-457286.html">
+                        <img src="http://www.e1.ru/news/static/484cb60181cad28b611c70f06078128b_70_50_c.jpg"
+                        alt="На перекрёстке Большакова - 8 Марта в ДТП легковушки разбросало по дороге">
+                    </a>
+                    <div class="news-caption">
+                        <a href="http://www.e1.ru/news/spool/news_id-457286.html">
+                            На перекрёстке Большакова - 8 Марта в ДТП легковушки разбросало по дороге
+                        </a>
+                        <span>
+                            Авария стала причиной длинной пробки.
+                        </span>
+                    </div>
+                </div>
+                <div class="news-element">
+    <a title="Следователи нашли новых жертв убийцы, который бросил у &quot;Карнавала&quot; труп в багажнике"
+                       href="http://www.e1.ru/news/spool/news_id-457278.html">
+                        <img src="http://www.e1.ru/news/static/378ec0d068a7a998a37a0b0db993220d_70_50_c.jpg"
+         alt="Следователи нашли новых жертв убийцы, который бросил у &quot;Карнавала&quot; труп в багажнике">
+                    </a>
+                    <div class="news-caption">
+                        <a href="http://www.e1.ru/news/spool/news_id-457278.html">
+            Следователи нашли новых жертв убийцы, который бросил у &quot;Карнавала&quot; труп в багажнике
+                        </a>
+                        <span>
+                            Расследованием занимается отдел по особо важным делам.
+                        </span>
+                    </div>
+                </div>
+                <div class="news-element">
+                    <a title="Дилерский центр Renault празднует своё 10-летие в космических масштабах"
+                       href="http://www.e1.ru/news/spool/news_id-457228.html">
+                        <img src="http://www.e1.ru/news/static/d890ce6bd89f4d37332b7862952f2219_70_50_c.jpg"
+                             alt="Дилерский центр Renault празднует своё 10-летие в космических масштабах">
+                    </a>
+                    <div class="news-caption">
+                        <a href="http://www.e1.ru/news/spool/news_id-457228.html">
+                            Дилерский центр Renault празднует своё 10-летие в космических масштабах
+                        </a>
+                        <span>
+    Весь декабрь в Renault "Лаки Моторс" скидки на автомобили, полезные подарки и бесплатные билеты в кино.
+                        </span>
+                    </div>
+                </div>
+                <div class="news-element">
+                    <a title="В Екатеринбурге полиция ищет таксиста, который выкинул из машины
+                    пожилую пассажирку и уехал"
+                       href="http://www.e1.ru/news/spool/news_id-457283.html">
+                        <img src="http://www.e1.ru/news/static/513c462e50b49f7f56efc3190e23af23_70_50_c.jpg"
+         alt="В Екатеринбурге полиция ищет таксиста, который выкинул из машины пожилую пассажирку и уехал">
+                    </a>
+                    <div class="news-caption">
+                    <a href="http://www.e1.ru/news/spool/news_id-457283.html">
+                В Екатеринбурге полиция ищет таксиста, который выкинул из машины пожилую пассажирку и уехал
+                        </a>
+                        <span>
+                        По словам женщины, водитель был недоволен тем, что она отказалась платить за ожидание.
+                        </span>
+                    </div>
+                </div>
+                <div class="news-element">
+                <a title="В &quot;Карасьеозёрском-2&quot; остался последний таунхаус с мансардой в подарок"
+                       href="http://www.e1.ru/news/spool/news_id-457279.html">
+                        <img src="http://www.e1.ru/news/static/c932e6c2efeb9fc5e3dcf8533d05ee1e_70_50_c.jpg"
+                     alt="В &quot;Карасьеозёрском-2&quot; остался последний таунхаус с мансардой в подарок">
+                    </a>
+                    <div class="news-caption">
+                        <a href="http://www.e1.ru/news/spool/news_id-457279.html">
+                            В &quot;Карасьеозёрском-2&quot; остался последний таунхаус с мансардой в подарок
+                        </a>
+                        <span>
+                К подарку площадью практически в треть дома девелопер готов добавить ещё и солидную скидку.
+                        </span>
+                    </div>
+                </div>
+                <div class="news-element">
+                    <a title="Даже мэр сделал прививку: когда в Екатеринбурге закончится вспышка кори"
+                       href="http://www.e1.ru/news/spool/news_id-457277.html">
+                        <img src="http://www.e1.ru/news/static/2f39ed9daee4374d414eef7f60b31e94_70_50_c.jpg"
+                             alt="Даже мэр сделал прививку: когда в Екатеринбурге закончится вспышка кори">
+                    </a>
+                    <div class="news-caption">
+                        <a href="http://www.e1.ru/news/spool/news_id-457277.html">
+                            Даже мэр сделал прививку: когда в Екатеринбурге закончится вспышка кори
+                        </a>
+                        <span>
+                        В зоне риска - дети младше трех лет, если родители почему-то не стали их прививать.
+                        </span>
+                    </div>
+                </div>
+                <div class="news-element">
+                    <a title="&quot;Бензин и керосин покупал на рынке&quot;:
+                    екатеринбургский студент рассказал, почему поджигал садики"
+                       href="http://www.e1.ru/news/spool/news_id-457275.html">
+                        <img src="http://www.e1.ru/news/static/6d247b9d27fd5ba5d4fe55565c091a60_70_50_c.jpg"
+                             alt="&quot;Бензин и керосин покупал на рынке&quot;:
+                             екатеринбургский студент рассказал, почему поджигал садики">
+                    </a>
+                    <div class="news-caption">
+                        <a href="http://www.e1.ru/news/spool/news_id-457275.html">
+    &quot;Бензин и керосин покупал на рынке&quot;: екатеринбургский студент рассказал, почему поджигал садики
+                        </a>
+                        <span>
+                            "На дело" молодой поджигатель ходил пьяным.
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="other-news">
+                <div class="block-header">
+                    <span class="block-header-caption">Подробности</span>
+        <a href="http://www.e1.ru/spool/section_id-160.html/" class="block-header-more">&#9658; Перейти</a>
+                </div>
+                <div class="news-element">
+        <a title="В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских садах"
+                   href="http://www.e1.ru/news/spool/news_id-456457223646.html">
+                        <img src="http://www.e1.ru/news/static/9cd5bf75ce81a91c1595020ded649899_70_50_c.jpg"
+             alt="В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских садах">
+                    </a>
+                    <div class="reports-caption">
+                    <a class="reports-caption-header" href="http://www.e1.ru/news/spool/news_id-457223.html">
+                    В Екатеринбурге задержали парня, подозреваемого в серийном поджоге веранд в детских садах
+                        </a>
+                        <a class="reports-caption-caption"
+                           href="http://www.e1.ru/news/spool/news_id-457223-section_id-160.html">
+                            Его уже опознали очевидцы.
+                        </a>
+                    </div>
+                </div>
+                <div class="block-header">
+                    <span class="block-header-caption">Репортаж</span>
+        <a href="http://www.e1.ru/spool/section_id-140.html/" class="block-header-more">&#9658; Перейти</a>
+                </div>
+                <div class="news-element">
+<a
+title=
+"Супертехнологии и опытные врачи: репортаж из турецкой клиники, где борются за
+жизни пациентов из разных стран"
+                       href="http://www.e1.ru/news/spool/news_id-456646.html">
+                        <img src="http://www.e1.ru/news/static/537352a7aee239bd11cd47fbf23ab772_70_50_c.jpg"
+alt=
+"Супертехнологии и опытные врачи: репортаж из турецкой клиники, где борются за
+жизни пациентов из разных стран">
+                    </a>
+                    <div class="reports-caption">
+                    <a class="reports-caption-header" href="http://www.e1.ru/news/spool/news_id-456646.html">
+Супертехнологии и опытные врачи: репортаж из турецкой клиники, где борются за жизни пациентов из разных стран
+                        </a>
+                        <a class="reports-caption-caption"
+                           href="http://www.e1.ru/news/spool/news_id-456646-section_id-140.html">
+                        Как турецким медикам удалось доказать, что их страна -  это не только солнце и море.
+                        </a>
+                    </div>
+                </div>
+                <div class="block-header">
+                    <span class="block-header-caption">Статьи о недвижимости</span>
+        <a href="http://www.e1.ru/spool/section_id-182.html/" class="block-header-more">&#9658; Перейти</a>
+                </div>
+                <div class="news-element">
+                    <a
+title=
+"Европейская трёхэтажка, новостройка с бассейном и ещё 8 вариантов: как низко упали цены перед Новым годом"
+                       href="http://www.e1.ru/news/spool/news_id-457079.html">
+                        <img src="http://www.e1.ru/news/static/c2edeff69453ff33cb3c493e3bf95e7c_70_50_c.jpg"
+alt=
+"Европейская трёхэтажка, новостройка с бассейном и ещё 8 вариантов: как низко упали цены перед Новым годом">
+                    </a>
+                    <div class="reports-caption">
+                    <a class="reports-caption-header" href="http://www.e1.ru/news/spool/news_id-457079.html">
+    Европейская трёхэтажка, новостройка с бассейном и ещё 8 вариантов: как низко упали цены перед Новым годом
+                        </a>
+                        <a class="reports-caption-caption"
+                           href="http://www.e1.ru/news/spool/news_id-457079-section_id-182.html">
+                            Кто из застройщиков сделает самый щедрый подарок новосёлам.
+                        </a>
+                    </div>
+                </div>
+                <div class="two-columns">
+                    <div class="left-column">
+                        <div class="block-header">
+                            <span class="block-header-caption">Недвижимость</span>
+                            <a href="http://www.e1.ru/spool/section_id-182.html/"
+                               class="block-header-more">&#9658; Добавить объявление</a>
+                        </div>
+                        <div class="links">
+                            <a href="http://arenda.e1.ru/?utm_source=e1_main"
+                               title="Аренда">Аренда</a>&nbsp;&nbsp;
+                            <a href="http://homes.e1.ru/?utm_source=e1_main"
+                               title="Продажа квартир">Продажа квартир</a>&nbsp;&nbsp;
+                            <a href="http://newhomes.e1.ru/?utm_source=e1_main"
+                               title="Новостройки">Новостройки</a>
+                        </div>
+                        <div class="estate-element">
+            <a href="http://newhomes.e1.ru/view/53261383?utm_source=e1_main">
+            <img src="http://static.ngs.ru/cache//realty/photo/23fe7cfc4fb80161d629c230eca6d9a7_50_38_c.jpg"
+                                     alt="фото квартиры">
+                            </a>
+                            <div class="estate-caption">
+                                <a class="estate-caption-header"
+                   href="http://newhomes.e1.ru/view/53261383?utm_source=e1_main">
+                                    Продам 1-комнатную квартиру
+                                </a>
+                                <span class="estate-caption-address">
+                                    Орджоникидзе, 1
+                                </span>
+                                <span class="estate-caption-price">
+                                    Цена: <strong>2 091 000 руб.</strong>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="estate-element">
+            <a href="http://newhomes.e1.ru/view/54792723?utm_source=e1_main">
+            <img src="http://static.ngs.ru/cache//realty/photo/5aac2f1790f9c36f09f373597c46f190_50_38_c.jpg"
+                         alt="фото квартиры">
+                            </a>
+                            <div class="estate-caption">
+                                <a class="estate-caption-header"
+               href="http://newhomes.e1.ru/view/54792723?utm_source=e1_main">
+                                    Продам 2-комнатную квартиру
+                                </a>
+                                <span class="estate-caption-address">
+                                    Академика Семихатова Н.А. Бульвар, 18
+                                </span>
+                                <span class="estate-caption-price">
+                                    Цена: <strong>3 120 000 руб.</strong>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="estate-element">
+                    <a href="http://kn.e1.ru/view/34004093?utm_source=e1_main">
+            <img src="http://static.ngs.ru/cache//realty/photo/46816fd5f2d176e9d1a8dd7d9e324fc1_50_38_c.jpg"
+                     alt="фото склада">
+                            </a>
+                            <div class="estate-caption">
+                                <a class="estate-caption-header"
+                       href="http://kn.e1.ru/view/34004093?utm_source=e1_main">
+                                    Продам складское помещение
+                                </a>
+                                <span class="estate-caption-address">
+                                    Альпинистов, 77
+                                </span>
+                                <span class="estate-caption-price">
+                                    Цена: <strong>18 000 руб. за м<sup>2</sup></strong>
+                                </span>
+                            </div>
+                        </div>
+                        <div class="estate-element">
+                    <a href="http://kn.e1.ru/view/34623931?utm_source=e1_main">
+            <img src="http://static.ngs.ru/cache/realty/photo/5ffbbb9d2c82272bb5f0bec37c63d166_50_38_c.jpg"
+                         alt="фото склада">
+                            </a>
+                            <div class="estate-caption">
+                                <a class="estate-caption-header"
+                       href="http://kn.e1.ru/view/34623931?utm_source=e1_main">
+                                    Сдам складское помещение
+                                </a>
+                                <span class="estate-caption-address">
+                                    Косарева, 91
+                                </span>
+                                <span class="estate-caption-price">
+                                    Цена: <strong>350 руб./мес. за м<sup>2</sup></strong>
+                                </span>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-column">
+                        <div class="block-header">
+                            <span class="block-header-caption">Продажа авто, мото</span>
+                            <a href="http://www.e1.ru/spool/section_id-182.html/"
+                               class="block-header-more">&#9658; Перейти</a>
+                        </div>
+                        <div class="car-links">
+                            <a href="https://auto.e1.ru/car/">Легковые</a>
+                            <a href="https://auto.e1.ru/truck/">Грузовые</a>
+                            <a href="https://auto.e1.ru/moto/">Мото</a>
+                        </div>
+                        <div class="car-element">
+                            <a href="https://auto.e1.ru/car/used/renault/duster/8200642">
+                    <img src="https://auto.e1.ru/pview/offers/cec4aaef77b3d9a264fc2463135a14b8_50_38_c.JPG"
+                                     alt="Фото машины">
+                            </a>
+                            <div class="car-caption">
+                                <a class="car-caption-header"
+                                   href="https://auto.e1.ru/car/used/renault/duster/8200642">
+                                    Renault Duster
+                                </a>
+                                <span class="car-caption-price">
+                                    679&nbsp;196 руб.
+                                </span>
+                                <span class="car-caption-class">
+                                    2014, механика, 1.6л
+                                </span>
+                            </div>
+                        </div>
+                        <div class="car-element">
+                            <a href="https://auto.e1.ru/car/used/volkswagen/touareg/7847866">
+                    <img src="https://auto.e1.ru/pview/offers/00534dcd466eb9bbe14b3707fb1f1513_50_38_c.jpg"
+                                     alt="Фото машины">
+                            </a>
+                            <div class="car-caption">
+                                <a class="car-caption-header"
+                                   href="https://auto.e1.ru/car/used/volkswagen/touareg/7847866">
+                                    Volkswagen Touareg
+                                </a>
+                                <span class="car-caption-price">
+                                    2&nbsp;379&nbsp;000 руб.
+                                </span>
+                                <span class="car-caption-class">
+                                    2014, автомат, 3.6л
+                                </span>
+                            </div>
+                        </div>
+                        <div class="car-element">
+                            <a href="https://auto.e1.ru/car/used/audi/a3/8104278">
+                    <img src="https://auto.e1.ru/pview/offers/bc8dead7b5e738d89d4aedc66291e153_50_38_c.jpg"
+                                     alt="Фото машины">
+                            </a>
+                            <div class="car-caption">
+                        <a class="car-caption-header" href="https://auto.e1.ru/car/used/audi/a3/8104278">
+                                    Audi A3
+                                </a>
+                                <span class="car-caption-price">
+                                    270&nbsp;000 руб.
+                                </span>
+                                <span class="car-caption-class">
+                                    1996, механика, 1.8л
+                                </span>
+                            </div>
+                        </div>
+                        <div class="car-element">
+                            <a href="https://auto.e1.ru/car/used/vaz/2121_niva/8182930">
+                    <img src="https://auto.e1.ru/pview/offers/4d68e5af5d3323c688a2f62063c54ec7_50_38_c.JPG"
+                                     alt="Фото машины">
+                            </a>
+                            <div class="car-caption">
+                    <a class="car-caption-header" href="https://auto.e1.ru/car/used/vaz/2121_niva/8182930">
+                                    ВАЗ (LADA) 2121 Нива
+                                </a>
+                                <span class="car-caption-price">
+                                    210 000 руб.
+                                </span>
+                                <span class="car-caption-class">
+                                    2012, механика, 1.7л
+                                </span>
+                            </div>
+                        </div>
+                        <div class="links">
+                            <a class="au-link au-link_catalog" href="https://auto.e1.ru/vip/">
+                                Каталог Спецпредложений
+                            </a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+        <div class="add-content">
+            <div class="add-block">
+                <div class="add-element">
+                    <a href="Внутренние%20твердотельные%20накопители">
+                        <img alt="Фото товара"
+                           src="files/add3.jpg">
+                    </a>
+                    <div class="add-caption">
+                        <a class="add-caption-header" href="Внутренние%20твердотельные%20накопители">
+                            Внутренние твердотельные накопители
+                        </a>
+                        <span class="add-caption-price">
+                            1 277,84 руб.
+                        </span>
+                        <span class="add-caption-class">
+                            купить
+                        </span>
+                    </div>
+                </div>
+                <div class="add-element">
+                    <a
+                        href="http://cat.fr.eu.criteo.com/delivery/ck.php?cppv=1">
+                        <img alt="Фото товара"
+                             src="files/add2.jpg">
+                    </a>
+                    <div class="add-caption">
+                        <a class="add-caption-header"
+                           href="http://cat.fr.eu.criteo.com/delivery/ck.php?cppv=1">
+                            Колонки MEMTEQ черный цвет
+                        </a>
+                        <span class="add-caption-price">
+                            318,98 руб.
+                        </span>
+                        <span class="add-caption-class">
+                            купить
+                        </span>
+                    </div>
+                </div>
+                <div class="add-element">
+                    <a
+                        href="http://cat.fr.eu.criteo.com/delivery/ck.php?cppv=1">
+                        <img alt="Фото товара"
+                             src="files/add1.jpg">
+                    </a>
+                    <div class="add-caption">
+                        <a class="add-caption-header"
+                           href="http://cat.fr.eu.criteo.com/delivery/ck.php?cppv=1">
+                            Aukey Клавиатуры
+                        </a>
+                        <span class="add-caption-price">
+                            46,03 руб.
+                        </span>
+                        <span class="add-caption-class">
+                            купить
+                        </span>
+                    </div>
+                </div>
+            </div>
+            <div class="tv-block">
+                <div class="block-header">
+                    <span class="block-header-caption">Сейчас по TV</span>
+        <a href="http://www.e1.ru/spool/section_id-182.html/" class="block-header-more">&#9658; Перейти</a>
+                </div>
+                <div class="tv-element">
+                    <img class="ntv" src="files/ntv.jpg" alt="НТВ">
+                    <span>
+                        19:45 — <span>Премьера. Екатерина Климова в детективном сериале "ОПЕКУН" (16+).</span>
+                    </span>
+                </div>
+                <div class="tv-element">
+                    <img class="russia" src="http://www.e1.ru//afisha/tv/img/icons/102_30.jpg" alt="Россия">
+                    <span>
+                        21:00 — <span>
+    Россия 1. "Русская серия". Премьера. Анна Ковальчук в детективном телесериале "Тайны следствия-16". (12+).
+                    </span>
+                    </span>
+                </div>
+                <div class="tv-element">
+                    <img class="russia" src="http://www.e1.ru/afisha/tv/img/icons/102_30.jpg" alt="Россия">
+                    <span>
+                        21:30 — <span>
+                        Павел Деревянко в многосерийном фильме "Обратная сторона Луны". Новый сезон (S) (16+).
+                    </span>
+                    </span>
+                </div>
+                <a href="http://www.e1.ru/afisha/tv/img/icons/afisha/tv/">Все телеканалы</a>
+            </div>
+        </div>
+    </main>
+    <footer class="footer">
+        <div class="main-footer">
+            <div class="footer-info">
+                <div class="links">
+                    <a href="http://info.e1.ru/reklama/">Информация для клиентов</a>
+                    <a href="http://info.e1.ru/">Реклама на Е1</a>
+                    <a href="http://info.e1.ru/price/">Прайс-лист</a>
+                </div>
+                <div class="phones">
+                    <span>
+                        <span class="phone-capture">Единый номер:</span>
+                        8-800-700-8-9-10 (звонок бесплатный)
+                    </span>
+                    <span>
+                        <span class="phone-capture">Отдел продаж:</span>
+                        <a href="mailto:adv@corp.e1.ru">adv@corp.e1.ru</a>,
+                        (343) 379-49-10
+                    </span>
+                    <span>
+                        <span class="phone-capture">Редакция:</span>
+                        <a href="mailto:news@corp.e1.ru">news@corp.e1.ru</a>,
+                        (343) 379-49-95, (343) 34-555-34 (круглосуточно - для новостей)
+                    </span>
+                </div>
+    <a href="http://www.e1.ru/help/feedback/sales.php">Замечания и пожелания по работе отдела продаж</a>
+                <span>Публикация материалов под меткой «На правах рекламы» <br>
+                    и «Новости компаний» оплачена из средств рекламодателя</span>
+            </div>
+            <div class="footer-reviews">
+                <div class="links">
+                    <a href="https://itunes.apple.com/ru/app/e1/id917630579?mt=8">iPhone</a>
+                    <a href="http://m.e1.ru/">Мобильная версия</a>
+                </div>
+                <div class="footer-reviews-links">
+                    <span>
+                        Отзывы и предложения о работе портала:
+                        <a href="mailto:info@corp.e1.ru">info@corp.e1.ru</a>
+                    </span>
+                    <a href="http://support.e1.ru/">Центр поддержки пользователей портала E1.RU</a>
+                    <span>
+                        Проблемы при работе с порталом:
+                        <a href="mailto:support@corp.e1.ru">support@corp.e1.ru</a>
+                    </span>
+                </div>
+                <div class="footer__desc">
+                    <a href="#">Карта сайта</a>
+                </div>
+            </div>
+            <div class="footer-img">
+                <img src="http://www.e1.ru/images/18grey.jpg" alt="18+">
+                <img src="http://counter.yadro.ru/logo;hsdigital/rn/main/66?43.7" alt="LiveInternet">
+            <a href="http://metrika.yandex.ru/stat/?id=6874273&amp;from=informer" target="_blank">
+                    <img
+                    src="http://bs.yandex.ru/informer/6874273/3_0_FFFFFFFF_EFEFEFFF_0_pageviews"
+                    alt="Яндекс.Метрика"
+                title="Яндекс.Метрика: данные за сегодня (просмотры, визиты и уникальные посетители)"></a>
+            </div>
+        </div>
+        <div class="footer-marks">
+            <span>© ООО «Хёрст Шкулёв Диджитал. Урал»</span>
+            <div class="footer-contractors">
+                <img src="http://www.e1.ru/images/intermediagroup.jpg" alt="regional network">
+                <img src="http://www.e1.ru/images/n1_gray.png" alt="N1">
+                <img src="http://www.e1.ru/images/zarplata_gray.png" alt="зарплата">
+            </div>
+        </div>
+    </footer>
 </body>
 </html>
